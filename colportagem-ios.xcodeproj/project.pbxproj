@@ -17,6 +17,13 @@
 		935EBC8E26BD4D800006A7CA /* HttpPostClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBC8D26BD4D800006A7CA /* HttpPostClient.swift */; };
 		935EBC9126BD4D960006A7CA /* SocialAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBC9026BD4D960006A7CA /* SocialAuthentication.swift */; };
 		935EBC9326BD4DA10006A7CA /* SocialSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBC9226BD4DA10006A7CA /* SocialSignIn.swift */; };
+		935EBCA226BD4ED80006A7CA /* Infra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 935EBC9926BD4ED80006A7CA /* Infra.framework */; };
+		935EBCC126BD4F240006A7CA /* Validation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 935EBCB826BD4F230006A7CA /* Validation.framework */; };
+		935EBCD526BD4F650006A7CA /* CompareFieldsValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBCD126BD4F650006A7CA /* CompareFieldsValidation.swift */; };
+		935EBCD626BD4F650006A7CA /* RequiredFieldValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBCD226BD4F650006A7CA /* RequiredFieldValidation.swift */; };
+		935EBCD726BD4F650006A7CA /* ValidationComposite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBCD326BD4F650006A7CA /* ValidationComposite.swift */; };
+		935EBCD826BD4F650006A7CA /* EmailValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBCD426BD4F650006A7CA /* EmailValidation.swift */; };
+		935EBCDA26BD4F730006A7CA /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBCD926BD4F730006A7CA /* EmailValidator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +33,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 935EBC6C26BD4CE20006A7CA;
 			remoteInfo = Data;
+		};
+		935EBCA326BD4ED80006A7CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 935EBC3A26BD4A850006A7CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 935EBC9826BD4ED80006A7CA;
+			remoteInfo = Infra;
+		};
+		935EBCC226BD4F240006A7CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 935EBC3A26BD4A850006A7CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 935EBCB726BD4F230006A7CA;
+			remoteInfo = Validation;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -45,6 +66,19 @@
 		935EBC8D26BD4D800006A7CA /* HttpPostClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpPostClient.swift; sourceTree = "<group>"; };
 		935EBC9026BD4D960006A7CA /* SocialAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialAuthentication.swift; sourceTree = "<group>"; };
 		935EBC9226BD4DA10006A7CA /* SocialSignIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialSignIn.swift; sourceTree = "<group>"; };
+		935EBC9926BD4ED80006A7CA /* Infra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Infra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		935EBC9C26BD4ED80006A7CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		935EBCA126BD4ED80006A7CA /* InfraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		935EBCA826BD4ED80006A7CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		935EBCB826BD4F230006A7CA /* Validation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Validation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		935EBCBB26BD4F230006A7CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		935EBCC026BD4F240006A7CA /* ValidationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ValidationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		935EBCC726BD4F240006A7CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		935EBCD126BD4F650006A7CA /* CompareFieldsValidation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompareFieldsValidation.swift; sourceTree = "<group>"; };
+		935EBCD226BD4F650006A7CA /* RequiredFieldValidation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequiredFieldValidation.swift; sourceTree = "<group>"; };
+		935EBCD326BD4F650006A7CA /* ValidationComposite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationComposite.swift; sourceTree = "<group>"; };
+		935EBCD426BD4F650006A7CA /* EmailValidation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailValidation.swift; sourceTree = "<group>"; };
+		935EBCD926BD4F730006A7CA /* EmailValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +104,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		935EBC9626BD4ED80006A7CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		935EBC9E26BD4ED80006A7CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				935EBCA226BD4ED80006A7CA /* Infra.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		935EBCB526BD4F230006A7CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		935EBCBD26BD4F240006A7CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				935EBCC126BD4F240006A7CA /* Validation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -79,6 +143,10 @@
 				935EBC5426BD4B700006A7CA /* Domain */,
 				935EBC6E26BD4CE20006A7CA /* Data */,
 				935EBC7926BD4CE30006A7CA /* DataTests */,
+				935EBC9A26BD4ED80006A7CA /* Infra */,
+				935EBCA526BD4ED80006A7CA /* InfraTests */,
+				935EBCB926BD4F230006A7CA /* Validation */,
+				935EBCC426BD4F240006A7CA /* ValidationTests */,
 				935EBC4426BD4A850006A7CA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,6 +157,10 @@
 				935EBC5326BD4B700006A7CA /* Domain.framework */,
 				935EBC6D26BD4CE20006A7CA /* Data.framework */,
 				935EBC7526BD4CE30006A7CA /* DataTests.xctest */,
+				935EBC9926BD4ED80006A7CA /* Infra.framework */,
+				935EBCA126BD4ED80006A7CA /* InfraTests.xctest */,
+				935EBCB826BD4F230006A7CA /* Validation.framework */,
+				935EBCC026BD4F240006A7CA /* ValidationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -214,6 +286,83 @@
 			path = Account;
 			sourceTree = "<group>";
 		};
+		935EBC9A26BD4ED80006A7CA /* Infra */ = {
+			isa = PBXGroup;
+			children = (
+				935EBCB226BD4EFF0006A7CA /* Http */,
+				935EBCB026BD4EED0006A7CA /* Auth */,
+				935EBCB126BD4EF40006A7CA /* Validation */,
+				935EBC9C26BD4ED80006A7CA /* Info.plist */,
+			);
+			path = Infra;
+			sourceTree = "<group>";
+		};
+		935EBCA526BD4ED80006A7CA /* InfraTests */ = {
+			isa = PBXGroup;
+			children = (
+				935EBCA826BD4ED80006A7CA /* Info.plist */,
+			);
+			path = InfraTests;
+			sourceTree = "<group>";
+		};
+		935EBCB026BD4EED0006A7CA /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		935EBCB126BD4EF40006A7CA /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Validation;
+			sourceTree = "<group>";
+		};
+		935EBCB226BD4EFF0006A7CA /* Http */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		935EBCB926BD4F230006A7CA /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				935EBCCF26BD4F3A0006A7CA /* Validators */,
+				935EBCD026BD4F440006A7CA /* Protocols */,
+				935EBCBB26BD4F230006A7CA /* Info.plist */,
+			);
+			path = Validation;
+			sourceTree = "<group>";
+		};
+		935EBCC426BD4F240006A7CA /* ValidationTests */ = {
+			isa = PBXGroup;
+			children = (
+				935EBCC726BD4F240006A7CA /* Info.plist */,
+			);
+			path = ValidationTests;
+			sourceTree = "<group>";
+		};
+		935EBCCF26BD4F3A0006A7CA /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				935EBCD126BD4F650006A7CA /* CompareFieldsValidation.swift */,
+				935EBCD426BD4F650006A7CA /* EmailValidation.swift */,
+				935EBCD226BD4F650006A7CA /* RequiredFieldValidation.swift */,
+				935EBCD326BD4F650006A7CA /* ValidationComposite.swift */,
+			);
+			path = Validators;
+			sourceTree = "<group>";
+		};
+		935EBCD026BD4F440006A7CA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				935EBCD926BD4F730006A7CA /* EmailValidator.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -225,6 +374,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		935EBC6826BD4CE20006A7CA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		935EBC9426BD4ED80006A7CA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		935EBCB326BD4F230006A7CA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -288,6 +451,78 @@
 			productReference = 935EBC7526BD4CE30006A7CA /* DataTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		935EBC9826BD4ED80006A7CA /* Infra */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 935EBCAA26BD4ED80006A7CA /* Build configuration list for PBXNativeTarget "Infra" */;
+			buildPhases = (
+				935EBC9426BD4ED80006A7CA /* Headers */,
+				935EBC9526BD4ED80006A7CA /* Sources */,
+				935EBC9626BD4ED80006A7CA /* Frameworks */,
+				935EBC9726BD4ED80006A7CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Infra;
+			productName = Infra;
+			productReference = 935EBC9926BD4ED80006A7CA /* Infra.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		935EBCA026BD4ED80006A7CA /* InfraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 935EBCAD26BD4ED80006A7CA /* Build configuration list for PBXNativeTarget "InfraTests" */;
+			buildPhases = (
+				935EBC9D26BD4ED80006A7CA /* Sources */,
+				935EBC9E26BD4ED80006A7CA /* Frameworks */,
+				935EBC9F26BD4ED80006A7CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				935EBCA426BD4ED80006A7CA /* PBXTargetDependency */,
+			);
+			name = InfraTests;
+			productName = InfraTests;
+			productReference = 935EBCA126BD4ED80006A7CA /* InfraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		935EBCB726BD4F230006A7CA /* Validation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 935EBCC926BD4F240006A7CA /* Build configuration list for PBXNativeTarget "Validation" */;
+			buildPhases = (
+				935EBCB326BD4F230006A7CA /* Headers */,
+				935EBCB426BD4F230006A7CA /* Sources */,
+				935EBCB526BD4F230006A7CA /* Frameworks */,
+				935EBCB626BD4F230006A7CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Validation;
+			productName = Validation;
+			productReference = 935EBCB826BD4F230006A7CA /* Validation.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		935EBCBF26BD4F240006A7CA /* ValidationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 935EBCCC26BD4F240006A7CA /* Build configuration list for PBXNativeTarget "ValidationTests" */;
+			buildPhases = (
+				935EBCBC26BD4F240006A7CA /* Sources */,
+				935EBCBD26BD4F240006A7CA /* Frameworks */,
+				935EBCBE26BD4F240006A7CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				935EBCC326BD4F240006A7CA /* PBXTargetDependency */,
+			);
+			name = ValidationTests;
+			productName = ValidationTests;
+			productReference = 935EBCC026BD4F240006A7CA /* ValidationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -308,6 +543,19 @@
 					935EBC7426BD4CE30006A7CA = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
+					935EBC9826BD4ED80006A7CA = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					935EBCA026BD4ED80006A7CA = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					935EBCB726BD4F230006A7CA = {
+						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
+					};
+					935EBCBF26BD4F240006A7CA = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
 				};
 			};
 			buildConfigurationList = 935EBC3D26BD4A850006A7CA /* Build configuration list for PBXProject "colportagem-ios" */;
@@ -326,6 +574,10 @@
 				935EBC5226BD4B700006A7CA /* Domain */,
 				935EBC6C26BD4CE20006A7CA /* Data */,
 				935EBC7426BD4CE30006A7CA /* DataTests */,
+				935EBC9826BD4ED80006A7CA /* Infra */,
+				935EBCA026BD4ED80006A7CA /* InfraTests */,
+				935EBCB726BD4F230006A7CA /* Validation */,
+				935EBCBF26BD4F240006A7CA /* ValidationTests */,
 			);
 		};
 /* End PBXProject section */
@@ -346,6 +598,34 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		935EBC7326BD4CE30006A7CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		935EBC9726BD4ED80006A7CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		935EBC9F26BD4ED80006A7CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		935EBCB626BD4F230006A7CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		935EBCBE26BD4F240006A7CA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -385,6 +665,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		935EBC9526BD4ED80006A7CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		935EBC9D26BD4ED80006A7CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		935EBCB426BD4F230006A7CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				935EBCD626BD4F650006A7CA /* RequiredFieldValidation.swift in Sources */,
+				935EBCD726BD4F650006A7CA /* ValidationComposite.swift in Sources */,
+				935EBCDA26BD4F730006A7CA /* EmailValidator.swift in Sources */,
+				935EBCD526BD4F650006A7CA /* CompareFieldsValidation.swift in Sources */,
+				935EBCD826BD4F650006A7CA /* EmailValidation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		935EBCBC26BD4F240006A7CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -392,6 +705,16 @@
 			isa = PBXTargetDependency;
 			target = 935EBC6C26BD4CE20006A7CA /* Data */;
 			targetProxy = 935EBC7726BD4CE30006A7CA /* PBXContainerItemProxy */;
+		};
+		935EBCA426BD4ED80006A7CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 935EBC9826BD4ED80006A7CA /* Infra */;
+			targetProxy = 935EBCA326BD4ED80006A7CA /* PBXContainerItemProxy */;
+		};
+		935EBCC326BD4F240006A7CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 935EBCB726BD4F230006A7CA /* Validation */;
+			targetProxy = 935EBCC226BD4F240006A7CA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -657,6 +980,179 @@
 			};
 			name = Release;
 		};
+		935EBCAB26BD4ED80006A7CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = TV9269UQRR;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Infra/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "colportagem-sistemas.usb.org.br.Infra";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		935EBCAC26BD4ED80006A7CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = TV9269UQRR;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Infra/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "colportagem-sistemas.usb.org.br.Infra";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		935EBCAE26BD4ED80006A7CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = TV9269UQRR;
+				INFOPLIST_FILE = InfraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "colportagem-sistemas.usb.org.br.InfraTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		935EBCAF26BD4ED80006A7CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = TV9269UQRR;
+				INFOPLIST_FILE = InfraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "colportagem-sistemas.usb.org.br.InfraTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		935EBCCA26BD4F240006A7CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = TV9269UQRR;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Validation/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "colportagem-sistemas.usb.org.br.Validation";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		935EBCCB26BD4F240006A7CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = TV9269UQRR;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Validation/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "colportagem-sistemas.usb.org.br.Validation";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		935EBCCD26BD4F240006A7CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = TV9269UQRR;
+				INFOPLIST_FILE = ValidationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "colportagem-sistemas.usb.org.br.ValidationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		935EBCCE26BD4F240006A7CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = TV9269UQRR;
+				INFOPLIST_FILE = ValidationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "colportagem-sistemas.usb.org.br.ValidationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -692,6 +1188,42 @@
 			buildConfigurations = (
 				935EBC8226BD4CE30006A7CA /* Debug */,
 				935EBC8326BD4CE30006A7CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		935EBCAA26BD4ED80006A7CA /* Build configuration list for PBXNativeTarget "Infra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				935EBCAB26BD4ED80006A7CA /* Debug */,
+				935EBCAC26BD4ED80006A7CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		935EBCAD26BD4ED80006A7CA /* Build configuration list for PBXNativeTarget "InfraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				935EBCAE26BD4ED80006A7CA /* Debug */,
+				935EBCAF26BD4ED80006A7CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		935EBCC926BD4F240006A7CA /* Build configuration list for PBXNativeTarget "Validation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				935EBCCA26BD4F240006A7CA /* Debug */,
+				935EBCCB26BD4F240006A7CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		935EBCCC26BD4F240006A7CA /* Build configuration list for PBXNativeTarget "ValidationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				935EBCCD26BD4F240006A7CA /* Debug */,
+				935EBCCE26BD4F240006A7CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
