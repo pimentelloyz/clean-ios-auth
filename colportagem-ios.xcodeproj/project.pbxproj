@@ -48,6 +48,29 @@
 		935EBD4426BD52910006A7CA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 935EBD4626BD52910006A7CA /* Localizable.strings */; };
 		935EBD4826BD53370006A7CA /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 935EBD4726BD53370006A7CA /* Color.xcassets */; };
 		935EBD4A26BD53660006A7CA /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 935EBD4926BD53660006A7CA /* Image.xcassets */; };
+		935EBD5426BD63670006A7CA /* Storyborded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBD4C26BD63660006A7CA /* Storyborded.swift */; };
+		935EBD5526BD63670006A7CA /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBD4D26BD63660006A7CA /* Font.swift */; };
+		935EBD5626BD63670006A7CA /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBD4E26BD63660006A7CA /* UIViewControllerExtensions.swift */; };
+		935EBD5726BD63670006A7CA /* Stringi18nExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBD4F26BD63670006A7CA /* Stringi18nExtension.swift */; };
+		935EBD5826BD63670006A7CA /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBD5026BD63670006A7CA /* UIViewExtensions.swift */; };
+		935EBD5926BD63670006A7CA /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBD5126BD63670006A7CA /* UIColorExtensions.swift */; };
+		935EBD5A26BD63670006A7CA /* Responsive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBD5226BD63670006A7CA /* Responsive.swift */; };
+		935EBD5B26BD63670006A7CA /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBD5326BD63670006A7CA /* Color.swift */; };
+		935EBD6026BD63980006A7CA /* HeaderPrimary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBD5E26BD63980006A7CA /* HeaderPrimary.swift */; };
+		935EBD6126BD63980006A7CA /* TextLabelPrimary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBD5F26BD63980006A7CA /* TextLabelPrimary.swift */; };
+		935EBD6726BD63A70006A7CA /* AccountTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBD6226BD63A60006A7CA /* AccountTextField.swift */; };
+		935EBD6826BD63A70006A7CA /* ButtonPrimary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBD6326BD63A60006A7CA /* ButtonPrimary.swift */; };
+		935EBD6926BD63A70006A7CA /* ButtonSeccoundary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBD6426BD63A60006A7CA /* ButtonSeccoundary.swift */; };
+		935EBD6A26BD63A70006A7CA /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBD6526BD63A70006A7CA /* CheckBox.swift */; };
+		935EBD6B26BD63A70006A7CA /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBD6626BD63A70006A7CA /* NavigationController.swift */; };
+		935EBD7126BD69CE0006A7CA /* StartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBD7026BD69CE0006A7CA /* StartButton.swift */; };
+		935EBD7326BD6A260006A7CA /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 935EBD7226BD6A260006A7CA /* Onboarding.storyboard */; };
+		935EBD7626BD6A4C0006A7CA /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBD7426BD6A4B0006A7CA /* OnboardingViewController.swift */; };
+		935EBD7726BD6A4C0006A7CA /* OnboardingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBD7526BD6A4C0006A7CA /* OnboardingRouter.swift */; };
+		935EBD7B26BD6AAF0006A7CA /* GoogleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBD7A26BD6AAE0006A7CA /* GoogleButton.swift */; };
+		935EBD7D26BD6AD20006A7CA /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 935EBD7C26BD6AD20006A7CA /* Login.storyboard */; };
+		935EBD8026BD6AE10006A7CA /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBD7E26BD6AE00006A7CA /* LoginRouter.swift */; };
+		935EBD8126BD6AE10006A7CA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBD7F26BD6AE10006A7CA /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -203,6 +226,29 @@
 		935EBD4526BD52910006A7CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		935EBD4726BD53370006A7CA /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 		935EBD4926BD53660006A7CA /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
+		935EBD4C26BD63660006A7CA /* Storyborded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyborded.swift; sourceTree = "<group>"; };
+		935EBD4D26BD63660006A7CA /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		935EBD4E26BD63660006A7CA /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		935EBD4F26BD63670006A7CA /* Stringi18nExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stringi18nExtension.swift; sourceTree = "<group>"; };
+		935EBD5026BD63670006A7CA /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		935EBD5126BD63670006A7CA /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		935EBD5226BD63670006A7CA /* Responsive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Responsive.swift; sourceTree = "<group>"; };
+		935EBD5326BD63670006A7CA /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		935EBD5E26BD63980006A7CA /* HeaderPrimary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderPrimary.swift; sourceTree = "<group>"; };
+		935EBD5F26BD63980006A7CA /* TextLabelPrimary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextLabelPrimary.swift; sourceTree = "<group>"; };
+		935EBD6226BD63A60006A7CA /* AccountTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountTextField.swift; sourceTree = "<group>"; };
+		935EBD6326BD63A60006A7CA /* ButtonPrimary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonPrimary.swift; sourceTree = "<group>"; };
+		935EBD6426BD63A60006A7CA /* ButtonSeccoundary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonSeccoundary.swift; sourceTree = "<group>"; };
+		935EBD6526BD63A70006A7CA /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+		935EBD6626BD63A70006A7CA /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		935EBD7026BD69CE0006A7CA /* StartButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartButton.swift; sourceTree = "<group>"; };
+		935EBD7226BD6A260006A7CA /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		935EBD7426BD6A4B0006A7CA /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		935EBD7526BD6A4C0006A7CA /* OnboardingRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingRouter.swift; sourceTree = "<group>"; };
+		935EBD7A26BD6AAE0006A7CA /* GoogleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleButton.swift; sourceTree = "<group>"; };
+		935EBD7C26BD6AD20006A7CA /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		935EBD7E26BD6AE00006A7CA /* LoginRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		935EBD7F26BD6AE10006A7CA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -568,7 +614,10 @@
 		935EBD1B26BD51D20006A7CA /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				935EBD6C26BD69670006A7CA /* Scenes */,
+				935EBD5C26BD63780006A7CA /* Components */,
 				935EBD3226BD52120006A7CA /* Resources */,
+				935EBD4B26BD63580006A7CA /* Helpers */,
 				935EBD1D26BD51D20006A7CA /* Info.plist */,
 			);
 			path = UI;
@@ -613,6 +662,98 @@
 				935EBD3926BD525C0006A7CA /* Montserrat-Thin.ttf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		935EBD4B26BD63580006A7CA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				935EBD5326BD63670006A7CA /* Color.swift */,
+				935EBD4D26BD63660006A7CA /* Font.swift */,
+				935EBD5226BD63670006A7CA /* Responsive.swift */,
+				935EBD4C26BD63660006A7CA /* Storyborded.swift */,
+				935EBD4F26BD63670006A7CA /* Stringi18nExtension.swift */,
+				935EBD5126BD63670006A7CA /* UIColorExtensions.swift */,
+				935EBD4E26BD63660006A7CA /* UIViewControllerExtensions.swift */,
+				935EBD5026BD63670006A7CA /* UIViewExtensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		935EBD5C26BD63780006A7CA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				935EBD5D26BD63850006A7CA /* Label */,
+				935EBD6226BD63A60006A7CA /* AccountTextField.swift */,
+				935EBD6326BD63A60006A7CA /* ButtonPrimary.swift */,
+				935EBD6426BD63A60006A7CA /* ButtonSeccoundary.swift */,
+				935EBD6526BD63A70006A7CA /* CheckBox.swift */,
+				935EBD6626BD63A70006A7CA /* NavigationController.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		935EBD5D26BD63850006A7CA /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				935EBD5E26BD63980006A7CA /* HeaderPrimary.swift */,
+				935EBD5F26BD63980006A7CA /* TextLabelPrimary.swift */,
+			);
+			path = Label;
+			sourceTree = "<group>";
+		};
+		935EBD6C26BD69670006A7CA /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				935EBD6E26BD69820006A7CA /* Account */,
+				935EBD6D26BD69730006A7CA /* Onboarding */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		935EBD6D26BD69730006A7CA /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				935EBD6F26BD698E0006A7CA /* Components */,
+				935EBD7526BD6A4C0006A7CA /* OnboardingRouter.swift */,
+				935EBD7426BD6A4B0006A7CA /* OnboardingViewController.swift */,
+				935EBD7226BD6A260006A7CA /* Onboarding.storyboard */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		935EBD6E26BD69820006A7CA /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				935EBD7826BD6A980006A7CA /* Login */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		935EBD6F26BD698E0006A7CA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				935EBD7026BD69CE0006A7CA /* StartButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		935EBD7826BD6A980006A7CA /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				935EBD7926BD6AA10006A7CA /* Components */,
+				935EBD7E26BD6AE00006A7CA /* LoginRouter.swift */,
+				935EBD7F26BD6AE10006A7CA /* LoginViewController.swift */,
+				935EBD7C26BD6AD20006A7CA /* Login.storyboard */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		935EBD7926BD6AA10006A7CA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				935EBD7A26BD6AAE0006A7CA /* GoogleButton.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -914,6 +1055,7 @@
 					};
 					935EBD1926BD51D20006A7CA = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 					935EBD2126BD51D20006A7CA = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -1019,6 +1161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				935EBD7326BD6A260006A7CA /* Onboarding.storyboard in Resources */,
 				935EBD3E26BD525C0006A7CA /* Montserrat-Regular.ttf in Resources */,
 				935EBD3C26BD525C0006A7CA /* Montserrat-Medium.ttf in Resources */,
 				935EBD3B26BD525C0006A7CA /* Montserrat-Light.ttf in Resources */,
@@ -1026,6 +1169,7 @@
 				935EBD4026BD525C0006A7CA /* Montserrat-Thin.ttf in Resources */,
 				935EBD4426BD52910006A7CA /* Localizable.strings in Resources */,
 				935EBD3F26BD525C0006A7CA /* Montserrat-SemiBold.ttf in Resources */,
+				935EBD7D26BD6AD20006A7CA /* Login.storyboard in Resources */,
 				935EBD4A26BD53660006A7CA /* Image.xcassets in Resources */,
 				935EBD4126BD525C0006A7CA /* Montserrat-Bold.ttf in Resources */,
 				935EBD4826BD53370006A7CA /* Color.xcassets in Resources */,
@@ -1126,6 +1270,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				935EBD8126BD6AE10006A7CA /* LoginViewController.swift in Sources */,
+				935EBD5726BD63670006A7CA /* Stringi18nExtension.swift in Sources */,
+				935EBD7726BD6A4C0006A7CA /* OnboardingRouter.swift in Sources */,
+				935EBD5826BD63670006A7CA /* UIViewExtensions.swift in Sources */,
+				935EBD6726BD63A70006A7CA /* AccountTextField.swift in Sources */,
+				935EBD7626BD6A4C0006A7CA /* OnboardingViewController.swift in Sources */,
+				935EBD5A26BD63670006A7CA /* Responsive.swift in Sources */,
+				935EBD5526BD63670006A7CA /* Font.swift in Sources */,
+				935EBD7B26BD6AAF0006A7CA /* GoogleButton.swift in Sources */,
+				935EBD5926BD63670006A7CA /* UIColorExtensions.swift in Sources */,
+				935EBD7126BD69CE0006A7CA /* StartButton.swift in Sources */,
+				935EBD6826BD63A70006A7CA /* ButtonPrimary.swift in Sources */,
+				935EBD6B26BD63A70006A7CA /* NavigationController.swift in Sources */,
+				935EBD5B26BD63670006A7CA /* Color.swift in Sources */,
+				935EBD6026BD63980006A7CA /* HeaderPrimary.swift in Sources */,
+				935EBD6926BD63A70006A7CA /* ButtonSeccoundary.swift in Sources */,
+				935EBD6A26BD63A70006A7CA /* CheckBox.swift in Sources */,
+				935EBD5626BD63670006A7CA /* UIViewControllerExtensions.swift in Sources */,
+				935EBD6126BD63980006A7CA /* TextLabelPrimary.swift in Sources */,
+				935EBD8026BD6AE10006A7CA /* LoginRouter.swift in Sources */,
+				935EBD5426BD63670006A7CA /* Storyborded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1729,6 +1894,7 @@
 		935EBD2C26BD51D20006A7CA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -1746,6 +1912,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "colportagem-sistemas.usb.org.br.UI";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -1753,6 +1920,7 @@
 		935EBD2D26BD51D20006A7CA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -1777,6 +1945,7 @@
 		935EBD2F26BD51D20006A7CA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = TV9269UQRR;
@@ -1795,6 +1964,7 @@
 		935EBD3026BD51D20006A7CA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = TV9269UQRR;

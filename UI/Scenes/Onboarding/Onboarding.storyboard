@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hsP-eg-Hw9">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Onboarding-->
+        <scene sceneID="0V3-18-4PF">
+            <objects>
+                <viewController storyboardIdentifier="OnboardingViewController" id="hsP-eg-Hw9" userLabel="Onboarding" customClass="OnboardingViewController" customModule="UI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="an2-5s-qYv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboard_image" translatesAutoresizingMaskIntoConstraints="NO" id="nI7-8R-5qZ" userLabel="Background Image">
+                                <rect key="frame" x="-221" y="244" width="635" height="1078"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lRv-ok-ZBU" customClass="StartButton" customModule="UI" customModuleProvider="target">
+                                <rect key="frame" x="80" y="778" width="254" height="34"/>
+                                <color key="backgroundColor" name="textGrayLight"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="0.0" green="0.18823529410000001" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cSX-kd-eA1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nI7-8R-5qZ" firstAttribute="leading" secondItem="cSX-kd-eA1" secondAttribute="leading" constant="-221" id="WE5-lv-gUT"/>
+                            <constraint firstItem="lRv-ok-ZBU" firstAttribute="leading" secondItem="cSX-kd-eA1" secondAttribute="leading" constant="80" id="YFD-Xy-VpC"/>
+                            <constraint firstAttribute="bottom" secondItem="nI7-8R-5qZ" secondAttribute="bottom" constant="-426" id="g5g-uJ-YHD"/>
+                            <constraint firstItem="cSX-kd-eA1" firstAttribute="trailing" secondItem="lRv-ok-ZBU" secondAttribute="trailing" constant="80" id="k6b-UA-eKO"/>
+                            <constraint firstItem="cSX-kd-eA1" firstAttribute="bottom" secondItem="lRv-ok-ZBU" secondAttribute="bottom" constant="50" id="mOg-oY-eE0"/>
+                            <constraint firstItem="nI7-8R-5qZ" firstAttribute="trailing" secondItem="cSX-kd-eA1" secondAttribute="trailing" id="qTB-Qb-U59"/>
+                            <constraint firstItem="nI7-8R-5qZ" firstAttribute="top" secondItem="cSX-kd-eA1" secondAttribute="top" constant="200" id="vBU-t5-5a3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="getStartedButton" destination="lRv-ok-ZBU" id="czY-T5-vRF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t2j-bu-hoE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5.7971014492753632" y="36.830357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="onboard_image" width="6012" height="4008"/>
+        <namedColor name="textGrayLight">
+            <color red="0.83921568627450982" green="0.83921568627450982" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
