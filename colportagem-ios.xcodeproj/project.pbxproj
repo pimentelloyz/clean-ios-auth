@@ -37,6 +37,17 @@
 		935EBD0F26BD516B0006A7CA /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBD0E26BD516B0006A7CA /* Validation.swift */; };
 		935EBD1026BD51830006A7CA /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 935EBCF626BD51380006A7CA /* Presentation.framework */; };
 		935EBD1126BD51830006A7CA /* Presentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 935EBCF626BD51380006A7CA /* Presentation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		935EBD2326BD51D20006A7CA /* UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 935EBD1A26BD51D20006A7CA /* UI.framework */; };
+		935EBD3B26BD525C0006A7CA /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 935EBD3426BD525C0006A7CA /* Montserrat-Light.ttf */; };
+		935EBD3C26BD525C0006A7CA /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 935EBD3526BD525C0006A7CA /* Montserrat-Medium.ttf */; };
+		935EBD3D26BD525C0006A7CA /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 935EBD3626BD525C0006A7CA /* Montserrat-Black.ttf */; };
+		935EBD3E26BD525C0006A7CA /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 935EBD3726BD525C0006A7CA /* Montserrat-Regular.ttf */; };
+		935EBD3F26BD525C0006A7CA /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 935EBD3826BD525C0006A7CA /* Montserrat-SemiBold.ttf */; };
+		935EBD4026BD525C0006A7CA /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 935EBD3926BD525C0006A7CA /* Montserrat-Thin.ttf */; };
+		935EBD4126BD525C0006A7CA /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 935EBD3A26BD525C0006A7CA /* Montserrat-Bold.ttf */; };
+		935EBD4426BD52910006A7CA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 935EBD4626BD52910006A7CA /* Localizable.strings */; };
+		935EBD4826BD53370006A7CA /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 935EBD4726BD53370006A7CA /* Color.xcassets */; };
+		935EBD4A26BD53660006A7CA /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 935EBD4926BD53660006A7CA /* Image.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +106,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 935EBCF526BD51380006A7CA;
 			remoteInfo = Presentation;
+		};
+		935EBD2426BD51D20006A7CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 935EBC3A26BD4A850006A7CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 935EBD1926BD51D20006A7CA;
+			remoteInfo = UI;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -171,6 +189,20 @@
 		935EBCFE26BD51390006A7CA /* PresentationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresentationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		935EBD0526BD51390006A7CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		935EBD0E26BD516B0006A7CA /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		935EBD1A26BD51D20006A7CA /* UI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		935EBD1D26BD51D20006A7CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		935EBD2226BD51D20006A7CA /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		935EBD2926BD51D20006A7CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		935EBD3426BD525C0006A7CA /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		935EBD3526BD525C0006A7CA /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		935EBD3626BD525C0006A7CA /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.ttf"; sourceTree = "<group>"; };
+		935EBD3726BD525C0006A7CA /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		935EBD3826BD525C0006A7CA /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		935EBD3926BD525C0006A7CA /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.ttf"; sourceTree = "<group>"; };
+		935EBD3A26BD525C0006A7CA /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		935EBD4526BD52910006A7CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		935EBD4726BD53370006A7CA /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		935EBD4926BD53660006A7CA /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +278,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		935EBD1726BD51D20006A7CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		935EBD1F26BD51D20006A7CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				935EBD2326BD51D20006A7CA /* UI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -261,6 +308,8 @@
 				935EBCC426BD4F240006A7CA /* ValidationTests */,
 				935EBCF726BD51380006A7CA /* Presentation */,
 				935EBD0226BD51390006A7CA /* PresentationTests */,
+				935EBD1B26BD51D20006A7CA /* UI */,
+				935EBD2626BD51D20006A7CA /* UITests */,
 				935EBC4426BD4A850006A7CA /* Products */,
 				935EBCE226BD50500006A7CA /* Frameworks */,
 			);
@@ -278,6 +327,8 @@
 				935EBCC026BD4F240006A7CA /* ValidationTests.xctest */,
 				935EBCF626BD51380006A7CA /* Presentation.framework */,
 				935EBCFE26BD51390006A7CA /* PresentationTests.xctest */,
+				935EBD1A26BD51D20006A7CA /* UI.framework */,
+				935EBD2226BD51D20006A7CA /* UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -514,6 +565,56 @@
 			path = Validators;
 			sourceTree = "<group>";
 		};
+		935EBD1B26BD51D20006A7CA /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				935EBD3226BD52120006A7CA /* Resources */,
+				935EBD1D26BD51D20006A7CA /* Info.plist */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		935EBD2626BD51D20006A7CA /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				935EBD2926BD51D20006A7CA /* Info.plist */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
+		935EBD3126BD52020006A7CA /* i18n */ = {
+			isa = PBXGroup;
+			children = (
+				935EBD4626BD52910006A7CA /* Localizable.strings */,
+			);
+			path = i18n;
+			sourceTree = "<group>";
+		};
+		935EBD3226BD52120006A7CA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				935EBD3326BD52250006A7CA /* Font */,
+				935EBD3126BD52020006A7CA /* i18n */,
+				935EBD4726BD53370006A7CA /* Color.xcassets */,
+				935EBD4926BD53660006A7CA /* Image.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		935EBD3326BD52250006A7CA /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				935EBD3626BD525C0006A7CA /* Montserrat-Black.ttf */,
+				935EBD3A26BD525C0006A7CA /* Montserrat-Bold.ttf */,
+				935EBD3426BD525C0006A7CA /* Montserrat-Light.ttf */,
+				935EBD3526BD525C0006A7CA /* Montserrat-Medium.ttf */,
+				935EBD3726BD525C0006A7CA /* Montserrat-Regular.ttf */,
+				935EBD3826BD525C0006A7CA /* Montserrat-SemiBold.ttf */,
+				935EBD3926BD525C0006A7CA /* Montserrat-Thin.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -546,6 +647,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		935EBCF126BD51380006A7CA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		935EBD1526BD51D20006A7CA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -727,6 +835,42 @@
 			productReference = 935EBCFE26BD51390006A7CA /* PresentationTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		935EBD1926BD51D20006A7CA /* UI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 935EBD2B26BD51D20006A7CA /* Build configuration list for PBXNativeTarget "UI" */;
+			buildPhases = (
+				935EBD1526BD51D20006A7CA /* Headers */,
+				935EBD1626BD51D20006A7CA /* Sources */,
+				935EBD1726BD51D20006A7CA /* Frameworks */,
+				935EBD1826BD51D20006A7CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UI;
+			productName = UI;
+			productReference = 935EBD1A26BD51D20006A7CA /* UI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		935EBD2126BD51D20006A7CA /* UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 935EBD2E26BD51D20006A7CA /* Build configuration list for PBXNativeTarget "UITests" */;
+			buildPhases = (
+				935EBD1E26BD51D20006A7CA /* Sources */,
+				935EBD1F26BD51D20006A7CA /* Frameworks */,
+				935EBD2026BD51D20006A7CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				935EBD2526BD51D20006A7CA /* PBXTargetDependency */,
+			);
+			name = UITests;
+			productName = UITests;
+			productReference = 935EBD2226BD51D20006A7CA /* UITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -768,6 +912,12 @@
 					935EBCFD26BD51390006A7CA = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
+					935EBD1926BD51D20006A7CA = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					935EBD2126BD51D20006A7CA = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
 				};
 			};
 			buildConfigurationList = 935EBC3D26BD4A850006A7CA /* Build configuration list for PBXProject "colportagem-ios" */;
@@ -795,6 +945,8 @@
 				935EBCBF26BD4F240006A7CA /* ValidationTests */,
 				935EBCF526BD51380006A7CA /* Presentation */,
 				935EBCFD26BD51390006A7CA /* PresentationTests */,
+				935EBD1926BD51D20006A7CA /* UI */,
+				935EBD2126BD51D20006A7CA /* UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -857,6 +1009,30 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		935EBCFC26BD51390006A7CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		935EBD1826BD51D20006A7CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				935EBD3E26BD525C0006A7CA /* Montserrat-Regular.ttf in Resources */,
+				935EBD3C26BD525C0006A7CA /* Montserrat-Medium.ttf in Resources */,
+				935EBD3B26BD525C0006A7CA /* Montserrat-Light.ttf in Resources */,
+				935EBD3D26BD525C0006A7CA /* Montserrat-Black.ttf in Resources */,
+				935EBD4026BD525C0006A7CA /* Montserrat-Thin.ttf in Resources */,
+				935EBD4426BD52910006A7CA /* Localizable.strings in Resources */,
+				935EBD3F26BD525C0006A7CA /* Montserrat-SemiBold.ttf in Resources */,
+				935EBD4A26BD53660006A7CA /* Image.xcassets in Resources */,
+				935EBD4126BD525C0006A7CA /* Montserrat-Bold.ttf in Resources */,
+				935EBD4826BD53370006A7CA /* Color.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		935EBD2026BD51D20006A7CA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -946,6 +1122,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		935EBD1626BD51D20006A7CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		935EBD1E26BD51D20006A7CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -989,7 +1179,23 @@
 			target = 935EBCF526BD51380006A7CA /* Presentation */;
 			targetProxy = 935EBD1226BD51830006A7CA /* PBXContainerItemProxy */;
 		};
+		935EBD2526BD51D20006A7CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 935EBD1926BD51D20006A7CA /* UI */;
+			targetProxy = 935EBD2426BD51D20006A7CA /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		935EBD4626BD52910006A7CA /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				935EBD4526BD52910006A7CA /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		935EBC4926BD4A850006A7CA /* Debug */ = {
@@ -1520,6 +1726,90 @@
 			};
 			name = Release;
 		};
+		935EBD2C26BD51D20006A7CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = TV9269UQRR;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = UI/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "colportagem-sistemas.usb.org.br.UI";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		935EBD2D26BD51D20006A7CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = TV9269UQRR;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = UI/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "colportagem-sistemas.usb.org.br.UI";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		935EBD2F26BD51D20006A7CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = TV9269UQRR;
+				INFOPLIST_FILE = UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "colportagem-sistemas.usb.org.br.UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		935EBD3026BD51D20006A7CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = TV9269UQRR;
+				INFOPLIST_FILE = UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "colportagem-sistemas.usb.org.br.UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1609,6 +1899,24 @@
 			buildConfigurations = (
 				935EBD0B26BD51390006A7CA /* Debug */,
 				935EBD0C26BD51390006A7CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		935EBD2B26BD51D20006A7CA /* Build configuration list for PBXNativeTarget "UI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				935EBD2C26BD51D20006A7CA /* Debug */,
+				935EBD2D26BD51D20006A7CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		935EBD2E26BD51D20006A7CA /* Build configuration list for PBXNativeTarget "UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				935EBD2F26BD51D20006A7CA /* Debug */,
+				935EBD3026BD51D20006A7CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
