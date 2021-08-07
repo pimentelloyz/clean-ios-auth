@@ -20,3 +20,9 @@ extension WeakVarProxy: LoadingView where T: LoadingView {
         instance?.display(viewModel: viewModel)
     }
 }
+
+extension WeakVarProxy: LocalCurrentAccountResultViewModel where T: LocalCurrentAccountResultViewModel {
+    func result(_ viewModel: LocalCurrentAccounViewModel) {
+        instance?.result(viewModel)
+    }
+}
