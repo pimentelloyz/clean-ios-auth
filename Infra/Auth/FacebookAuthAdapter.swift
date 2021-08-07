@@ -23,10 +23,13 @@ public final class FacebookAuthAdapter: SocialSignIn {
                 }
                 let credential = FacebookAuthProvider.credential(withAccessToken: token.tokenString)
                 self.auth.signIn(with: credential) { result, error in
+                    if let _ = error {
+                        completion(.failure(.unauthorized))
+                    }
                     completion(.success(nil))
                 }
-            case .failed(let error):
-                print(error)
+            case .failed( _):
+                completion(.failure(.badRequest))
             case .cancelled:
                 break
             }

@@ -191,6 +191,7 @@
 		935EBEBA26BE2B350006A7CA /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBD6526BD63A70006A7CA /* CheckBox.swift */; };
 		935EBEBB26BE2B3D0006A7CA /* TextLabelPrimary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBD5F26BD63980006A7CA /* TextLabelPrimary.swift */; };
 		935EBEBC26BE2B3D0006A7CA /* HeaderPrimary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBD5E26BD63980006A7CA /* HeaderPrimary.swift */; };
+		935EBEBD26BE2F960006A7CA /* GoogleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBD7A26BD6AAE0006A7CA /* GoogleButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -2132,6 +2133,7 @@
 				935EBEBB26BE2B3D0006A7CA /* TextLabelPrimary.swift in Sources */,
 				935EBEAA26BE262C0006A7CA /* UIColorExtensions.swift in Sources */,
 				935EBE9526BDD8690006A7CA /* LoginViewController.swift in Sources */,
+				935EBEBD26BE2F960006A7CA /* GoogleButton.swift in Sources */,
 				935EBE8126BDD4C00006A7CA /* ApiUrlFactory.swift in Sources */,
 				935EBE5426BDAEB00006A7CA /* HomeController.swift in Sources */,
 				935EBEA726BE261C0006A7CA /* Color.swift in Sources */,
