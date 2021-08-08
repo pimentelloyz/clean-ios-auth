@@ -14,6 +14,7 @@ public final class LoginViewController: UIViewController, Storyboarded, URLSessi
     var activeField: UITextField?
     
     public var signInWithFacebook: (() -> Void)?
+    public var signInWithGoogle: (() -> Void)?
     public var signInWithMicrosoft: (() -> Void)?
     public var generateToken: ((GenerateTokenRequest) -> Void)?
 
@@ -31,6 +32,7 @@ public final class LoginViewController: UIViewController, Storyboarded, URLSessi
     private func configure() {
         signInWithFacebbokButton?.addTarget(self, action: #selector(signInWithFacebookTapped), for: .touchUpInside)
         signInWithMicrosoftButton?.addTarget(self, action: #selector(signInWithMicrosoftTapped), for: .touchUpInside)
+        signInWithGoogleButton?.addTarget(self, action: #selector(signInWithGoogleTapped), for: .touchUpInside)
         hideKeyboradOnTap()
     }
     
@@ -40,6 +42,10 @@ public final class LoginViewController: UIViewController, Storyboarded, URLSessi
     
     @objc private func signInWithMicrosoftTapped() {
         signInWithMicrosoft?()
+    }
+
+    @objc private func signInWithGoogleTapped() {
+        signInWithGoogle?()
     }
 
     public override func viewWillDisappear(_ animated: Bool) {

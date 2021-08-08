@@ -162,7 +162,7 @@
 		935EBE8926BDD54C0006A7CA /* RemoteRefreshTokenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBE8526BDD54B0006A7CA /* RemoteRefreshTokenFactory.swift */; };
 		935EBE8A26BDD54C0006A7CA /* SaveCurrentAccountFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBE8626BDD54B0006A7CA /* SaveCurrentAccountFactory.swift */; };
 		935EBE8B26BDD54C0006A7CA /* RemoteGenerateTokenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBE8726BDD54C0006A7CA /* RemoteGenerateTokenFactory.swift */; };
-		935EBE8D26BDD6B00006A7CA /* SocialAuthenticationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBE8C26BDD6B00006A7CA /* SocialAuthenticationFactory.swift */; };
+		935EBE8D26BDD6B00006A7CA /* SocialFecebookAuthenticationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBE8C26BDD6B00006A7CA /* SocialFecebookAuthenticationFactory.swift */; };
 		935EBE9026BDD6DE0006A7CA /* FacebookAuthAdapterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBE8F26BDD6DE0006A7CA /* FacebookAuthAdapterFactory.swift */; };
 		935EBE9326BDD7AC0006A7CA /* UploadMultipart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBE9226BDD7AC0006A7CA /* UploadMultipart.swift */; };
 		935EBE9526BDD8690006A7CA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBD7F26BD6AE10006A7CA /* LoginViewController.swift */; };
@@ -195,6 +195,10 @@
 		93AD24DE26BF76D80012A5CF /* AuthenticationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD24DD26BF76D80012A5CF /* AuthenticationModel.swift */; };
 		93AD24E026BF783E0012A5CF /* FirebaseHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD24DF26BF783E0012A5CF /* FirebaseHelpers.swift */; };
 		93AD24E426BF7ECC0012A5CF /* AuthenticationResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD24E326BF7ECC0012A5CF /* AuthenticationResultViewModel.swift */; };
+		93AD24EA26BFAAD50012A5CF /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 93AD24E926BFAAD50012A5CF /* GoogleSignIn */; };
+		93AD24EC26BFAC9F0012A5CF /* GoogleAuthAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD24EB26BFAC9F0012A5CF /* GoogleAuthAdapter.swift */; };
+		93AD24EE26BFB6B50012A5CF /* GoogleAuthAdapterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD24ED26BFB6B50012A5CF /* GoogleAuthAdapterFactory.swift */; };
+		93AD24F026BFB9C70012A5CF /* SocialGoogleAuthenticationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD24EF26BFB9C70012A5CF /* SocialGoogleAuthenticationFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -545,7 +549,7 @@
 		935EBE8526BDD54B0006A7CA /* RemoteRefreshTokenFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteRefreshTokenFactory.swift; sourceTree = "<group>"; };
 		935EBE8626BDD54B0006A7CA /* SaveCurrentAccountFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveCurrentAccountFactory.swift; sourceTree = "<group>"; };
 		935EBE8726BDD54C0006A7CA /* RemoteGenerateTokenFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteGenerateTokenFactory.swift; sourceTree = "<group>"; };
-		935EBE8C26BDD6B00006A7CA /* SocialAuthenticationFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialAuthenticationFactory.swift; sourceTree = "<group>"; };
+		935EBE8C26BDD6B00006A7CA /* SocialFecebookAuthenticationFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialFecebookAuthenticationFactory.swift; sourceTree = "<group>"; };
 		935EBE8F26BDD6DE0006A7CA /* FacebookAuthAdapterFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookAuthAdapterFactory.swift; sourceTree = "<group>"; };
 		935EBE9226BDD7AC0006A7CA /* UploadMultipart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadMultipart.swift; sourceTree = "<group>"; };
 		935EBE9926BDD9230006A7CA /* LocalSaveSecureCurrentAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalSaveSecureCurrentAccount.swift; sourceTree = "<group>"; };
@@ -556,6 +560,9 @@
 		93AD24DD26BF76D80012A5CF /* AuthenticationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationModel.swift; sourceTree = "<group>"; };
 		93AD24DF26BF783E0012A5CF /* FirebaseHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseHelpers.swift; sourceTree = "<group>"; };
 		93AD24E326BF7ECC0012A5CF /* AuthenticationResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationResultViewModel.swift; sourceTree = "<group>"; };
+		93AD24EB26BFAC9F0012A5CF /* GoogleAuthAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuthAdapter.swift; sourceTree = "<group>"; };
+		93AD24ED26BFB6B50012A5CF /* GoogleAuthAdapterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuthAdapterFactory.swift; sourceTree = "<group>"; };
+		93AD24EF26BFB9C70012A5CF /* SocialGoogleAuthenticationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialGoogleAuthenticationFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -592,6 +599,7 @@
 				935EBCE826BD50710006A7CA /* Data.framework in Frameworks */,
 				935EBCDD26BD4FED0006A7CA /* Alamofire in Frameworks */,
 				935EBDFF26BDA3630006A7CA /* FirebaseAuth in Frameworks */,
+				93AD24EA26BFAAD50012A5CF /* GoogleSignIn in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -878,6 +886,7 @@
 			isa = PBXGroup;
 			children = (
 				935EBE0526BDA5360006A7CA /* FacebookAuthAdapter.swift */,
+				93AD24EB26BFAC9F0012A5CF /* GoogleAuthAdapter.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -1409,11 +1418,12 @@
 		935EBE8326BDD5300006A7CA /* Account */ = {
 			isa = PBXGroup;
 			children = (
-				935EBE8C26BDD6B00006A7CA /* SocialAuthenticationFactory.swift */,
+				935EBE8C26BDD6B00006A7CA /* SocialFecebookAuthenticationFactory.swift */,
 				935EBE8426BDD54B0006A7CA /* LoadCurrentAccountFactory.swift */,
 				935EBE8726BDD54C0006A7CA /* RemoteGenerateTokenFactory.swift */,
 				935EBE8526BDD54B0006A7CA /* RemoteRefreshTokenFactory.swift */,
 				935EBE8626BDD54B0006A7CA /* SaveCurrentAccountFactory.swift */,
+				93AD24EF26BFB9C70012A5CF /* SocialGoogleAuthenticationFactory.swift */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -1422,6 +1432,7 @@
 			isa = PBXGroup;
 			children = (
 				935EBE8F26BDD6DE0006A7CA /* FacebookAuthAdapterFactory.swift */,
+				93AD24ED26BFB6B50012A5CF /* GoogleAuthAdapterFactory.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -1568,6 +1579,7 @@
 				935EBDFE26BDA3630006A7CA /* FirebaseAuth */,
 				935EBE0126BDA40C0006A7CA /* FacebookLogin */,
 				935EBE0A26BDA6D80006A7CA /* KeychainAccess */,
+				93AD24E926BFAAD50012A5CF /* GoogleSignIn */,
 			);
 			productName = Infra;
 			productReference = 935EBC9926BD4ED80006A7CA /* Infra.framework */;
@@ -1818,6 +1830,7 @@
 				935EBDFD26BDA3630006A7CA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				935EBE0026BDA40C0006A7CA /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
 				935EBE0926BDA6D80006A7CA /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+				93AD24E826BFAAD50012A5CF /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 			);
 			productRefGroup = 935EBC4426BD4A850006A7CA /* Products */;
 			projectDirPath = "";
@@ -2018,6 +2031,7 @@
 				935EBCE126BD50130006A7CA /* EmailValidatorAdapter.swift in Sources */,
 				935EBE2826BDA9180006A7CA /* AlamofirePostAdapter.swift in Sources */,
 				935EBE3D26BDA9D30006A7CA /* FileManagerHelpers.swift in Sources */,
+				93AD24EC26BFAC9F0012A5CF /* GoogleAuthAdapter.swift in Sources */,
 				93AD24E026BF783E0012A5CF /* FirebaseHelpers.swift in Sources */,
 				935EBE2726BDA9180006A7CA /* AlamofireDownloadFileAdapter.swift in Sources */,
 				935EBE2526BDA9180006A7CA /* AlamofireGetAdapter.swift in Sources */,
@@ -2146,6 +2160,7 @@
 				935EBEAA26BE262C0006A7CA /* UIColorExtensions.swift in Sources */,
 				935EBE9526BDD8690006A7CA /* LoginViewController.swift in Sources */,
 				935EBEBD26BE2F960006A7CA /* GoogleButton.swift in Sources */,
+				93AD24EE26BFB6B50012A5CF /* GoogleAuthAdapterFactory.swift in Sources */,
 				935EBE8126BDD4C00006A7CA /* ApiUrlFactory.swift in Sources */,
 				935EBE5426BDAEB00006A7CA /* HomeController.swift in Sources */,
 				935EBEA726BE261C0006A7CA /* Color.swift in Sources */,
@@ -2157,7 +2172,7 @@
 				935EBE8926BDD54C0006A7CA /* RemoteRefreshTokenFactory.swift in Sources */,
 				935EBEBA26BE2B350006A7CA /* CheckBox.swift in Sources */,
 				935EBE7A26BDD4AC0006A7CA /* AlamofireDeleteAdapterFactory.swift in Sources */,
-				935EBE8D26BDD6B00006A7CA /* SocialAuthenticationFactory.swift in Sources */,
+				935EBE8D26BDD6B00006A7CA /* SocialFecebookAuthenticationFactory.swift in Sources */,
 				935EBE8B26BDD54C0006A7CA /* RemoteGenerateTokenFactory.swift in Sources */,
 				935EBD8926BD82610006A7CA /* AppDelegate.swift in Sources */,
 				935EBE5B26BDB0850006A7CA /* LoadScreenViewControllerFactory.swift in Sources */,
@@ -2170,6 +2185,7 @@
 				935EBEA826BE26230006A7CA /* Font.swift in Sources */,
 				935EBE8826BDD54C0006A7CA /* LoadCurrentAccountFactory.swift in Sources */,
 				935EBEA626BE26080006A7CA /* Stringi18nExtension.swift in Sources */,
+				93AD24F026BFB9C70012A5CF /* SocialGoogleAuthenticationFactory.swift in Sources */,
 				935EBEB826BE2B350006A7CA /* AccountTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3239,6 +3255,14 @@
 				minimumVersion = 4.2.2;
 			};
 		};
+		93AD24E826BFAAD50012A5CF /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -3261,6 +3285,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 935EBE0926BDA6D80006A7CA /* XCRemoteSwiftPackageReference "KeychainAccess" */;
 			productName = KeychainAccess;
+		};
+		93AD24E926BFAAD50012A5CF /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 93AD24E826BFAAD50012A5CF /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

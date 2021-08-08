@@ -42,7 +42,6 @@ public final class GenerateTokenPresenter {
                         self.alertView.showMessage(viewModel: AlertViewModel(title: "Erro", message: "Ocorreu um erro, tente novamente dentro de alguns instantes"))
                     }
                 case .success(let data):
-                    print(data)
                     self.saveSecureCurrentAccount.save(account: data)
                     self.generateTokenViewModel.result(GenerateTokenViewModel(account: data))
                 }

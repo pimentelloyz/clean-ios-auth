@@ -31,7 +31,6 @@ public final class LoginPresenter {
                     self.alertView.showMessage(viewModel: AlertViewModel(title: "Error", message: "An error occurred, please try again in a few moments"))
                 }
             case .success(let data):
-                print(data)
                 self.authenticationResultViewModel.result(AuthenticationViewModel(account: data))
             }
         }
