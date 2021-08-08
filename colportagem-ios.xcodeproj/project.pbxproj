@@ -192,6 +192,8 @@
 		935EBEBB26BE2B3D0006A7CA /* TextLabelPrimary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBD5F26BD63980006A7CA /* TextLabelPrimary.swift */; };
 		935EBEBC26BE2B3D0006A7CA /* HeaderPrimary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBD5E26BD63980006A7CA /* HeaderPrimary.swift */; };
 		935EBEBD26BE2F960006A7CA /* GoogleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBD7A26BD6AAE0006A7CA /* GoogleButton.swift */; };
+		93AD24DE26BF76D80012A5CF /* AuthenticationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD24DD26BF76D80012A5CF /* AuthenticationModel.swift */; };
+		93AD24E026BF783E0012A5CF /* FirebaseHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD24DF26BF783E0012A5CF /* FirebaseHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -550,6 +552,8 @@
 		935EBE9B26BDD9230006A7CA /* LocalLoadSecureCurrentAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalLoadSecureCurrentAccount.swift; sourceTree = "<group>"; };
 		935EBEA426BE25BB0006A7CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		935EBEAE26BE26C70006A7CA /* MainFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainFactory.swift; sourceTree = "<group>"; };
+		93AD24DD26BF76D80012A5CF /* AuthenticationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationModel.swift; sourceTree = "<group>"; };
+		93AD24DF26BF783E0012A5CF /* FirebaseHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseHelpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -764,6 +768,7 @@
 			isa = PBXGroup;
 			children = (
 				935EBC6226BD4BF90006A7CA /* AccountModel.swift */,
+				93AD24DD26BF76D80012A5CF /* AuthenticationModel.swift */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -1287,6 +1292,7 @@
 			isa = PBXGroup;
 			children = (
 				935EBE3C26BDA9D30006A7CA /* FileManagerHelpers.swift */,
+				93AD24DF26BF783E0012A5CF /* FirebaseHelpers.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -1964,6 +1970,7 @@
 				935EBE1326BDA7930006A7CA /* SaveSecureCurrentAccount.swift in Sources */,
 				935EBE1226BDA7930006A7CA /* LoadSecureCurrentAccount.swift in Sources */,
 				935EBE9326BDD7AC0006A7CA /* UploadMultipart.swift in Sources */,
+				93AD24DE26BF76D80012A5CF /* AuthenticationModel.swift in Sources */,
 				935EBC6026BD4BC30006A7CA /* DomainError.swift in Sources */,
 				935EBC6326BD4BF90006A7CA /* AccountModel.swift in Sources */,
 				935EBC6726BD4C140006A7CA /* Authentication.swift in Sources */,
@@ -2008,6 +2015,7 @@
 				935EBCE126BD50130006A7CA /* EmailValidatorAdapter.swift in Sources */,
 				935EBE2826BDA9180006A7CA /* AlamofirePostAdapter.swift in Sources */,
 				935EBE3D26BDA9D30006A7CA /* FileManagerHelpers.swift in Sources */,
+				93AD24E026BF783E0012A5CF /* FirebaseHelpers.swift in Sources */,
 				935EBE2726BDA9180006A7CA /* AlamofireDownloadFileAdapter.swift in Sources */,
 				935EBE2526BDA9180006A7CA /* AlamofireGetAdapter.swift in Sources */,
 				935EBE3826BDA9B90006A7CA /* KeychainAccessSaveSecureAdapter.swift in Sources */,

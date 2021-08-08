@@ -26,7 +26,10 @@ public final class FacebookAuthAdapter: SocialSignIn {
                     if let _ = error {
                         completion(.failure(.unauthorized))
                     }
-                    completion(.success(nil))
+                    if let result = result {
+                        completion(.success(firebaseToValidData(user: result.user)))
+                    }
+                    completion(.failure(.badRequest))
                 }
             case .failed( _):
                 completion(.failure(.badRequest))

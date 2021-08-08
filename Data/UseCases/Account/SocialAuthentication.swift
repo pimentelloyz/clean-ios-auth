@@ -13,11 +13,10 @@ public final class SocialAuthentication: Authentication {
             switch result {
             case .failure: completion(.failure(.unexpected))
             case .success(let data):
-                guard let data = data else {
-                    completion(.failure(.unexpected))
-                    return
+                if let data: AuthenticationModel = data?.toModel() {
+                    completion(.success(data))
                 }
-                completion(.success(data))
+                completion(.failure(.unexpected))
             }
         }
     }

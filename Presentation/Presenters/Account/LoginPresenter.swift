@@ -25,7 +25,8 @@ public final class LoginPresenter {
                 default:
                     self.alertView.showMessage(viewModel: AlertViewModel(title: "Error", message: "An error occurred, please try again in a few moments"))
                 }
-            case .success:
+            case .success(let data):
+                print(data)
                 self.alertView.showMessage(viewModel: AlertViewModel(title: "Sucesso", message: "Login realizado com sucesso"))
             }
         }
