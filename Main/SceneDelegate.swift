@@ -2,6 +2,7 @@ import UIKit
 import UI
 import FBSDKCoreKit
 import FacebookCore
+import MSAL
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
@@ -22,7 +23,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     @available(iOS 13.0, *)
     func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
-        guard let url = URLContexts.first?.url else { return }
-        ApplicationDelegate.shared.application( UIApplication.shared, open: url, sourceApplication: nil, annotation: [UIApplication.OpenURLOptionsKey.annotation] )
+        guard let urlContext = URLContexts.first else {
+              return
+           }
+
+        let url = urlContext.url
+        ApplicationDelegate.shared.application( UIApplication.shared, open: url, sourceApplication: nil, annotation: [UIApplication.OpenURLOptionsKey.annotation])
+       
+           let sourceApp = urlContext.options.sourceApplication
+           MSALPublicClientApplication.handleMSALResponse(url, sourceApplication: sourceApp)
     }
 }

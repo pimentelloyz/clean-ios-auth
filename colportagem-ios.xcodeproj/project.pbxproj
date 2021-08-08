@@ -199,6 +199,10 @@
 		93AD24EC26BFAC9F0012A5CF /* GoogleAuthAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD24EB26BFAC9F0012A5CF /* GoogleAuthAdapter.swift */; };
 		93AD24EE26BFB6B50012A5CF /* GoogleAuthAdapterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD24ED26BFB6B50012A5CF /* GoogleAuthAdapterFactory.swift */; };
 		93AD24F026BFB9C70012A5CF /* SocialGoogleAuthenticationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD24EF26BFB9C70012A5CF /* SocialGoogleAuthenticationFactory.swift */; };
+		93AD24F326BFBEE50012A5CF /* MSAL in Frameworks */ = {isa = PBXBuildFile; productRef = 93AD24F226BFBEE50012A5CF /* MSAL */; };
+		93AD24F526BFC1430012A5CF /* MicrosoftAuthAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD24F426BFC1430012A5CF /* MicrosoftAuthAdapter.swift */; };
+		93AD24F726BFC30F0012A5CF /* MicrosoftAuthAdapterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD24F626BFC30F0012A5CF /* MicrosoftAuthAdapterFactory.swift */; };
+		93AD24F926BFC3500012A5CF /* SocialMicrosoftAuthenticationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD24F826BFC3500012A5CF /* SocialMicrosoftAuthenticationFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -557,12 +561,16 @@
 		935EBE9B26BDD9230006A7CA /* LocalLoadSecureCurrentAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalLoadSecureCurrentAccount.swift; sourceTree = "<group>"; };
 		935EBEA426BE25BB0006A7CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		935EBEAE26BE26C70006A7CA /* MainFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainFactory.swift; sourceTree = "<group>"; };
+		935F5B7026C04E710024934B /* Main.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Main.entitlements; sourceTree = "<group>"; };
 		93AD24DD26BF76D80012A5CF /* AuthenticationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationModel.swift; sourceTree = "<group>"; };
 		93AD24DF26BF783E0012A5CF /* FirebaseHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseHelpers.swift; sourceTree = "<group>"; };
 		93AD24E326BF7ECC0012A5CF /* AuthenticationResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationResultViewModel.swift; sourceTree = "<group>"; };
 		93AD24EB26BFAC9F0012A5CF /* GoogleAuthAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuthAdapter.swift; sourceTree = "<group>"; };
 		93AD24ED26BFB6B50012A5CF /* GoogleAuthAdapterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuthAdapterFactory.swift; sourceTree = "<group>"; };
 		93AD24EF26BFB9C70012A5CF /* SocialGoogleAuthenticationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialGoogleAuthenticationFactory.swift; sourceTree = "<group>"; };
+		93AD24F426BFC1430012A5CF /* MicrosoftAuthAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicrosoftAuthAdapter.swift; sourceTree = "<group>"; };
+		93AD24F626BFC30F0012A5CF /* MicrosoftAuthAdapterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicrosoftAuthAdapterFactory.swift; sourceTree = "<group>"; };
+		93AD24F826BFC3500012A5CF /* SocialMicrosoftAuthenticationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMicrosoftAuthenticationFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -594,6 +602,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				935EBE0226BDA40C0006A7CA /* FacebookLogin in Frameworks */,
+				93AD24F326BFBEE50012A5CF /* MSAL in Frameworks */,
 				935EBCED26BD51120006A7CA /* Validation.framework in Frameworks */,
 				935EBE0B26BDA6D80006A7CA /* KeychainAccess in Frameworks */,
 				935EBCE826BD50710006A7CA /* Data.framework in Frameworks */,
@@ -887,6 +896,7 @@
 			children = (
 				935EBE0526BDA5360006A7CA /* FacebookAuthAdapter.swift */,
 				93AD24EB26BFAC9F0012A5CF /* GoogleAuthAdapter.swift */,
+				93AD24F426BFC1430012A5CF /* MicrosoftAuthAdapter.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -1134,6 +1144,7 @@
 		935EBD8726BD82610006A7CA /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				935F5B7026C04E710024934B /* Main.entitlements */,
 				935EBDC626BD832A0006A7CA /* Factories */,
 				935EBDC326BD83150006A7CA /* Builders */,
 				935EBDC026BD83010006A7CA /* Decorator */,
@@ -1424,6 +1435,7 @@
 				935EBE8526BDD54B0006A7CA /* RemoteRefreshTokenFactory.swift */,
 				935EBE8626BDD54B0006A7CA /* SaveCurrentAccountFactory.swift */,
 				93AD24EF26BFB9C70012A5CF /* SocialGoogleAuthenticationFactory.swift */,
+				93AD24F826BFC3500012A5CF /* SocialMicrosoftAuthenticationFactory.swift */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -1433,6 +1445,7 @@
 			children = (
 				935EBE8F26BDD6DE0006A7CA /* FacebookAuthAdapterFactory.swift */,
 				93AD24ED26BFB6B50012A5CF /* GoogleAuthAdapterFactory.swift */,
+				93AD24F626BFC30F0012A5CF /* MicrosoftAuthAdapterFactory.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -1580,6 +1593,7 @@
 				935EBE0126BDA40C0006A7CA /* FacebookLogin */,
 				935EBE0A26BDA6D80006A7CA /* KeychainAccess */,
 				93AD24E926BFAAD50012A5CF /* GoogleSignIn */,
+				93AD24F226BFBEE50012A5CF /* MSAL */,
 			);
 			productName = Infra;
 			productReference = 935EBC9926BD4ED80006A7CA /* Infra.framework */;
@@ -1831,6 +1845,7 @@
 				935EBE0026BDA40C0006A7CA /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
 				935EBE0926BDA6D80006A7CA /* XCRemoteSwiftPackageReference "KeychainAccess" */,
 				93AD24E826BFAAD50012A5CF /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				93AD24F126BFBEE50012A5CF /* XCRemoteSwiftPackageReference "microsoft-authentication-library-for-objc" */,
 			);
 			productRefGroup = 935EBC4426BD4A850006A7CA /* Products */;
 			projectDirPath = "";
@@ -2031,6 +2046,7 @@
 				935EBCE126BD50130006A7CA /* EmailValidatorAdapter.swift in Sources */,
 				935EBE2826BDA9180006A7CA /* AlamofirePostAdapter.swift in Sources */,
 				935EBE3D26BDA9D30006A7CA /* FileManagerHelpers.swift in Sources */,
+				93AD24F526BFC1430012A5CF /* MicrosoftAuthAdapter.swift in Sources */,
 				93AD24EC26BFAC9F0012A5CF /* GoogleAuthAdapter.swift in Sources */,
 				93AD24E026BF783E0012A5CF /* FirebaseHelpers.swift in Sources */,
 				935EBE2726BDA9180006A7CA /* AlamofireDownloadFileAdapter.swift in Sources */,
@@ -2173,6 +2189,7 @@
 				935EBEBA26BE2B350006A7CA /* CheckBox.swift in Sources */,
 				935EBE7A26BDD4AC0006A7CA /* AlamofireDeleteAdapterFactory.swift in Sources */,
 				935EBE8D26BDD6B00006A7CA /* SocialFecebookAuthenticationFactory.swift in Sources */,
+				93AD24F726BFC30F0012A5CF /* MicrosoftAuthAdapterFactory.swift in Sources */,
 				935EBE8B26BDD54C0006A7CA /* RemoteGenerateTokenFactory.swift in Sources */,
 				935EBD8926BD82610006A7CA /* AppDelegate.swift in Sources */,
 				935EBE5B26BDB0850006A7CA /* LoadScreenViewControllerFactory.swift in Sources */,
@@ -2182,6 +2199,7 @@
 				935EBE7026BDD47B0006A7CA /* KeychainAccessRemoveSecureAdapter.swift in Sources */,
 				935EBEAF26BE26C70006A7CA /* MainFactory.swift in Sources */,
 				935EBD8B26BD82610006A7CA /* SceneDelegate.swift in Sources */,
+				93AD24F926BFC3500012A5CF /* SocialMicrosoftAuthenticationFactory.swift in Sources */,
 				935EBEA826BE26230006A7CA /* Font.swift in Sources */,
 				935EBE8826BDD54C0006A7CA /* LoadCurrentAccountFactory.swift in Sources */,
 				935EBEA626BE26080006A7CA /* Stringi18nExtension.swift in Sources */,
@@ -3001,6 +3019,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Main/Main.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TV9269UQRR;
 				INFOPLIST_FILE = Main/Info.plist;
@@ -3024,6 +3043,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Main/Main.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TV9269UQRR;
 				INFOPLIST_FILE = Main/Info.plist;
@@ -3263,6 +3283,14 @@
 				minimumVersion = 6.0.1;
 			};
 		};
+		93AD24F126BFBEE50012A5CF /* XCRemoteSwiftPackageReference "microsoft-authentication-library-for-objc" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AzureAD/microsoft-authentication-library-for-objc";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.20;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -3290,6 +3318,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 93AD24E826BFAAD50012A5CF /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
 			productName = GoogleSignIn;
+		};
+		93AD24F226BFBEE50012A5CF /* MSAL */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 93AD24F126BFBEE50012A5CF /* XCRemoteSwiftPackageReference "microsoft-authentication-library-for-objc" */;
+			productName = MSAL;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
