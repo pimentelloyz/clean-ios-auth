@@ -194,6 +194,7 @@
 		935EBEBD26BE2F960006A7CA /* GoogleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBD7A26BD6AAE0006A7CA /* GoogleButton.swift */; };
 		93AD24DE26BF76D80012A5CF /* AuthenticationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD24DD26BF76D80012A5CF /* AuthenticationModel.swift */; };
 		93AD24E026BF783E0012A5CF /* FirebaseHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD24DF26BF783E0012A5CF /* FirebaseHelpers.swift */; };
+		93AD24E426BF7ECC0012A5CF /* AuthenticationResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD24E326BF7ECC0012A5CF /* AuthenticationResultViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -554,6 +555,7 @@
 		935EBEAE26BE26C70006A7CA /* MainFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainFactory.swift; sourceTree = "<group>"; };
 		93AD24DD26BF76D80012A5CF /* AuthenticationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationModel.swift; sourceTree = "<group>"; };
 		93AD24DF26BF783E0012A5CF /* FirebaseHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseHelpers.swift; sourceTree = "<group>"; };
+		93AD24E326BF7ECC0012A5CF /* AuthenticationResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationResultViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1318,6 +1320,7 @@
 			children = (
 				935EBE4326BDAA640006A7CA /* GenerateTokenResultViewModel.swift */,
 				935EBE4426BDAA650006A7CA /* LocalCurrentAccountViewModel.swift */,
+				93AD24E326BF7ECC0012A5CF /* AuthenticationResultViewModel.swift */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -2063,6 +2066,7 @@
 				935EBE4B26BDAB2F0006A7CA /* GenerateTokenPresenter.swift in Sources */,
 				935EBDF726BDA2100006A7CA /* LoadingView.swift in Sources */,
 				935EBDF826BDA2100006A7CA /* AlertView.swift in Sources */,
+				93AD24E426BF7ECC0012A5CF /* AuthenticationResultViewModel.swift in Sources */,
 				935EBE4026BDAA1D0006A7CA /* PathComponentRequest.swift in Sources */,
 				935EBE4526BDAA650006A7CA /* GenerateTokenResultViewModel.swift in Sources */,
 				935EBE4A26BDAB2F0006A7CA /* GenerateTokenRequest.swift in Sources */,
@@ -2977,6 +2981,7 @@
 		};
 		935EBDAE26BD82670006A7CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 935EBDB926BD82E00006A7CA /* Debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -2999,6 +3004,7 @@
 		};
 		935EBDAF26BD82670006A7CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 935EBDBA26BD82E00006A7CA /* Release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

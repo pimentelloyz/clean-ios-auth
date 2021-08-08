@@ -26,3 +26,15 @@ extension WeakVarProxy: LocalCurrentAccountResultViewModel where T: LocalCurrent
         instance?.result(viewModel)
     }
 }
+
+extension WeakVarProxy: AuthenticationResultViewModel where T: AuthenticationResultViewModel {
+    func result(_ viewModel: AuthenticationViewModel) {
+        instance?.result(viewModel)
+    }
+}
+
+extension WeakVarProxy: GenerateTokenResultViewModel where T: GenerateTokenResultViewModel {
+    func result(_ viewModel: GenerateTokenViewModel) {
+        instance?.result(viewModel)
+    }
+}

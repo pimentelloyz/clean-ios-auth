@@ -14,6 +14,7 @@
 "Validation failed" = "Validation failed";
 "Error" = "Error";
 "An error occurred, please try again in a few moments" = "An error occurred, please try again in a few moments";
+"Você não tem acesso ao sistema" = "Você não tem acesso ao sistema";
 "Invalid email and / or password (s)" = "Invalid email and / or password (s)";
 "The field" = "The field";
 "is required" = "is required";

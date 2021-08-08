@@ -5,11 +5,16 @@ public final class LoginPresenter {
     private let alertView: AlertView
     private let authentication: Authentication
     private let loadingView: LoadingView
+    private let authenticationResultViewModel: AuthenticationResultViewModel
     
-    public init(alertView: AlertView, authentication: Authentication, loadingView: LoadingView) {
+    public init(alertView: AlertView,
+                authentication: Authentication,
+                loadingView: LoadingView,
+                authenticationResultViewModel: AuthenticationResultViewModel) {
         self.alertView = alertView
         self.authentication = authentication
         self.loadingView = loadingView
+        self.authenticationResultViewModel = authenticationResultViewModel
     }
     
     public func signIn() {
@@ -27,7 +32,7 @@ public final class LoginPresenter {
                 }
             case .success(let data):
                 print(data)
-                self.alertView.showMessage(viewModel: AlertViewModel(title: "Sucesso", message: "Login realizado com sucesso"))
+                self.authenticationResultViewModel.result(AuthenticationViewModel(account: data))
             }
         }
     }

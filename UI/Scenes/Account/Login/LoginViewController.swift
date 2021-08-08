@@ -15,6 +15,7 @@ public final class LoginViewController: UIViewController, Storyboarded, URLSessi
     
     public var signInWithFacebook: (() -> Void)?
     public var signInWithMicrosoft: (() -> Void)?
+    public var generateToken: ((GenerateTokenRequest) -> Void)?
 
     public override func viewDidLoad() {
         super.viewDidLoad()
@@ -77,6 +78,11 @@ public final class LoginViewController: UIViewController, Storyboarded, URLSessi
         self.scrollView.contentInset = contentInsets
         self.scrollView.scrollIndicatorInsets = contentInsets
     }
+    
+    func generateTokenHandler(authentication: AuthenticationViewModel) {
+        let request = GenerateTokenRequest(email: authentication.account?.email)
+        generateToken?(request)
+    }
 }
 
 extension LoginViewController: UITextFieldDelegate {
@@ -86,6 +92,18 @@ extension LoginViewController: UITextFieldDelegate {
     
     public func textFieldDidBeginEditing(_ textField: UITextField) {
         activeField = textField
+    }
+}
+
+extension LoginViewController: AuthenticationResultViewModel {
+    public func result(_ viewModel: AuthenticationViewModel) {
+        generateTokenHandler(authentication: viewModel)
+    }
+}
+
+extension LoginViewController: GenerateTokenResultViewModel {
+    public func result(_ viewModel: GenerateTokenViewModel) {
+        print(viewModel)
     }
 }
 

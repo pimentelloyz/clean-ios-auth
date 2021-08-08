@@ -2,7 +2,7 @@ import Foundation
 import Domain
 
 public protocol GenerateTokenResultViewModel {
-    func result(viewModel: GenerateTokenViewModel)
+    func result(_ viewModel: GenerateTokenViewModel)
 }
 
 public struct GenerateTokenViewModel: Equatable {

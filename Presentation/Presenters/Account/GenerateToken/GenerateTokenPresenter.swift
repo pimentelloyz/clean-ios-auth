@@ -2,25 +2,25 @@ import Foundation
 import Domain
 
 public final class GenerateTokenPresenter {
-    private let alertView: AlertView
     private let generateToken: GenerateToken
-    private let loadingView: LoadingView
-    private let validation: Validation
     private let saveSecureCurrentAccount: SaveSecureCurrentAccount
     private let generateTokenViewModel: GenerateTokenResultViewModel
+    private let loadingView: LoadingView
+    private let validation: Validation
+    private let alertView: AlertView
     
-    public init(alertView: AlertView,
-                generateToken: GenerateToken,
+    public init(generateToken: GenerateToken,
+                saveSecureCurrentAccount: SaveSecureCurrentAccount,
+                generateTokenViewModel: GenerateTokenResultViewModel,
                 loadingView: LoadingView,
                 validation: Validation,
-                saveSecureCurrentAccount: SaveSecureCurrentAccount,
-                generateTokenViewModel: GenerateTokenResultViewModel) {
-        self.alertView = alertView
+                alertView: AlertView) {
         self.generateToken = generateToken
-        self.loadingView = loadingView
-        self.validation = validation
         self.saveSecureCurrentAccount = saveSecureCurrentAccount
         self.generateTokenViewModel = generateTokenViewModel
+        self.loadingView = loadingView
+        self.validation = validation
+        self.alertView = alertView
     }
     
     public func generate(request: GenerateTokenRequest) {
@@ -37,13 +37,14 @@ public final class GenerateTokenPresenter {
                     case .expiredSession:
                         self.alertView.showMessage(viewModel: AlertViewModel(title: "Erro", message: "Email e/ou senha inválido(s)"))
                     case .unauthorized:
-                        self.alertView.showMessage(viewModel: AlertViewModel(title: "Erro", message: "Voce ou sua igreja tem acesso a este módulo"))
+                        self.alertView.showMessage(viewModel: AlertViewModel(title: "Erro", message: "Você não tem acesso ao sistema"))
                     default:
                         self.alertView.showMessage(viewModel: AlertViewModel(title: "Erro", message: "Ocorreu um erro, tente novamente dentro de alguns instantes"))
                     }
                 case .success(let data):
+                    print(data)
                     self.saveSecureCurrentAccount.save(account: data)
-                    self.generateTokenViewModel.result(viewModel: GenerateTokenViewModel(account: data))
+                    self.generateTokenViewModel.result(GenerateTokenViewModel(account: data))
                 }
             }
         }
