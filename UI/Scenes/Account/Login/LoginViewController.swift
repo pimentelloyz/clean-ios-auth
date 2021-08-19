@@ -17,7 +17,8 @@ public final class LoginViewController: UIViewController, Storyboarded, URLSessi
     public var signInWithGoogle: (() -> Void)?
     public var signInWithMicrosoft: (() -> Void)?
     public var generateToken: ((GenerateTokenRequest) -> Void)?
-
+    public var goToMain: (() -> Void)?
+    
     public override func viewDidLoad() {
         super.viewDidLoad()
         configure()
@@ -109,7 +110,9 @@ extension LoginViewController: AuthenticationResultViewModel {
 
 extension LoginViewController: GenerateTokenResultViewModel {
     public func result(_ viewModel: GenerateTokenViewModel) {
-        print(viewModel)
+        if viewModel.isLogged {
+            goToMain?()
+        }
     }
 }
 

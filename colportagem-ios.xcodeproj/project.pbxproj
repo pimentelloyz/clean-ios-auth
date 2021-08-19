@@ -1144,7 +1144,6 @@
 		935EBD8726BD82610006A7CA /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				935F5B7026C04E710024934B /* Main.entitlements */,
 				935EBDC626BD832A0006A7CA /* Factories */,
 				935EBDC326BD83150006A7CA /* Builders */,
 				935EBDC026BD83010006A7CA /* Decorator */,
@@ -1157,6 +1156,7 @@
 				935EBD9326BD82660006A7CA /* LaunchScreen.storyboard */,
 				935EBD9626BD82660006A7CA /* Info.plist */,
 				935EBE0326BDA5090006A7CA /* GoogleService-Info.plist */,
+				935F5B7026C04E710024934B /* Main.entitlements */,
 			);
 			path = Main;
 			sourceTree = "<group>";

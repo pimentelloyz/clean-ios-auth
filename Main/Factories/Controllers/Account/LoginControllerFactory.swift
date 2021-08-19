@@ -10,6 +10,7 @@ public func makeLoginController() -> LoginViewController {
 
 public func makeLoginControllerWith(facebookAuthentication: Authentication, microsoftAuthentication: Authentication, generateToken: GenerateToken) -> LoginViewController {
     let controller = LoginViewController.instantiate()
+    let loginRouter = LoginRouter(nav: SceneDelegate.nav, mainFactory: makeMainTabBarController)
     let signInFacebookPresenter = LoginPresenter(alertView: WeakVarProxy(controller), authentication: facebookAuthentication, loadingView: WeakVarProxy(controller), authenticationResultViewModel: WeakVarProxy(controller))
     let signInMicrosoftPresenter = LoginPresenter(alertView: WeakVarProxy(controller), authentication: microsoftAuthentication, loadingView: WeakVarProxy(controller), authenticationResultViewModel: WeakVarProxy(controller))
     let signInGooglePresenter = LoginPresenter(alertView: WeakVarProxy(controller), authentication: makeSocialGoogleAuthentication(controller: controller), loadingView: WeakVarProxy(controller), authenticationResultViewModel: WeakVarProxy(controller))
@@ -19,6 +20,7 @@ public func makeLoginControllerWith(facebookAuthentication: Authentication, micr
     controller.signInWithGoogle = signInGooglePresenter.signIn
     controller.generateToken = generateTokenPresenter.generate
     controller.signInWithMicrosoft = signInMicrosoftPresenter.signIn
+    controller.goToMain = loginRouter.goToMain
     return controller
 }
 
