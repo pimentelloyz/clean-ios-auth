@@ -18,10 +18,10 @@ public func makeMainTabBarControllerWith() -> UITabBarController {
     let tabBarDelegate = TabBarDelegate()
     
     let vcData: [(UIViewController, UIImage, UIImage)] = [
-        (HomeViewController.instantiate(), UIImage(named: "facebook")!, UIImage(named: "facebook")!),
-        (OfferViewController.instantiate(), UIImage(named: "facebook")!, UIImage(named: "facebook")!),
-        (PriceViewController.instantiate(), UIImage(named: "facebook")!, UIImage(named: "facebook")!),
-        (SettingsViewController.instantiate(), UIImage(named: "facebook")!, UIImage(named: "facebook")!),
+        (HomeViewController.instantiate(), UIImage(named: "home")!, UIImage(named: "home_selected")!),
+        (OfferViewController.instantiate(), UIImage(named: "offer")!, UIImage(named: "offer_selected")!),
+        (PriceViewController.instantiate(), UIImage(named: "price")!, UIImage(named: "price_selected")!),
+        (SettingsViewController.instantiate(), UIImage(named: "settings")!, UIImage(named: "settings_selected")!),
         
         //(galleryViewController, UIImage(named: "gallery")!, UIImage(named: "gallery-selected")!)
     ]
