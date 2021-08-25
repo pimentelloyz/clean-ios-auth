@@ -17,19 +17,20 @@ public func makeMainTabBarControllerWith() -> UITabBarController {
     
     let tabBarDelegate = TabBarDelegate()
     
-    let vcData: [(UIViewController, UIImage, UIImage)] = [
-        (HomeViewController.instantiate(), UIImage(named: "home")!, UIImage(named: "home_selected")!),
-        (OfferViewController.instantiate(), UIImage(named: "offer")!, UIImage(named: "offer_selected")!),
-        (PriceViewController.instantiate(), UIImage(named: "price")!, UIImage(named: "price_selected")!),
-        (SettingsViewController.instantiate(), UIImage(named: "settings")!, UIImage(named: "settings_selected")!),
+    let vcData: [(UIViewController, UIImage, UIImage, String)] = [
+        (HomeViewController.instantiate(), UIImage(named: "home")!, UIImage(named: "home_selected")!, "Home"),
+        (OfferViewController.instantiate(), UIImage(named: "offer")!, UIImage(named: "offer_selected")!, "Ofertas"),
+        (PriceViewController.instantiate(), UIImage(named: "price")!, UIImage(named: "price_selected")!, "Preços"),
+        (SettingsViewController.instantiate(), UIImage(named: "settings")!, UIImage(named: "settings_selected")!, "Configurações"),
         
         //(galleryViewController, UIImage(named: "gallery")!, UIImage(named: "gallery-selected")!)
     ]
 
-    let vcs = vcData.map { (vc, defaultImage, selectedImage) -> UINavigationController in
+    let vcs = vcData.map { (vc, defaultImage, selectedImage, title) -> UINavigationController in
         let nav = UINavigationController(rootViewController: vc)
         nav.tabBarItem.image = defaultImage
         nav.tabBarItem.selectedImage = selectedImage
+        nav.title = title
         return nav
     }
     
