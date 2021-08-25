@@ -207,6 +207,10 @@
 		93F0DE4726D6ABB600C4631C /* Price.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93F0DE4526D6ABB600C4631C /* Price.storyboard */; };
 		93F0DE4926D6ABC500C4631C /* PriceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F0DE4826D6ABC500C4631C /* PriceViewController.swift */; };
 		93F0DE4A26D6ABC500C4631C /* PriceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F0DE4826D6ABC500C4631C /* PriceViewController.swift */; };
+		93F0DE4D26D6AF6300C4631C /* Offer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93F0DE4C26D6AF6300C4631C /* Offer.storyboard */; };
+		93F0DE4E26D6AF6300C4631C /* Offer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93F0DE4C26D6AF6300C4631C /* Offer.storyboard */; };
+		93F0DE5026D6AF7500C4631C /* OfferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F0DE4F26D6AF7500C4631C /* OfferViewController.swift */; };
+		93F0DE5126D6AF7500C4631C /* OfferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F0DE4F26D6AF7500C4631C /* OfferViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -577,6 +581,8 @@
 		93AD24F826BFC3500012A5CF /* SocialMicrosoftAuthenticationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMicrosoftAuthenticationFactory.swift; sourceTree = "<group>"; };
 		93F0DE4526D6ABB600C4631C /* Price.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Price.storyboard; sourceTree = "<group>"; };
 		93F0DE4826D6ABC500C4631C /* PriceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceViewController.swift; sourceTree = "<group>"; };
+		93F0DE4C26D6AF6300C4631C /* Offer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Offer.storyboard; sourceTree = "<group>"; };
+		93F0DE4F26D6AF7500C4631C /* OfferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1363,6 +1369,7 @@
 		935EBE4C26BDAD310006A7CA /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				93F0DE4B26D6AEEE00C4631C /* Offer */,
 				93F0DE4426D6AB9E00C4631C /* Price */,
 				935EBE4E26BDADA20006A7CA /* Settings */,
 				935EBE4D26BDAD460006A7CA /* Home */,
@@ -1480,6 +1487,15 @@
 				93F0DE4826D6ABC500C4631C /* PriceViewController.swift */,
 			);
 			path = Price;
+			sourceTree = "<group>";
+		};
+		93F0DE4B26D6AEEE00C4631C /* Offer */ = {
+			isa = PBXGroup;
+			children = (
+				93F0DE4C26D6AF6300C4631C /* Offer.storyboard */,
+				93F0DE4F26D6AF7500C4631C /* OfferViewController.swift */,
+			);
+			path = Offer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1963,6 +1979,7 @@
 				935EBD3F26BD525C0006A7CA /* Montserrat-SemiBold.ttf in Resources */,
 				935EBD7D26BD6AD20006A7CA /* Login.storyboard in Resources */,
 				93F0DE4626D6ABB600C4631C /* Price.storyboard in Resources */,
+				93F0DE4D26D6AF6300C4631C /* Offer.storyboard in Resources */,
 				935EBEA226BE25BB0006A7CA /* Localizable.strings in Resources */,
 				935EBD4A26BD53660006A7CA /* Image.xcassets in Resources */,
 				935EBD4126BD525C0006A7CA /* Montserrat-Bold.ttf in Resources */,
@@ -1988,6 +2005,7 @@
 				935EBE0426BDA5090006A7CA /* GoogleService-Info.plist in Resources */,
 				935EBEA326BE25BB0006A7CA /* Localizable.strings in Resources */,
 				935EBEB126BE26E20006A7CA /* Color.xcassets in Resources */,
+				93F0DE4E26D6AF6300C4631C /* Offer.storyboard in Resources */,
 				935EBE6426BDB0C60006A7CA /* LoadScreen.storyboard in Resources */,
 				935EBE5326BDAEB00006A7CA /* Home.storyboard in Resources */,
 				935EBEB026BE26DE0006A7CA /* Image.xcassets in Resources */,
@@ -2151,6 +2169,7 @@
 				935EBD6026BD63980006A7CA /* HeaderPrimary.swift in Sources */,
 				935EBE6126BDB0C10006A7CA /* LoadScreenViewController.swift in Sources */,
 				935EBD6926BD63A70006A7CA /* ButtonSeccoundary.swift in Sources */,
+				93F0DE5026D6AF7500C4631C /* OfferViewController.swift in Sources */,
 				935EBE6226BDB0C10006A7CA /* LoadScreenRouter.swift in Sources */,
 				935EBD6A26BD63A70006A7CA /* CheckBox.swift in Sources */,
 				935EBE5826BDAF080006A7CA /* SettingViewController.swift in Sources */,
@@ -2191,6 +2210,7 @@
 				935EBE7326BDD47B0006A7CA /* AuthenticationHeadersFactory.swift in Sources */,
 				935EBE7226BDD47B0006A7CA /* KeychainAccessSaveSecureAdapter.swift in Sources */,
 				935EBE6326BDB0C60006A7CA /* LoadScreenViewController.swift in Sources */,
+				93F0DE5126D6AF7500C4631C /* OfferViewController.swift in Sources */,
 				935EBEBB26BE2B3D0006A7CA /* TextLabelPrimary.swift in Sources */,
 				935EBEAA26BE262C0006A7CA /* UIColorExtensions.swift in Sources */,
 				935EBE9526BDD8690006A7CA /* LoginViewController.swift in Sources */,
