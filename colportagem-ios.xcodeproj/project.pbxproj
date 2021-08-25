@@ -203,6 +203,10 @@
 		93AD24F526BFC1430012A5CF /* MicrosoftAuthAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD24F426BFC1430012A5CF /* MicrosoftAuthAdapter.swift */; };
 		93AD24F726BFC30F0012A5CF /* MicrosoftAuthAdapterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD24F626BFC30F0012A5CF /* MicrosoftAuthAdapterFactory.swift */; };
 		93AD24F926BFC3500012A5CF /* SocialMicrosoftAuthenticationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD24F826BFC3500012A5CF /* SocialMicrosoftAuthenticationFactory.swift */; };
+		93F0DE4626D6ABB600C4631C /* Price.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93F0DE4526D6ABB600C4631C /* Price.storyboard */; };
+		93F0DE4726D6ABB600C4631C /* Price.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93F0DE4526D6ABB600C4631C /* Price.storyboard */; };
+		93F0DE4926D6ABC500C4631C /* PriceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F0DE4826D6ABC500C4631C /* PriceViewController.swift */; };
+		93F0DE4A26D6ABC500C4631C /* PriceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F0DE4826D6ABC500C4631C /* PriceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -571,6 +575,8 @@
 		93AD24F426BFC1430012A5CF /* MicrosoftAuthAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicrosoftAuthAdapter.swift; sourceTree = "<group>"; };
 		93AD24F626BFC30F0012A5CF /* MicrosoftAuthAdapterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicrosoftAuthAdapterFactory.swift; sourceTree = "<group>"; };
 		93AD24F826BFC3500012A5CF /* SocialMicrosoftAuthenticationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMicrosoftAuthenticationFactory.swift; sourceTree = "<group>"; };
+		93F0DE4526D6ABB600C4631C /* Price.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Price.storyboard; sourceTree = "<group>"; };
+		93F0DE4826D6ABC500C4631C /* PriceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1357,6 +1363,7 @@
 		935EBE4C26BDAD310006A7CA /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				93F0DE4426D6AB9E00C4631C /* Price */,
 				935EBE4E26BDADA20006A7CA /* Settings */,
 				935EBE4D26BDAD460006A7CA /* Home */,
 			);
@@ -1464,6 +1471,15 @@
 				935EBEAE26BE26C70006A7CA /* MainFactory.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		93F0DE4426D6AB9E00C4631C /* Price */ = {
+			isa = PBXGroup;
+			children = (
+				93F0DE4526D6ABB600C4631C /* Price.storyboard */,
+				93F0DE4826D6ABC500C4631C /* PriceViewController.swift */,
+			);
+			path = Price;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1946,6 +1962,7 @@
 				935EBD4026BD525C0006A7CA /* Montserrat-Thin.ttf in Resources */,
 				935EBD3F26BD525C0006A7CA /* Montserrat-SemiBold.ttf in Resources */,
 				935EBD7D26BD6AD20006A7CA /* Login.storyboard in Resources */,
+				93F0DE4626D6ABB600C4631C /* Price.storyboard in Resources */,
 				935EBEA226BE25BB0006A7CA /* Localizable.strings in Resources */,
 				935EBD4A26BD53660006A7CA /* Image.xcassets in Resources */,
 				935EBD4126BD525C0006A7CA /* Montserrat-Bold.ttf in Resources */,
@@ -1975,6 +1992,7 @@
 				935EBE5326BDAEB00006A7CA /* Home.storyboard in Resources */,
 				935EBEB026BE26DE0006A7CA /* Image.xcassets in Resources */,
 				935EBD9226BD82660006A7CA /* Assets.xcassets in Resources */,
+				93F0DE4726D6ABB600C4631C /* Price.storyboard in Resources */,
 				935EBDBC26BD82E00006A7CA /* Release.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2120,6 +2138,7 @@
 				935EBD7726BD6A4C0006A7CA /* OnboardingRouter.swift in Sources */,
 				935EBD5826BD63670006A7CA /* UIViewExtensions.swift in Sources */,
 				935EBD6726BD63A70006A7CA /* AccountTextField.swift in Sources */,
+				93F0DE4926D6ABC500C4631C /* PriceViewController.swift in Sources */,
 				935EBD7626BD6A4C0006A7CA /* OnboardingViewController.swift in Sources */,
 				935EBD5A26BD63670006A7CA /* Responsive.swift in Sources */,
 				935EBD5526BD63670006A7CA /* Font.swift in Sources */,
@@ -2188,6 +2207,7 @@
 				935EBE8926BDD54C0006A7CA /* RemoteRefreshTokenFactory.swift in Sources */,
 				935EBEBA26BE2B350006A7CA /* CheckBox.swift in Sources */,
 				935EBE7A26BDD4AC0006A7CA /* AlamofireDeleteAdapterFactory.swift in Sources */,
+				93F0DE4A26D6ABC500C4631C /* PriceViewController.swift in Sources */,
 				935EBE8D26BDD6B00006A7CA /* SocialFecebookAuthenticationFactory.swift in Sources */,
 				93AD24F726BFC30F0012A5CF /* MicrosoftAuthAdapterFactory.swift in Sources */,
 				935EBE8B26BDD54C0006A7CA /* RemoteGenerateTokenFactory.swift in Sources */,

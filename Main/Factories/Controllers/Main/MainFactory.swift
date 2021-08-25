@@ -19,7 +19,7 @@ public func makeMainTabBarControllerWith() -> UITabBarController {
     
     let vcData: [(UIViewController, UIImage, UIImage)] = [
         (HomeViewController.instantiate(), UIImage(named: "facebook")!, UIImage(named: "facebook")!),
-        //(studyPlanViewController, UIImage(named: "study-plan")!, UIImage(named: "study-plan-selected")!),
+        (PriceViewController.instantiate(), UIImage(named: "facebook")!, UIImage(named: "facebook")!),
         (SettingsViewController.instantiate(), UIImage(named: "facebook")!, UIImage(named: "facebook")!),
         //(solidarityActionViewController, UIImage(named: "solidarity-action")!, UIImage(named: "solidarity-action-selected")!),
         //(galleryViewController, UIImage(named: "gallery")!, UIImage(named: "gallery-selected")!)
