@@ -203,6 +203,8 @@
 		93AD24F526BFC1430012A5CF /* MicrosoftAuthAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD24F426BFC1430012A5CF /* MicrosoftAuthAdapter.swift */; };
 		93AD24F726BFC30F0012A5CF /* MicrosoftAuthAdapterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD24F626BFC30F0012A5CF /* MicrosoftAuthAdapterFactory.swift */; };
 		93AD24F926BFC3500012A5CF /* SocialMicrosoftAuthenticationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD24F826BFC3500012A5CF /* SocialMicrosoftAuthenticationFactory.swift */; };
+		93CA3F2726D8018800E95FDD /* RegularLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CA3F2626D8018800E95FDD /* RegularLabel.swift */; };
+		93CA3F2826D8018B00E95FDD /* RegularLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CA3F2626D8018800E95FDD /* RegularLabel.swift */; };
 		93F0DE4626D6ABB600C4631C /* Price.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93F0DE4526D6ABB600C4631C /* Price.storyboard */; };
 		93F0DE4726D6ABB600C4631C /* Price.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93F0DE4526D6ABB600C4631C /* Price.storyboard */; };
 		93F0DE4926D6ABC500C4631C /* PriceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F0DE4826D6ABC500C4631C /* PriceViewController.swift */; };
@@ -579,6 +581,8 @@
 		93AD24F426BFC1430012A5CF /* MicrosoftAuthAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicrosoftAuthAdapter.swift; sourceTree = "<group>"; };
 		93AD24F626BFC30F0012A5CF /* MicrosoftAuthAdapterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicrosoftAuthAdapterFactory.swift; sourceTree = "<group>"; };
 		93AD24F826BFC3500012A5CF /* SocialMicrosoftAuthenticationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMicrosoftAuthenticationFactory.swift; sourceTree = "<group>"; };
+		93CA3F2526D7FFF700E95FDD /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		93CA3F2626D8018800E95FDD /* RegularLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularLabel.swift; sourceTree = "<group>"; };
 		93F0DE4526D6ABB600C4631C /* Price.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Price.storyboard; sourceTree = "<group>"; };
 		93F0DE4826D6ABC500C4631C /* PriceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceViewController.swift; sourceTree = "<group>"; };
 		93F0DE4C26D6AF6300C4631C /* Offer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Offer.storyboard; sourceTree = "<group>"; };
@@ -1077,9 +1081,9 @@
 		935EBD5C26BD63780006A7CA /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				93CA3F2426D7FEC500E95FDD /* Buttons */,
 				935EBD5D26BD63850006A7CA /* Label */,
 				935EBD6226BD63A60006A7CA /* AccountTextField.swift */,
-				935EBD6326BD63A60006A7CA /* ButtonPrimary.swift */,
 				935EBD6426BD63A60006A7CA /* ButtonSeccoundary.swift */,
 				935EBD6526BD63A70006A7CA /* CheckBox.swift */,
 				935EBD6626BD63A70006A7CA /* NavigationController.swift */,
@@ -1092,6 +1096,7 @@
 			children = (
 				935EBD5E26BD63980006A7CA /* HeaderPrimary.swift */,
 				935EBD5F26BD63980006A7CA /* TextLabelPrimary.swift */,
+				93CA3F2626D8018800E95FDD /* RegularLabel.swift */,
 			);
 			path = Label;
 			sourceTree = "<group>";
@@ -1478,6 +1483,14 @@
 				935EBEAE26BE26C70006A7CA /* MainFactory.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		93CA3F2426D7FEC500E95FDD /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				935EBD6326BD63A60006A7CA /* ButtonPrimary.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 		93F0DE4426D6AB9E00C4631C /* Price */ = {
@@ -1869,6 +1882,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = 935EBC3926BD4A850006A7CA;
 			packageReferences = (
@@ -2153,6 +2167,7 @@
 				935EBD8126BD6AE10006A7CA /* LoginViewController.swift in Sources */,
 				935EBD5726BD63670006A7CA /* Stringi18nExtension.swift in Sources */,
 				935EBE5226BDADD70006A7CA /* HomeController.swift in Sources */,
+				93CA3F2726D8018800E95FDD /* RegularLabel.swift in Sources */,
 				935EBD7726BD6A4C0006A7CA /* OnboardingRouter.swift in Sources */,
 				935EBD5826BD63670006A7CA /* UIViewExtensions.swift in Sources */,
 				935EBD6726BD63A70006A7CA /* AccountTextField.swift in Sources */,
@@ -2242,6 +2257,7 @@
 				93AD24F926BFC3500012A5CF /* SocialMicrosoftAuthenticationFactory.swift in Sources */,
 				935EBEA826BE26230006A7CA /* Font.swift in Sources */,
 				935EBE8826BDD54C0006A7CA /* LoadCurrentAccountFactory.swift in Sources */,
+				93CA3F2826D8018B00E95FDD /* RegularLabel.swift in Sources */,
 				935EBEA626BE26080006A7CA /* Stringi18nExtension.swift in Sources */,
 				93AD24F026BFB9C70012A5CF /* SocialGoogleAuthenticationFactory.swift in Sources */,
 				935EBEB826BE2B350006A7CA /* AccountTextField.swift in Sources */,
@@ -2363,6 +2379,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				935EBEA426BE25BB0006A7CA /* en */,
+				93CA3F2526D7FFF700E95FDD /* pt-BR */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -2374,6 +2391,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -2438,6 +2456,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

@@ -13,11 +13,11 @@ class ButtonPrimary: UIButton {
     private func setup() {
         let heightResponsive = Responsive.of().hp(7).height ?? 18
         setHeight(heightResponsive)
-        backgroundColor = Color.backgroundPrimary
+        setTitle(titleLabel?.text?.localized(), for: .normal)
+        backgroundColor = Color.primary
         clipsToBounds = true
-        layer.cornerRadius = heightResponsive / 2
+        layer.cornerRadius = heightResponsive / 3
         setTitleColor(Color.white, for: .normal)
         titleLabel?.font = MainFont.bold.with(size: Responsive.of().ip(2).inch)
-        setTitle(titleLabel?.text?.localized(), for: .normal)
     }
 }

@@ -16,8 +16,42 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wqQ-WV-34T" customClass="ButtonPrimary" customModule="Main" customModuleProvider="target">
+                                <rect key="frame" x="242" y="60" width="148" height="48"/>
+                                <color key="backgroundColor" name="primary"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="148" id="P4T-T9-Ghs"/>
+                                    <constraint firstAttribute="height" constant="48" id="fYT-xK-Xoj"/>
+                                </constraints>
+                                <state key="normal" title="NEW_PRODUCT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="iAj-zk-8oa">
+                                <rect key="frame" x="24" y="68.5" width="141.5" height="31"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NO_PRICE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zRq-B7-DeG" customClass="RegularLabel" customModule="Main" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="80.5" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jZS-Kc-QcY">
+                                        <rect key="frame" x="92.5" y="0.0" width="51" height="31"/>
+                                        <color key="onTintColor" name="primary"/>
+                                    </switch>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" name="backgroundPrimary"/>
+                        <constraints>
+                            <constraint firstItem="iAj-zk-8oa" firstAttribute="centerY" secondItem="wqQ-WV-34T" secondAttribute="centerY" id="JYL-ML-AMy"/>
+                            <constraint firstItem="wqQ-WV-34T" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="16" id="Ubh-1h-L8u"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="wqQ-WV-34T" secondAttribute="trailing" constant="24" id="WuL-vV-L8t"/>
+                            <constraint firstItem="iAj-zk-8oa" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="m1s-5t-DVm"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -28,6 +62,9 @@
     <resources>
         <namedColor name="backgroundPrimary">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primary">
+            <color red="0.0" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
