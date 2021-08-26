@@ -19,8 +19,8 @@ public func makeMainTabBarControllerWith() -> UITabBarController {
     
     let vcData: [(UIViewController, UIImage, UIImage, String)] = [
         (HomeViewController.instantiate(), UIImage(named: "home")!, UIImage(named: "home_selected")!, "Home"),
-        (OfferViewController.instantiate(), UIImage(named: "offer")!, UIImage(named: "offer_selected")!, "Ofertas"),
         (PriceViewController.instantiate(), UIImage(named: "price")!, UIImage(named: "price_selected")!, "Preços"),
+        (OfferViewController.instantiate(), UIImage(named: "offer")!, UIImage(named: "offer_selected")!, "Ofertas"),
         (SettingsViewController.instantiate(), UIImage(named: "settings")!, UIImage(named: "settings_selected")!, "Configurações"),
         
         //(galleryViewController, UIImage(named: "gallery")!, UIImage(named: "gallery-selected")!)
