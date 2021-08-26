@@ -45,18 +45,18 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MIb-Co-fHU">
-                                <rect key="frame" x="24" y="126" width="366" height="48"/>
+                                <rect key="frame" x="24" y="126" width="366" height="54"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Z5p-o8-qSk">
-                                        <rect key="frame" x="8" y="4" width="350" height="40"/>
+                                        <rect key="frame" x="8" y="4" width="350" height="46"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="SEARCH_BY_NAME_OR_CODE" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nc2-xv-7e2" customClass="SearchTextField" customModule="Main" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="288" height="40"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="46"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NFA-4y-WN5">
-                                                <rect key="frame" x="304" y="0.0" width="46" height="40"/>
+                                                <rect key="frame" x="304" y="0.0" width="46" height="46"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="46" id="FFi-V8-1yn"/>
                                                 </constraints>
@@ -69,13 +69,13 @@
                                 <constraints>
                                     <constraint firstItem="Z5p-o8-qSk" firstAttribute="leading" secondItem="MIb-Co-fHU" secondAttribute="leading" constant="8" id="8DS-xm-4To"/>
                                     <constraint firstAttribute="trailing" secondItem="Z5p-o8-qSk" secondAttribute="trailing" constant="8" id="XnW-gb-u6w"/>
-                                    <constraint firstAttribute="height" constant="48" id="g5O-3N-dXD"/>
+                                    <constraint firstAttribute="height" constant="54" id="g5O-3N-dXD"/>
                                     <constraint firstItem="Z5p-o8-qSk" firstAttribute="top" secondItem="MIb-Co-fHU" secondAttribute="top" constant="4" id="gZ2-CW-taD"/>
                                     <constraint firstAttribute="bottom" secondItem="Z5p-o8-qSk" secondAttribute="bottom" constant="4" id="sae-4A-Ev6"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UUQ-We-ng3">
-                                <rect key="frame" x="0.0" y="174" width="414" height="722"/>
+                                <rect key="frame" x="0.0" y="180" width="414" height="716"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>

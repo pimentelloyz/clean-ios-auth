@@ -20,6 +20,12 @@
 "is required" = "is required";
 "is invalid" = "is invalid";
 
+"HOME" = "Home";
+"PRICE" = "Preços";
+"OFFER" = "Ofertas";
+"SETTINGS" = "Configurações";
+
 "NEW_PRODUCT" = "+ Novo Produto";
 "NO_PRICE" = "Sem preço";
 "SEARCH_BY_NAME_OR_CODE" = "Buscar por nome ou código";
+"LEST_PRICE" = "Último Preço de Compra: "; 

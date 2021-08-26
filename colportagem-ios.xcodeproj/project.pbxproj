@@ -207,6 +207,14 @@
 		93CA3F2826D8018B00E95FDD /* RegularLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CA3F2626D8018800E95FDD /* RegularLabel.swift */; };
 		93CA3F2B26D8086200E95FDD /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CA3F2A26D8086200E95FDD /* SearchTextField.swift */; };
 		93CA3F2C26D808A600E95FDD /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CA3F2A26D8086200E95FDD /* SearchTextField.swift */; };
+		93CA3F3026D80B8700E95FDD /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CA3F2E26D80B8700E95FDD /* ProductTableViewCell.swift */; };
+		93CA3F3126D80B8700E95FDD /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CA3F2E26D80B8700E95FDD /* ProductTableViewCell.swift */; };
+		93CA3F3226D80B8700E95FDD /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93CA3F2F26D80B8700E95FDD /* ProductTableViewCell.xib */; };
+		93CA3F3326D80B8700E95FDD /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93CA3F2F26D80B8700E95FDD /* ProductTableViewCell.xib */; };
+		93CA3F3826D80D5600E95FDD /* ContainerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CA3F3726D80D5600E95FDD /* ContainerCell.swift */; };
+		93CA3F3926D80D5600E95FDD /* ContainerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CA3F3726D80D5600E95FDD /* ContainerCell.swift */; };
+		93CA3F3B26D80F9A00E95FDD /* BoldLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CA3F3A26D80F9A00E95FDD /* BoldLabel.swift */; };
+		93CA3F3C26D80F9A00E95FDD /* BoldLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CA3F3A26D80F9A00E95FDD /* BoldLabel.swift */; };
 		93F0DE4626D6ABB600C4631C /* Price.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93F0DE4526D6ABB600C4631C /* Price.storyboard */; };
 		93F0DE4726D6ABB600C4631C /* Price.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93F0DE4526D6ABB600C4631C /* Price.storyboard */; };
 		93F0DE4926D6ABC500C4631C /* PriceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F0DE4826D6ABC500C4631C /* PriceViewController.swift */; };
@@ -586,6 +594,10 @@
 		93CA3F2526D7FFF700E95FDD /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		93CA3F2626D8018800E95FDD /* RegularLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularLabel.swift; sourceTree = "<group>"; };
 		93CA3F2A26D8086200E95FDD /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
+		93CA3F2E26D80B8700E95FDD /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		93CA3F2F26D80B8700E95FDD /* ProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
+		93CA3F3726D80D5600E95FDD /* ContainerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerCell.swift; sourceTree = "<group>"; };
+		93CA3F3A26D80F9A00E95FDD /* BoldLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoldLabel.swift; sourceTree = "<group>"; };
 		93F0DE4526D6ABB600C4631C /* Price.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Price.storyboard; sourceTree = "<group>"; };
 		93F0DE4826D6ABC500C4631C /* PriceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceViewController.swift; sourceTree = "<group>"; };
 		93F0DE4C26D6AF6300C4631C /* Offer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Offer.storyboard; sourceTree = "<group>"; };
@@ -1090,6 +1102,7 @@
 				935EBD6426BD63A60006A7CA /* ButtonSeccoundary.swift */,
 				935EBD6526BD63A70006A7CA /* CheckBox.swift */,
 				935EBD6626BD63A70006A7CA /* NavigationController.swift */,
+				93CA3F3726D80D5600E95FDD /* ContainerCell.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -1100,6 +1113,7 @@
 				935EBD5E26BD63980006A7CA /* HeaderPrimary.swift */,
 				935EBD5F26BD63980006A7CA /* TextLabelPrimary.swift */,
 				93CA3F2626D8018800E95FDD /* RegularLabel.swift */,
+				93CA3F3A26D80F9A00E95FDD /* BoldLabel.swift */,
 			);
 			path = Label;
 			sourceTree = "<group>";
@@ -1505,6 +1519,15 @@
 			path = TextFields;
 			sourceTree = "<group>";
 		};
+		93CA3F2D26D809B400E95FDD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				93CA3F2E26D80B8700E95FDD /* ProductTableViewCell.swift */,
+				93CA3F2F26D80B8700E95FDD /* ProductTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		93F0DE4426D6AB9E00C4631C /* Price */ = {
 			isa = PBXGroup;
 			children = (
@@ -1517,6 +1540,7 @@
 		93F0DE4B26D6AEEE00C4631C /* Offer */ = {
 			isa = PBXGroup;
 			children = (
+				93CA3F2D26D809B400E95FDD /* Cells */,
 				93F0DE4C26D6AF6300C4631C /* Offer.storyboard */,
 				93F0DE4F26D6AF7500C4631C /* OfferViewController.swift */,
 			);
@@ -2001,6 +2025,7 @@
 				935EBD3B26BD525C0006A7CA /* Montserrat-Light.ttf in Resources */,
 				935EBD3D26BD525C0006A7CA /* Montserrat-Black.ttf in Resources */,
 				935EBE5E26BDB0B50006A7CA /* LoadScreen.storyboard in Resources */,
+				93CA3F3226D80B8700E95FDD /* ProductTableViewCell.xib in Resources */,
 				935EBD4026BD525C0006A7CA /* Montserrat-Thin.ttf in Resources */,
 				935EBD3F26BD525C0006A7CA /* Montserrat-SemiBold.ttf in Resources */,
 				935EBD7D26BD6AD20006A7CA /* Login.storyboard in Resources */,
@@ -2028,6 +2053,7 @@
 				935EBE9726BDD8690006A7CA /* Login.storyboard in Resources */,
 				935EBDBB26BD82E00006A7CA /* Debug.xcconfig in Resources */,
 				935EBD9526BD82660006A7CA /* LaunchScreen.storyboard in Resources */,
+				93CA3F3326D80B8700E95FDD /* ProductTableViewCell.xib in Resources */,
 				935EBE0426BDA5090006A7CA /* GoogleService-Info.plist in Resources */,
 				935EBEA326BE25BB0006A7CA /* Localizable.strings in Resources */,
 				935EBEB126BE26E20006A7CA /* Color.xcassets in Resources */,
@@ -2187,12 +2213,15 @@
 				935EBD7626BD6A4C0006A7CA /* OnboardingViewController.swift in Sources */,
 				935EBD5A26BD63670006A7CA /* Responsive.swift in Sources */,
 				935EBD5526BD63670006A7CA /* Font.swift in Sources */,
+				93CA3F3B26D80F9A00E95FDD /* BoldLabel.swift in Sources */,
 				935EBD7B26BD6AAF0006A7CA /* GoogleButton.swift in Sources */,
 				935EBD5926BD63670006A7CA /* UIColorExtensions.swift in Sources */,
+				93CA3F3826D80D5600E95FDD /* ContainerCell.swift in Sources */,
 				935EBD7126BD69CE0006A7CA /* StartButton.swift in Sources */,
 				935EBD6826BD63A70006A7CA /* ButtonPrimary.swift in Sources */,
 				935EBD6B26BD63A70006A7CA /* NavigationController.swift in Sources */,
 				935EBD5B26BD63670006A7CA /* Color.swift in Sources */,
+				93CA3F3026D80B8700E95FDD /* ProductTableViewCell.swift in Sources */,
 				935EBD6026BD63980006A7CA /* HeaderPrimary.swift in Sources */,
 				935EBE6126BDB0C10006A7CA /* LoadScreenViewController.swift in Sources */,
 				935EBD6926BD63A70006A7CA /* ButtonSeccoundary.swift in Sources */,
@@ -2244,8 +2273,10 @@
 				935EBE9526BDD8690006A7CA /* LoginViewController.swift in Sources */,
 				935EBEBD26BE2F960006A7CA /* GoogleButton.swift in Sources */,
 				93AD24EE26BFB6B50012A5CF /* GoogleAuthAdapterFactory.swift in Sources */,
+				93CA3F3C26D80F9A00E95FDD /* BoldLabel.swift in Sources */,
 				935EBE8126BDD4C00006A7CA /* ApiUrlFactory.swift in Sources */,
 				935EBE5426BDAEB00006A7CA /* HomeController.swift in Sources */,
+				93CA3F3926D80D5600E95FDD /* ContainerCell.swift in Sources */,
 				935EBEA726BE261C0006A7CA /* Color.swift in Sources */,
 				935EBDBF26BD82FC0006A7CA /* WeakVarProxy.swift in Sources */,
 				935EBE7F26BDD4AC0006A7CA /* EmailValidatorAdapterFactory.swift in Sources */,
@@ -2260,6 +2291,7 @@
 				93AD24F726BFC30F0012A5CF /* MicrosoftAuthAdapterFactory.swift in Sources */,
 				93CA3F2C26D808A600E95FDD /* SearchTextField.swift in Sources */,
 				935EBE8B26BDD54C0006A7CA /* RemoteGenerateTokenFactory.swift in Sources */,
+				93CA3F3126D80B8700E95FDD /* ProductTableViewCell.swift in Sources */,
 				935EBD8926BD82610006A7CA /* AppDelegate.swift in Sources */,
 				935EBE5B26BDB0850006A7CA /* LoadScreenViewControllerFactory.swift in Sources */,
 				935EBEAB26BE26380006A7CA /* UIViewControllerExtensions.swift in Sources */,
