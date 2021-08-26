@@ -205,6 +205,8 @@
 		93AD24F926BFC3500012A5CF /* SocialMicrosoftAuthenticationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD24F826BFC3500012A5CF /* SocialMicrosoftAuthenticationFactory.swift */; };
 		93CA3F2726D8018800E95FDD /* RegularLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CA3F2626D8018800E95FDD /* RegularLabel.swift */; };
 		93CA3F2826D8018B00E95FDD /* RegularLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CA3F2626D8018800E95FDD /* RegularLabel.swift */; };
+		93CA3F2B26D8086200E95FDD /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CA3F2A26D8086200E95FDD /* SearchTextField.swift */; };
+		93CA3F2C26D808A600E95FDD /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CA3F2A26D8086200E95FDD /* SearchTextField.swift */; };
 		93F0DE4626D6ABB600C4631C /* Price.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93F0DE4526D6ABB600C4631C /* Price.storyboard */; };
 		93F0DE4726D6ABB600C4631C /* Price.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93F0DE4526D6ABB600C4631C /* Price.storyboard */; };
 		93F0DE4926D6ABC500C4631C /* PriceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F0DE4826D6ABC500C4631C /* PriceViewController.swift */; };
@@ -583,6 +585,7 @@
 		93AD24F826BFC3500012A5CF /* SocialMicrosoftAuthenticationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMicrosoftAuthenticationFactory.swift; sourceTree = "<group>"; };
 		93CA3F2526D7FFF700E95FDD /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		93CA3F2626D8018800E95FDD /* RegularLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularLabel.swift; sourceTree = "<group>"; };
+		93CA3F2A26D8086200E95FDD /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
 		93F0DE4526D6ABB600C4631C /* Price.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Price.storyboard; sourceTree = "<group>"; };
 		93F0DE4826D6ABC500C4631C /* PriceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceViewController.swift; sourceTree = "<group>"; };
 		93F0DE4C26D6AF6300C4631C /* Offer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Offer.storyboard; sourceTree = "<group>"; };
@@ -1083,7 +1086,7 @@
 			children = (
 				93CA3F2426D7FEC500E95FDD /* Buttons */,
 				935EBD5D26BD63850006A7CA /* Label */,
-				935EBD6226BD63A60006A7CA /* AccountTextField.swift */,
+				93CA3F2926D8084B00E95FDD /* TextFields */,
 				935EBD6426BD63A60006A7CA /* ButtonSeccoundary.swift */,
 				935EBD6526BD63A70006A7CA /* CheckBox.swift */,
 				935EBD6626BD63A70006A7CA /* NavigationController.swift */,
@@ -1491,6 +1494,15 @@
 				935EBD6326BD63A60006A7CA /* ButtonPrimary.swift */,
 			);
 			path = Buttons;
+			sourceTree = "<group>";
+		};
+		93CA3F2926D8084B00E95FDD /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				935EBD6226BD63A60006A7CA /* AccountTextField.swift */,
+				93CA3F2A26D8086200E95FDD /* SearchTextField.swift */,
+			);
+			path = TextFields;
 			sourceTree = "<group>";
 		};
 		93F0DE4426D6AB9E00C4631C /* Price */ = {
@@ -2188,6 +2200,7 @@
 				935EBE6226BDB0C10006A7CA /* LoadScreenRouter.swift in Sources */,
 				935EBD6A26BD63A70006A7CA /* CheckBox.swift in Sources */,
 				935EBE5826BDAF080006A7CA /* SettingViewController.swift in Sources */,
+				93CA3F2B26D8086200E95FDD /* SearchTextField.swift in Sources */,
 				935EBD5626BD63670006A7CA /* UIViewControllerExtensions.swift in Sources */,
 				935EBD6126BD63980006A7CA /* TextLabelPrimary.swift in Sources */,
 				935EBD8026BD6AE10006A7CA /* LoginRouter.swift in Sources */,
@@ -2245,6 +2258,7 @@
 				93F0DE4A26D6ABC500C4631C /* PriceViewController.swift in Sources */,
 				935EBE8D26BDD6B00006A7CA /* SocialFecebookAuthenticationFactory.swift in Sources */,
 				93AD24F726BFC30F0012A5CF /* MicrosoftAuthAdapterFactory.swift in Sources */,
+				93CA3F2C26D808A600E95FDD /* SearchTextField.swift in Sources */,
 				935EBE8B26BDD54C0006A7CA /* RemoteGenerateTokenFactory.swift in Sources */,
 				935EBD8926BD82610006A7CA /* AppDelegate.swift in Sources */,
 				935EBE5B26BDB0850006A7CA /* LoadScreenViewControllerFactory.swift in Sources */,
