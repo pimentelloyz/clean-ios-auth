@@ -9,7 +9,6 @@ public extension Color {
     static let backgroundPrimary = UIColor(hexString: "#FFFFFF")
     static let backgroundSeccoundary = UIColor(hexString: "#D6D6D6")
     
-    // TEXT
     static let textPrimary = UIColor(hexString: "#003066")
     static let textGrayLight = UIColor(hexString: "#D6D6D6")
     static let textBlack = UIColor(hexString: "#000000")
