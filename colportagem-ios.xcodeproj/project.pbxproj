@@ -192,6 +192,10 @@
 		935EBEBB26BE2B3D0006A7CA /* TextLabelPrimary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBD5F26BD63980006A7CA /* TextLabelPrimary.swift */; };
 		935EBEBC26BE2B3D0006A7CA /* HeaderPrimary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBD5E26BD63980006A7CA /* HeaderPrimary.swift */; };
 		935EBEBD26BE2F960006A7CA /* GoogleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBD7A26BD6AAE0006A7CA /* GoogleButton.swift */; };
+		9381731A26D9676300B12D99 /* NewOfferButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9381731926D9676300B12D99 /* NewOfferButton.swift */; };
+		9381731B26D9676300B12D99 /* NewOfferButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9381731926D9676300B12D99 /* NewOfferButton.swift */; };
+		9381731E26D969CC00B12D99 /* AccountImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9381731D26D969CC00B12D99 /* AccountImageView.swift */; };
+		9381731F26D969CC00B12D99 /* AccountImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9381731D26D969CC00B12D99 /* AccountImageView.swift */; };
 		93AD24DE26BF76D80012A5CF /* AuthenticationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD24DD26BF76D80012A5CF /* AuthenticationModel.swift */; };
 		93AD24E026BF783E0012A5CF /* FirebaseHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD24DF26BF783E0012A5CF /* FirebaseHelpers.swift */; };
 		93AD24E426BF7ECC0012A5CF /* AuthenticationResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD24E326BF7ECC0012A5CF /* AuthenticationResultViewModel.swift */; };
@@ -582,6 +586,8 @@
 		935EBEA426BE25BB0006A7CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		935EBEAE26BE26C70006A7CA /* MainFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainFactory.swift; sourceTree = "<group>"; };
 		935F5B7026C04E710024934B /* Main.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Main.entitlements; sourceTree = "<group>"; };
+		9381731926D9676300B12D99 /* NewOfferButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOfferButton.swift; sourceTree = "<group>"; };
+		9381731D26D969CC00B12D99 /* AccountImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountImageView.swift; sourceTree = "<group>"; };
 		93AD24DD26BF76D80012A5CF /* AuthenticationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationModel.swift; sourceTree = "<group>"; };
 		93AD24DF26BF783E0012A5CF /* FirebaseHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseHelpers.swift; sourceTree = "<group>"; };
 		93AD24E326BF7ECC0012A5CF /* AuthenticationResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationResultViewModel.swift; sourceTree = "<group>"; };
@@ -1096,6 +1102,7 @@
 		935EBD5C26BD63780006A7CA /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				9381731C26D969AA00B12D99 /* Images */,
 				93CA3F2426D7FEC500E95FDD /* Buttons */,
 				935EBD5D26BD63850006A7CA /* Label */,
 				93CA3F2926D8084B00E95FDD /* TextFields */,
@@ -1502,10 +1509,19 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
+		9381731C26D969AA00B12D99 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				9381731D26D969CC00B12D99 /* AccountImageView.swift */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		93CA3F2426D7FEC500E95FDD /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
 				935EBD6326BD63A60006A7CA /* ButtonPrimary.swift */,
+				9381731926D9676300B12D99 /* NewOfferButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -2213,6 +2229,7 @@
 				935EBD7626BD6A4C0006A7CA /* OnboardingViewController.swift in Sources */,
 				935EBD5A26BD63670006A7CA /* Responsive.swift in Sources */,
 				935EBD5526BD63670006A7CA /* Font.swift in Sources */,
+				9381731A26D9676300B12D99 /* NewOfferButton.swift in Sources */,
 				93CA3F3B26D80F9A00E95FDD /* BoldLabel.swift in Sources */,
 				935EBD7B26BD6AAF0006A7CA /* GoogleButton.swift in Sources */,
 				935EBD5926BD63670006A7CA /* UIColorExtensions.swift in Sources */,
@@ -2221,6 +2238,7 @@
 				935EBD6826BD63A70006A7CA /* ButtonPrimary.swift in Sources */,
 				935EBD6B26BD63A70006A7CA /* NavigationController.swift in Sources */,
 				935EBD5B26BD63670006A7CA /* Color.swift in Sources */,
+				9381731E26D969CC00B12D99 /* AccountImageView.swift in Sources */,
 				93CA3F3026D80B8700E95FDD /* ProductTableViewCell.swift in Sources */,
 				935EBD6026BD63980006A7CA /* HeaderPrimary.swift in Sources */,
 				935EBE6126BDB0C10006A7CA /* LoadScreenViewController.swift in Sources */,
@@ -2283,9 +2301,11 @@
 				935EBDCE26BD83E50006A7CA /* LoginControllerFactory.swift in Sources */,
 				935EBE6526BDB0C60006A7CA /* LoadScreenRouter.swift in Sources */,
 				935EBE7C26BDD4AC0006A7CA /* AlamofireDownloadFileAdapterFactory.swift in Sources */,
+				9381731B26D9676300B12D99 /* NewOfferButton.swift in Sources */,
 				935EBE8926BDD54C0006A7CA /* RemoteRefreshTokenFactory.swift in Sources */,
 				935EBEBA26BE2B350006A7CA /* CheckBox.swift in Sources */,
 				935EBE7A26BDD4AC0006A7CA /* AlamofireDeleteAdapterFactory.swift in Sources */,
+				9381731F26D969CC00B12D99 /* AccountImageView.swift in Sources */,
 				93F0DE4A26D6ABC500C4631C /* PriceViewController.swift in Sources */,
 				935EBE8D26BDD6B00006A7CA /* SocialFecebookAuthenticationFactory.swift in Sources */,
 				93AD24F726BFC30F0012A5CF /* MicrosoftAuthAdapterFactory.swift in Sources */,

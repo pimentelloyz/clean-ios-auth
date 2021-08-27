@@ -21,6 +21,7 @@ public final class OfferViewController: UIViewController, Storyboarded {
     
     func setup() {
         navigationController?.setNavigationBarHidden(true, animated: true)
+        view.backgroundColor = Color.backgroundPrimary
         tableView.delegate = self
         tableView.dataSource = self
         tableView.backgroundColor = Color.backgroundPrimary
