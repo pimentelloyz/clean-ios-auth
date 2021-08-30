@@ -19,6 +19,8 @@
 		933DFE5326DD69F8007812EA /* TextExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DFE4F26DD69F8007812EA /* TextExtensions.swift */; };
 		933DFE5426DD69F8007812EA /* TextExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DFE4F26DD69F8007812EA /* TextExtensions.swift */; };
 		933DFE5526DD69F8007812EA /* TextExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DFE4F26DD69F8007812EA /* TextExtensions.swift */; };
+		933DFE5926DD6C0F007812EA /* RemoteLoadProductRegisteredByAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DFE5826DD6C0F007812EA /* RemoteLoadProductRegisteredByAccount.swift */; };
+		933DFE5C26DD6C53007812EA /* HttpGetClientSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DFE5B26DD6C53007812EA /* HttpGetClientSpy.swift */; };
 		935EBC6026BD4BC30006A7CA /* DomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBC5F26BD4BC30006A7CA /* DomainError.swift */; };
 		935EBC6326BD4BF90006A7CA /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBC6226BD4BF90006A7CA /* AccountModel.swift */; };
 		935EBC6526BD4C010006A7CA /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBC6426BD4C010006A7CA /* Model.swift */; };
@@ -453,6 +455,8 @@
 		933DFE4B26DD3F5A007812EA /* TestFactories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFactories.swift; sourceTree = "<group>"; };
 		933DFE4D26DD4505007812EA /* ProductFactories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductFactories.swift; sourceTree = "<group>"; };
 		933DFE4F26DD69F8007812EA /* TextExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextExtensions.swift; sourceTree = "<group>"; };
+		933DFE5826DD6C0F007812EA /* RemoteLoadProductRegisteredByAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteLoadProductRegisteredByAccount.swift; sourceTree = "<group>"; };
+		933DFE5B26DD6C53007812EA /* HttpGetClientSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpGetClientSpy.swift; sourceTree = "<group>"; };
 		935EBC5326BD4B700006A7CA /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		935EBC5626BD4B700006A7CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		935EBC5F26BD4BC30006A7CA /* DomainError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DomainError.swift; sourceTree = "<group>"; };
@@ -790,6 +794,30 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		933DFE5626DD6C00007812EA /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				933DFE5726DD6C06007812EA /* Price */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		933DFE5726DD6C06007812EA /* Price */ = {
+			isa = PBXGroup;
+			children = (
+				933DFE5826DD6C0F007812EA /* RemoteLoadProductRegisteredByAccount.swift */,
+			);
+			path = Price;
+			sourceTree = "<group>";
+		};
+		933DFE5A26DD6C47007812EA /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				933DFE5B26DD6C53007812EA /* HttpGetClientSpy.swift */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
 		935EBC3926BD4A850006A7CA = {
 			isa = PBXGroup;
 			children = (
@@ -910,6 +938,7 @@
 		935EBC7926BD4CE30006A7CA /* DataTests */ = {
 			isa = PBXGroup;
 			children = (
+				933DFE5A26DD6C47007812EA /* Http */,
 				933DFE4A26DD3F32007812EA /* Helpers */,
 				933DFE4826DD2776007812EA /* Main */,
 				935EBC7C26BD4CE30006A7CA /* Info.plist */,
@@ -940,6 +969,7 @@
 		935EBC8626BD4D390006A7CA /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				933DFE5626DD6C00007812EA /* Main */,
 				935EBC8F26BD4D8B0006A7CA /* Account */,
 			);
 			path = UseCases;
@@ -2207,6 +2237,7 @@
 				935EBE1B26BDA8450006A7CA /* RemoveSecureCacheStorage.swift in Sources */,
 				935EBE1D26BDA8450006A7CA /* LoadSecureCacheStorage.swift in Sources */,
 				935EBE1F26BDA86B0006A7CA /* RemoteGenerateToken.swift in Sources */,
+				933DFE5926DD6C0F007812EA /* RemoteLoadProductRegisteredByAccount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2218,6 +2249,7 @@
 				933DFE4C26DD3F5A007812EA /* TestFactories.swift in Sources */,
 				933DFE4E26DD4505007812EA /* ProductFactories.swift in Sources */,
 				933DFE4726DD276D007812EA /* RemoteLoadProductRegisteredByAccountTests.swift in Sources */,
+				933DFE5C26DD6C53007812EA /* HttpGetClientSpy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
