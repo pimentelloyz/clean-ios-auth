@@ -34,11 +34,17 @@ class HttpGetClientSpy: HttpGetClient {
 class RemoteLoadProductRegisteredByAccountTests: XCTestCase {
     func test_should_call_httpClient_with_correct_url() throws {
         let url = makeUrl()
-        let httpClient = HttpGetClientSpy()
-        let sut = RemoteLoadProductRegisteredByAccount(url: url, httpClient: httpClient)
-        
+        let (sut, httpGetClientSpy) = makeSut(url: url)
         sut.load(by: makeLoadProductRegisteredByAccountParams()) { _ in }
         
-        XCTAssertEqual(httpClient.url, url)
+        XCTAssertEqual(httpGetClientSpy.url, url)
+    }
+}
+
+extension RemoteLoadProductRegisteredByAccountTests {
+    func makeSut(url: URL = makeUrl()) -> (sut: RemoteLoadProductRegisteredByAccount, httpGetClientSpy: HttpGetClientSpy) {
+        let httpGetClientSpy = HttpGetClientSpy()
+        let sut = RemoteLoadProductRegisteredByAccount(url: url, httpClient: httpGetClientSpy)
+        return (sut, httpGetClientSpy)
     }
 }
