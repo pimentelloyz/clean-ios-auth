@@ -98,6 +98,14 @@ class RemoteLoadProductRegisteredByAccountTests: XCTestCase {
             httpGetClientSpy.completesWithData(data: productModel.toData())
         }
     }
+    
+    func test_should_not_completes_if_httpClient_completes_with_invalid_data() throws {
+        let (sut, httpGetClientSpy, _) = makeSut()
+        
+        expect(sut: sut, completeWith: .failure(.unexpected)) {
+            httpGetClientSpy.completesWithData(data: makeInvalidData())
+        }
+    }
 }
 
 extension RemoteLoadProductRegisteredByAccountTests {

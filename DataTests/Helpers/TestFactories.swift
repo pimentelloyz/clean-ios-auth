@@ -8,3 +8,7 @@ func makeUrl() -> URL {
 func makeAuthenticationHeaders() -> AuthenticationHeaders {
     return AuthenticationHeaders(token: "any-token")
 }
+
+func makeInvalidData() -> Data {
+    return Data("invalid_data".utf8)
+}
