@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		933DFE3D26DD1CC6007812EA /* SignatureValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DFE3C26DD1CC6007812EA /* SignatureValue.swift */; };
+		933DFE3F26DD2251007812EA /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DFE3E26DD2251007812EA /* Product.swift */; };
 		935EBC6026BD4BC30006A7CA /* DomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBC5F26BD4BC30006A7CA /* DomainError.swift */; };
 		935EBC6326BD4BF90006A7CA /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBC6226BD4BF90006A7CA /* AccountModel.swift */; };
 		935EBC6526BD4C010006A7CA /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBC6426BD4C010006A7CA /* Model.swift */; };
@@ -434,6 +436,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		933DFE3C26DD1CC6007812EA /* SignatureValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureValue.swift; sourceTree = "<group>"; };
+		933DFE3E26DD2251007812EA /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		935EBC5326BD4B700006A7CA /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		935EBC5626BD4B700006A7CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		935EBC5F26BD4BC30006A7CA /* DomainError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DomainError.swift; sourceTree = "<group>"; };
@@ -728,6 +732,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		933DFE3B26DD1C95007812EA /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				933DFE3C26DD1CC6007812EA /* SignatureValue.swift */,
+				933DFE3E26DD2251007812EA /* Product.swift */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
 		935EBC3926BD4A850006A7CA = {
 			isa = PBXGroup;
 			children = (
@@ -793,6 +806,7 @@
 		935EBC5C26BD4BA10006A7CA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				933DFE3B26DD1C95007812EA /* Product */,
 				935EBC6126BD4BEE0006A7CA /* Account */,
 				935EBC6426BD4C010006A7CA /* Model.swift */,
 			);
@@ -2104,11 +2118,13 @@
 				935EBE1426BDA7930006A7CA /* AuthenticationHeaders.swift in Sources */,
 				935EBE1326BDA7930006A7CA /* SaveSecureCurrentAccount.swift in Sources */,
 				935EBE1226BDA7930006A7CA /* LoadSecureCurrentAccount.swift in Sources */,
+				933DFE3D26DD1CC6007812EA /* SignatureValue.swift in Sources */,
 				935EBE9326BDD7AC0006A7CA /* UploadMultipart.swift in Sources */,
 				93AD24DE26BF76D80012A5CF /* AuthenticationModel.swift in Sources */,
 				935EBC6026BD4BC30006A7CA /* DomainError.swift in Sources */,
 				935EBC6326BD4BF90006A7CA /* AccountModel.swift in Sources */,
 				935EBC6726BD4C140006A7CA /* Authentication.swift in Sources */,
+				933DFE3F26DD2251007812EA /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
