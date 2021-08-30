@@ -1,6 +1,6 @@
 import Foundation
 
-public struct ProductRegisterdByAccount: Model {
+public struct ProductRegisteredByAccount: Model {
     public let productId: Int
     public let productCode: String
     public let productName: String

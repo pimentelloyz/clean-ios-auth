@@ -19,7 +19,12 @@ class RemoteLoadProductRegisteredByAccount {
     func load(by params: LoadProductRegisteredParameters, completion: @escaping (LoadProductRegisteredByAccount.Result) -> Void) {
         self.httpClient.get(to: url, by: params.toData(), headers: authenticationHeaders.toData()) { result in
             switch result {
-            case .success: completion(.failure(.unexpected))
+            case .success(let data):
+                if let productRegistered: ProductRegisteredByAccount = data?.toModel() {
+                    completion(.success(productRegistered))
+                } else {
+                    completion(.failure(.unexpected))
+                }
             case .failure(let error):
                 switch error {
                 case .unauthorized:
@@ -45,6 +50,10 @@ class HttpGetClientSpy: HttpGetClient {
     
     func completeWithError(_ error: HttpError) {
         self.completion?(.failure(error))
+    }
+    
+    func completesWithData(data: Data?) {
+        self.completion?(.success(data))
     }
 }
 
@@ -78,6 +87,15 @@ class RemoteLoadProductRegisteredByAccountTests: XCTestCase {
         
         expect(sut: sut, completeWith: .failure(.expiredSession)) {
             httpGetClientSpy.completeWithError(.unauthorized)
+        }
+    }
+    
+    func test_load_should_complete_with_model_if_httpClient_completes_with_valid_data() throws {
+        let (sut, httpGetClientSpy, _) = makeSut()
+        let productModel = makeProductRegisteredByAccount()
+        
+        expect(sut: sut, completeWith: .success(productModel)) {
+            httpGetClientSpy.completesWithData(data: productModel.toData())
         }
     }
 }
