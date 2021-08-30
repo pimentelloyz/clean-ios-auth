@@ -15,7 +15,7 @@ public final class RemoteRefreshToken: RefreshToken {
     }
     
     public func refresh(completion: @escaping (RefreshToken.Result) -> Void ){
-        httpClient.get(to: self.url, with: nil, and: authenticationHeaders.toData()) { [weak self] result in
+        httpClient.get(to: self.url, by: nil, headers: authenticationHeaders.toData()) { [weak self] result in
             guard self != nil else { return }
             switch result {
             case .success(let data):
