@@ -13,6 +13,12 @@
 		933DFE4726DD276D007812EA /* RemoteLoadProductRegisteredByAccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DFE4626DD276D007812EA /* RemoteLoadProductRegisteredByAccountTests.swift */; };
 		933DFE4C26DD3F5A007812EA /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DFE4B26DD3F5A007812EA /* TestFactories.swift */; };
 		933DFE4E26DD4505007812EA /* ProductFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DFE4D26DD4505007812EA /* ProductFactories.swift */; };
+		933DFE5026DD69F8007812EA /* TextExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DFE4F26DD69F8007812EA /* TextExtensions.swift */; };
+		933DFE5126DD69F8007812EA /* TextExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DFE4F26DD69F8007812EA /* TextExtensions.swift */; };
+		933DFE5226DD69F8007812EA /* TextExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DFE4F26DD69F8007812EA /* TextExtensions.swift */; };
+		933DFE5326DD69F8007812EA /* TextExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DFE4F26DD69F8007812EA /* TextExtensions.swift */; };
+		933DFE5426DD69F8007812EA /* TextExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DFE4F26DD69F8007812EA /* TextExtensions.swift */; };
+		933DFE5526DD69F8007812EA /* TextExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DFE4F26DD69F8007812EA /* TextExtensions.swift */; };
 		935EBC6026BD4BC30006A7CA /* DomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBC5F26BD4BC30006A7CA /* DomainError.swift */; };
 		935EBC6326BD4BF90006A7CA /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBC6226BD4BF90006A7CA /* AccountModel.swift */; };
 		935EBC6526BD4C010006A7CA /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBC6426BD4C010006A7CA /* Model.swift */; };
@@ -446,6 +452,7 @@
 		933DFE4626DD276D007812EA /* RemoteLoadProductRegisteredByAccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteLoadProductRegisteredByAccountTests.swift; sourceTree = "<group>"; };
 		933DFE4B26DD3F5A007812EA /* TestFactories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFactories.swift; sourceTree = "<group>"; };
 		933DFE4D26DD4505007812EA /* ProductFactories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductFactories.swift; sourceTree = "<group>"; };
+		933DFE4F26DD69F8007812EA /* TextExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextExtensions.swift; sourceTree = "<group>"; };
 		935EBC5326BD4B700006A7CA /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		935EBC5626BD4B700006A7CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		935EBC5F26BD4BC30006A7CA /* DomainError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DomainError.swift; sourceTree = "<group>"; };
@@ -778,6 +785,7 @@
 			children = (
 				933DFE4B26DD3F5A007812EA /* TestFactories.swift */,
 				933DFE4D26DD4505007812EA /* ProductFactories.swift */,
+				933DFE4F26DD69F8007812EA /* TextExtensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -1955,6 +1963,7 @@
 					};
 					935EBCA026BD4ED80006A7CA = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 					935EBCB726BD4F230006A7CA = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -1962,6 +1971,7 @@
 					};
 					935EBCBF26BD4F240006A7CA = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 					935EBCF526BD51380006A7CA = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -1969,6 +1979,7 @@
 					};
 					935EBCFD26BD51390006A7CA = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 					935EBD1926BD51D20006A7CA = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -1976,12 +1987,14 @@
 					};
 					935EBD2126BD51D20006A7CA = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 					935EBD8526BD82610006A7CA = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
 					935EBD9A26BD82670006A7CA = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 						TestTargetID = 935EBD8526BD82610006A7CA;
 					};
 				};
@@ -2201,6 +2214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				933DFE5026DD69F8007812EA /* TextExtensions.swift in Sources */,
 				933DFE4C26DD3F5A007812EA /* TestFactories.swift in Sources */,
 				933DFE4E26DD4505007812EA /* ProductFactories.swift in Sources */,
 				933DFE4726DD276D007812EA /* RemoteLoadProductRegisteredByAccountTests.swift in Sources */,
@@ -2232,6 +2246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				933DFE5126DD69F8007812EA /* TextExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2251,6 +2266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				933DFE5226DD69F8007812EA /* TextExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2276,6 +2292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				933DFE5326DD69F8007812EA /* TextExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2324,6 +2341,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				933DFE5426DD69F8007812EA /* TextExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2399,6 +2417,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				933DFE5526DD69F8007812EA /* TextExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2863,6 +2882,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = TV9269UQRR;
@@ -2877,6 +2897,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "colportagem-sistemas.usb.org.br.InfraTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -2885,6 +2906,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = TV9269UQRR;
@@ -2964,6 +2986,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = TV9269UQRR;
@@ -2978,6 +3001,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "colportagem-sistemas.usb.org.br.ValidationTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -2986,6 +3010,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = TV9269UQRR;
@@ -3065,6 +3090,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = TV9269UQRR;
@@ -3079,6 +3105,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "colportagem-sistemas.usb.org.br.PresentationTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -3087,6 +3114,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = TV9269UQRR;
@@ -3166,6 +3194,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = TV9269UQRR;
@@ -3180,6 +3209,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "colportagem-sistemas.usb.org.br.UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -3188,6 +3218,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = TV9269UQRR;
@@ -3260,6 +3291,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TV9269UQRR;
 				INFOPLIST_FILE = MainTests/Info.plist;
@@ -3273,6 +3305,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "colportagem-sistemas.usb.org.br.MainTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Main.app/Main";
@@ -3284,6 +3317,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TV9269UQRR;
 				INFOPLIST_FILE = MainTests/Info.plist;

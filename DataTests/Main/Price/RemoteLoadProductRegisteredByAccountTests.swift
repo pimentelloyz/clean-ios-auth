@@ -17,7 +17,8 @@ class RemoteLoadProductRegisteredByAccount {
     }
     
     func load(by params: LoadProductRegisteredParameters, completion: @escaping (LoadProductRegisteredByAccount.Result) -> Void) {
-        self.httpClient.get(to: url, by: params.toData(), headers: authenticationHeaders.toData()) { result in
+        self.httpClient.get(to: url, by: params.toData(), headers: authenticationHeaders.toData()) { [weak self] result in
+            guard self != nil else { return }
             switch result {
             case .success(let data):
                 if let productRegistered: ProductRegisteredByAccount = data?.toModel() {
@@ -99,12 +100,24 @@ class RemoteLoadProductRegisteredByAccountTests: XCTestCase {
         }
     }
     
-    func test_should_not_completes_if_httpClient_completes_with_invalid_data() throws {
+    func test_load_should_not_completes_if_httpClient_completes_with_invalid_data() throws {
         let (sut, httpGetClientSpy, _) = makeSut()
         
         expect(sut: sut, completeWith: .failure(.unexpected)) {
             httpGetClientSpy.completesWithData(data: makeInvalidData())
         }
+    }
+    
+    func test_load_should_not_complete_if_sut_has_bean_deallocated() throws {
+        let httpGetClientSpy = HttpGetClientSpy()
+        var sut: RemoteLoadProductRegisteredByAccount? = RemoteLoadProductRegisteredByAccount(url: makeUrl(), httpClient: httpGetClientSpy, authenticationHeaders: makeAuthenticationHeaders())
+        var result: LoadProductRegisteredByAccount.Result?
+        
+        sut?.load(by: makeLoadProductRegisteredByAccountParams()) { result = $0 }
+        sut = nil
+        httpGetClientSpy.completeWithError(.noConnectivity)
+        
+        XCTAssertNil(result)
     }
 }
 
@@ -112,6 +125,8 @@ extension RemoteLoadProductRegisteredByAccountTests {
     func makeSut(url: URL = makeUrl(), authenticationHeaders: AuthenticationHeaders = makeAuthenticationHeaders()) -> (sut: RemoteLoadProductRegisteredByAccount, httpGetClientSpy: HttpGetClientSpy, authenticationHeaders: AuthenticationHeaders) {
         let httpGetClientSpy = HttpGetClientSpy()
         let sut = RemoteLoadProductRegisteredByAccount(url: url, httpClient: httpGetClientSpy, authenticationHeaders: authenticationHeaders)
+        checkMemoryLeak(for: sut)
+        checkMemoryLeak(for: httpGetClientSpy)
         return (sut, httpGetClientSpy, authenticationHeaders)
     }
     
