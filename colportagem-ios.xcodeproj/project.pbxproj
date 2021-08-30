@@ -1547,6 +1547,7 @@
 		93F0DE4426D6AB9E00C4631C /* Price */ = {
 			isa = PBXGroup;
 			children = (
+				93CA3F2D26D809B400E95FDD /* Cells */,
 				93F0DE4526D6ABB600C4631C /* Price.storyboard */,
 				93F0DE4826D6ABC500C4631C /* PriceViewController.swift */,
 			);
@@ -1556,7 +1557,6 @@
 		93F0DE4B26D6AEEE00C4631C /* Offer */ = {
 			isa = PBXGroup;
 			children = (
-				93CA3F2D26D809B400E95FDD /* Cells */,
 				93F0DE4C26D6AF6300C4631C /* Offer.storyboard */,
 				93F0DE4F26D6AF7500C4631C /* OfferViewController.swift */,
 			);
