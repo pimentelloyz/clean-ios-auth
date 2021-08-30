@@ -1,6 +1,6 @@
 import Foundation
 
-public protocol LoadProductRegistredByAccount {
+public protocol LoadProductRegisteredByAccount {
     typealias Result = Swift.Result<ProductRegisterdByAccount, DomainError>
     func load(by params: LoadProductRegisteredParameters, completion: @escaping (Result) -> Void)
 }
