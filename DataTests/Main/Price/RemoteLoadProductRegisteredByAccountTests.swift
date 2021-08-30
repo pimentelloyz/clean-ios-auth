@@ -20,7 +20,13 @@ class RemoteLoadProductRegisteredByAccount {
         self.httpClient.get(to: url, by: params.toData(), headers: authenticationHeaders.toData()) { result in
             switch result {
             case .success: completion(.failure(.unexpected))
-            case .failure: completion(.failure(.unexpected))
+            case .failure(let error):
+                switch error {
+                case .unauthorized:
+                    completion(.failure(.expiredSession))
+                default:
+                    completion(.failure(.unexpected))
+                }
             }
         }
     }
@@ -61,8 +67,17 @@ class RemoteLoadProductRegisteredByAccountTests: XCTestCase {
     
     func test_load_should_complete_with_error_if_httpClient_fails() throws {
         let (sut, httpGetClientSpy, _) = makeSut()
+        
         expect(sut: sut, completeWith: .failure(.unexpected)) {
             httpGetClientSpy.completeWithError(.noConnectivity)
+        }
+    }
+    
+    func test_load_should_complete_with_sessionExpired_if_httpClient_completes_with_unauthorized() throws {
+        let (sut, httpGetClientSpy, _) = makeSut()
+        
+        expect(sut: sut, completeWith: .failure(.expiredSession)) {
+            httpGetClientSpy.completeWithError(.unauthorized)
         }
     }
 }
