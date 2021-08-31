@@ -22,6 +22,10 @@
 		933DFE5926DD6C0F007812EA /* RemoteLoadProductRegisteredByAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DFE5826DD6C0F007812EA /* RemoteLoadProductRegisteredByAccount.swift */; };
 		933DFE5C26DD6C53007812EA /* HttpGetClientSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DFE5B26DD6C53007812EA /* HttpGetClientSpy.swift */; };
 		933DFE5F26DD6D6E007812EA /* EmailValidatorAdapterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DFE5E26DD6D6E007812EA /* EmailValidatorAdapterTests.swift */; };
+		93439B9C26DE69B3007CA45D /* AlamofireGetAdapterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93439B9B26DE69B3007CA45D /* AlamofireGetAdapterTests.swift */; };
+		93439B9E26DE6B18007CA45D /* AlamofirePostAdapterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93439B9D26DE6B18007CA45D /* AlamofirePostAdapterTests.swift */; };
+		93439BA026DE6B31007CA45D /* URLProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93439B9F26DE6B31007CA45D /* URLProtocolStub.swift */; };
+		93439BA126DE6BB8007CA45D /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DFE4B26DD3F5A007812EA /* TestFactories.swift */; };
 		935EBC6026BD4BC30006A7CA /* DomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBC5F26BD4BC30006A7CA /* DomainError.swift */; };
 		935EBC6326BD4BF90006A7CA /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBC6226BD4BF90006A7CA /* AccountModel.swift */; };
 		935EBC6526BD4C010006A7CA /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBC6426BD4C010006A7CA /* Model.swift */; };
@@ -459,6 +463,9 @@
 		933DFE5826DD6C0F007812EA /* RemoteLoadProductRegisteredByAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteLoadProductRegisteredByAccount.swift; sourceTree = "<group>"; };
 		933DFE5B26DD6C53007812EA /* HttpGetClientSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpGetClientSpy.swift; sourceTree = "<group>"; };
 		933DFE5E26DD6D6E007812EA /* EmailValidatorAdapterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidatorAdapterTests.swift; sourceTree = "<group>"; };
+		93439B9B26DE69B3007CA45D /* AlamofireGetAdapterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireGetAdapterTests.swift; sourceTree = "<group>"; };
+		93439B9D26DE6B18007CA45D /* AlamofirePostAdapterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofirePostAdapterTests.swift; sourceTree = "<group>"; };
+		93439B9F26DE6B31007CA45D /* URLProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProtocolStub.swift; sourceTree = "<group>"; };
 		935EBC5326BD4B700006A7CA /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		935EBC5626BD4B700006A7CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		935EBC5F26BD4BC30006A7CA /* DomainError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DomainError.swift; sourceTree = "<group>"; };
@@ -828,6 +835,16 @@
 			path = Validators;
 			sourceTree = "<group>";
 		};
+		93439B9A26DE6999007CA45D /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				93439B9B26DE69B3007CA45D /* AlamofireGetAdapterTests.swift */,
+				93439B9D26DE6B18007CA45D /* AlamofirePostAdapterTests.swift */,
+				93439B9F26DE6B31007CA45D /* URLProtocolStub.swift */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
 		935EBC3926BD4A850006A7CA = {
 			isa = PBXGroup;
 			children = (
@@ -1029,6 +1046,7 @@
 		935EBCA526BD4ED80006A7CA /* InfraTests */ = {
 			isa = PBXGroup;
 			children = (
+				93439B9A26DE6999007CA45D /* Http */,
 				933DFE5D26DD6D5C007812EA /* Validators */,
 				935EBCA826BD4ED80006A7CA /* Info.plist */,
 			);
@@ -2289,8 +2307,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93439BA126DE6BB8007CA45D /* TestFactories.swift in Sources */,
+				93439B9E26DE6B18007CA45D /* AlamofirePostAdapterTests.swift in Sources */,
+				93439B9C26DE69B3007CA45D /* AlamofireGetAdapterTests.swift in Sources */,
 				933DFE5F26DD6D6E007812EA /* EmailValidatorAdapterTests.swift in Sources */,
 				933DFE5126DD69F8007812EA /* TextExtensions.swift in Sources */,
+				93439BA026DE6B31007CA45D /* URLProtocolStub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -5,7 +5,7 @@ import Data
 
 class RemoteLoadProductRegisteredByAccountTests: XCTestCase {
     func test_load_should_call_httpClient_with_correct_url() throws {
-        let url = makeUrl()
+        let url = makeURL()
         let (sut, httpGetClientSpy, _) = makeSut(url: url)
         sut.load(by: makeLoadProductRegisteredByAccountParams()) { _ in }
         
@@ -55,7 +55,7 @@ class RemoteLoadProductRegisteredByAccountTests: XCTestCase {
     
     func test_load_should_not_complete_if_sut_has_bean_deallocated() throws {
         let httpGetClientSpy = HttpGetClientSpy()
-        var sut: RemoteLoadProductRegisteredByAccount? = RemoteLoadProductRegisteredByAccount(url: makeUrl(), httpClient: httpGetClientSpy, authenticationHeaders: makeAuthenticationHeaders())
+        var sut: RemoteLoadProductRegisteredByAccount? = RemoteLoadProductRegisteredByAccount(url: makeURL(), httpClient: httpGetClientSpy, authenticationHeaders: makeAuthenticationHeaders())
         var result: LoadProductRegisteredByAccount.Result?
         
         sut?.load(by: makeLoadProductRegisteredByAccountParams()) { result = $0 }
@@ -67,7 +67,7 @@ class RemoteLoadProductRegisteredByAccountTests: XCTestCase {
 }
 
 extension RemoteLoadProductRegisteredByAccountTests {
-    func makeSut(url: URL = makeUrl(), authenticationHeaders: AuthenticationHeaders = makeAuthenticationHeaders()) -> (sut: RemoteLoadProductRegisteredByAccount, httpGetClientSpy: HttpGetClientSpy, authenticationHeaders: AuthenticationHeaders) {
+    func makeSut(url: URL = makeURL(), authenticationHeaders: AuthenticationHeaders = makeAuthenticationHeaders()) -> (sut: RemoteLoadProductRegisteredByAccount, httpGetClientSpy: HttpGetClientSpy, authenticationHeaders: AuthenticationHeaders) {
         let httpGetClientSpy = HttpGetClientSpy()
         let sut = RemoteLoadProductRegisteredByAccount(url: url, httpClient: httpGetClientSpy, authenticationHeaders: authenticationHeaders)
         checkMemoryLeak(for: sut)
