@@ -12,6 +12,22 @@ class GenerateTokenPresenterTests: XCTestCase {
         
         XCTAssertTrue(NSDictionary(dictionary: validationSpy.data!).isEqual(to: request.toJson()!))
     }
+    
+    func test_generate_should_show_error_message_if_validation_fails() throws {
+        let alertViewSpy = AlertViewSpy()
+        let validationSpy = ValidationSpy()
+        let sut = makeSut(alertView: alertViewSpy, validation: validationSpy)
+        let exp = expectation(description: "waiting")
+        alertViewSpy.observe { viewModel in
+            XCTAssertEqual(viewModel, AlertViewModel(title: "Falha na validação", message: "Erro"))
+            exp.fulfill()
+        }
+        validationSpy.simulateError()
+
+        sut.generate(request: makeGenerateTokenRequest(email: nil))
+
+        wait(for: [exp], timeout: 1)
+    }
 }
 
 extension GenerateTokenPresenterTests {
