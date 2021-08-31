@@ -261,6 +261,9 @@
 		93F0DE5126D6AF7500C4631C /* OfferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F0DE4F26D6AF7500C4631C /* OfferViewController.swift */; };
 		93F815EA26DECA1400D30133 /* TestFectories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F815E926DECA1400D30133 /* TestFectories.swift */; };
 		93F815EB26DECA1400D30133 /* TestFectories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F815E926DECA1400D30133 /* TestFectories.swift */; };
+		93F815ED26DECC7B00D30133 /* AccountFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F815EC26DECC7B00D30133 /* AccountFactories.swift */; };
+		93F815EE26DECC7B00D30133 /* AccountFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F815EC26DECC7B00D30133 /* AccountFactories.swift */; };
+		93F815EF26DECCB900D30133 /* AccountFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F815EC26DECC7B00D30133 /* AccountFactories.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -669,6 +672,7 @@
 		93F0DE4C26D6AF6300C4631C /* Offer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Offer.storyboard; sourceTree = "<group>"; };
 		93F0DE4F26D6AF7500C4631C /* OfferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferViewController.swift; sourceTree = "<group>"; };
 		93F815E926DECA1400D30133 /* TestFectories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFectories.swift; sourceTree = "<group>"; };
+		93F815EC26DECC7B00D30133 /* AccountFactories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountFactories.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -828,6 +832,7 @@
 				933DFE4B26DD3F5A007812EA /* TestFactories.swift */,
 				933DFE4D26DD4505007812EA /* ProductFactories.swift */,
 				933DFE4F26DD69F8007812EA /* TextExtensions.swift */,
+				93F815EC26DECC7B00D30133 /* AccountFactories.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -2397,6 +2402,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93F815ED26DECC7B00D30133 /* AccountFactories.swift in Sources */,
 				933DFE5026DD69F8007812EA /* TextExtensions.swift in Sources */,
 				933DFE4C26DD3F5A007812EA /* TestFactories.swift in Sources */,
 				933DFE4E26DD4505007812EA /* ProductFactories.swift in Sources */,
@@ -2436,6 +2442,7 @@
 				933DFE5F26DD6D6E007812EA /* EmailValidatorAdapterTests.swift in Sources */,
 				933DFE5126DD69F8007812EA /* TextExtensions.swift in Sources */,
 				93439BA026DE6B31007CA45D /* URLProtocolStub.swift in Sources */,
+				93F815EE26DECC7B00D30133 /* AccountFactories.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2487,6 +2494,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93F815EF26DECCB900D30133 /* AccountFactories.swift in Sources */,
 				93439BB326DE72B9007CA45D /* GenerateTokenPresenterTests.swift in Sources */,
 				93439BC926DEBA65007CA45D /* GenerateTokenSpy.swift in Sources */,
 				93F815EA26DECA1400D30133 /* TestFectories.swift in Sources */,
