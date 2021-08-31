@@ -9,7 +9,7 @@ public final class AlamofireGetAdapter: HttpGetClient {
         self.session = session
     }
     
-    public func get(to url: URL, with data: Data?, and headers: Data?, completion: @escaping (Result<Data?, HttpError>) -> Void) {
+    public func get(to url: URL, by data: Data?, headers: Data?, completion: @escaping (Result<Data?, HttpError>) -> Void) {
         session.request(url, method: .get, parameters: data?.toJson(), encoding: URLEncoding.queryString, headers: headers?.toHeaders()).responseData { dataResponse in
             guard let statusCode = dataResponse.response?.statusCode else { return completion(.failure(.noConnectivity)) }
             switch dataResponse.result {
