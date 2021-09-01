@@ -9,7 +9,7 @@ public func makeMainTabBarControllerWith() -> UITabBarController {
     SceneDelegate.nav.setNavigationBarHidden(true, animated: true)
     let tabController = UITabBarController()
     tabController.navigationController?.navigationBar.isHidden = true
-    //let homeViewController = makeHomeViewController()
+    let homeViewController = makeHomeViewController()
     //let studyPlanViewController = StudyPlanViewController.instantiate()
     //let attendanceViewController = makeAttendanceViewController()
     //let solidarityActionViewController = SolidarityActionViewController.instantiate()
@@ -18,7 +18,7 @@ public func makeMainTabBarControllerWith() -> UITabBarController {
     let tabBarDelegate = TabBarDelegate()
     
     let vcData: [(UIViewController, UIImage, UIImage, String)] = [
-        (HomeViewController.instantiate(), UIImage(named: "home")!, UIImage(named: "home_selected")!, "HOME".localized()),
+        (homeViewController, UIImage(named: "home")!, UIImage(named: "home_selected")!, "HOME".localized()),
         (PriceViewController.instantiate(), UIImage(named: "price")!, UIImage(named: "price_selected")!, "PRICE".localized()),
         (OfferViewController.instantiate(), UIImage(named: "offer")!, UIImage(named: "offer_selected")!, "OFFER".localized()),
         (SettingsViewController.instantiate(), UIImage(named: "settings")!, UIImage(named: "settings_selected")!, "SETTINGS".localized()),

@@ -251,6 +251,7 @@
 		93CA3F3926D80D5600E95FDD /* ContainerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CA3F3726D80D5600E95FDD /* ContainerCell.swift */; };
 		93CA3F3B26D80F9A00E95FDD /* BoldLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CA3F3A26D80F9A00E95FDD /* BoldLabel.swift */; };
 		93CA3F3C26D80F9A00E95FDD /* BoldLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CA3F3A26D80F9A00E95FDD /* BoldLabel.swift */; };
+		93ED03D826DFAEE200E7636C /* HomeControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ED03D726DFAEE200E7636C /* HomeControllerFactory.swift */; };
 		93F0DE4626D6ABB600C4631C /* Price.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93F0DE4526D6ABB600C4631C /* Price.storyboard */; };
 		93F0DE4726D6ABB600C4631C /* Price.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93F0DE4526D6ABB600C4631C /* Price.storyboard */; };
 		93F0DE4926D6ABC500C4631C /* PriceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F0DE4826D6ABC500C4631C /* PriceViewController.swift */; };
@@ -667,6 +668,7 @@
 		93CA3F2F26D80B8700E95FDD /* ProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
 		93CA3F3726D80D5600E95FDD /* ContainerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerCell.swift; sourceTree = "<group>"; };
 		93CA3F3A26D80F9A00E95FDD /* BoldLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoldLabel.swift; sourceTree = "<group>"; };
+		93ED03D726DFAEE200E7636C /* HomeControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeControllerFactory.swift; sourceTree = "<group>"; };
 		93F0DE4526D6ABB600C4631C /* Price.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Price.storyboard; sourceTree = "<group>"; };
 		93F0DE4826D6ABC500C4631C /* PriceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceViewController.swift; sourceTree = "<group>"; };
 		93F0DE4C26D6AF6300C4631C /* Offer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Offer.storyboard; sourceTree = "<group>"; };
@@ -1526,6 +1528,7 @@
 		935EBDCA26BD836A0006A7CA /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				93ED03D626DFAED300E7636C /* Home */,
 				935EBEAD26BE269C0006A7CA /* Main */,
 				935EBE5926BDB0740006A7CA /* LoadScreen */,
 				935EBDCC26BD83BC0006A7CA /* Account */,
@@ -1787,6 +1790,14 @@
 				93CA3F2F26D80B8700E95FDD /* ProductTableViewCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		93ED03D626DFAED300E7636C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				93ED03D726DFAEE200E7636C /* HomeControllerFactory.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		93F0DE4426D6AB9E00C4631C /* Price */ = {
@@ -2563,6 +2574,7 @@
 				935EBDC526BD83250006A7CA /* ValidationBuilder.swift in Sources */,
 				935EBEA926BE26230006A7CA /* Responsive.swift in Sources */,
 				935EBEB626BE2B350006A7CA /* NavigationController.swift in Sources */,
+				93ED03D826DFAEE200E7636C /* HomeControllerFactory.swift in Sources */,
 				935EBE7D26BDD4AC0006A7CA /* AlamofireGetAdapterFactory.swift in Sources */,
 				935EBE9026BDD6DE0006A7CA /* FacebookAuthAdapterFactory.swift in Sources */,
 				935EBEAC26BE26420006A7CA /* UIViewExtensions.swift in Sources */,
@@ -3695,7 +3707,7 @@
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 8.5.0;
+				minimumVersion = 8.6.0;
 			};
 		};
 		935EBE0026BDA40C0006A7CA /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
