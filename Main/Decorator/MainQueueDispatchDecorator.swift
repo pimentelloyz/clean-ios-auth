@@ -37,3 +37,11 @@ extension MainQueueDispatchDecorator: RefreshToken where T: RefreshToken {
         }
     }
 }
+
+extension MainQueueDispatchDecorator: LoadProductRegisteredByAccount where T: LoadProductRegisteredByAccount {
+    public func load(by params: LoadProductRegisteredParameters, completion: @escaping (LoadProductRegisteredByAccount.Result) -> Void) {
+        instance.load(by: params) { [weak self] result in
+            self?.dispatch { completion(result) }
+        }
+    }
+}
