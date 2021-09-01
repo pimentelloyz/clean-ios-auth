@@ -20,11 +20,11 @@ public struct LoadProductRegisteredByAccountViewModel: Equatable {
         return product.body.count
     }
     
-    public func postByIndex(_ index: Int) -> LoadProductRegisteredByAccountBodyViewModel? {
+    public func productByIndex(_ index: Int) -> LoadProductRegisteredByAccountBodyViewModel? {
         return LoadProductRegisteredByAccountBodyViewModel(product.body[index])
     }
     
-    public func listPostBody() -> [LoadProductRegisteredByAccountBodyViewModel] {
+    public func listProductBody() -> [LoadProductRegisteredByAccountBodyViewModel] {
         product.body.map({ LoadProductRegisteredByAccountBodyViewModel($0)})
     }
 }
@@ -34,5 +34,17 @@ public struct LoadProductRegisteredByAccountBodyViewModel {
     
     public init(_ body: ProductRegisteredByAccountBody?) {
         self.body = body
+    }
+    
+    public var productName: String {
+        return self.body?.productName ?? ""
+    }
+    
+    public var salesValeu: String {
+        return "\(self.body?.salesValue ?? 00.0)" 
+    }
+    
+    public var lastPurchasePrice: String {
+        return "\(self.body?.lastPurchasePrice ?? 00.0)"
     }
 }

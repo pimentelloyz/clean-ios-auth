@@ -19,7 +19,6 @@ public class RemoteLoadProductRegisteredByAccount: LoadProductRegisteredByAccoun
             guard self != nil else { return }
             switch result {
             case .success(let data):
-                print(data)
                 if let productRegistered: ProductRegisteredByAccount = data?.toModel() {
                     completion(.success(productRegistered))
                 } else {

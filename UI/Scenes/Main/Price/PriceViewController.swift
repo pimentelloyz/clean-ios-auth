@@ -9,8 +9,13 @@ public final class PriceViewController: UIViewController, Storyboarded {
             searchContainerView.layer.cornerRadius = 24
         }
     }
-    
+    var viewModel: LoadProductRegisteredByAccountViewModel? {
+        didSet {
+            tableView.reloadData()
+        }
+    }
     public var loadProductRegisteredByAccount: ((LoadProductRegisteredByAccountRequest) -> Void)?
+    
     struct Storyboard {
         static let productCell = String(describing: ProductTableViewCell.self)
     }
@@ -47,19 +52,21 @@ extension PriceViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return viewModel?.numberOfItemsInSection(section) ?? 0
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Storyboard.productCell, for: indexPath) as! ProductTableViewCell
         cell.selectionStyle = .none
+        let product = self.viewModel?.productByIndex(indexPath.row)
+        cell.product = product
         return cell
     }
 }
 
 extension PriceViewController: LoadProductRegisteredByAccountResultViewModel {
     public func result(_ viewModel: LoadProductRegisteredByAccountViewModel) {
-        print(viewModel)
+        self.viewModel = viewModel
     }
 }
 
