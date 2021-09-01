@@ -7,6 +7,6 @@ func makeRemoteLoadProductRegisteredByAccount() -> LoadProductRegisteredByAccoun
 }
 
 func makeRemoteLoadProductRegisteredByAccountWith(httpClient: HttpGetClient) -> LoadProductRegisteredByAccount {
-    let loadProduct = RemoteLoadProductRegisteredByAccount(url: makeApiUrl(path: "load-product-registered-by-account"), httpClient: httpClient, authenticationHeaders: makeAuthenticationHeaders())
+    let loadProduct = RemoteLoadProductRegisteredByAccount(url: makeApiUrl(path: "product/load-product-registered-by-account"), httpClient: httpClient, authenticationHeaders: makeAuthenticationHeaders())
     return MainQueueDispatchDecorator(loadProduct)
 }

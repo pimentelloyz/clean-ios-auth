@@ -10,7 +10,7 @@ public func makeMainTabBarControllerWith() -> UITabBarController {
     let tabController = UITabBarController()
     tabController.navigationController?.navigationBar.isHidden = true
     let homeViewController = makeHomeViewController()
-    //let studyPlanViewController = StudyPlanViewController.instantiate()
+    let priceViewController = makePriceViewController()
     //let attendanceViewController = makeAttendanceViewController()
     //let solidarityActionViewController = SolidarityActionViewController.instantiate()
     //let galleryViewController = makeGaleryViewController()
@@ -19,7 +19,7 @@ public func makeMainTabBarControllerWith() -> UITabBarController {
     
     let vcData: [(UIViewController, UIImage, UIImage, String)] = [
         (homeViewController, UIImage(named: "home")!, UIImage(named: "home_selected")!, "HOME".localized()),
-        (PriceViewController.instantiate(), UIImage(named: "price")!, UIImage(named: "price_selected")!, "PRICE".localized()),
+        (priceViewController, UIImage(named: "price")!, UIImage(named: "price_selected")!, "PRICE".localized()),
         (OfferViewController.instantiate(), UIImage(named: "offer")!, UIImage(named: "offer_selected")!, "OFFER".localized()),
         (SettingsViewController.instantiate(), UIImage(named: "settings")!, UIImage(named: "settings_selected")!, "SETTINGS".localized()),
         

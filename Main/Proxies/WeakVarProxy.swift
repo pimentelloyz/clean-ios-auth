@@ -38,3 +38,9 @@ extension WeakVarProxy: GenerateTokenResultViewModel where T: GenerateTokenResul
         instance?.result(viewModel)
     }
 }
+
+extension WeakVarProxy: LoadProductRegisteredByAccountResultViewModel where T: LoadProductRegisteredByAccountResultViewModel {
+    func result(_ viewModel: LoadProductRegisteredByAccountViewModel) {
+        instance?.result(viewModel)
+    }
+}
