@@ -29,7 +29,6 @@ public final class ProductNotRegisteredViewController: UIViewController, Storybo
     }
     
     func setup() {
-        title = "PRODUCT_NOT_REGISTERED".localized()
         view.backgroundColor = Color.backgroundPrimary
         tableView.delegate = self
         tableView.dataSource = self
@@ -44,6 +43,10 @@ public final class ProductNotRegisteredViewController: UIViewController, Storybo
     
     func fetchProductNotRegisteredByAccount() {
         loadProductNotRegisteredByAccount?(LoadProductNotRegisteredByAccountRequest(limit: 10, offSet: 0, search: "%"))
+    }
+    
+    @IBAction func backDidTap(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
     }
 }
 

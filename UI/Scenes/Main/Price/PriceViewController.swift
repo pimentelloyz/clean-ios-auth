@@ -19,6 +19,7 @@ public final class PriceViewController: UIViewController, Storyboarded {
 
     struct Storyboard {
         static let productCell = String(describing: ProductTableViewCell.self)
+        static let productSignatureCell = String(describing: ProductSignatureTableViewCell.self)
     }
     
     public final override func viewDidLoad() {
@@ -40,6 +41,8 @@ public final class PriceViewController: UIViewController, Storyboarded {
     func registerNib() {
         let productNib = UINib(nibName: Storyboard.productCell, bundle: nil)
         tableView.register(productNib, forCellReuseIdentifier: Storyboard.productCell)
+        let productSignatureNib = UINib(nibName: Storyboard.productSignatureCell, bundle: nil)
+        tableView.register(productSignatureNib, forCellReuseIdentifier: Storyboard.productSignatureCell)
     }
     
     func fetchProductRegisteredByAccount() {
@@ -61,9 +64,17 @@ extension PriceViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let product = self.viewModel?.productByIndex(indexPath.row)
+        if product?.isSignature ?? false {
+            let cell = tableView.dequeueReusableCell(withIdentifier: Storyboard.productSignatureCell, for: indexPath) as! ProductSignatureTableViewCell
+            cell.selectionStyle = .none
+            
+            cell.product = product
+            return cell
+        }
         let cell = tableView.dequeueReusableCell(withIdentifier: Storyboard.productCell, for: indexPath) as! ProductTableViewCell
         cell.selectionStyle = .none
-        let product = self.viewModel?.productByIndex(indexPath.row)
+        
         cell.product = product
         return cell
     }

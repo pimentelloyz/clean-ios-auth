@@ -40,6 +40,18 @@ public struct LoadProductRegisteredByAccountBodyViewModel {
         return self.body?.productName ?? ""
     }
     
+    public var isSignature: Bool {
+        return self.body?.productSignature ?? false
+    }
+    
+    public var productCode: String {
+        return self.body?.productCode ?? "000"
+    }
+    
+    public var signatures: [SignatureValue]? {
+        return self.body?.signatures
+    }
+    
     public var salesValeu: String {
         return "\(self.body?.salesValue ?? 00.0)" 
     }

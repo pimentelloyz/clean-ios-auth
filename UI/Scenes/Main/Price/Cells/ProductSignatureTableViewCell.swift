@@ -1,11 +1,13 @@
 import UIKit
 import Presentation
 
-public final class ProductTableViewCell: UITableViewCell {
+public final class ProductSignatureTableViewCell: UITableViewCell {
 
     @IBOutlet weak var productNameLabel: BoldLabel!
-    @IBOutlet weak var productPriceLabel: TextLabelPrimary!
     @IBOutlet weak var lastPurchasePrice: RegularLabel!
+    @IBOutlet var monthLabel: [TextLabelPrimary]!
+    @IBOutlet var productPriceCollectionLabel: [TextLabelPrimary]!
+    
     
     var product: LoadProductRegisteredByAccountBodyViewModel? {
         didSet {
@@ -20,7 +22,14 @@ public final class ProductTableViewCell: UITableViewCell {
     func updateUI() {
         guard let viewModel = product else { return }
         productNameLabel.text   = "\(viewModel.productCode) - \(viewModel.productName)"
-        productPriceLabel.text  = viewModel.salesValeu
         lastPurchasePrice.text  = (lastPurchasePrice.text?.localized())! +  viewModel.lastPurchasePrice
+        for (_, label) in monthLabel.enumerated() {
+            label.text = label.text?.localized()
+        }
+        
+        guard let signatures = viewModel.signatures else { return }
+        for (index, signature) in signatures.enumerated() {
+            productPriceCollectionLabel[index].text = "\(signature.salesValue)"
+        }
     }
 }

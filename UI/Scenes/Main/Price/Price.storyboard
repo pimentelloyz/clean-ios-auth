@@ -19,11 +19,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vmi-Cg-y3D" customClass="ButtonPrimary" customModule="Main" customModuleProvider="target">
-                                <rect key="frame" x="242" y="60" width="148" height="48"/>
+                                <rect key="frame" x="210" y="60" width="180" height="48"/>
                                 <color key="backgroundColor" name="primary"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="bNl-c1-L8m"/>
-                                    <constraint firstAttribute="width" constant="148" id="lMu-hV-a9i"/>
+                                    <constraint firstAttribute="width" constant="180" id="lMu-hV-a9i"/>
                                 </constraints>
                                 <state key="normal" title="NEW_PRODUCT">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -32,17 +32,17 @@
                                     <action selector="addNewProductDidTap:" destination="yO9-Sq-KBd" eventType="touchUpInside" id="YjK-pq-SOn"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="NYV-FB-g5T">
-                                <rect key="frame" x="24" y="68.5" width="141.5" height="31"/>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" distribution="fillProportionally" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="NYV-FB-g5T">
+                                <rect key="frame" x="24" y="68.5" width="162" height="31"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NO_PRICE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6e-1f-f7b" customClass="RegularLabel" customModule="Main" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="80.5" height="31"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NO_PRICE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="F6e-1f-f7b" customClass="RegularLabel" customModule="Main" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="92" height="31"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E3Z-mb-z7M">
-                                        <rect key="frame" x="92.5" y="0.0" width="51" height="31"/>
+                                        <rect key="frame" x="104" y="0.0" width="60" height="31"/>
                                         <color key="onTintColor" name="primary"/>
                                     </switch>
                                 </subviews>
@@ -90,6 +90,7 @@
                             <constraint firstItem="Vmi-Cg-y3D" firstAttribute="top" secondItem="NRL-53-Dq6" secondAttribute="top" constant="16" id="Etc-IQ-hwI"/>
                             <constraint firstItem="NYV-FB-g5T" firstAttribute="leading" secondItem="NRL-53-Dq6" secondAttribute="leading" constant="24" id="Gfy-1t-afA"/>
                             <constraint firstItem="ifY-1v-MuO" firstAttribute="leading" secondItem="NRL-53-Dq6" secondAttribute="leading" constant="24" id="HDI-Gv-Bon"/>
+                            <constraint firstItem="Vmi-Cg-y3D" firstAttribute="leading" secondItem="NYV-FB-g5T" secondAttribute="trailing" constant="24" id="NQ7-gD-OJ1"/>
                             <constraint firstItem="NRL-53-Dq6" firstAttribute="trailing" secondItem="Vmi-Cg-y3D" secondAttribute="trailing" constant="24" id="UsE-lx-No5"/>
                             <constraint firstItem="ifY-1v-MuO" firstAttribute="top" secondItem="Vmi-Cg-y3D" secondAttribute="bottom" constant="18" id="cgz-de-LsU"/>
                             <constraint firstItem="NRL-53-Dq6" firstAttribute="trailing" secondItem="ifY-1v-MuO" secondAttribute="trailing" constant="24" id="i1Q-4x-FJ5"/>
@@ -105,7 +106,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wHl-nx-hVg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-993" y="-108"/>
+            <point key="canvasLocation" x="-1146" y="-117"/>
         </scene>
     </scenes>
     <resources>

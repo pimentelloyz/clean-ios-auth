@@ -1,6 +1,6 @@
 import UIKit
 
-class ContainerCell: UIView {
+class NumberMonthContainer: UIView {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.setup()
@@ -11,10 +11,8 @@ class ContainerCell: UIView {
     }
     
     private func setup() {
-        backgroundColor = Color.backgroundPrimary
+        backgroundColor = Color.customGray
         clipsToBounds = true
-        layer.cornerRadius = 8
-        layer.borderWidth = 1
-        layer.borderColor = Color.customGray.cgColor
+        layer.cornerRadius = 3
     }
 }
