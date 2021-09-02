@@ -15,6 +15,7 @@ public final class ProductNotRegisteredViewController: UIViewController, Storybo
         }
     }
     public var loadProductNotRegisteredByAccount: ((LoadProductNotRegisteredByAccountRequest) -> Void)?
+    public var goToAddProductViewController: (() -> Void)?
     
     struct Storyboard {
         static let productNotRegisteredTableViewCell = String(describing: ProductNotRegisteredTableViewCell.self)
@@ -61,6 +62,10 @@ extension ProductNotRegisteredViewController: UITableViewDelegate, UITableViewDa
         let product = self.viewModel?.productByIndex(indexPath.row)
         cell.product = product
         return cell
+    }
+    
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.goToAddProductViewController?()
     }
 }
 

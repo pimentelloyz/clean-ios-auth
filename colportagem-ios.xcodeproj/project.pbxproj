@@ -255,6 +255,10 @@
 		936229F926E1347900BA2FB1 /* AddProductImputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936229F626E1347900BA2FB1 /* AddProductImputTableViewCell.swift */; };
 		936229FA26E1347900BA2FB1 /* AddProductImputTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 936229F726E1347900BA2FB1 /* AddProductImputTableViewCell.xib */; };
 		936229FB26E1347900BA2FB1 /* AddProductImputTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 936229F726E1347900BA2FB1 /* AddProductImputTableViewCell.xib */; };
+		936229FD26E1367300BA2FB1 /* AddProductViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936229FC26E1367300BA2FB1 /* AddProductViewControllerFactory.swift */; };
+		936229FE26E1367300BA2FB1 /* AddProductViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936229FC26E1367300BA2FB1 /* AddProductViewControllerFactory.swift */; };
+		93622A0126E136EC00BA2FB1 /* ProductNotRegisteredRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93622A0026E136EB00BA2FB1 /* ProductNotRegisteredRouter.swift */; };
+		93622A0226E136EC00BA2FB1 /* ProductNotRegisteredRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93622A0026E136EB00BA2FB1 /* ProductNotRegisteredRouter.swift */; };
 		9381731A26D9676300B12D99 /* NewOfferButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9381731926D9676300B12D99 /* NewOfferButton.swift */; };
 		9381731B26D9676300B12D99 /* NewOfferButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9381731926D9676300B12D99 /* NewOfferButton.swift */; };
 		9381731E26D969CC00B12D99 /* AccountImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9381731D26D969CC00B12D99 /* AccountImageView.swift */; };
@@ -703,6 +707,8 @@
 		936229F226E1329900BA2FB1 /* AddProduct.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddProduct.storyboard; sourceTree = "<group>"; };
 		936229F626E1347900BA2FB1 /* AddProductImputTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductImputTableViewCell.swift; sourceTree = "<group>"; };
 		936229F726E1347900BA2FB1 /* AddProductImputTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddProductImputTableViewCell.xib; sourceTree = "<group>"; };
+		936229FC26E1367300BA2FB1 /* AddProductViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductViewControllerFactory.swift; sourceTree = "<group>"; };
+		93622A0026E136EB00BA2FB1 /* ProductNotRegisteredRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductNotRegisteredRouter.swift; sourceTree = "<group>"; };
 		9381731926D9676300B12D99 /* NewOfferButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOfferButton.swift; sourceTree = "<group>"; };
 		9381731D26D969CC00B12D99 /* AccountImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountImageView.swift; sourceTree = "<group>"; };
 		93AD24DD26BF76D80012A5CF /* AuthenticationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationModel.swift; sourceTree = "<group>"; };
@@ -1856,7 +1862,6 @@
 		936229C826E10C4900BA2FB1 /* SubViews */ = {
 			isa = PBXGroup;
 			children = (
-				936229ED26E131F500BA2FB1 /* AddProduct */,
 				936229EE26E1324D00BA2FB1 /* ProductNotRegistered */,
 			);
 			path = SubViews;
@@ -1884,6 +1889,7 @@
 			isa = PBXGroup;
 			children = (
 				936229E126E1150D00BA2FB1 /* ProductNotRegisteredByAccountViewControllerFactory.swift */,
+				936229FC26E1367300BA2FB1 /* AddProductViewControllerFactory.swift */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
@@ -1910,9 +1916,11 @@
 		936229EE26E1324D00BA2FB1 /* ProductNotRegistered */ = {
 			isa = PBXGroup;
 			children = (
+				936229FF26E136CB00BA2FB1 /* SubViews */,
 				936229E326E115B500BA2FB1 /* Cells */,
 				936229C926E10C7300BA2FB1 /* ProductNotRegisteredViewController.swift */,
 				936229CC26E10C8F00BA2FB1 /* ProductNotRegistered.storyboard */,
+				93622A0026E136EB00BA2FB1 /* ProductNotRegisteredRouter.swift */,
 			);
 			path = ProductNotRegistered;
 			sourceTree = "<group>";
@@ -1924,6 +1932,14 @@
 				936229F726E1347900BA2FB1 /* AddProductImputTableViewCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		936229FF26E136CB00BA2FB1 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				936229ED26E131F500BA2FB1 /* AddProduct */,
+			);
+			path = SubViews;
 			sourceTree = "<group>";
 		};
 		9381731C26D969AA00B12D99 /* Images */ = {
@@ -2715,10 +2731,12 @@
 				935EBE5226BDADD70006A7CA /* HomeController.swift in Sources */,
 				936229CA26E10C7300BA2FB1 /* ProductNotRegisteredViewController.swift in Sources */,
 				93CA3F2726D8018800E95FDD /* RegularLabel.swift in Sources */,
+				93622A0126E136EC00BA2FB1 /* ProductNotRegisteredRouter.swift in Sources */,
 				935EBD7726BD6A4C0006A7CA /* OnboardingRouter.swift in Sources */,
 				935EBD5826BD63670006A7CA /* UIViewExtensions.swift in Sources */,
 				935EBD6726BD63A70006A7CA /* AccountTextField.swift in Sources */,
 				93F0DE4926D6ABC500C4631C /* PriceViewController.swift in Sources */,
+				936229FD26E1367300BA2FB1 /* AddProductViewControllerFactory.swift in Sources */,
 				936229E626E115DE00BA2FB1 /* ProductNotRegisteredTableViewCell.swift in Sources */,
 				935EBD7626BD6A4C0006A7CA /* OnboardingViewController.swift in Sources */,
 				935EBD5A26BD63670006A7CA /* Responsive.swift in Sources */,
@@ -2785,6 +2803,7 @@
 				935EBE9826BDD8960006A7CA /* Storyborded.swift in Sources */,
 				935EBE7E26BDD4AC0006A7CA /* AlamofirePostAdapterFactory.swift in Sources */,
 				935EBE7326BDD47B0006A7CA /* AuthenticationHeadersFactory.swift in Sources */,
+				93622A0226E136EC00BA2FB1 /* ProductNotRegisteredRouter.swift in Sources */,
 				935EBE7226BDD47B0006A7CA /* KeychainAccessSaveSecureAdapter.swift in Sources */,
 				936229F126E1328200BA2FB1 /* AddProductViewController.swift in Sources */,
 				936229F926E1347900BA2FB1 /* AddProductImputTableViewCell.swift in Sources */,
@@ -2821,6 +2840,7 @@
 				935EBE5B26BDB0850006A7CA /* LoadScreenViewControllerFactory.swift in Sources */,
 				935EBEAB26BE26380006A7CA /* UIViewControllerExtensions.swift in Sources */,
 				935EBDC226BD830C0006A7CA /* MainQueueDispatchDecorator.swift in Sources */,
+				936229FE26E1367300BA2FB1 /* AddProductViewControllerFactory.swift in Sources */,
 				935EBE8A26BDD54C0006A7CA /* SaveCurrentAccountFactory.swift in Sources */,
 				935EBE7026BDD47B0006A7CA /* KeychainAccessRemoveSecureAdapter.swift in Sources */,
 				935EBEAF26BE26C70006A7CA /* MainFactory.swift in Sources */,
