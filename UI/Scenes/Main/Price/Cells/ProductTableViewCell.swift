@@ -21,6 +21,6 @@ public final class ProductTableViewCell: UITableViewCell {
         guard let viewModel = product else { return }
         productNameLabel.text   = viewModel.productName
         productPriceLabel.text  = viewModel.salesValeu
-        lastPurchasePrice.text  = viewModel.lastPurchasePrice
+        lastPurchasePrice.text  = (lastPurchasePrice.text?.localized())! +  viewModel.lastPurchasePrice
     }
 }

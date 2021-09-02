@@ -30,4 +30,4 @@
 "NEW_PRODUCT" = "+ Novo Produto";
 "NO_PRICE" = "Sem preço";
 "SEARCH_BY_NAME_OR_CODE" = "Buscar por nome ou código";
-"LEST_PRICE" = "Último Preço de Compra: "; 
+"LAST_PURCHASE_PRICE" = "Último preço de compra: ";
