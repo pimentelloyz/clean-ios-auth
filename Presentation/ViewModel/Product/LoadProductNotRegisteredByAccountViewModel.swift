@@ -1,5 +1,3 @@
-//
-//  LoadProductNotRegisteredByAccountViewModel.swift
 import Foundation
 import Domain
 
@@ -63,6 +61,6 @@ public struct LoadProductNotRegisteredByAccountBodyViewModel {
     }
     
     public var signatureOptions: String {
-        return "SIGNATURE_OPTIONS".lowercased()
+        return "SIGNATURE_OPTIONS"
     }
 }
