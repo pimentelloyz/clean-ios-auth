@@ -15,7 +15,8 @@ public final class PriceViewController: UIViewController, Storyboarded {
         }
     }
     public var loadProductRegisteredByAccount: ((LoadProductRegisteredByAccountRequest) -> Void)?
-    
+    public var goToProductNotRegisteredViewController: (() -> Void)?
+
     struct Storyboard {
         static let productCell = String(describing: ProductTableViewCell.self)
     }
@@ -43,6 +44,10 @@ public final class PriceViewController: UIViewController, Storyboarded {
     
     func fetchProductRegisteredByAccount() {
         loadProductRegisteredByAccount?(LoadProductRegisteredByAccountRequest(limit: 10, offSet: 0, search: "%"))
+    }
+    
+    @IBAction func addNewProductDidTap(_ sender: Any) {
+        goToProductNotRegisteredViewController?()
     }
 }
 

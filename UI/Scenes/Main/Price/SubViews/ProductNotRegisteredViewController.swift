@@ -9,26 +9,27 @@ public final class ProductNotRegisteredViewController: UIViewController, Storybo
             searchContainerView.layer.cornerRadius = 24
         }
     }
-    var viewModel: LoadProductRegisteredByAccountViewModel? {
+    var viewModel: LoadProductNotRegisteredByAccountViewModel? {
         didSet {
             tableView.reloadData()
         }
     }
-    public var loadProductRegisteredByAccount: ((LoadProductRegisteredByAccountRequest) -> Void)?
+    public var loadProductNotRegisteredByAccount: ((LoadProductNotRegisteredByAccountRequest) -> Void)?
     
     struct Storyboard {
-        static let productCell = String(describing: ProductTableViewCell.self)
+        static let productNotRegisteredTableViewCell = String(describing: ProductNotRegisteredTableViewCell.self)
     }
     
     public final override func viewDidLoad() {
         super.viewDidLoad()
         setup()
         registerNib()
-        fetchProductRegisteredByAccount()
+        fetchProductNotRegisteredByAccount()
     }
     
     func setup() {
-        navigationController?.setNavigationBarHidden(true, animated: true)
+        navigationController?.setNavigationBarHidden(false, animated: true)
+        title = "PRODUCT_NOT_REGISTERED".localized()
         view.backgroundColor = Color.backgroundPrimary
         tableView.delegate = self
         tableView.dataSource = self
@@ -37,12 +38,12 @@ public final class ProductNotRegisteredViewController: UIViewController, Storybo
     }
     
     func registerNib() {
-        let productNib = UINib(nibName: Storyboard.productCell, bundle: nil)
-        tableView.register(productNib, forCellReuseIdentifier: Storyboard.productCell)
+        let productNib = UINib(nibName: Storyboard.productNotRegisteredTableViewCell, bundle: nil)
+        tableView.register(productNib, forCellReuseIdentifier: Storyboard.productNotRegisteredTableViewCell)
     }
     
-    func fetchProductRegisteredByAccount() {
-        loadProductRegisteredByAccount?(LoadProductRegisteredByAccountRequest(limit: 10, offSet: 0, search: "%"))
+    func fetchProductNotRegisteredByAccount() {
+        loadProductNotRegisteredByAccount?(LoadProductNotRegisteredByAccountRequest(limit: 10, offSet: 0, search: "%"))
     }
 }
 
@@ -56,7 +57,7 @@ extension ProductNotRegisteredViewController: UITableViewDelegate, UITableViewDa
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: Storyboard.productCell, for: indexPath) as! ProductTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: Storyboard.productNotRegisteredTableViewCell, for: indexPath) as! ProductNotRegisteredTableViewCell
         cell.selectionStyle = .none
         let product = self.viewModel?.productByIndex(indexPath.row)
         cell.product = product
@@ -64,8 +65,8 @@ extension ProductNotRegisteredViewController: UITableViewDelegate, UITableViewDa
     }
 }
 
-extension ProductNotRegisteredViewController: LoadProductRegisteredByAccountResultViewModel {
-    public func result(_ viewModel: LoadProductRegisteredByAccountViewModel) {
+extension ProductNotRegisteredViewController: LoadProductNotRegisteredByAccountResultViewModel {
+    public func result(_ viewModel: LoadProductNotRegisteredByAccountViewModel) {
         self.viewModel = viewModel
     }
 }

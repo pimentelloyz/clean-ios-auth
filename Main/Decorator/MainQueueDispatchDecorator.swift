@@ -45,3 +45,11 @@ extension MainQueueDispatchDecorator: LoadProductRegisteredByAccount where T: Lo
         }
     }
 }
+
+extension MainQueueDispatchDecorator: LoadProductNotRegisteredByAccount where T: LoadProductNotRegisteredByAccount {
+    public func load(by params: LoadProductNotRegisteredByAccountParameters, completion: @escaping (LoadProductNotRegisteredByAccount.Result) -> Void) {
+        instance.load(by: params) { [weak self] result in
+            self?.dispatch { completion(result) }
+        }
+    }
+}

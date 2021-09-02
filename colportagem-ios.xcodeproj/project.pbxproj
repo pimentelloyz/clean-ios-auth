@@ -239,6 +239,14 @@
 		936229D726E1117600BA2FB1 /* LoadProductNotRegisteredByAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936229D626E1117600BA2FB1 /* LoadProductNotRegisteredByAccountViewModel.swift */; };
 		936229DB26E1123300BA2FB1 /* LoadProductNotRegisteredByAccountRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936229DA26E1123300BA2FB1 /* LoadProductNotRegisteredByAccountRequest.swift */; };
 		936229DD26E1126200BA2FB1 /* LoadProductNotRegisteredByAccountPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936229DC26E1126200BA2FB1 /* LoadProductNotRegisteredByAccountPresenter.swift */; };
+		936229DF26E112F000BA2FB1 /* RemoteLoadProductNotRegisteredByAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936229DE26E112F000BA2FB1 /* RemoteLoadProductNotRegisteredByAccount.swift */; };
+		936229E226E1150D00BA2FB1 /* ProductNotRegisteredByAccountViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936229E126E1150D00BA2FB1 /* ProductNotRegisteredByAccountViewControllerFactory.swift */; };
+		936229E626E115DE00BA2FB1 /* ProductNotRegisteredTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936229E426E115DE00BA2FB1 /* ProductNotRegisteredTableViewCell.swift */; };
+		936229E726E115DE00BA2FB1 /* ProductNotRegisteredTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936229E426E115DE00BA2FB1 /* ProductNotRegisteredTableViewCell.swift */; };
+		936229E826E115DE00BA2FB1 /* ProductNotRegisteredTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 936229E526E115DE00BA2FB1 /* ProductNotRegisteredTableViewCell.xib */; };
+		936229E926E115DE00BA2FB1 /* ProductNotRegisteredTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 936229E526E115DE00BA2FB1 /* ProductNotRegisteredTableViewCell.xib */; };
+		936229EB26E1184100BA2FB1 /* PriceRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936229EA26E1184100BA2FB1 /* PriceRouter.swift */; };
+		936229EC26E1184100BA2FB1 /* PriceRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936229EA26E1184100BA2FB1 /* PriceRouter.swift */; };
 		9381731A26D9676300B12D99 /* NewOfferButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9381731926D9676300B12D99 /* NewOfferButton.swift */; };
 		9381731B26D9676300B12D99 /* NewOfferButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9381731926D9676300B12D99 /* NewOfferButton.swift */; };
 		9381731E26D969CC00B12D99 /* AccountImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9381731D26D969CC00B12D99 /* AccountImageView.swift */; };
@@ -678,6 +686,11 @@
 		936229D626E1117600BA2FB1 /* LoadProductNotRegisteredByAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadProductNotRegisteredByAccountViewModel.swift; sourceTree = "<group>"; };
 		936229DA26E1123300BA2FB1 /* LoadProductNotRegisteredByAccountRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadProductNotRegisteredByAccountRequest.swift; sourceTree = "<group>"; };
 		936229DC26E1126200BA2FB1 /* LoadProductNotRegisteredByAccountPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadProductNotRegisteredByAccountPresenter.swift; sourceTree = "<group>"; };
+		936229DE26E112F000BA2FB1 /* RemoteLoadProductNotRegisteredByAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteLoadProductNotRegisteredByAccount.swift; sourceTree = "<group>"; };
+		936229E126E1150D00BA2FB1 /* ProductNotRegisteredByAccountViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductNotRegisteredByAccountViewControllerFactory.swift; sourceTree = "<group>"; };
+		936229E426E115DE00BA2FB1 /* ProductNotRegisteredTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductNotRegisteredTableViewCell.swift; sourceTree = "<group>"; };
+		936229E526E115DE00BA2FB1 /* ProductNotRegisteredTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductNotRegisteredTableViewCell.xib; sourceTree = "<group>"; };
+		936229EA26E1184100BA2FB1 /* PriceRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceRouter.swift; sourceTree = "<group>"; };
 		9381731926D9676300B12D99 /* NewOfferButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOfferButton.swift; sourceTree = "<group>"; };
 		9381731D26D969CC00B12D99 /* AccountImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountImageView.swift; sourceTree = "<group>"; };
 		93AD24DD26BF76D80012A5CF /* AuthenticationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationModel.swift; sourceTree = "<group>"; };
@@ -990,17 +1003,19 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		9348E75826DFBC9300DDF063 /* Price */ = {
+		9348E75826DFBC9300DDF063 /* Product */ = {
 			isa = PBXGroup;
 			children = (
 				9348E75926DFBDD400DDF063 /* RemoteLoadProductRegisteredByAccountFactory.swift */,
+				936229DE26E112F000BA2FB1 /* RemoteLoadProductNotRegisteredByAccount.swift */,
 			);
-			path = Price;
+			path = Product;
 			sourceTree = "<group>";
 		};
 		9348E75B26DFBEFB00DDF063 /* Price */ = {
 			isa = PBXGroup;
 			children = (
+				936229E026E114EE00BA2FB1 /* SubViews */,
 				9348E75C26DFBF0E00DDF063 /* PriceViewControllerFactory.swift */,
 			);
 			path = Price;
@@ -1780,7 +1795,7 @@
 		935EBE8226BDD4F50006A7CA /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
-				9348E75826DFBC9300DDF063 /* Price */,
+				9348E75826DFBC9300DDF063 /* Product */,
 				935EBE8326BDD5300006A7CA /* Account */,
 			);
 			path = UseCases;
@@ -1829,6 +1844,7 @@
 		936229C826E10C4900BA2FB1 /* SubViews */ = {
 			isa = PBXGroup;
 			children = (
+				936229E326E115B500BA2FB1 /* Cells */,
 				936229C926E10C7300BA2FB1 /* ProductNotRegisteredViewController.swift */,
 				936229CC26E10C8F00BA2FB1 /* ProductNotRegistered.storyboard */,
 			);
@@ -1851,6 +1867,23 @@
 				936229DC26E1126200BA2FB1 /* LoadProductNotRegisteredByAccountPresenter.swift */,
 			);
 			path = ProductNotRegisteredByAccount;
+			sourceTree = "<group>";
+		};
+		936229E026E114EE00BA2FB1 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				936229E126E1150D00BA2FB1 /* ProductNotRegisteredByAccountViewControllerFactory.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		936229E326E115B500BA2FB1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				936229E426E115DE00BA2FB1 /* ProductNotRegisteredTableViewCell.swift */,
+				936229E526E115DE00BA2FB1 /* ProductNotRegisteredTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		9381731C26D969AA00B12D99 /* Images */ = {
@@ -1903,6 +1936,7 @@
 				93CA3F2D26D809B400E95FDD /* Cells */,
 				93F0DE4526D6ABB600C4631C /* Price.storyboard */,
 				93F0DE4826D6ABC500C4631C /* PriceViewController.swift */,
+				936229EA26E1184100BA2FB1 /* PriceRouter.swift */,
 			);
 			path = Price;
 			sourceTree = "<group>";
@@ -2402,6 +2436,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				935EBD7326BD6A260006A7CA /* Onboarding.storyboard in Resources */,
+				936229E826E115DE00BA2FB1 /* ProductNotRegisteredTableViewCell.xib in Resources */,
 				935EBD3E26BD525C0006A7CA /* Montserrat-Regular.ttf in Resources */,
 				935EBE5026BDADC90006A7CA /* Home.storyboard in Resources */,
 				935EBD3C26BD525C0006A7CA /* Montserrat-Medium.ttf in Resources */,
@@ -2443,6 +2478,7 @@
 				935EBEB126BE26E20006A7CA /* Color.xcassets in Resources */,
 				93F0DE4E26D6AF6300C4631C /* Offer.storyboard in Resources */,
 				935EBE6426BDB0C60006A7CA /* LoadScreen.storyboard in Resources */,
+				936229E926E115DE00BA2FB1 /* ProductNotRegisteredTableViewCell.xib in Resources */,
 				935EBE5326BDAEB00006A7CA /* Home.storyboard in Resources */,
 				935EBEB026BE26DE0006A7CA /* Image.xcassets in Resources */,
 				935EBD9226BD82660006A7CA /* Assets.xcassets in Resources */,
@@ -2639,6 +2675,7 @@
 				935EBD5826BD63670006A7CA /* UIViewExtensions.swift in Sources */,
 				935EBD6726BD63A70006A7CA /* AccountTextField.swift in Sources */,
 				93F0DE4926D6ABC500C4631C /* PriceViewController.swift in Sources */,
+				936229E626E115DE00BA2FB1 /* ProductNotRegisteredTableViewCell.swift in Sources */,
 				935EBD7626BD6A4C0006A7CA /* OnboardingViewController.swift in Sources */,
 				935EBD5A26BD63670006A7CA /* Responsive.swift in Sources */,
 				935EBD5526BD63670006A7CA /* Font.swift in Sources */,
@@ -2653,6 +2690,7 @@
 				935EBD5B26BD63670006A7CA /* Color.swift in Sources */,
 				9381731E26D969CC00B12D99 /* AccountImageView.swift in Sources */,
 				93CA3F3026D80B8700E95FDD /* ProductTableViewCell.swift in Sources */,
+				936229EB26E1184100BA2FB1 /* PriceRouter.swift in Sources */,
 				935EBD6026BD63980006A7CA /* HeaderPrimary.swift in Sources */,
 				935EBE6126BDB0C10006A7CA /* LoadScreenViewController.swift in Sources */,
 				935EBD6926BD63A70006A7CA /* ButtonSeccoundary.swift in Sources */,
@@ -2680,9 +2718,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				936229E226E1150D00BA2FB1 /* ProductNotRegisteredByAccountViewControllerFactory.swift in Sources */,
 				935EBDC526BD83250006A7CA /* ValidationBuilder.swift in Sources */,
 				935EBEA926BE26230006A7CA /* Responsive.swift in Sources */,
 				935EBEB626BE2B350006A7CA /* NavigationController.swift in Sources */,
+				936229EC26E1184100BA2FB1 /* PriceRouter.swift in Sources */,
 				93ED03D826DFAEE200E7636C /* HomeControllerFactory.swift in Sources */,
 				935EBE7D26BDD4AC0006A7CA /* AlamofireGetAdapterFactory.swift in Sources */,
 				935EBE9026BDD6DE0006A7CA /* FacebookAuthAdapterFactory.swift in Sources */,
@@ -2736,10 +2776,12 @@
 				935EBE8A26BDD54C0006A7CA /* SaveCurrentAccountFactory.swift in Sources */,
 				935EBE7026BDD47B0006A7CA /* KeychainAccessRemoveSecureAdapter.swift in Sources */,
 				935EBEAF26BE26C70006A7CA /* MainFactory.swift in Sources */,
+				936229E726E115DE00BA2FB1 /* ProductNotRegisteredTableViewCell.swift in Sources */,
 				935EBD8B26BD82610006A7CA /* SceneDelegate.swift in Sources */,
 				93AD24F926BFC3500012A5CF /* SocialMicrosoftAuthenticationFactory.swift in Sources */,
 				935EBEA826BE26230006A7CA /* Font.swift in Sources */,
 				935EBE8826BDD54C0006A7CA /* LoadCurrentAccountFactory.swift in Sources */,
+				936229DF26E112F000BA2FB1 /* RemoteLoadProductNotRegisteredByAccount.swift in Sources */,
 				93CA3F2826D8018B00E95FDD /* RegularLabel.swift in Sources */,
 				935EBEA626BE26080006A7CA /* Stringi18nExtension.swift in Sources */,
 				9348E75A26DFBDD400DDF063 /* RemoteLoadProductRegisteredByAccountFactory.swift in Sources */,

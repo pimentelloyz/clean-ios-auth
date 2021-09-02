@@ -31,3 +31,5 @@
 "NO_PRICE" = "No Price";
 "SEARCH_BY_NAME_OR_CODE" = "Search by name or code";
 "LAST_PURCHASE_PRICE" = "Last purchase price: ";
+"SIGNATURE_OPTIONS" = "12, 24, 36 months";
+"PRODUCT_NOT_REGISTERED" = "Products not registered";

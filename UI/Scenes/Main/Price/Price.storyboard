@@ -28,6 +28,9 @@
                                 <state key="normal" title="NEW_PRODUCT">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="addNewProductDidTap:" destination="yO9-Sq-KBd" eventType="touchUpInside" id="YjK-pq-SOn"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="NYV-FB-g5T">
                                 <rect key="frame" x="24" y="68.5" width="141.5" height="31"/>
