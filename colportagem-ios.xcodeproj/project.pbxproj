@@ -259,6 +259,19 @@
 		936229FE26E1367300BA2FB1 /* AddProductViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936229FC26E1367300BA2FB1 /* AddProductViewControllerFactory.swift */; };
 		93622A0126E136EC00BA2FB1 /* ProductNotRegisteredRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93622A0026E136EB00BA2FB1 /* ProductNotRegisteredRouter.swift */; };
 		93622A0226E136EC00BA2FB1 /* ProductNotRegisteredRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93622A0026E136EB00BA2FB1 /* ProductNotRegisteredRouter.swift */; };
+		93622A0426E139D800BA2FB1 /* SaveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93622A0326E139D800BA2FB1 /* SaveButton.swift */; };
+		93622A0526E139D800BA2FB1 /* SaveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93622A0326E139D800BA2FB1 /* SaveButton.swift */; };
+		93622A0726E139EF00BA2FB1 /* CancelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93622A0626E139EF00BA2FB1 /* CancelButton.swift */; };
+		93622A0826E139EF00BA2FB1 /* CancelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93622A0626E139EF00BA2FB1 /* CancelButton.swift */; };
+		93622A0926E13CCF00BA2FB1 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 935EBD3426BD525C0006A7CA /* Montserrat-Light.ttf */; };
+		93622A0A26E13CCF00BA2FB1 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 935EBD3A26BD525C0006A7CA /* Montserrat-Bold.ttf */; };
+		93622A0B26E13CCF00BA2FB1 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 935EBD3826BD525C0006A7CA /* Montserrat-SemiBold.ttf */; };
+		93622A0C26E13CCF00BA2FB1 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 935EBD3526BD525C0006A7CA /* Montserrat-Medium.ttf */; };
+		93622A0D26E13CCF00BA2FB1 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 935EBD3726BD525C0006A7CA /* Montserrat-Regular.ttf */; };
+		93622A0E26E13CCF00BA2FB1 /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 935EBD3626BD525C0006A7CA /* Montserrat-Black.ttf */; };
+		93622A0F26E13CCF00BA2FB1 /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 935EBD3926BD525C0006A7CA /* Montserrat-Thin.ttf */; };
+		93622A1126E13F7800BA2FB1 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93622A1026E13F7800BA2FB1 /* FontExtension.swift */; };
+		93622A1226E13F7800BA2FB1 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93622A1026E13F7800BA2FB1 /* FontExtension.swift */; };
 		9381731A26D9676300B12D99 /* NewOfferButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9381731926D9676300B12D99 /* NewOfferButton.swift */; };
 		9381731B26D9676300B12D99 /* NewOfferButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9381731926D9676300B12D99 /* NewOfferButton.swift */; };
 		9381731E26D969CC00B12D99 /* AccountImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9381731D26D969CC00B12D99 /* AccountImageView.swift */; };
@@ -709,6 +722,9 @@
 		936229F726E1347900BA2FB1 /* AddProductImputTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddProductImputTableViewCell.xib; sourceTree = "<group>"; };
 		936229FC26E1367300BA2FB1 /* AddProductViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductViewControllerFactory.swift; sourceTree = "<group>"; };
 		93622A0026E136EB00BA2FB1 /* ProductNotRegisteredRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductNotRegisteredRouter.swift; sourceTree = "<group>"; };
+		93622A0326E139D800BA2FB1 /* SaveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveButton.swift; sourceTree = "<group>"; };
+		93622A0626E139EF00BA2FB1 /* CancelButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelButton.swift; sourceTree = "<group>"; };
+		93622A1026E13F7800BA2FB1 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
 		9381731926D9676300B12D99 /* NewOfferButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOfferButton.swift; sourceTree = "<group>"; };
 		9381731D26D969CC00B12D99 /* AccountImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountImageView.swift; sourceTree = "<group>"; };
 		93AD24DD26BF76D80012A5CF /* AuthenticationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationModel.swift; sourceTree = "<group>"; };
@@ -1440,6 +1456,7 @@
 				935EBD5126BD63670006A7CA /* UIColorExtensions.swift */,
 				935EBD4E26BD63660006A7CA /* UIViewControllerExtensions.swift */,
 				935EBD5026BD63670006A7CA /* UIViewExtensions.swift */,
+				93622A1026E13F7800BA2FB1 /* FontExtension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -1955,6 +1972,8 @@
 			children = (
 				935EBD6326BD63A60006A7CA /* ButtonPrimary.swift */,
 				9381731926D9676300B12D99 /* NewOfferButton.swift */,
+				93622A0326E139D800BA2FB1 /* SaveButton.swift */,
+				93622A0626E139EF00BA2FB1 /* CancelButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -2527,8 +2546,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93622A0F26E13CCF00BA2FB1 /* Montserrat-Thin.ttf in Resources */,
+				93622A0A26E13CCF00BA2FB1 /* Montserrat-Bold.ttf in Resources */,
 				935EBE9726BDD8690006A7CA /* Login.storyboard in Resources */,
+				93622A0D26E13CCF00BA2FB1 /* Montserrat-Regular.ttf in Resources */,
 				935EBDBB26BD82E00006A7CA /* Debug.xcconfig in Resources */,
+				93622A0B26E13CCF00BA2FB1 /* Montserrat-SemiBold.ttf in Resources */,
 				935EBD9526BD82660006A7CA /* LaunchScreen.storyboard in Resources */,
 				93CA3F3326D80B8700E95FDD /* ProductTableViewCell.xib in Resources */,
 				935EBE0426BDA5090006A7CA /* GoogleService-Info.plist in Resources */,
@@ -2541,9 +2564,12 @@
 				935EBE5326BDAEB00006A7CA /* Home.storyboard in Resources */,
 				935EBEB026BE26DE0006A7CA /* Image.xcassets in Resources */,
 				935EBD9226BD82660006A7CA /* Assets.xcassets in Resources */,
+				93622A0E26E13CCF00BA2FB1 /* Montserrat-Black.ttf in Resources */,
 				936229F426E1329900BA2FB1 /* AddProduct.storyboard in Resources */,
 				93F0DE4726D6ABB600C4631C /* Price.storyboard in Resources */,
+				93622A0926E13CCF00BA2FB1 /* Montserrat-Light.ttf in Resources */,
 				936229CE26E10C8F00BA2FB1 /* ProductNotRegistered.storyboard in Resources */,
+				93622A0C26E13CCF00BA2FB1 /* Montserrat-Medium.ttf in Resources */,
 				935EBDBC26BD82E00006A7CA /* Release.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2734,6 +2760,7 @@
 				93622A0126E136EC00BA2FB1 /* ProductNotRegisteredRouter.swift in Sources */,
 				935EBD7726BD6A4C0006A7CA /* OnboardingRouter.swift in Sources */,
 				935EBD5826BD63670006A7CA /* UIViewExtensions.swift in Sources */,
+				93622A0426E139D800BA2FB1 /* SaveButton.swift in Sources */,
 				935EBD6726BD63A70006A7CA /* AccountTextField.swift in Sources */,
 				93F0DE4926D6ABC500C4631C /* PriceViewController.swift in Sources */,
 				936229FD26E1367300BA2FB1 /* AddProductViewControllerFactory.swift in Sources */,
@@ -2754,6 +2781,7 @@
 				936229F026E1328200BA2FB1 /* AddProductViewController.swift in Sources */,
 				9381731E26D969CC00B12D99 /* AccountImageView.swift in Sources */,
 				93CA3F3026D80B8700E95FDD /* ProductTableViewCell.swift in Sources */,
+				93622A0726E139EF00BA2FB1 /* CancelButton.swift in Sources */,
 				936229EB26E1184100BA2FB1 /* PriceRouter.swift in Sources */,
 				935EBD6026BD63980006A7CA /* HeaderPrimary.swift in Sources */,
 				935EBE6126BDB0C10006A7CA /* LoadScreenViewController.swift in Sources */,
@@ -2766,6 +2794,7 @@
 				935EBD5626BD63670006A7CA /* UIViewControllerExtensions.swift in Sources */,
 				935EBD6126BD63980006A7CA /* TextLabelPrimary.swift in Sources */,
 				935EBD8026BD6AE10006A7CA /* LoginRouter.swift in Sources */,
+				93622A1126E13F7800BA2FB1 /* FontExtension.swift in Sources */,
 				935EBD5426BD63670006A7CA /* Storyborded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2788,6 +2817,7 @@
 				935EBEB626BE2B350006A7CA /* NavigationController.swift in Sources */,
 				936229EC26E1184100BA2FB1 /* PriceRouter.swift in Sources */,
 				93ED03D826DFAEE200E7636C /* HomeControllerFactory.swift in Sources */,
+				93622A1226E13F7800BA2FB1 /* FontExtension.swift in Sources */,
 				935EBE7D26BDD4AC0006A7CA /* AlamofireGetAdapterFactory.swift in Sources */,
 				935EBE9026BDD6DE0006A7CA /* FacebookAuthAdapterFactory.swift in Sources */,
 				935EBEAC26BE26420006A7CA /* UIViewExtensions.swift in Sources */,
@@ -2808,6 +2838,7 @@
 				936229F126E1328200BA2FB1 /* AddProductViewController.swift in Sources */,
 				936229F926E1347900BA2FB1 /* AddProductImputTableViewCell.swift in Sources */,
 				935EBE6326BDB0C60006A7CA /* LoadScreenViewController.swift in Sources */,
+				93622A0526E139D800BA2FB1 /* SaveButton.swift in Sources */,
 				93F0DE5126D6AF7500C4631C /* OfferViewController.swift in Sources */,
 				935EBEBB26BE2B3D0006A7CA /* TextLabelPrimary.swift in Sources */,
 				935EBEAA26BE262C0006A7CA /* UIColorExtensions.swift in Sources */,
@@ -2840,6 +2871,7 @@
 				935EBE5B26BDB0850006A7CA /* LoadScreenViewControllerFactory.swift in Sources */,
 				935EBEAB26BE26380006A7CA /* UIViewControllerExtensions.swift in Sources */,
 				935EBDC226BD830C0006A7CA /* MainQueueDispatchDecorator.swift in Sources */,
+				93622A0826E139EF00BA2FB1 /* CancelButton.swift in Sources */,
 				936229FE26E1367300BA2FB1 /* AddProductViewControllerFactory.swift in Sources */,
 				935EBE8A26BDD54C0006A7CA /* SaveCurrentAccountFactory.swift in Sources */,
 				935EBE7026BDD47B0006A7CA /* KeychainAccessRemoveSecureAdapter.swift in Sources */,

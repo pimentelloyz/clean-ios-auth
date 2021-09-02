@@ -33,3 +33,5 @@
 "LAST_PURCHASE_PRICE" = "Last purchase price: ";
 "SIGNATURE_OPTIONS" = "12, 24, 36 months";
 "PRODUCT_NOT_REGISTERED" = "Products not registered";
+"SAVE_BUTTON" = "Save";
+"CLOSE_BUTTON" = "Close";

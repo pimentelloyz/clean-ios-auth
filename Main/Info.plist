@@ -20,6 +20,16 @@
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
+    <key>UIAppFonts</key>
+    <array>
+        <string>Montserrat-SemiBold.ttf</string>
+        <string>Montserrat-Thin.ttf</string>
+        <string>Montserrat-Medium.ttf</string>
+        <string>Montserrat-Black.ttf</string>
+        <string>Montserrat-Light.ttf</string>
+        <string>Montserrat-Bold.ttf</string>
+        <string>Montserrat-Regular.ttf</string>
+    </array>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
