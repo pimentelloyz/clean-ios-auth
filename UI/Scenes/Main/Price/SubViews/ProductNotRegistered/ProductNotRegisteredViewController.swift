@@ -28,7 +28,6 @@ public final class ProductNotRegisteredViewController: UIViewController, Storybo
     }
     
     func setup() {
-        navigationController?.setNavigationBarHidden(false, animated: true)
         title = "PRODUCT_NOT_REGISTERED".localized()
         view.backgroundColor = Color.backgroundPrimary
         tableView.delegate = self

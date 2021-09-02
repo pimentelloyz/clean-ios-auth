@@ -247,6 +247,14 @@
 		936229E926E115DE00BA2FB1 /* ProductNotRegisteredTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 936229E526E115DE00BA2FB1 /* ProductNotRegisteredTableViewCell.xib */; };
 		936229EB26E1184100BA2FB1 /* PriceRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936229EA26E1184100BA2FB1 /* PriceRouter.swift */; };
 		936229EC26E1184100BA2FB1 /* PriceRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936229EA26E1184100BA2FB1 /* PriceRouter.swift */; };
+		936229F026E1328200BA2FB1 /* AddProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936229EF26E1328200BA2FB1 /* AddProductViewController.swift */; };
+		936229F126E1328200BA2FB1 /* AddProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936229EF26E1328200BA2FB1 /* AddProductViewController.swift */; };
+		936229F326E1329900BA2FB1 /* AddProduct.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 936229F226E1329900BA2FB1 /* AddProduct.storyboard */; };
+		936229F426E1329900BA2FB1 /* AddProduct.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 936229F226E1329900BA2FB1 /* AddProduct.storyboard */; };
+		936229F826E1347900BA2FB1 /* AddProductImputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936229F626E1347900BA2FB1 /* AddProductImputTableViewCell.swift */; };
+		936229F926E1347900BA2FB1 /* AddProductImputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936229F626E1347900BA2FB1 /* AddProductImputTableViewCell.swift */; };
+		936229FA26E1347900BA2FB1 /* AddProductImputTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 936229F726E1347900BA2FB1 /* AddProductImputTableViewCell.xib */; };
+		936229FB26E1347900BA2FB1 /* AddProductImputTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 936229F726E1347900BA2FB1 /* AddProductImputTableViewCell.xib */; };
 		9381731A26D9676300B12D99 /* NewOfferButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9381731926D9676300B12D99 /* NewOfferButton.swift */; };
 		9381731B26D9676300B12D99 /* NewOfferButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9381731926D9676300B12D99 /* NewOfferButton.swift */; };
 		9381731E26D969CC00B12D99 /* AccountImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9381731D26D969CC00B12D99 /* AccountImageView.swift */; };
@@ -691,6 +699,10 @@
 		936229E426E115DE00BA2FB1 /* ProductNotRegisteredTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductNotRegisteredTableViewCell.swift; sourceTree = "<group>"; };
 		936229E526E115DE00BA2FB1 /* ProductNotRegisteredTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductNotRegisteredTableViewCell.xib; sourceTree = "<group>"; };
 		936229EA26E1184100BA2FB1 /* PriceRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceRouter.swift; sourceTree = "<group>"; };
+		936229EF26E1328200BA2FB1 /* AddProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductViewController.swift; sourceTree = "<group>"; };
+		936229F226E1329900BA2FB1 /* AddProduct.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddProduct.storyboard; sourceTree = "<group>"; };
+		936229F626E1347900BA2FB1 /* AddProductImputTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductImputTableViewCell.swift; sourceTree = "<group>"; };
+		936229F726E1347900BA2FB1 /* AddProductImputTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddProductImputTableViewCell.xib; sourceTree = "<group>"; };
 		9381731926D9676300B12D99 /* NewOfferButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOfferButton.swift; sourceTree = "<group>"; };
 		9381731D26D969CC00B12D99 /* AccountImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountImageView.swift; sourceTree = "<group>"; };
 		93AD24DD26BF76D80012A5CF /* AuthenticationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationModel.swift; sourceTree = "<group>"; };
@@ -1844,9 +1856,8 @@
 		936229C826E10C4900BA2FB1 /* SubViews */ = {
 			isa = PBXGroup;
 			children = (
-				936229E326E115B500BA2FB1 /* Cells */,
-				936229C926E10C7300BA2FB1 /* ProductNotRegisteredViewController.swift */,
-				936229CC26E10C8F00BA2FB1 /* ProductNotRegistered.storyboard */,
+				936229ED26E131F500BA2FB1 /* AddProduct */,
+				936229EE26E1324D00BA2FB1 /* ProductNotRegistered */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
@@ -1882,6 +1893,35 @@
 			children = (
 				936229E426E115DE00BA2FB1 /* ProductNotRegisteredTableViewCell.swift */,
 				936229E526E115DE00BA2FB1 /* ProductNotRegisteredTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		936229ED26E131F500BA2FB1 /* AddProduct */ = {
+			isa = PBXGroup;
+			children = (
+				936229F526E1345F00BA2FB1 /* Cells */,
+				936229EF26E1328200BA2FB1 /* AddProductViewController.swift */,
+				936229F226E1329900BA2FB1 /* AddProduct.storyboard */,
+			);
+			path = AddProduct;
+			sourceTree = "<group>";
+		};
+		936229EE26E1324D00BA2FB1 /* ProductNotRegistered */ = {
+			isa = PBXGroup;
+			children = (
+				936229E326E115B500BA2FB1 /* Cells */,
+				936229C926E10C7300BA2FB1 /* ProductNotRegisteredViewController.swift */,
+				936229CC26E10C8F00BA2FB1 /* ProductNotRegistered.storyboard */,
+			);
+			path = ProductNotRegistered;
+			sourceTree = "<group>";
+		};
+		936229F526E1345F00BA2FB1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				936229F626E1347900BA2FB1 /* AddProductImputTableViewCell.swift */,
+				936229F726E1347900BA2FB1 /* AddProductImputTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -2449,10 +2489,12 @@
 				935EBD7D26BD6AD20006A7CA /* Login.storyboard in Resources */,
 				93F0DE4626D6ABB600C4631C /* Price.storyboard in Resources */,
 				93F0DE4D26D6AF6300C4631C /* Offer.storyboard in Resources */,
+				936229FA26E1347900BA2FB1 /* AddProductImputTableViewCell.xib in Resources */,
 				935EBEA226BE25BB0006A7CA /* Localizable.strings in Resources */,
 				935EBD4A26BD53660006A7CA /* Image.xcassets in Resources */,
 				936229CD26E10C8F00BA2FB1 /* ProductNotRegistered.storyboard in Resources */,
 				935EBD4126BD525C0006A7CA /* Montserrat-Bold.ttf in Resources */,
+				936229F326E1329900BA2FB1 /* AddProduct.storyboard in Resources */,
 				935EBD4826BD53370006A7CA /* Color.xcassets in Resources */,
 				935EBE5626BDAEFB0006A7CA /* Settings.storyboard in Resources */,
 			);
@@ -2475,6 +2517,7 @@
 				93CA3F3326D80B8700E95FDD /* ProductTableViewCell.xib in Resources */,
 				935EBE0426BDA5090006A7CA /* GoogleService-Info.plist in Resources */,
 				935EBEA326BE25BB0006A7CA /* Localizable.strings in Resources */,
+				936229FB26E1347900BA2FB1 /* AddProductImputTableViewCell.xib in Resources */,
 				935EBEB126BE26E20006A7CA /* Color.xcassets in Resources */,
 				93F0DE4E26D6AF6300C4631C /* Offer.storyboard in Resources */,
 				935EBE6426BDB0C60006A7CA /* LoadScreen.storyboard in Resources */,
@@ -2482,6 +2525,7 @@
 				935EBE5326BDAEB00006A7CA /* Home.storyboard in Resources */,
 				935EBEB026BE26DE0006A7CA /* Image.xcassets in Resources */,
 				935EBD9226BD82660006A7CA /* Assets.xcassets in Resources */,
+				936229F426E1329900BA2FB1 /* AddProduct.storyboard in Resources */,
 				93F0DE4726D6ABB600C4631C /* Price.storyboard in Resources */,
 				936229CE26E10C8F00BA2FB1 /* ProductNotRegistered.storyboard in Resources */,
 				935EBDBC26BD82E00006A7CA /* Release.xcconfig in Resources */,
@@ -2680,6 +2724,7 @@
 				935EBD5A26BD63670006A7CA /* Responsive.swift in Sources */,
 				935EBD5526BD63670006A7CA /* Font.swift in Sources */,
 				9381731A26D9676300B12D99 /* NewOfferButton.swift in Sources */,
+				936229F826E1347900BA2FB1 /* AddProductImputTableViewCell.swift in Sources */,
 				93CA3F3B26D80F9A00E95FDD /* BoldLabel.swift in Sources */,
 				935EBD7B26BD6AAF0006A7CA /* GoogleButton.swift in Sources */,
 				935EBD5926BD63670006A7CA /* UIColorExtensions.swift in Sources */,
@@ -2688,6 +2733,7 @@
 				935EBD6826BD63A70006A7CA /* ButtonPrimary.swift in Sources */,
 				935EBD6B26BD63A70006A7CA /* NavigationController.swift in Sources */,
 				935EBD5B26BD63670006A7CA /* Color.swift in Sources */,
+				936229F026E1328200BA2FB1 /* AddProductViewController.swift in Sources */,
 				9381731E26D969CC00B12D99 /* AccountImageView.swift in Sources */,
 				93CA3F3026D80B8700E95FDD /* ProductTableViewCell.swift in Sources */,
 				936229EB26E1184100BA2FB1 /* PriceRouter.swift in Sources */,
@@ -2740,6 +2786,8 @@
 				935EBE7E26BDD4AC0006A7CA /* AlamofirePostAdapterFactory.swift in Sources */,
 				935EBE7326BDD47B0006A7CA /* AuthenticationHeadersFactory.swift in Sources */,
 				935EBE7226BDD47B0006A7CA /* KeychainAccessSaveSecureAdapter.swift in Sources */,
+				936229F126E1328200BA2FB1 /* AddProductViewController.swift in Sources */,
+				936229F926E1347900BA2FB1 /* AddProductImputTableViewCell.swift in Sources */,
 				935EBE6326BDB0C60006A7CA /* LoadScreenViewController.swift in Sources */,
 				93F0DE5126D6AF7500C4631C /* OfferViewController.swift in Sources */,
 				935EBEBB26BE2B3D0006A7CA /* TextLabelPrimary.swift in Sources */,
