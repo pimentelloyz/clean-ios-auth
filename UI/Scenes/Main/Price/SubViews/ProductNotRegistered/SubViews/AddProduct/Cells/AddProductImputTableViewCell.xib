@@ -17,14 +17,17 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="93"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y5F-S6-CKc" customClass="HeaderPrimary" customModule="Main" customModuleProvider="target">
-                        <rect key="frame" x="24" y="18" width="272" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y5F-S6-CKc" customClass="BoldLabel" customModule="Main" customModuleProvider="target">
+                        <rect key="frame" x="24" y="18" width="272" height="13"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ywe-fN-Q65">
-                        <rect key="frame" x="24" y="47" width="272" height="34"/>
+                        <rect key="frame" x="24" y="39" width="272" height="42"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="42" id="DRh-Uc-5c1"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits"/>
                     </textField>

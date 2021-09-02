@@ -272,6 +272,8 @@
 		93622A0F26E13CCF00BA2FB1 /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 935EBD3926BD525C0006A7CA /* Montserrat-Thin.ttf */; };
 		93622A1126E13F7800BA2FB1 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93622A1026E13F7800BA2FB1 /* FontExtension.swift */; };
 		93622A1226E13F7800BA2FB1 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93622A1026E13F7800BA2FB1 /* FontExtension.swift */; };
+		93622A1526E1441B00BA2FB1 /* ProductLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93622A1426E1441B00BA2FB1 /* ProductLabel.swift */; };
+		93622A1626E1441B00BA2FB1 /* ProductLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93622A1426E1441B00BA2FB1 /* ProductLabel.swift */; };
 		9381731A26D9676300B12D99 /* NewOfferButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9381731926D9676300B12D99 /* NewOfferButton.swift */; };
 		9381731B26D9676300B12D99 /* NewOfferButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9381731926D9676300B12D99 /* NewOfferButton.swift */; };
 		9381731E26D969CC00B12D99 /* AccountImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9381731D26D969CC00B12D99 /* AccountImageView.swift */; };
@@ -725,6 +727,7 @@
 		93622A0326E139D800BA2FB1 /* SaveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveButton.swift; sourceTree = "<group>"; };
 		93622A0626E139EF00BA2FB1 /* CancelButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelButton.swift; sourceTree = "<group>"; };
 		93622A1026E13F7800BA2FB1 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
+		93622A1426E1441B00BA2FB1 /* ProductLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductLabel.swift; sourceTree = "<group>"; };
 		9381731926D9676300B12D99 /* NewOfferButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOfferButton.swift; sourceTree = "<group>"; };
 		9381731D26D969CC00B12D99 /* AccountImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountImageView.swift; sourceTree = "<group>"; };
 		93AD24DD26BF76D80012A5CF /* AuthenticationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationModel.swift; sourceTree = "<group>"; };
@@ -1923,6 +1926,7 @@
 		936229ED26E131F500BA2FB1 /* AddProduct */ = {
 			isa = PBXGroup;
 			children = (
+				93622A1326E1441000BA2FB1 /* Components */,
 				936229F526E1345F00BA2FB1 /* Cells */,
 				936229EF26E1328200BA2FB1 /* AddProductViewController.swift */,
 				936229F226E1329900BA2FB1 /* AddProduct.storyboard */,
@@ -1957,6 +1961,14 @@
 				936229ED26E131F500BA2FB1 /* AddProduct */,
 			);
 			path = SubViews;
+			sourceTree = "<group>";
+		};
+		93622A1326E1441000BA2FB1 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				93622A1426E1441B00BA2FB1 /* ProductLabel.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		9381731C26D969AA00B12D99 /* Images */ = {
@@ -2768,6 +2780,7 @@
 				935EBD7626BD6A4C0006A7CA /* OnboardingViewController.swift in Sources */,
 				935EBD5A26BD63670006A7CA /* Responsive.swift in Sources */,
 				935EBD5526BD63670006A7CA /* Font.swift in Sources */,
+				93622A1526E1441B00BA2FB1 /* ProductLabel.swift in Sources */,
 				9381731A26D9676300B12D99 /* NewOfferButton.swift in Sources */,
 				936229F826E1347900BA2FB1 /* AddProductImputTableViewCell.swift in Sources */,
 				93CA3F3B26D80F9A00E95FDD /* BoldLabel.swift in Sources */,
@@ -2864,6 +2877,7 @@
 				936229CB26E10C7600BA2FB1 /* ProductNotRegisteredViewController.swift in Sources */,
 				935EBE8D26BDD6B00006A7CA /* SocialFecebookAuthenticationFactory.swift in Sources */,
 				93AD24F726BFC30F0012A5CF /* MicrosoftAuthAdapterFactory.swift in Sources */,
+				93622A1626E1441B00BA2FB1 /* ProductLabel.swift in Sources */,
 				93CA3F2C26D808A600E95FDD /* SearchTextField.swift in Sources */,
 				935EBE8B26BDD54C0006A7CA /* RemoteGenerateTokenFactory.swift in Sources */,
 				93CA3F3126D80B8700E95FDD /* ProductTableViewCell.swift in Sources */,

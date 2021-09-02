@@ -28,6 +28,13 @@ public class AddProductViewController: UIViewController, Storyboarded {
         tableView.backgroundColor = Color.backgroundPrimary
         tableView.separatorStyle = .none
     }
+    
+    @IBAction func closeDidTap(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func saveProductDidTap(_ sender: Any) {
+    }
 }
 
 extension AddProductViewController: UITableViewDelegate, UITableViewDataSource {

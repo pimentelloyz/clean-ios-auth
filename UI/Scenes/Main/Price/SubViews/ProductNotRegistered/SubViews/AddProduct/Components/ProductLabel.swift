@@ -1,6 +1,6 @@
 import UIKit
 
-class BoldLabel: UILabel {
+class ProductLabel: UILabel {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.setup()
@@ -11,7 +11,7 @@ class BoldLabel: UILabel {
     }
     
     private func setup() {
-        font = MainFont.bold.with(size: Responsive.of().ip(1.8).inch)
+        font = MainFont.semiBold.with(size: Responsive.of().ip(2).inch)
         textColor = Color.textBlack
         text = text?.localized()
     }

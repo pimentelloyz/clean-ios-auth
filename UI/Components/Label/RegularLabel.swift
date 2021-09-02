@@ -11,7 +11,7 @@ class RegularLabel: UILabel {
     }
     
     private func setup() {
-        font = MainFont.regular.with(size: Responsive.of().ip(2).inch)
+        font = MainFont.regular.with(size: Responsive.of().ip(1.8).inch)
         textColor = Color.textGray
         text = text?.localized()
     }
