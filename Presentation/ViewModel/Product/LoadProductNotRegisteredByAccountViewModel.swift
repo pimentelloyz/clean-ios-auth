@@ -42,11 +42,27 @@ public struct LoadProductNotRegisteredByAccountBodyViewModel {
         return self.body?.productName ?? ""
     }
     
+    public var productCode: String {
+        return self.body?.productCode ?? ""
+    }
+    
+    public var codeAndNameProduct: String {
+        return self.productCode + " - " + self.productName
+    }
+    
     public var salesValeu: String {
         return "\(self.body?.salesValue ?? 00.0)"
     }
     
     public var lastPurchasePrice: String {
         return "\(self.body?.lastPurchasePrice ?? 00.0)"
+    }
+    
+    public var isSignature: Bool {
+        return self.body?.productSignature ?? false
+    }
+    
+    public var signatureOptions: String {
+        return "SIGNATURE_OPTIONS".lowercased()
     }
 }

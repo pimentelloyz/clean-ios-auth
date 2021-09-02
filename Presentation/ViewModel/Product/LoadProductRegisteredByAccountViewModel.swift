@@ -48,6 +48,10 @@ public struct LoadProductRegisteredByAccountBodyViewModel {
         return self.body?.productCode ?? "000"
     }
     
+    public var codeAndNameProduct: String {
+        return self.productCode + " - " + self.productName
+    }
+    
     public var signatures: [SignatureValue]? {
         return self.body?.signatures
     }

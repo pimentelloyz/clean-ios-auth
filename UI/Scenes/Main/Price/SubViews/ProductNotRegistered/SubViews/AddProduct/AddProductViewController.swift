@@ -1,18 +1,23 @@
 import Foundation
 import UIKit
+import Presentation
 
 public class AddProductViewController: UIViewController, Storyboarded {
+    @IBOutlet weak var productNameLabel: ProductLabel!
+    @IBOutlet weak var monthsCountLabel: RegularLabel!
     @IBOutlet weak var tableView: UITableView!
     
     struct Storyboard {
         static let addProductImputTableViewCell = String(describing: AddProductImputTableViewCell.self)
     }
+    public var productViewModel: LoadProductNotRegisteredByAccountBodyViewModel?
     
     public final override func viewDidLoad() {
         super.viewDidLoad()
         setup()
         registerNib()
         tableView.reloadData()
+        updateUI()
     }
 
     func registerNib() {
@@ -27,6 +32,12 @@ public class AddProductViewController: UIViewController, Storyboarded {
         tableView.dataSource = self
         tableView.backgroundColor = Color.backgroundPrimary
         tableView.separatorStyle = .none
+    }
+    
+    func updateUI() {
+        guard let product = productViewModel else { return }
+        productNameLabel.text = product.codeAndNameProduct
+        monthsCountLabel.text = product.isSignature ? product.signatureOptions : ""
     }
     
     @IBAction func closeDidTap(_ sender: Any) {

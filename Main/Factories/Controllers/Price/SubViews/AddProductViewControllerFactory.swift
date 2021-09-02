@@ -3,11 +3,12 @@ import Presentation
 import Validation
 import Domain
 
-public func makeAddProductViewController() -> AddProductViewController {
-    return makeAddProductViewControllerWith()
+public func makeAddProductViewController(viewModel: LoadProductNotRegisteredByAccountBodyViewModel) -> AddProductViewController {
+    return makeAddProductViewControllerWith(viewModel: viewModel)
 }
 
-public func makeAddProductViewControllerWith() -> AddProductViewController {
+public func makeAddProductViewControllerWith(viewModel: LoadProductNotRegisteredByAccountBodyViewModel) -> AddProductViewController {
     let controller = AddProductViewController.instantiate()
+    controller.productViewModel = viewModel
     return controller
 }

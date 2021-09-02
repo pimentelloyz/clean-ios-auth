@@ -19,7 +19,7 @@ public final class ProductTableViewCell: UITableViewCell {
     
     func updateUI() {
         guard let viewModel = product else { return }
-        productNameLabel.text   = "\(viewModel.productCode) - \(viewModel.productName)"
+        productNameLabel.text   = viewModel.codeAndNameProduct
         productPriceLabel.text  = viewModel.salesValeu
         lastPurchasePrice.text  = (lastPurchasePrice.text?.localized())! +  viewModel.lastPurchasePrice
     }

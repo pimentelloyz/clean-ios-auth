@@ -100,6 +100,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="monthsCountLabel" destination="B1c-dT-5Vw" id="tK4-CF-LuU"/>
+                        <outlet property="productNameLabel" destination="eLc-kx-lT1" id="9Gh-1j-gdH"/>
                         <outlet property="tableView" destination="bSI-JX-qTU" id="veW-aP-ijP"/>
                     </connections>
                 </viewController>
