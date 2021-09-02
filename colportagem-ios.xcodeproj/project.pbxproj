@@ -233,6 +233,8 @@
 		936229CB26E10C7600BA2FB1 /* ProductNotRegisteredViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936229C926E10C7300BA2FB1 /* ProductNotRegisteredViewController.swift */; };
 		936229CD26E10C8F00BA2FB1 /* ProductNotRegistered.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 936229CC26E10C8F00BA2FB1 /* ProductNotRegistered.storyboard */; };
 		936229CE26E10C8F00BA2FB1 /* ProductNotRegistered.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 936229CC26E10C8F00BA2FB1 /* ProductNotRegistered.storyboard */; };
+		936229D026E10DB200BA2FB1 /* ProductNotRegisteredByAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936229CF26E10DB200BA2FB1 /* ProductNotRegisteredByAccount.swift */; };
+		936229D226E10E2B00BA2FB1 /* LoadProductNotRegisteredByAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936229D126E10E2B00BA2FB1 /* LoadProductNotRegisteredByAccount.swift */; };
 		9381731A26D9676300B12D99 /* NewOfferButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9381731926D9676300B12D99 /* NewOfferButton.swift */; };
 		9381731B26D9676300B12D99 /* NewOfferButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9381731926D9676300B12D99 /* NewOfferButton.swift */; };
 		9381731E26D969CC00B12D99 /* AccountImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9381731D26D969CC00B12D99 /* AccountImageView.swift */; };
@@ -666,6 +668,8 @@
 		935F5B7026C04E710024934B /* Main.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Main.entitlements; sourceTree = "<group>"; };
 		936229C926E10C7300BA2FB1 /* ProductNotRegisteredViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductNotRegisteredViewController.swift; sourceTree = "<group>"; };
 		936229CC26E10C8F00BA2FB1 /* ProductNotRegistered.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProductNotRegistered.storyboard; sourceTree = "<group>"; };
+		936229CF26E10DB200BA2FB1 /* ProductNotRegisteredByAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductNotRegisteredByAccount.swift; sourceTree = "<group>"; };
+		936229D126E10E2B00BA2FB1 /* LoadProductNotRegisteredByAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadProductNotRegisteredByAccount.swift; sourceTree = "<group>"; };
 		9381731926D9676300B12D99 /* NewOfferButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOfferButton.swift; sourceTree = "<group>"; };
 		9381731D26D969CC00B12D99 /* AccountImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountImageView.swift; sourceTree = "<group>"; };
 		93AD24DD26BF76D80012A5CF /* AuthenticationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationModel.swift; sourceTree = "<group>"; };
@@ -816,6 +820,7 @@
 			children = (
 				933DFE3C26DD1CC6007812EA /* SignatureValue.swift */,
 				933DFE3E26DD2251007812EA /* ProductRegisteredByAccount.swift */,
+				936229CF26E10DB200BA2FB1 /* ProductNotRegisteredByAccount.swift */,
 			);
 			path = Product;
 			sourceTree = "<group>";
@@ -824,6 +829,7 @@
 			isa = PBXGroup;
 			children = (
 				933DFE4226DD23C9007812EA /* LoadProductRegisteredByAccount.swift */,
+				936229D126E10E2B00BA2FB1 /* LoadProductNotRegisteredByAccount.swift */,
 			);
 			path = Product;
 			sourceTree = "<group>";
@@ -2438,6 +2444,8 @@
 				935EBE0E26BDA6FB0006A7CA /* PathComponent.swift in Sources */,
 				933DFE4326DD23C9007812EA /* LoadProductRegisteredByAccount.swift in Sources */,
 				935EBE1426BDA7930006A7CA /* AuthenticationHeaders.swift in Sources */,
+				936229D026E10DB200BA2FB1 /* ProductNotRegisteredByAccount.swift in Sources */,
+				936229D226E10E2B00BA2FB1 /* LoadProductNotRegisteredByAccount.swift in Sources */,
 				935EBE1326BDA7930006A7CA /* SaveSecureCurrentAccount.swift in Sources */,
 				935EBE1226BDA7930006A7CA /* LoadSecureCurrentAccount.swift in Sources */,
 				933DFE3D26DD1CC6007812EA /* SignatureValue.swift in Sources */,
