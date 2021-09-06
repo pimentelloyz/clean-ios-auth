@@ -292,6 +292,7 @@
 		9381731F26D969CC00B12D99 /* AccountImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9381731D26D969CC00B12D99 /* AccountImageView.swift */; };
 		9396620F26E64CAE000089D7 /* AddValueAccountProductDidChangeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9396620E26E64CAE000089D7 /* AddValueAccountProductDidChangeDelegate.swift */; };
 		9396621026E64DC7000089D7 /* AddValueAccountProductDidChangeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9396620E26E64CAE000089D7 /* AddValueAccountProductDidChangeDelegate.swift */; };
+		9396621226E68B65000089D7 /* AddSignatureValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9396621126E68B65000089D7 /* AddSignatureValue.swift */; };
 		93AD24DE26BF76D80012A5CF /* AuthenticationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD24DD26BF76D80012A5CF /* AuthenticationModel.swift */; };
 		93AD24E026BF783E0012A5CF /* FirebaseHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD24DF26BF783E0012A5CF /* FirebaseHelpers.swift */; };
 		93AD24E426BF7ECC0012A5CF /* AuthenticationResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD24E326BF7ECC0012A5CF /* AuthenticationResultViewModel.swift */; };
@@ -755,6 +756,7 @@
 		9381731926D9676300B12D99 /* NewOfferButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOfferButton.swift; sourceTree = "<group>"; };
 		9381731D26D969CC00B12D99 /* AccountImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountImageView.swift; sourceTree = "<group>"; };
 		9396620E26E64CAE000089D7 /* AddValueAccountProductDidChangeDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddValueAccountProductDidChangeDelegate.swift; sourceTree = "<group>"; };
+		9396621126E68B65000089D7 /* AddSignatureValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSignatureValue.swift; sourceTree = "<group>"; };
 		93AD24DD26BF76D80012A5CF /* AuthenticationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationModel.swift; sourceTree = "<group>"; };
 		93AD24DF26BF783E0012A5CF /* FirebaseHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseHelpers.swift; sourceTree = "<group>"; };
 		93AD24E326BF7ECC0012A5CF /* AuthenticationResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationResultViewModel.swift; sourceTree = "<group>"; };
@@ -939,6 +941,7 @@
 				933DFE4226DD23C9007812EA /* LoadProductRegisteredByAccount.swift */,
 				936229D126E10E2B00BA2FB1 /* LoadProductNotRegisteredByAccount.swift */,
 				931C7FE626E63442000BDEDE /* AddValueAccountProduct.swift */,
+				9396621126E68B65000089D7 /* AddSignatureValue.swift */,
 			);
 			path = Product;
 			sourceTree = "<group>";
@@ -2696,6 +2699,7 @@
 				935EBC6026BD4BC30006A7CA /* DomainError.swift in Sources */,
 				935EBC6326BD4BF90006A7CA /* AccountModel.swift in Sources */,
 				935EBC6726BD4C140006A7CA /* Authentication.swift in Sources */,
+				9396621226E68B65000089D7 /* AddSignatureValue.swift in Sources */,
 				933DFE3F26DD2251007812EA /* ProductRegisteredByAccount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
