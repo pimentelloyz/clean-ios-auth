@@ -60,7 +60,7 @@ extension AddProductViewController: UITableViewDelegate, UITableViewDataSource {
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Storyboard.addProductImputTableViewCell, for: indexPath) as! AddProductImputTableViewCell
         cell.selectionStyle = .none
-        cell.productLabel.text = "\("VALUE_FOR_SALE".localized()) - \(indexPath.row + 1 * 12) \(cell.productLabel.text!.localized())"
+        cell.productLabel.text = "\("VALUE_FOR_SALE".localized()) - \((indexPath.row + 1) * 12) \(cell.productLabel.text!.localized())"
         return cell
     }
 }
