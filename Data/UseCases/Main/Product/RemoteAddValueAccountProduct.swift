@@ -1,0 +1,29 @@
+import Foundation
+import Domain
+
+public final class RemoteAddValueAccountProduct: AddValueAccountProduct {
+    public var url: URL
+    public var httpClient: HttpPostClient
+    
+    public init(url: URL, httpClient: HttpPostClient) {
+        self.url = url
+        self.httpClient = httpClient
+    }
+    
+    public func add(with params: AddValueAccountProductParameters, completion: @escaping (AddValueAccountProduct.Result) -> Void) {
+        self.httpClient.post(to: self.url, with: params.toData(), and: nil) { [weak self] result in
+            guard self != nil else { return }
+            switch result {
+            case .success(let data):
+                completion(.success(NoContentModel(data: data)))
+            case .failure(let error):
+                switch error {
+                case .unauthorized:
+                    completion(.failure(.unauthorized))
+                default:
+                    completion(.failure(.unexpected))
+                }
+            }
+        }
+    }
+}

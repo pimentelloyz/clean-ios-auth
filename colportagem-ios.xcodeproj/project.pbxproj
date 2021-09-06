@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		931C7FE726E63442000BDEDE /* AddValueAccountProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931C7FE626E63442000BDEDE /* AddValueAccountProduct.swift */; };
-		931C7FEA26E634EB000BDEDE /* NoContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931C7FE926E634EB000BDEDE /* NoContent.swift */; };
+		931C7FEA26E634EB000BDEDE /* NoContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931C7FE926E634EB000BDEDE /* NoContentModel.swift */; };
+		931C7FEC26E635EF000BDEDE /* RemoteAddValueAccountProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931C7FEB26E635EF000BDEDE /* RemoteAddValueAccountProduct.swift */; };
 		933DFE3D26DD1CC6007812EA /* SignatureValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DFE3C26DD1CC6007812EA /* SignatureValue.swift */; };
 		933DFE3F26DD2251007812EA /* ProductRegisteredByAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DFE3E26DD2251007812EA /* ProductRegisteredByAccount.swift */; };
 		933DFE4326DD23C9007812EA /* LoadProductRegisteredByAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DFE4226DD23C9007812EA /* LoadProductRegisteredByAccount.swift */; };
@@ -531,7 +532,8 @@
 
 /* Begin PBXFileReference section */
 		931C7FE626E63442000BDEDE /* AddValueAccountProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddValueAccountProduct.swift; sourceTree = "<group>"; };
-		931C7FE926E634EB000BDEDE /* NoContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoContent.swift; sourceTree = "<group>"; };
+		931C7FE926E634EB000BDEDE /* NoContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoContentModel.swift; sourceTree = "<group>"; };
+		931C7FEB26E635EF000BDEDE /* RemoteAddValueAccountProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAddValueAccountProduct.swift; sourceTree = "<group>"; };
 		933DFE3C26DD1CC6007812EA /* SignatureValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureValue.swift; sourceTree = "<group>"; };
 		933DFE3E26DD2251007812EA /* ProductRegisteredByAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRegisteredByAccount.swift; sourceTree = "<group>"; };
 		933DFE4226DD23C9007812EA /* LoadProductRegisteredByAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadProductRegisteredByAccount.swift; sourceTree = "<group>"; };
@@ -889,7 +891,7 @@
 		931C7FE826E634E1000BDEDE /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				931C7FE926E634EB000BDEDE /* NoContent.swift */,
+				931C7FE926E634EB000BDEDE /* NoContentModel.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -954,6 +956,7 @@
 			children = (
 				933DFE5826DD6C0F007812EA /* RemoteLoadProductRegisteredByAccount.swift */,
 				936229D426E110C100BA2FB1 /* RemoteLoadProductNotRegisteredByAccount.swift */,
+				931C7FEB26E635EF000BDEDE /* RemoteAddValueAccountProduct.swift */,
 			);
 			path = Product;
 			sourceTree = "<group>";
@@ -2648,7 +2651,7 @@
 				935EBE1226BDA7930006A7CA /* LoadSecureCurrentAccount.swift in Sources */,
 				933DFE3D26DD1CC6007812EA /* SignatureValue.swift in Sources */,
 				931C7FE726E63442000BDEDE /* AddValueAccountProduct.swift in Sources */,
-				931C7FEA26E634EB000BDEDE /* NoContent.swift in Sources */,
+				931C7FEA26E634EB000BDEDE /* NoContentModel.swift in Sources */,
 				935EBE9326BDD7AC0006A7CA /* UploadMultipart.swift in Sources */,
 				93AD24DE26BF76D80012A5CF /* AuthenticationModel.swift in Sources */,
 				935EBC6026BD4BC30006A7CA /* DomainError.swift in Sources */,
@@ -2674,6 +2677,7 @@
 				935EBC9326BD4DA10006A7CA /* SocialSignIn.swift in Sources */,
 				935EBE3126BDA9420006A7CA /* HttpDownloadFileClient.swift in Sources */,
 				935EBC8C26BD4D770006A7CA /* ExtensionHelpers.swift in Sources */,
+				931C7FEC26E635EF000BDEDE /* RemoteAddValueAccountProduct.swift in Sources */,
 				935EBE9C26BDD9230006A7CA /* LocalSaveSecureCurrentAccount.swift in Sources */,
 				935EBE1C26BDA8450006A7CA /* SaveSecureCacheStorage.swift in Sources */,
 				935EBE1B26BDA8450006A7CA /* RemoveSecureCacheStorage.swift in Sources */,
