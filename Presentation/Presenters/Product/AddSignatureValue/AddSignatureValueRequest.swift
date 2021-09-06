@@ -3,7 +3,7 @@ import Domain
 
 public struct AddSignatureValueRequest: Model {
     public let productId: Int?
-    public let signatureItems: [SignatureItemsRequest]?
+    public var signatureItems: [SignatureItemsRequest]?
     
     public init(productId: Int? = nil,
                 signatureItems: [SignatureItemsRequest]? = nil) {
@@ -12,17 +12,24 @@ public struct AddSignatureValueRequest: Model {
     }
     
     public func toAddSignatureValueParameters() -> AddSignatureValueParameters {
-        return AddSignatureValueParameters(productId: self.productId!, signatureItems: self.signatureItems!)
+        var itens = [SignatureItemsParameters]()
+            self.signatureItems
+                .map { $0.forEach { itens.append($0.toSignatureItemsParameters())} }
+        return AddSignatureValueParameters(productId: self.productId!, signatureItems: itens)
     }
 }
 
 public struct SignatureItemsRequest: Model {
-    public let monthCount: Int
-    public let salesValue: Double
+    public let monthCount: Int?
+    public var salesValue: Double?
     
-    public init(monthCount: Int,
-                salesValue: Double) {
+    public init(monthCount: Int? = nil,
+                salesValue: Double? = nil) {
         self.monthCount     = monthCount
         self.salesValue     = salesValue
+    }
+    
+    public func toSignatureItemsParameters() -> SignatureItemsParameters {
+        return SignatureItemsParameters(monthCount: self.monthCount!, salesValue: self.salesValue!)
     }
 }

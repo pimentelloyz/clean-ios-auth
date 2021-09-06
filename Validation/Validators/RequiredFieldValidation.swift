@@ -15,6 +15,8 @@ public final class RequiredFieldValidation: Validation, Equatable {
             return nil
         } else if (data?[fieldName] as? Double) != nil {
             return nil
+        } else if (data?[fieldName] as? [AnyObject]) != nil {
+            return nil
         } else {
             guard let fieldValue = data?[fieldName] as? String, !fieldValue.isEmpty else { return "O campo \(fieldLabel) é obrigatório" }
             return nil

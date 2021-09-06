@@ -296,6 +296,9 @@
 		9396621426E68C08000089D7 /* RemoteAddSignatureValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9396621326E68C08000089D7 /* RemoteAddSignatureValue.swift */; };
 		9396621726E68C7A000089D7 /* AddSignatureValueRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9396621626E68C7A000089D7 /* AddSignatureValueRequest.swift */; };
 		9396621926E68D38000089D7 /* AddSignatureValuePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9396621826E68D38000089D7 /* AddSignatureValuePresenter.swift */; };
+		9396621B26E6913D000089D7 /* RemoteAddSignatureValueFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9396621A26E6913D000089D7 /* RemoteAddSignatureValueFactory.swift */; };
+		9396621D26E69385000089D7 /* AddSignatureValueDidChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9396621C26E69385000089D7 /* AddSignatureValueDidChange.swift */; };
+		9396621E26E69392000089D7 /* AddSignatureValueDidChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9396621C26E69385000089D7 /* AddSignatureValueDidChange.swift */; };
 		93AD24DE26BF76D80012A5CF /* AuthenticationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD24DD26BF76D80012A5CF /* AuthenticationModel.swift */; };
 		93AD24E026BF783E0012A5CF /* FirebaseHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD24DF26BF783E0012A5CF /* FirebaseHelpers.swift */; };
 		93AD24E426BF7ECC0012A5CF /* AuthenticationResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD24E326BF7ECC0012A5CF /* AuthenticationResultViewModel.swift */; };
@@ -763,6 +766,8 @@
 		9396621326E68C08000089D7 /* RemoteAddSignatureValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAddSignatureValue.swift; sourceTree = "<group>"; };
 		9396621626E68C7A000089D7 /* AddSignatureValueRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSignatureValueRequest.swift; sourceTree = "<group>"; };
 		9396621826E68D38000089D7 /* AddSignatureValuePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSignatureValuePresenter.swift; sourceTree = "<group>"; };
+		9396621A26E6913D000089D7 /* RemoteAddSignatureValueFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAddSignatureValueFactory.swift; sourceTree = "<group>"; };
+		9396621C26E69385000089D7 /* AddSignatureValueDidChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSignatureValueDidChange.swift; sourceTree = "<group>"; };
 		93AD24DD26BF76D80012A5CF /* AuthenticationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationModel.swift; sourceTree = "<group>"; };
 		93AD24DF26BF783E0012A5CF /* FirebaseHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseHelpers.swift; sourceTree = "<group>"; };
 		93AD24E326BF7ECC0012A5CF /* AuthenticationResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationResultViewModel.swift; sourceTree = "<group>"; };
@@ -1108,6 +1113,7 @@
 				9348E75926DFBDD400DDF063 /* RemoteLoadProductRegisteredByAccountFactory.swift */,
 				936229DE26E112F000BA2FB1 /* RemoteLoadProductNotRegisteredByAccount.swift */,
 				931C7FF526E638D3000BDEDE /* RemoteAddValueAccountProductFactory.swift */,
+				9396621A26E6913D000089D7 /* RemoteAddSignatureValueFactory.swift */,
 			);
 			path = Product;
 			sourceTree = "<group>";
@@ -2059,6 +2065,7 @@
 			isa = PBXGroup;
 			children = (
 				9396620E26E64CAE000089D7 /* AddValueAccountProductDidChangeDelegate.swift */,
+				9396621C26E69385000089D7 /* AddSignatureValueDidChange.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -2892,6 +2899,7 @@
 				936229F826E1347900BA2FB1 /* AddProductImputTableViewCell.swift in Sources */,
 				9396620F26E64CAE000089D7 /* AddValueAccountProductDidChangeDelegate.swift in Sources */,
 				93CA3F3B26D80F9A00E95FDD /* BoldLabel.swift in Sources */,
+				9396621D26E69385000089D7 /* AddSignatureValueDidChange.swift in Sources */,
 				935EBD7B26BD6AAF0006A7CA /* GoogleButton.swift in Sources */,
 				935EBD5926BD63670006A7CA /* UIColorExtensions.swift in Sources */,
 				93CA3F3826D80D5600E95FDD /* ContainerCell.swift in Sources */,
@@ -2959,7 +2967,9 @@
 				935EBE7326BDD47B0006A7CA /* AuthenticationHeadersFactory.swift in Sources */,
 				93622A0226E136EC00BA2FB1 /* ProductNotRegisteredRouter.swift in Sources */,
 				935EBE7226BDD47B0006A7CA /* KeychainAccessSaveSecureAdapter.swift in Sources */,
+				9396621B26E6913D000089D7 /* RemoteAddSignatureValueFactory.swift in Sources */,
 				936229F126E1328200BA2FB1 /* AddProductViewController.swift in Sources */,
+				9396621E26E69392000089D7 /* AddSignatureValueDidChange.swift in Sources */,
 				936229F926E1347900BA2FB1 /* AddProductImputTableViewCell.swift in Sources */,
 				935EBE6326BDB0C60006A7CA /* LoadScreenViewController.swift in Sources */,
 				93622A0526E139D800BA2FB1 /* SaveButton.swift in Sources */,

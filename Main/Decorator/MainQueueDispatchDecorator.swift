@@ -61,3 +61,11 @@ extension MainQueueDispatchDecorator: AddValueAccountProduct where T: AddValueAc
         }
     }
 }
+
+extension MainQueueDispatchDecorator: AddSignatureValue where T: AddSignatureValue {
+    public func add(with params: AddSignatureValueParameters, completion: @escaping (AddSignatureValue.Result) -> Void) {
+        instance.add(with: params) { [weak self] result in
+            self?.dispatch { completion(result) }
+        }
+    }
+}
