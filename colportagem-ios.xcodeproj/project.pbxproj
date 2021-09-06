@@ -10,6 +10,9 @@
 		931C7FE726E63442000BDEDE /* AddValueAccountProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931C7FE626E63442000BDEDE /* AddValueAccountProduct.swift */; };
 		931C7FEA26E634EB000BDEDE /* NoContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931C7FE926E634EB000BDEDE /* NoContentModel.swift */; };
 		931C7FEC26E635EF000BDEDE /* RemoteAddValueAccountProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931C7FEB26E635EF000BDEDE /* RemoteAddValueAccountProduct.swift */; };
+		931C7FEF26E636FA000BDEDE /* AddValueAccountProductPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931C7FEE26E636FA000BDEDE /* AddValueAccountProductPresenter.swift */; };
+		931C7FF226E63722000BDEDE /* NoContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931C7FF126E63722000BDEDE /* NoContentViewModel.swift */; };
+		931C7FF426E63763000BDEDE /* AddValueAccountProductRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931C7FF326E63763000BDEDE /* AddValueAccountProductRequest.swift */; };
 		933DFE3D26DD1CC6007812EA /* SignatureValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DFE3C26DD1CC6007812EA /* SignatureValue.swift */; };
 		933DFE3F26DD2251007812EA /* ProductRegisteredByAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DFE3E26DD2251007812EA /* ProductRegisteredByAccount.swift */; };
 		933DFE4326DD23C9007812EA /* LoadProductRegisteredByAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DFE4226DD23C9007812EA /* LoadProductRegisteredByAccount.swift */; };
@@ -534,6 +537,9 @@
 		931C7FE626E63442000BDEDE /* AddValueAccountProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddValueAccountProduct.swift; sourceTree = "<group>"; };
 		931C7FE926E634EB000BDEDE /* NoContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoContentModel.swift; sourceTree = "<group>"; };
 		931C7FEB26E635EF000BDEDE /* RemoteAddValueAccountProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAddValueAccountProduct.swift; sourceTree = "<group>"; };
+		931C7FEE26E636FA000BDEDE /* AddValueAccountProductPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddValueAccountProductPresenter.swift; sourceTree = "<group>"; };
+		931C7FF126E63722000BDEDE /* NoContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoContentViewModel.swift; sourceTree = "<group>"; };
+		931C7FF326E63763000BDEDE /* AddValueAccountProductRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddValueAccountProductRequest.swift; sourceTree = "<group>"; };
 		933DFE3C26DD1CC6007812EA /* SignatureValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureValue.swift; sourceTree = "<group>"; };
 		933DFE3E26DD2251007812EA /* ProductRegisteredByAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRegisteredByAccount.swift; sourceTree = "<group>"; };
 		933DFE4226DD23C9007812EA /* LoadProductRegisteredByAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadProductRegisteredByAccount.swift; sourceTree = "<group>"; };
@@ -896,6 +902,23 @@
 			path = Shared;
 			sourceTree = "<group>";
 		};
+		931C7FED26E636A8000BDEDE /* AddValueAccountProduct */ = {
+			isa = PBXGroup;
+			children = (
+				931C7FEE26E636FA000BDEDE /* AddValueAccountProductPresenter.swift */,
+				931C7FF326E63763000BDEDE /* AddValueAccountProductRequest.swift */,
+			);
+			path = AddValueAccountProduct;
+			sourceTree = "<group>";
+		};
+		931C7FF026E63713000BDEDE /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				931C7FF126E63722000BDEDE /* NoContentViewModel.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		933DFE3B26DD1C95007812EA /* Product */ = {
 			isa = PBXGroup;
 			children = (
@@ -1086,6 +1109,7 @@
 		9348E75E26DFBFE800DDF063 /* Product */ = {
 			isa = PBXGroup;
 			children = (
+				931C7FED26E636A8000BDEDE /* AddValueAccountProduct */,
 				936229D926E1120D00BA2FB1 /* ProductNotRegisteredByAccount */,
 				936229D826E111E700BA2FB1 /* ProductRegisteredByAccount */,
 			);
@@ -1765,6 +1789,7 @@
 		935EBE4126BDAA260006A7CA /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				931C7FF026E63713000BDEDE /* Shared */,
 				9348E76126DFC06C00DDF063 /* Product */,
 				935EBE4226BDAA580006A7CA /* Account */,
 			);
@@ -2767,10 +2792,12 @@
 			files = (
 				935EBDFC26BDA2380006A7CA /* LoginPresenter.swift in Sources */,
 				935EBD0F26BD516B0006A7CA /* Validation.swift in Sources */,
+				931C7FEF26E636FA000BDEDE /* AddValueAccountProductPresenter.swift in Sources */,
 				935EBE6826BDB1610006A7CA /* LoadScreenPresenter.swift in Sources */,
 				935EBE4626BDAA650006A7CA /* LocalCurrentAccountViewModel.swift in Sources */,
 				935EBE4B26BDAB2F0006A7CA /* GenerateTokenPresenter.swift in Sources */,
 				935EBDF726BDA2100006A7CA /* LoadingView.swift in Sources */,
+				931C7FF426E63763000BDEDE /* AddValueAccountProductRequest.swift in Sources */,
 				9348E76326DFC08600DDF063 /* LoadProductRegisteredByAccountViewModel.swift in Sources */,
 				936229D726E1117600BA2FB1 /* LoadProductNotRegisteredByAccountViewModel.swift in Sources */,
 				936229DD26E1126200BA2FB1 /* LoadProductNotRegisteredByAccountPresenter.swift in Sources */,
@@ -2778,6 +2805,7 @@
 				93AD24E426BF7ECC0012A5CF /* AuthenticationResultViewModel.swift in Sources */,
 				936229DB26E1123300BA2FB1 /* LoadProductNotRegisteredByAccountRequest.swift in Sources */,
 				935EBE4026BDAA1D0006A7CA /* PathComponentRequest.swift in Sources */,
+				931C7FF226E63722000BDEDE /* NoContentViewModel.swift in Sources */,
 				9348E76526DFE98500DDF063 /* LoadProductRegisteredByAccountRequest.swift in Sources */,
 				935EBE4526BDAA650006A7CA /* GenerateTokenResultViewModel.swift in Sources */,
 				935EBE4A26BDAB2F0006A7CA /* GenerateTokenRequest.swift in Sources */,
