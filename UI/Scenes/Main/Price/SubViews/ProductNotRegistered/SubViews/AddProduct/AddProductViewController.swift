@@ -11,6 +11,7 @@ public class AddProductViewController: UIViewController, Storyboarded {
         static let addProductImputTableViewCell = String(describing: AddProductImputTableViewCell.self)
     }
     public var productViewModel: LoadProductNotRegisteredByAccountBodyViewModel?
+    public var addValueAccountProduct: ((AddValueAccountProductRequest) -> Void)?
     
     public final override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,7 +55,7 @@ extension AddProductViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return productViewModel?.numberOfRowsOnAddProductView() ?? 0
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -62,5 +63,32 @@ extension AddProductViewController: UITableViewDelegate, UITableViewDataSource {
         cell.selectionStyle = .none
         cell.productLabel.text = "\("VALUE_FOR_SALE".localized()) - \((indexPath.row + 1) * 12) \(cell.productLabel.text!.localized())"
         return cell
+    }
+}
+
+extension AddProductViewController: ResultNoContentViewModel {
+    public func result(_ viewModel: NoContentViewModel) {
+        navigationController?.popViewController(animated: true)
+    }
+}
+
+extension AddProductViewController: LoadingView {
+    public func display(viewModel: LoadingViewModel) {
+        if viewModel.isLoading {
+            view.isUserInteractionEnabled = false
+//            activityIndicator.startAnimating()
+        } else {
+            view.isUserInteractionEnabled = true
+//            activityIndicator.stopAnimating()
+        }
+    }
+}
+
+extension AddProductViewController: AlertView {
+    public func showMessage(viewModel: AlertViewModel) {
+        let alert = UIAlertController(title: viewModel.title, message: viewModel.message, preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .default)
+        alert.addAction(action)
+        present(alert, animated: true)
     }
 }

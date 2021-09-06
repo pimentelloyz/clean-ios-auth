@@ -13,6 +13,7 @@
 		931C7FEF26E636FA000BDEDE /* AddValueAccountProductPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931C7FEE26E636FA000BDEDE /* AddValueAccountProductPresenter.swift */; };
 		931C7FF226E63722000BDEDE /* NoContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931C7FF126E63722000BDEDE /* NoContentViewModel.swift */; };
 		931C7FF426E63763000BDEDE /* AddValueAccountProductRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931C7FF326E63763000BDEDE /* AddValueAccountProductRequest.swift */; };
+		931C7FF626E638D3000BDEDE /* RemoteAddValueAccountProductFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931C7FF526E638D3000BDEDE /* RemoteAddValueAccountProductFactory.swift */; };
 		933DFE3D26DD1CC6007812EA /* SignatureValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DFE3C26DD1CC6007812EA /* SignatureValue.swift */; };
 		933DFE3F26DD2251007812EA /* ProductRegisteredByAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DFE3E26DD2251007812EA /* ProductRegisteredByAccount.swift */; };
 		933DFE4326DD23C9007812EA /* LoadProductRegisteredByAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DFE4226DD23C9007812EA /* LoadProductRegisteredByAccount.swift */; };
@@ -261,7 +262,6 @@
 		936229F926E1347900BA2FB1 /* AddProductImputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936229F626E1347900BA2FB1 /* AddProductImputTableViewCell.swift */; };
 		936229FA26E1347900BA2FB1 /* AddProductImputTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 936229F726E1347900BA2FB1 /* AddProductImputTableViewCell.xib */; };
 		936229FB26E1347900BA2FB1 /* AddProductImputTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 936229F726E1347900BA2FB1 /* AddProductImputTableViewCell.xib */; };
-		936229FD26E1367300BA2FB1 /* AddProductViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936229FC26E1367300BA2FB1 /* AddProductViewControllerFactory.swift */; };
 		936229FE26E1367300BA2FB1 /* AddProductViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936229FC26E1367300BA2FB1 /* AddProductViewControllerFactory.swift */; };
 		93622A0126E136EC00BA2FB1 /* ProductNotRegisteredRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93622A0026E136EB00BA2FB1 /* ProductNotRegisteredRouter.swift */; };
 		93622A0226E136EC00BA2FB1 /* ProductNotRegisteredRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93622A0026E136EB00BA2FB1 /* ProductNotRegisteredRouter.swift */; };
@@ -540,6 +540,7 @@
 		931C7FEE26E636FA000BDEDE /* AddValueAccountProductPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddValueAccountProductPresenter.swift; sourceTree = "<group>"; };
 		931C7FF126E63722000BDEDE /* NoContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoContentViewModel.swift; sourceTree = "<group>"; };
 		931C7FF326E63763000BDEDE /* AddValueAccountProductRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddValueAccountProductRequest.swift; sourceTree = "<group>"; };
+		931C7FF526E638D3000BDEDE /* RemoteAddValueAccountProductFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAddValueAccountProductFactory.swift; sourceTree = "<group>"; };
 		933DFE3C26DD1CC6007812EA /* SignatureValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureValue.swift; sourceTree = "<group>"; };
 		933DFE3E26DD2251007812EA /* ProductRegisteredByAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRegisteredByAccount.swift; sourceTree = "<group>"; };
 		933DFE4226DD23C9007812EA /* LoadProductRegisteredByAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadProductRegisteredByAccount.swift; sourceTree = "<group>"; };
@@ -1093,6 +1094,7 @@
 			children = (
 				9348E75926DFBDD400DDF063 /* RemoteLoadProductRegisteredByAccountFactory.swift */,
 				936229DE26E112F000BA2FB1 /* RemoteLoadProductNotRegisteredByAccount.swift */,
+				931C7FF526E638D3000BDEDE /* RemoteAddValueAccountProductFactory.swift */,
 			);
 			path = Product;
 			sourceTree = "<group>";
@@ -2845,7 +2847,6 @@
 				93622A0426E139D800BA2FB1 /* SaveButton.swift in Sources */,
 				935EBD6726BD63A70006A7CA /* AccountTextField.swift in Sources */,
 				93F0DE4926D6ABC500C4631C /* PriceViewController.swift in Sources */,
-				936229FD26E1367300BA2FB1 /* AddProductViewControllerFactory.swift in Sources */,
 				936229E626E115DE00BA2FB1 /* ProductNotRegisteredTableViewCell.swift in Sources */,
 				935EBD7626BD6A4C0006A7CA /* OnboardingViewController.swift in Sources */,
 				935EBD5A26BD63670006A7CA /* Responsive.swift in Sources */,
@@ -2956,6 +2957,7 @@
 				935EBE8B26BDD54C0006A7CA /* RemoteGenerateTokenFactory.swift in Sources */,
 				93CA3F3126D80B8700E95FDD /* ProductTableViewCell.swift in Sources */,
 				935EBD8926BD82610006A7CA /* AppDelegate.swift in Sources */,
+				931C7FF626E638D3000BDEDE /* RemoteAddValueAccountProductFactory.swift in Sources */,
 				935EBE5B26BDB0850006A7CA /* LoadScreenViewControllerFactory.swift in Sources */,
 				935EBEAB26BE26380006A7CA /* UIViewControllerExtensions.swift in Sources */,
 				935EBDC226BD830C0006A7CA /* MainQueueDispatchDecorator.swift in Sources */,

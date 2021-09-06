@@ -53,3 +53,11 @@ extension MainQueueDispatchDecorator: LoadProductNotRegisteredByAccount where T:
         }
     }
 }
+
+extension MainQueueDispatchDecorator: AddValueAccountProduct where T: AddValueAccountProduct {
+    public func add(with params: AddValueAccountProductParameters, completion: @escaping (AddValueAccountProduct.Result) -> Void) {
+        instance.add(with: params) { [weak self] result in
+            self?.dispatch { completion(result) }
+        }
+    }
+}

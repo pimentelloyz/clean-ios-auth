@@ -50,3 +50,9 @@ extension WeakVarProxy: LoadProductNotRegisteredByAccountResultViewModel where T
         instance?.result(viewModel)
     }
 }
+
+extension WeakVarProxy: ResultNoContentViewModel where T: ResultNoContentViewModel {
+    func result(_ viewModel: NoContentViewModel) {
+        instance?.result(viewModel)
+    }
+}

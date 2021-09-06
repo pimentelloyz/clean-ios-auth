@@ -36,6 +36,14 @@ public struct LoadProductNotRegisteredByAccountBodyViewModel {
         self.body = body
     }
     
+    public func paramsToAddValueAccountProduct() -> [AddValueAccountProductParameters] {
+        return [AddValueAccountProductParameters(productId: body?.productId ?? 0, salesValue: body?.salesValue ?? 0.0)]
+    }
+    
+    public func numberOfRowsOnAddProductView() -> Int {
+        return body?.productSignature ?? false ? 3 : 1
+    }
+    
     public var productName: String {
         return self.body?.productName ?? ""
     }
