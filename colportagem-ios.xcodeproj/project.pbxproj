@@ -294,6 +294,8 @@
 		9396621026E64DC7000089D7 /* AddValueAccountProductDidChangeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9396620E26E64CAE000089D7 /* AddValueAccountProductDidChangeDelegate.swift */; };
 		9396621226E68B65000089D7 /* AddSignatureValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9396621126E68B65000089D7 /* AddSignatureValue.swift */; };
 		9396621426E68C08000089D7 /* RemoteAddSignatureValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9396621326E68C08000089D7 /* RemoteAddSignatureValue.swift */; };
+		9396621726E68C7A000089D7 /* AddSignatureValueRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9396621626E68C7A000089D7 /* AddSignatureValueRequest.swift */; };
+		9396621926E68D38000089D7 /* AddSignatureValuePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9396621826E68D38000089D7 /* AddSignatureValuePresenter.swift */; };
 		93AD24DE26BF76D80012A5CF /* AuthenticationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD24DD26BF76D80012A5CF /* AuthenticationModel.swift */; };
 		93AD24E026BF783E0012A5CF /* FirebaseHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD24DF26BF783E0012A5CF /* FirebaseHelpers.swift */; };
 		93AD24E426BF7ECC0012A5CF /* AuthenticationResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD24E326BF7ECC0012A5CF /* AuthenticationResultViewModel.swift */; };
@@ -759,6 +761,8 @@
 		9396620E26E64CAE000089D7 /* AddValueAccountProductDidChangeDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddValueAccountProductDidChangeDelegate.swift; sourceTree = "<group>"; };
 		9396621126E68B65000089D7 /* AddSignatureValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSignatureValue.swift; sourceTree = "<group>"; };
 		9396621326E68C08000089D7 /* RemoteAddSignatureValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAddSignatureValue.swift; sourceTree = "<group>"; };
+		9396621626E68C7A000089D7 /* AddSignatureValueRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSignatureValueRequest.swift; sourceTree = "<group>"; };
+		9396621826E68D38000089D7 /* AddSignatureValuePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSignatureValuePresenter.swift; sourceTree = "<group>"; };
 		93AD24DD26BF76D80012A5CF /* AuthenticationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationModel.swift; sourceTree = "<group>"; };
 		93AD24DF26BF783E0012A5CF /* FirebaseHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseHelpers.swift; sourceTree = "<group>"; };
 		93AD24E326BF7ECC0012A5CF /* AuthenticationResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationResultViewModel.swift; sourceTree = "<group>"; };
@@ -1120,6 +1124,7 @@
 		9348E75E26DFBFE800DDF063 /* Product */ = {
 			isa = PBXGroup;
 			children = (
+				9396621526E68C65000089D7 /* AddSignatureValue */,
 				931C7FED26E636A8000BDEDE /* AddValueAccountProduct */,
 				936229D926E1120D00BA2FB1 /* ProductNotRegisteredByAccount */,
 				936229D826E111E700BA2FB1 /* ProductRegisteredByAccount */,
@@ -2058,6 +2063,15 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		9396621526E68C65000089D7 /* AddSignatureValue */ = {
+			isa = PBXGroup;
+			children = (
+				9396621626E68C7A000089D7 /* AddSignatureValueRequest.swift */,
+				9396621826E68D38000089D7 /* AddSignatureValuePresenter.swift */,
+			);
+			path = AddSignatureValue;
+			sourceTree = "<group>";
+		};
 		93CA3F2426D7FEC500E95FDD /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
@@ -2816,8 +2830,10 @@
 				935EBD0F26BD516B0006A7CA /* Validation.swift in Sources */,
 				931C7FEF26E636FA000BDEDE /* AddValueAccountProductPresenter.swift in Sources */,
 				935EBE6826BDB1610006A7CA /* LoadScreenPresenter.swift in Sources */,
+				9396621926E68D38000089D7 /* AddSignatureValuePresenter.swift in Sources */,
 				935EBE4626BDAA650006A7CA /* LocalCurrentAccountViewModel.swift in Sources */,
 				935EBE4B26BDAB2F0006A7CA /* GenerateTokenPresenter.swift in Sources */,
+				9396621726E68C7A000089D7 /* AddSignatureValueRequest.swift in Sources */,
 				935EBDF726BDA2100006A7CA /* LoadingView.swift in Sources */,
 				931C7FF426E63763000BDEDE /* AddValueAccountProductRequest.swift in Sources */,
 				9348E76326DFC08600DDF063 /* LoadProductRegisteredByAccountViewModel.swift in Sources */,
