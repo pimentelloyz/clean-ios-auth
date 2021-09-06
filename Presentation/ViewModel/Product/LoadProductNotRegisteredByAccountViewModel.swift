@@ -44,6 +44,10 @@ public struct LoadProductNotRegisteredByAccountBodyViewModel {
         return body?.productSignature ?? false ? 3 : 1
     }
     
+    public var productId: Int {
+        return self.body?.productId ?? 0
+    }
+    
     public var productName: String {
         return self.body?.productName ?? ""
     }

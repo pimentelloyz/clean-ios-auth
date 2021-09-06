@@ -12,7 +12,7 @@ public class AddProductViewController: UIViewController, Storyboarded {
     }
     public var productViewModel: LoadProductNotRegisteredByAccountBodyViewModel?
     public var addValueAccountProduct: ((AddValueAccountProductRequest) -> Void)?
-    
+    var addValueAccountProductParameters: AddValueAccountProductRequest?
     public final override func viewDidLoad() {
         super.viewDidLoad()
         setup()
@@ -29,6 +29,7 @@ public class AddProductViewController: UIViewController, Storyboarded {
     func setup() {
         navigationController?.setNavigationBarHidden(true, animated: true)
         view.backgroundColor = Color.backgroundPrimary
+        hideKeyboradOnTap()
         tableView.delegate = self
         tableView.dataSource = self
         tableView.backgroundColor = Color.backgroundPrimary
@@ -46,6 +47,13 @@ public class AddProductViewController: UIViewController, Storyboarded {
     }
     
     @IBAction func saveProductDidTap(_ sender: Any) {
+        guard let viewModel = productViewModel else { return }
+        if viewModel.isSignature {
+            
+        } else {
+            guard let parameters = addValueAccountProductParameters else { return }
+            addValueAccountProduct?(parameters)
+        }
     }
 }
 
@@ -60,9 +68,17 @@ extension AddProductViewController: UITableViewDelegate, UITableViewDataSource {
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Storyboard.addProductImputTableViewCell, for: indexPath) as! AddProductImputTableViewCell
+        cell.valueDidChangeDelegate = self
         cell.selectionStyle = .none
         cell.productLabel.text = "\("VALUE_FOR_SALE".localized()) - \((indexPath.row + 1) * 12) \(cell.productLabel.text!.localized())"
         return cell
+    }
+}
+
+extension AddProductViewController: AddValueAccountProductDidChangeDelegate {
+    public func didChangeValueAccountProduct(with newValue: Double) {
+        guard let product = productViewModel else { return }
+        self.addValueAccountProductParameters = AddValueAccountProductRequest(productId: product.productId, salesValue: newValue)
     }
 }
 
@@ -86,7 +102,7 @@ extension AddProductViewController: LoadingView {
 
 extension AddProductViewController: AlertView {
     public func showMessage(viewModel: AlertViewModel) {
-        let alert = UIAlertController(title: viewModel.title, message: viewModel.message, preferredStyle: .alert)
+        let alert = UIAlertController(title: viewModel.title.localized(), message: viewModel.message, preferredStyle: .alert)
         let action = UIAlertAction(title: "OK", style: .default)
         alert.addAction(action)
         present(alert, animated: true)

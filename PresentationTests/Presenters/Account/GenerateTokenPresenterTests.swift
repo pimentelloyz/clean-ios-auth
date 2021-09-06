@@ -19,7 +19,7 @@ class GenerateTokenPresenterTests: XCTestCase {
         let sut = makeSut(alertView: alertViewSpy, validation: validationSpy)
         let exp = expectation(description: "waiting")
         alertViewSpy.observe { viewModel in
-            XCTAssertEqual(viewModel, AlertViewModel(title: "Falha na validação", message: "Erro"))
+            XCTAssertEqual(viewModel, AlertViewModel(title: "VALIDATION_FAILS", message: "Erro"))
             exp.fulfill()
         }
         validationSpy.simulateError()

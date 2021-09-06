@@ -11,8 +11,14 @@ public final class RequiredFieldValidation: Validation, Equatable {
     }
     
     public func validate(data: [String : Any]?) -> String? {
-        guard let fieldValue = data?[fieldName] as? String, !fieldValue.isEmpty else { return "The field \(fieldLabel) is required" }
-        return nil
+        if (data?[fieldName] as? Int) != nil {
+            return nil
+        } else if (data?[fieldName] as? Double) != nil {
+            return nil
+        } else {
+            guard let fieldValue = data?[fieldName] as? String, !fieldValue.isEmpty else { return "O campo \(fieldLabel) é obrigatório" }
+            return nil
+        }
     }
     
     public static func == (lhs: RequiredFieldValidation, rhs: RequiredFieldValidation) -> Bool {

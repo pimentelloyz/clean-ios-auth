@@ -11,7 +11,7 @@ public final class RemoteGenerateToken: GenerateToken {
     }
     
     public func generate(by parameters: GenerateTokenParameters, completion: @escaping (GenerateToken.Result) -> Void) {
-        self.httpClient.post(to: self.url, with: parameters.toData(), and: nil) { [weak self] result in
+        self.httpClient.post(to: self.url, with: parameters.toData(), headers: nil) { [weak self] result in
             guard self != nil else { return }
             switch result {
             case .success(let data):

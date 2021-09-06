@@ -7,6 +7,6 @@ func makeRemoteAddValueAccountProduct() -> AddValueAccountProduct {
 }
 
 func makeRemoteAddValueAccountProductWith(httpClient: HttpPostClient) -> AddValueAccountProduct {
-    let addValueAccountProduct = RemoteAddValueAccountProduct(url: makeApiUrl(path: "product/add-value-account-product"), httpClient: httpClient)
+    let addValueAccountProduct = RemoteAddValueAccountProduct(url: makeApiUrl(path: "product/add-value-account-product"), httpClient: httpClient,  authenticationHeaders: makeAuthenticationHeaders())
     return MainQueueDispatchDecorator(addValueAccountProduct)
 }

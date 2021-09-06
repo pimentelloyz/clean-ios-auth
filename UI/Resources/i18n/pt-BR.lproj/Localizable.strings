@@ -36,3 +36,6 @@
 "CLOSE_BUTTON" = "Fechar";
 "MONTHS" = "meses";
 "VALUE_FOR_SALE" = "Valor de venda";
+
+"VALIDATION_FAILS" = "Falha na validação";
+"PRODUCT_ID" = "Id do produto";

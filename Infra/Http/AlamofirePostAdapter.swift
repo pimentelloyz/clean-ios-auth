@@ -9,7 +9,7 @@ public final class AlamofirePostAdapter: HttpPostClient {
         self.session = session
     }
     
-    public func post(to url: URL, with data: Data?, and headers: Data?, completion: @escaping (Result<Data?, HttpError>) -> Void) {
+    public func post(to url: URL, with data: Data?, headers: Data?, completion: @escaping (Result<Data?, HttpError>) -> Void) {
         session.request(url, method: .post, parameters: data?.toJson(), encoding: JSONEncoding.default, headers: headers?.toHeaders()).responseData { dataResponse in
             guard let statusCode = dataResponse.response?.statusCode else { return completion(.failure(.noConnectivity)) }
             switch dataResponse.result {

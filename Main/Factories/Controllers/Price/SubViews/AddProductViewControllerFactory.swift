@@ -17,6 +17,6 @@ public func makeAddProductViewControllerWith(viewModel: LoadProductNotRegistered
 }
 
 public func makeAddValueAccountProductValidations() -> [Validation] {
-    return ValidationBuilder.field("productId").label("PRODUCT_ID").required().build() +
-        ValidationBuilder.field("salesValue").label("SALES_VALUE").required().build()
+    return ValidationBuilder.field("productId").label("PRODUCT_ID".localized()).required().build() +
+        ValidationBuilder.field("salesValue").label("SALES_VALUE".localized()).required().build()
 }

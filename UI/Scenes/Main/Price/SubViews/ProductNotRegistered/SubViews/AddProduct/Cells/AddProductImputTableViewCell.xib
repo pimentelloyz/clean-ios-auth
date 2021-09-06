@@ -47,7 +47,7 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
                 <outlet property="productLabel" destination="Y5F-S6-CKc" id="bSe-IS-wA0"/>
-                <outlet property="productValeuLabel" destination="Ywe-fN-Q65" id="i9H-Ea-rHR"/>
+                <outlet property="productValeuTextField" destination="Ywe-fN-Q65" id="uno-76-83q"/>
             </connections>
             <point key="canvasLocation" x="34.782608695652179" y="89.0625"/>
         </tableViewCell>

@@ -22,7 +22,7 @@ public final class AddValueAccountProductPresenter {
     
     public func add(request: AddValueAccountProductRequest) {
         if let message = validation.validate(data: request.toJson()) {
-            alertView.showMessage(viewModel: AlertViewModel(title: "Falha na validação", message: message))
+            alertView.showMessage(viewModel: AlertViewModel(title: "VALIDATION_FAILS", message: message))
         } else {
             loadingView.display(viewModel: LoadingViewModel(isLoading: true))
             addValueAccountProduct.add(with: request.toAddValueAccountProductParameters()) { [weak self] result in
