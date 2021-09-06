@@ -14,8 +14,10 @@ public final class PriceViewController: UIViewController, Storyboarded {
             tableView.reloadData()
         }
     }
+    var selectedProduct: LoadProductRegisteredByAccountBodyViewModel?
     public var loadProductRegisteredByAccount: ((LoadProductRegisteredByAccountRequest) -> Void)?
     public var goToProductNotRegisteredViewController: (() -> Void)?
+    public var goToAddProductViewController: ((LoadProductRegisteredByAccountBodyViewModel) -> Void)?
 
     struct Storyboard {
         static let productCell = String(describing: ProductTableViewCell.self)
@@ -77,6 +79,11 @@ extension PriceViewController: UITableViewDelegate, UITableViewDataSource {
         
         cell.product = product
         return cell
+    }
+    
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let product = self.viewModel?.productByIndex(indexPath.row)
+        self.selectedProduct = product
     }
 }
 

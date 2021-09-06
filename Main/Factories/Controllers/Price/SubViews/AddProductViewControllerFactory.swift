@@ -7,6 +7,11 @@ public func makeAddProductViewController(viewModel: LoadProductNotRegisteredByAc
     return makeAddProductViewControllerWith(viewModel: viewModel, addValueAccountProduct: makeRemoteAddValueAccountProduct(), addSignatureValue: makeRemoteAddSignatureValue())
 }
 
+public func makeAddProductViewController(viewModel: LoadProductRegisteredByAccountBodyViewModel) -> AddProductViewController {
+    return makeUpdateProductViewControllerWith(viewModel: viewModel, updateValueAccountProduct: makeRemoteUpdateValueAccountProduct())
+}
+
+
 public func makeAddProductViewControllerWith(viewModel: LoadProductNotRegisteredByAccountBodyViewModel, addValueAccountProduct: AddValueAccountProduct, addSignatureValue: AddSignatureValue) -> AddProductViewController {
     let controller = AddProductViewController.instantiate()
     let validationComposite = ValidationComposite(validations: makeAddValueAccountProductValidations())
@@ -16,6 +21,15 @@ public func makeAddProductViewControllerWith(viewModel: LoadProductNotRegistered
     controller.productViewModel = viewModel
     controller.addValueAccountProduct = addValueAccountProductPresenter.add
     controller.addSignatureValue = addSignatureValuePresenter.add
+    return controller
+}
+
+public func makeUpdateProductViewControllerWith(viewModel: LoadProductRegisteredByAccountBodyViewModel, updateValueAccountProduct: UpdateValueAccountProduct) -> AddProductViewController {
+    let controller = AddProductViewController.instantiate()
+    let validationComposite = ValidationComposite(validations: makeAddValueAccountProductValidations())
+    let updateValueAccountProductPresenter = UpdateValueAccountProductPresenter(updateValueAccountProduct: updateValueAccountProduct, alertView: WeakVarProxy(controller), loadingView: WeakVarProxy(controller), validation: validationComposite, viewModel: WeakVarProxy(controller))
+    controller.productToEditViewModel = viewModel
+    controller.updateValueAccountProduct = updateValueAccountProductPresenter.update
     return controller
 }
 

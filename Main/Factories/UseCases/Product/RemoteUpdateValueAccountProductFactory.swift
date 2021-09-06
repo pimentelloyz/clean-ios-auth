@@ -2,7 +2,7 @@ import Foundation
 import Data
 import Domain
 
-func makeRemoteLoadPost() -> UpdateValueAccountProduct {
+func makeRemoteUpdateValueAccountProduct() -> UpdateValueAccountProduct {
     return makeRemoteUpdateValueAccountProductWith(httpClient: makeAlamofirePutAdapter())
 }
 

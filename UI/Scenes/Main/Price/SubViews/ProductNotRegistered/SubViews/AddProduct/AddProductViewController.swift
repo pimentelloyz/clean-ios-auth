@@ -12,9 +12,12 @@ public class AddProductViewController: UIViewController, Storyboarded {
     }
     
     public var productViewModel: LoadProductNotRegisteredByAccountBodyViewModel?
+    public var productToEditViewModel: LoadProductRegisteredByAccountBodyViewModel?
     
     public var addValueAccountProduct: ((AddValueAccountProductRequest) -> Void)?
     var addValueAccountProductParameters: AddValueAccountProductRequest?
+    public var updateValueAccountProduct: ((UpdateValueAccountProductRequest, PathComponentRequest) -> Void)?
+    var aupdateValueAccountProductParameters: UpdateValueAccountProductRequest?
     
     public var addSignatureValue: ((AddSignatureValueRequest) -> Void)?
     var addSignatureValueRequest: AddSignatureValueRequest?
