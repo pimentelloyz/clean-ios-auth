@@ -300,6 +300,9 @@
 		9396621D26E69385000089D7 /* AddSignatureValueDidChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9396621C26E69385000089D7 /* AddSignatureValueDidChange.swift */; };
 		9396621E26E69392000089D7 /* AddSignatureValueDidChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9396621C26E69385000089D7 /* AddSignatureValueDidChange.swift */; };
 		9396622026E6A787000089D7 /* UpdateValueAccountProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9396621F26E6A787000089D7 /* UpdateValueAccountProduct.swift */; };
+		9396622226E6A81B000089D7 /* AlamofirePutAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9396622126E6A81B000089D7 /* AlamofirePutAdapter.swift */; };
+		9396622426E6A84B000089D7 /* HttpPutClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9396622326E6A84B000089D7 /* HttpPutClient.swift */; };
+		9396622626E6A8A7000089D7 /* RemoteUpdateValueAccountProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9396622526E6A8A7000089D7 /* RemoteUpdateValueAccountProduct.swift */; };
 		93AD24DE26BF76D80012A5CF /* AuthenticationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD24DD26BF76D80012A5CF /* AuthenticationModel.swift */; };
 		93AD24E026BF783E0012A5CF /* FirebaseHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD24DF26BF783E0012A5CF /* FirebaseHelpers.swift */; };
 		93AD24E426BF7ECC0012A5CF /* AuthenticationResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD24E326BF7ECC0012A5CF /* AuthenticationResultViewModel.swift */; };
@@ -770,6 +773,9 @@
 		9396621A26E6913D000089D7 /* RemoteAddSignatureValueFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAddSignatureValueFactory.swift; sourceTree = "<group>"; };
 		9396621C26E69385000089D7 /* AddSignatureValueDidChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSignatureValueDidChange.swift; sourceTree = "<group>"; };
 		9396621F26E6A787000089D7 /* UpdateValueAccountProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateValueAccountProduct.swift; sourceTree = "<group>"; };
+		9396622126E6A81B000089D7 /* AlamofirePutAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofirePutAdapter.swift; sourceTree = "<group>"; };
+		9396622326E6A84B000089D7 /* HttpPutClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpPutClient.swift; sourceTree = "<group>"; };
+		9396622526E6A8A7000089D7 /* RemoteUpdateValueAccountProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteUpdateValueAccountProduct.swift; sourceTree = "<group>"; };
 		93AD24DD26BF76D80012A5CF /* AuthenticationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationModel.swift; sourceTree = "<group>"; };
 		93AD24DF26BF783E0012A5CF /* FirebaseHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseHelpers.swift; sourceTree = "<group>"; };
 		93AD24E326BF7ECC0012A5CF /* AuthenticationResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationResultViewModel.swift; sourceTree = "<group>"; };
@@ -1002,6 +1008,7 @@
 				936229D426E110C100BA2FB1 /* RemoteLoadProductNotRegisteredByAccount.swift */,
 				931C7FEB26E635EF000BDEDE /* RemoteAddValueAccountProduct.swift */,
 				9396621326E68C08000089D7 /* RemoteAddSignatureValue.swift */,
+				9396622526E6A8A7000089D7 /* RemoteUpdateValueAccountProduct.swift */,
 			);
 			path = Product;
 			sourceTree = "<group>";
@@ -1295,6 +1302,7 @@
 				935EBE2B26BDA9410006A7CA /* HttpGetClient.swift */,
 				935EBE2D26BDA9420006A7CA /* HttpPostClient.swift */,
 				935EBE2A26BDA9410006A7CA /* HttpUploadClient.swift */,
+				9396622326E6A84B000089D7 /* HttpPutClient.swift */,
 			);
 			path = Http;
 			sourceTree = "<group>";
@@ -1385,6 +1393,7 @@
 				935EBE2026BDA9170006A7CA /* AlamofireGetAdapter.swift */,
 				935EBE2326BDA9170006A7CA /* AlamofirePostAdapter.swift */,
 				935EBE2126BDA9170006A7CA /* AlamofireUploadImageAdapter.swift */,
+				9396622126E6A81B000089D7 /* AlamofirePutAdapter.swift */,
 			);
 			path = Http;
 			sourceTree = "<group>";
@@ -2753,6 +2762,8 @@
 				935EBE9C26BDD9230006A7CA /* LocalSaveSecureCurrentAccount.swift in Sources */,
 				935EBE1C26BDA8450006A7CA /* SaveSecureCacheStorage.swift in Sources */,
 				935EBE1B26BDA8450006A7CA /* RemoveSecureCacheStorage.swift in Sources */,
+				9396622426E6A84B000089D7 /* HttpPutClient.swift in Sources */,
+				9396622626E6A8A7000089D7 /* RemoteUpdateValueAccountProduct.swift in Sources */,
 				935EBE1D26BDA8450006A7CA /* LoadSecureCacheStorage.swift in Sources */,
 				935EBE1F26BDA86B0006A7CA /* RemoteGenerateToken.swift in Sources */,
 				933DFE5926DD6C0F007812EA /* RemoteLoadProductRegisteredByAccount.swift in Sources */,
@@ -2789,6 +2800,7 @@
 				935EBE2626BDA9180006A7CA /* AlamofireUploadImageAdapter.swift in Sources */,
 				935EBE3926BDA9B90006A7CA /* KeychainAccessLoadSecureAdapter.swift in Sources */,
 				935EBE3A26BDA9B90006A7CA /* KeychainAccessRemoveSecureAdapter.swift in Sources */,
+				9396622226E6A81B000089D7 /* AlamofirePutAdapter.swift in Sources */,
 				935EBE2926BDA9180006A7CA /* AlamofireDeleteAdapter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
