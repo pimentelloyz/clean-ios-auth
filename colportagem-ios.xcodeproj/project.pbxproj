@@ -293,6 +293,7 @@
 		9396620F26E64CAE000089D7 /* AddValueAccountProductDidChangeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9396620E26E64CAE000089D7 /* AddValueAccountProductDidChangeDelegate.swift */; };
 		9396621026E64DC7000089D7 /* AddValueAccountProductDidChangeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9396620E26E64CAE000089D7 /* AddValueAccountProductDidChangeDelegate.swift */; };
 		9396621226E68B65000089D7 /* AddSignatureValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9396621126E68B65000089D7 /* AddSignatureValue.swift */; };
+		9396621426E68C08000089D7 /* RemoteAddSignatureValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9396621326E68C08000089D7 /* RemoteAddSignatureValue.swift */; };
 		93AD24DE26BF76D80012A5CF /* AuthenticationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD24DD26BF76D80012A5CF /* AuthenticationModel.swift */; };
 		93AD24E026BF783E0012A5CF /* FirebaseHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD24DF26BF783E0012A5CF /* FirebaseHelpers.swift */; };
 		93AD24E426BF7ECC0012A5CF /* AuthenticationResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD24E326BF7ECC0012A5CF /* AuthenticationResultViewModel.swift */; };
@@ -757,6 +758,7 @@
 		9381731D26D969CC00B12D99 /* AccountImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountImageView.swift; sourceTree = "<group>"; };
 		9396620E26E64CAE000089D7 /* AddValueAccountProductDidChangeDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddValueAccountProductDidChangeDelegate.swift; sourceTree = "<group>"; };
 		9396621126E68B65000089D7 /* AddSignatureValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSignatureValue.swift; sourceTree = "<group>"; };
+		9396621326E68C08000089D7 /* RemoteAddSignatureValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAddSignatureValue.swift; sourceTree = "<group>"; };
 		93AD24DD26BF76D80012A5CF /* AuthenticationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationModel.swift; sourceTree = "<group>"; };
 		93AD24DF26BF783E0012A5CF /* FirebaseHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseHelpers.swift; sourceTree = "<group>"; };
 		93AD24E326BF7ECC0012A5CF /* AuthenticationResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationResultViewModel.swift; sourceTree = "<group>"; };
@@ -987,6 +989,7 @@
 				933DFE5826DD6C0F007812EA /* RemoteLoadProductRegisteredByAccount.swift */,
 				936229D426E110C100BA2FB1 /* RemoteLoadProductNotRegisteredByAccount.swift */,
 				931C7FEB26E635EF000BDEDE /* RemoteAddValueAccountProduct.swift */,
+				9396621326E68C08000089D7 /* RemoteAddSignatureValue.swift */,
 			);
 			path = Product;
 			sourceTree = "<group>";
@@ -2712,6 +2715,7 @@
 				935EBE3326BDA9420006A7CA /* HttpDeleteClient.swift in Sources */,
 				935EBE2F26BDA9420006A7CA /* HttpUploadClient.swift in Sources */,
 				935EBC9126BD4D960006A7CA /* SocialAuthentication.swift in Sources */,
+				9396621426E68C08000089D7 /* RemoteAddSignatureValue.swift in Sources */,
 				935EBC8A26BD4D6D0006A7CA /* HttpErrors.swift in Sources */,
 				935EBE9D26BDD9230006A7CA /* RemoteRefreshToken.swift in Sources */,
 				936229D526E110C100BA2FB1 /* RemoteLoadProductNotRegisteredByAccount.swift in Sources */,
