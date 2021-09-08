@@ -2,7 +2,7 @@ import Foundation
 
 public protocol UpdateSignatureValue {
     typealias Result = Swift.Result<NoContentModel, DomainError>
-    func update(with params: UpdateSignatureValueParemeters, completion: @escaping (Result) -> Void)
+    func update(with params: UpdateSignatureValueParemeters, to pathComponent: PathComponent, completion: @escaping (Result) -> Void)
 }
 
 public struct UpdateSignatureValueParemeters: Model {

@@ -320,6 +320,7 @@
 		93AD24F926BFC3500012A5CF /* SocialMicrosoftAuthenticationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD24F826BFC3500012A5CF /* SocialMicrosoftAuthenticationFactory.swift */; };
 		93C8772C26E8E6AB0052CD8A /* ProductActionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C8772B26E8E6AB0052CD8A /* ProductActionManager.swift */; };
 		93C8772E26E903ED0052CD8A /* UpdateSignatureValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C8772D26E903ED0052CD8A /* UpdateSignatureValue.swift */; };
+		93C8773026E9054B0052CD8A /* RemoteUpdateSignatureValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C8772F26E9054B0052CD8A /* RemoteUpdateSignatureValue.swift */; };
 		93CA3F2726D8018800E95FDD /* RegularLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CA3F2626D8018800E95FDD /* RegularLabel.swift */; };
 		93CA3F2826D8018B00E95FDD /* RegularLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CA3F2626D8018800E95FDD /* RegularLabel.swift */; };
 		93CA3F2B26D8086200E95FDD /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CA3F2A26D8086200E95FDD /* SearchTextField.swift */; };
@@ -797,6 +798,7 @@
 		93AD24F826BFC3500012A5CF /* SocialMicrosoftAuthenticationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMicrosoftAuthenticationFactory.swift; sourceTree = "<group>"; };
 		93C8772B26E8E6AB0052CD8A /* ProductActionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductActionManager.swift; sourceTree = "<group>"; };
 		93C8772D26E903ED0052CD8A /* UpdateSignatureValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateSignatureValue.swift; sourceTree = "<group>"; };
+		93C8772F26E9054B0052CD8A /* RemoteUpdateSignatureValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteUpdateSignatureValue.swift; sourceTree = "<group>"; };
 		93CA3F2526D7FFF700E95FDD /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		93CA3F2626D8018800E95FDD /* RegularLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularLabel.swift; sourceTree = "<group>"; };
 		93CA3F2A26D8086200E95FDD /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
@@ -1022,6 +1024,7 @@
 				931C7FEB26E635EF000BDEDE /* RemoteAddValueAccountProduct.swift */,
 				9396621326E68C08000089D7 /* RemoteAddSignatureValue.swift */,
 				9396622526E6A8A7000089D7 /* RemoteUpdateValueAccountProduct.swift */,
+				93C8772F26E9054B0052CD8A /* RemoteUpdateSignatureValue.swift */,
 			);
 			path = Product;
 			sourceTree = "<group>";
@@ -2800,6 +2803,7 @@
 				9396622426E6A84B000089D7 /* HttpPutClient.swift in Sources */,
 				9396622626E6A8A7000089D7 /* RemoteUpdateValueAccountProduct.swift in Sources */,
 				935EBE1D26BDA8450006A7CA /* LoadSecureCacheStorage.swift in Sources */,
+				93C8773026E9054B0052CD8A /* RemoteUpdateSignatureValue.swift in Sources */,
 				935EBE1F26BDA86B0006A7CA /* RemoteGenerateToken.swift in Sources */,
 				933DFE5926DD6C0F007812EA /* RemoteLoadProductRegisteredByAccount.swift in Sources */,
 			);
