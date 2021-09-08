@@ -8,12 +8,15 @@ public class AddProductImputTableViewCell: UITableViewCell {
     
     var valueDidChangeDelegate: AddValueAccountProductDidChangeDelegate?
     var addSignatureValueDidChange: AddSignatureValueDidChange?
+    public var productActionManager: ProductActionManager = ProductActionManager.add
     
-    var productViewModel: LoadProductNotRegisteredByAccountBodyViewModel? {
+    var productViewModel: LoadProductNotRegisteredByAccountBodyViewModel?
+    var productToEditViewModel: LoadProductRegisteredByAccountBodyViewModel? {
         didSet {
             updateUI()
         }
     }
+    
     var indexPath: IndexPath!
     
     public override func awakeFromNib() {
@@ -22,7 +25,15 @@ public class AddProductImputTableViewCell: UITableViewCell {
     }
     
     func updateUI() {
-        guard let viewModel = productViewModel else { return }
+        switch productActionManager {
+        case .add:
+            break
+        case .update:
+            guard let viewModel = productToEditViewModel else {
+                return
+            }
+            productValeuTextField.text  = "\(viewModel.signatures?[indexPath.row].salesValue ?? 0.0)"
+        }
     }
 }
 
@@ -30,11 +41,24 @@ extension AddProductImputTableViewCell: UITextFieldDelegate {
     public func textFieldDidEndEditing(_ textField: UITextField) {
         guard let safeText = textField.text else { return }
         guard let newValue = Double(safeText) else { return }
-        guard let viewModel = productViewModel else { return }
-        if viewModel.isSignature {
-            self.addSignatureValueDidChange?.didChangeSignatureValue(with: newValue, for: indexPath.row)
-        } else {
-            self.valueDidChangeDelegate?.didChangeValueAccountProduct(with: newValue)
+        
+        switch productActionManager {
+        case .add:
+            guard let viewModel = productViewModel else { return }
+            if viewModel.isSignature {
+                self.addSignatureValueDidChange?.didChangeSignatureValue(with: newValue, for: indexPath.row)
+            } else {
+                self.valueDidChangeDelegate?.didChangeValueAccountProduct(with: newValue)
+            }
+        case .update:
+            guard let viewModel = productToEditViewModel else {
+                return
+            }
+            if viewModel.isSignature {
+                self.addSignatureValueDidChange?.didChangeSignatureValue(with: newValue, for: indexPath.row)
+            } else {
+                self.valueDidChangeDelegate?.didChangeValueAccountProduct(with: newValue)
+            }
         }
     }
 }

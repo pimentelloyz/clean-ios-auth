@@ -84,6 +84,8 @@ extension PriceViewController: UITableViewDelegate, UITableViewDataSource {
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let product = self.viewModel?.productByIndex(indexPath.row)
         self.selectedProduct = product
+        guard let productViewModel = self.selectedProduct else { return }
+        self.goToAddProductViewController?(productViewModel)
     }
 }
 

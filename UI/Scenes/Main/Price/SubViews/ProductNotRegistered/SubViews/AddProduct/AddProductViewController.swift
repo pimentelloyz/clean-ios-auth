@@ -11,6 +11,8 @@ public class AddProductViewController: UIViewController, Storyboarded {
         static let addProductImputTableViewCell = String(describing: AddProductImputTableViewCell.self)
     }
     
+    public var productActionManager: ProductActionManager = ProductActionManager.add
+    
     public var productViewModel: LoadProductNotRegisteredByAccountBodyViewModel?
     public var productToEditViewModel: LoadProductRegisteredByAccountBodyViewModel?
     
@@ -46,12 +48,23 @@ public class AddProductViewController: UIViewController, Storyboarded {
     }
     
     func updateUI() {
-        guard let product = productViewModel else { return }
-        productNameLabel.text = product.codeAndNameProduct
-        monthsCountLabel.text = product.isSignature ? product.signatureOptions.localized() : ""
-        if product.isSignature {
-            addSignatureValueRequest = AddSignatureValueRequest(productId: product.productId, signatureItems: [])
+        switch productActionManager {
+        case .add:
+            guard let product = productViewModel else { return }
+            productNameLabel.text = product.codeAndNameProduct
+            monthsCountLabel.text = product.isSignature ? product.signatureOptions.localized() : ""
+            if product.isSignature {
+                addSignatureValueRequest = AddSignatureValueRequest(productId: product.productId, signatureItems: [])
+            }
+        case .update:
+            guard let product = productToEditViewModel else { return }
+            productNameLabel.text = product.codeAndNameProduct
+            monthsCountLabel.text = product.isSignature ? product.signatureOptions.localized() : ""
+            if product.isSignature {
+                addSignatureValueRequest = AddSignatureValueRequest(productId: product.productId, signatureItems: [])
+            }
         }
+       
     }
     
     @IBAction func closeDidTap(_ sender: Any) {
@@ -59,13 +72,27 @@ public class AddProductViewController: UIViewController, Storyboarded {
     }
     
     @IBAction func saveProductDidTap(_ sender: Any) {
-        guard let viewModel = productViewModel else { return }
-        if viewModel.isSignature {
-            guard let parameters = addSignatureValueRequest else { return }
-            addSignatureValue?(parameters)
-        } else {
-            guard let parameters = addValueAccountProductParameters else { return }
-            addValueAccountProduct?(parameters)
+        switch productActionManager {
+        case .add:
+            guard let viewModel = productViewModel else { return }
+            if viewModel.isSignature {
+                guard let parameters = addSignatureValueRequest else { return }
+                addSignatureValue?(parameters)
+            } else {
+                guard let parameters = addValueAccountProductParameters else { return }
+                addValueAccountProduct?(parameters)
+            }
+        case .update:
+            guard let viewModel = productToEditViewModel else { return }
+            if viewModel.isSignature {
+                guard let parameters = addSignatureValueRequest else { return }
+                print(parameters)
+//                addSignatureValue?(parameters)
+            } else {
+                guard let parameters = addValueAccountProductParameters else { return }
+                print(parameters)
+//                addValueAccountProduct?(parameters)
+            }
         }
     }
 }
@@ -76,28 +103,51 @@ extension AddProductViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return productViewModel?.numberOfRowsOnAddProductView() ?? 0
+        switch productActionManager {
+        case .add:
+            return productViewModel?.numberOfRowsOnAddProductView() ?? 0
+        default:
+            return productToEditViewModel?.numberOfRowsOnAddProductView() ?? 0
+        }
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Storyboard.addProductImputTableViewCell, for: indexPath) as! AddProductImputTableViewCell
-        guard let viewModel = self.productViewModel else {
-            return UITableViewCell()
+        cell.productActionManager = productActionManager
+        cell.indexPath = indexPath
+        switch productActionManager {
+        case .add:
+            guard let viewModel = self.productViewModel else {
+                return UITableViewCell()
+            }
+            
+            if viewModel.isSignature {
+                cell.selectionStyle = .none
+                cell.addSignatureValueDidChange = self
+                cell.productLabel.text = "\("VALUE_FOR_SALE".localized()) - \((indexPath.row + 1) * 12) \(cell.productLabel.text!.localized())"
+                self.addSignatureValueRequest?.signatureItems?.append(SignatureItemsRequest(monthCount: ((indexPath.row + 1) * 12), salesValue: 0.0))
+            } else {
+                cell.productViewModel = viewModel
+                cell.valueDidChangeDelegate = self
+                cell.selectionStyle = .none
+            }
+            return cell
+        case .update:
+            guard let viewModel = self.productToEditViewModel else {
+                return UITableViewCell()
+            }
+            cell.productToEditViewModel = viewModel
+            if viewModel.isSignature {
+                cell.selectionStyle = .none
+                cell.addSignatureValueDidChange = self
+                cell.productLabel.text = "\("VALUE_FOR_SALE".localized()) - \((indexPath.row + 1) * 12) \(cell.productLabel.text!.localized())"
+                self.addSignatureValueRequest?.signatureItems?.append(SignatureItemsRequest(monthCount: ((indexPath.row + 1) * 12), salesValue: 0.0))
+            } else {
+                cell.valueDidChangeDelegate = self
+                cell.selectionStyle = .none
+            }
+            return cell
         }
-        
-        if viewModel.isSignature {
-            cell.productViewModel = viewModel
-            cell.indexPath = indexPath
-            cell.selectionStyle = .none
-            cell.addSignatureValueDidChange = self
-            cell.productLabel.text = "\("VALUE_FOR_SALE".localized()) - \((indexPath.row + 1) * 12) \(cell.productLabel.text!.localized())"
-            self.addSignatureValueRequest?.signatureItems?.append(SignatureItemsRequest(monthCount: ((indexPath.row + 1) * 12), salesValue: 0.0))
-        } else {
-            cell.productViewModel = viewModel
-            cell.valueDidChangeDelegate = self
-            cell.selectionStyle = .none
-        }
-        return cell
     }
 }
 

@@ -318,6 +318,7 @@
 		93AD24F526BFC1430012A5CF /* MicrosoftAuthAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD24F426BFC1430012A5CF /* MicrosoftAuthAdapter.swift */; };
 		93AD24F726BFC30F0012A5CF /* MicrosoftAuthAdapterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD24F626BFC30F0012A5CF /* MicrosoftAuthAdapterFactory.swift */; };
 		93AD24F926BFC3500012A5CF /* SocialMicrosoftAuthenticationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD24F826BFC3500012A5CF /* SocialMicrosoftAuthenticationFactory.swift */; };
+		93C8772C26E8E6AB0052CD8A /* ProductActionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C8772B26E8E6AB0052CD8A /* ProductActionManager.swift */; };
 		93CA3F2726D8018800E95FDD /* RegularLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CA3F2626D8018800E95FDD /* RegularLabel.swift */; };
 		93CA3F2826D8018B00E95FDD /* RegularLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CA3F2626D8018800E95FDD /* RegularLabel.swift */; };
 		93CA3F2B26D8086200E95FDD /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CA3F2A26D8086200E95FDD /* SearchTextField.swift */; };
@@ -793,6 +794,7 @@
 		93AD24F426BFC1430012A5CF /* MicrosoftAuthAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicrosoftAuthAdapter.swift; sourceTree = "<group>"; };
 		93AD24F626BFC30F0012A5CF /* MicrosoftAuthAdapterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicrosoftAuthAdapterFactory.swift; sourceTree = "<group>"; };
 		93AD24F826BFC3500012A5CF /* SocialMicrosoftAuthenticationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMicrosoftAuthenticationFactory.swift; sourceTree = "<group>"; };
+		93C8772B26E8E6AB0052CD8A /* ProductActionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductActionManager.swift; sourceTree = "<group>"; };
 		93CA3F2526D7FFF700E95FDD /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		93CA3F2626D8018800E95FDD /* RegularLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularLabel.swift; sourceTree = "<group>"; };
 		93CA3F2A26D8086200E95FDD /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
@@ -1149,6 +1151,7 @@
 		9348E75E26DFBFE800DDF063 /* Product */ = {
 			isa = PBXGroup;
 			children = (
+				93C8772A26E8E6860052CD8A /* Helpers */,
 				9396622726E6A98A000089D7 /* UpdateValueAccountProduct */,
 				9396621526E68C65000089D7 /* AddSignatureValue */,
 				931C7FED26E636A8000BDEDE /* AddValueAccountProduct */,
@@ -2111,6 +2114,14 @@
 			path = UpdateValueAccountProduct;
 			sourceTree = "<group>";
 		};
+		93C8772A26E8E6860052CD8A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				93C8772B26E8E6AB0052CD8A /* ProductActionManager.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		93CA3F2426D7FEC500E95FDD /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
@@ -2870,6 +2881,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				935EBDFC26BDA2380006A7CA /* LoginPresenter.swift in Sources */,
+				93C8772C26E8E6AB0052CD8A /* ProductActionManager.swift in Sources */,
 				935EBD0F26BD516B0006A7CA /* Validation.swift in Sources */,
 				931C7FEF26E636FA000BDEDE /* AddValueAccountProductPresenter.swift in Sources */,
 				935EBE6826BDB1610006A7CA /* LoadScreenPresenter.swift in Sources */,

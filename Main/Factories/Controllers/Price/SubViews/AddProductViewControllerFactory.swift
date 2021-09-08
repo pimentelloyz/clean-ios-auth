@@ -29,6 +29,7 @@ public func makeUpdateProductViewControllerWith(viewModel: LoadProductRegistered
     let validationComposite = ValidationComposite(validations: makeAddValueAccountProductValidations())
     let updateValueAccountProductPresenter = UpdateValueAccountProductPresenter(updateValueAccountProduct: updateValueAccountProduct, alertView: WeakVarProxy(controller), loadingView: WeakVarProxy(controller), validation: validationComposite, viewModel: WeakVarProxy(controller))
     controller.productToEditViewModel = viewModel
+    controller.productActionManager = .update
     controller.updateValueAccountProduct = updateValueAccountProductPresenter.update
     return controller
 }

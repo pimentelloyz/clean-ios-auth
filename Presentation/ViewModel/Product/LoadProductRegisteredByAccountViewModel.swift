@@ -36,6 +36,14 @@ public struct LoadProductRegisteredByAccountBodyViewModel {
         self.body = body
     }
     
+    public func numberOfRowsOnAddProductView() -> Int {
+        return body?.productSignature ?? false ? 3 : 1
+    }
+    
+    public var productId: Int {
+        return self.body?.productId ?? 0
+    }
+    
     public var productName: String {
         return self.body?.productName ?? ""
     }
@@ -62,5 +70,9 @@ public struct LoadProductRegisteredByAccountBodyViewModel {
     
     public var lastPurchasePrice: String {
         return "\(self.body?.lastPurchasePrice ?? 00.0)"
+    }
+    
+    public var signatureOptions: String {
+        return "SIGNATURE_OPTIONS"
     }
 }
