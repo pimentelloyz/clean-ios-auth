@@ -319,6 +319,7 @@
 		93AD24F726BFC30F0012A5CF /* MicrosoftAuthAdapterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD24F626BFC30F0012A5CF /* MicrosoftAuthAdapterFactory.swift */; };
 		93AD24F926BFC3500012A5CF /* SocialMicrosoftAuthenticationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD24F826BFC3500012A5CF /* SocialMicrosoftAuthenticationFactory.swift */; };
 		93C8772C26E8E6AB0052CD8A /* ProductActionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C8772B26E8E6AB0052CD8A /* ProductActionManager.swift */; };
+		93C8772E26E903ED0052CD8A /* UpdateSignatureValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C8772D26E903ED0052CD8A /* UpdateSignatureValue.swift */; };
 		93CA3F2726D8018800E95FDD /* RegularLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CA3F2626D8018800E95FDD /* RegularLabel.swift */; };
 		93CA3F2826D8018B00E95FDD /* RegularLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CA3F2626D8018800E95FDD /* RegularLabel.swift */; };
 		93CA3F2B26D8086200E95FDD /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CA3F2A26D8086200E95FDD /* SearchTextField.swift */; };
@@ -795,6 +796,7 @@
 		93AD24F626BFC30F0012A5CF /* MicrosoftAuthAdapterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicrosoftAuthAdapterFactory.swift; sourceTree = "<group>"; };
 		93AD24F826BFC3500012A5CF /* SocialMicrosoftAuthenticationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMicrosoftAuthenticationFactory.swift; sourceTree = "<group>"; };
 		93C8772B26E8E6AB0052CD8A /* ProductActionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductActionManager.swift; sourceTree = "<group>"; };
+		93C8772D26E903ED0052CD8A /* UpdateSignatureValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateSignatureValue.swift; sourceTree = "<group>"; };
 		93CA3F2526D7FFF700E95FDD /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		93CA3F2626D8018800E95FDD /* RegularLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularLabel.swift; sourceTree = "<group>"; };
 		93CA3F2A26D8086200E95FDD /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
@@ -972,6 +974,7 @@
 				931C7FE626E63442000BDEDE /* AddValueAccountProduct.swift */,
 				9396621126E68B65000089D7 /* AddSignatureValue.swift */,
 				9396621F26E6A787000089D7 /* UpdateValueAccountProduct.swift */,
+				93C8772D26E903ED0052CD8A /* UpdateSignatureValue.swift */,
 			);
 			path = Product;
 			sourceTree = "<group>";
@@ -2763,6 +2766,7 @@
 				9396622026E6A787000089D7 /* UpdateValueAccountProduct.swift in Sources */,
 				931C7FEA26E634EB000BDEDE /* NoContentModel.swift in Sources */,
 				935EBE9326BDD7AC0006A7CA /* UploadMultipart.swift in Sources */,
+				93C8772E26E903ED0052CD8A /* UpdateSignatureValue.swift in Sources */,
 				93AD24DE26BF76D80012A5CF /* AuthenticationModel.swift in Sources */,
 				935EBC6026BD4BC30006A7CA /* DomainError.swift in Sources */,
 				935EBC6326BD4BF90006A7CA /* AccountModel.swift in Sources */,
