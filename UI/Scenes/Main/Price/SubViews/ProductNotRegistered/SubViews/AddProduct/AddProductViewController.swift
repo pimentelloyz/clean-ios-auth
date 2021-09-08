@@ -21,10 +21,12 @@ public class AddProductViewController: UIViewController, Storyboarded {
     public var updateValueAccountProduct: ((UpdateValueAccountProductRequest, PathComponentRequest) -> Void)?
     public var updateValueAccountProductRequest: UpdateValueAccountProductRequest?
     public var updateValueAccountProductPath: PathComponentRequest?
-    var aupdateValueAccountProductParameters: UpdateValueAccountProductRequest?
     
     public var addSignatureValue: ((AddSignatureValueRequest) -> Void)?
     var addSignatureValueRequest: AddSignatureValueRequest?
+    public var updateSignatureValue: ((UpdateSignatureValueRequest, PathComponentRequest) -> Void)?
+    public var updateSignatureValueRequest: UpdateSignatureValueRequest?
+    public var updateSignatureValuePath: PathComponentRequest?
     
     public final override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,10 +65,12 @@ public class AddProductViewController: UIViewController, Storyboarded {
             productNameLabel.text = product.codeAndNameProduct
             monthsCountLabel.text = product.isSignature ? product.signatureOptions.localized() : ""
             if product.isSignature {
-                addSignatureValueRequest = AddSignatureValueRequest(productId: product.productId, signatureItems: [])
+                var signatureItems = [UpdateSignatureItemsRequest]()
+                product.signatures.map { $0.forEach { signatureItems.append(UpdateSignatureItemsRequest(signatureValueId: $0.signatureValueId, monthCount: $0.monthNumber, salesValue: $0.salesValue))} }
+                updateSignatureValueRequest = UpdateSignatureValueRequest(accountProductId: product.accountProductId, signatureItems: signatureItems)
+                updateSignatureValuePath = PathComponentRequest(path: "\(product.accountProductId)")
             }
         }
-       
     }
     
     @IBAction func closeDidTap(_ sender: Any) {
@@ -87,8 +91,9 @@ public class AddProductViewController: UIViewController, Storyboarded {
         case .update:
             guard let viewModel = productToEditViewModel else { return }
             if viewModel.isSignature {
-                guard let parameters = addSignatureValueRequest else { return }
-//                addSignatureValue?(parameters)
+                guard let request = updateSignatureValueRequest else { return }
+                guard let path = updateSignatureValuePath else { return }
+                updateSignatureValue?(request, path)
             } else {
                 guard let request = updateValueAccountProductRequest else { return }
                 guard let path = updateValueAccountProductPath else { return }
@@ -142,7 +147,6 @@ extension AddProductViewController: UITableViewDelegate, UITableViewDataSource {
                 cell.selectionStyle = .none
                 cell.addSignatureValueDidChange = self
                 cell.productLabel.text = "\("VALUE_FOR_SALE".localized()) - \((indexPath.row + 1) * 12) \(cell.productLabel.text!.localized())"
-                self.addSignatureValueRequest?.signatureItems?.append(SignatureItemsRequest(monthCount: ((indexPath.row + 1) * 12), salesValue: 0.0))
             } else {
                 cell.valueDidChangeDelegate = self
                 cell.selectionStyle = .none
@@ -168,9 +172,15 @@ extension AddProductViewController: AddValueAccountProductDidChangeDelegate {
 
 extension AddProductViewController: AddSignatureValueDidChange {
     public func didChangeSignatureValue(with newValue: Double, for index: Int) {
-        self.addSignatureValueRequest?.signatureItems?[index].salesValue = newValue
+        switch productActionManager {
+        case .add:
+            self.addSignatureValueRequest?.signatureItems?[index].salesValue = newValue
+        case .update:
+            self.updateSignatureValueRequest?.signatureItems?[index].salesValue = newValue
+        }
     }
 }
+
 
 extension AddProductViewController: ResultNoContentViewModel {
     public func result(_ viewModel: NoContentViewModel) {

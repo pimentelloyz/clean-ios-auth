@@ -323,6 +323,7 @@
 		93C8773026E9054B0052CD8A /* RemoteUpdateSignatureValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C8772F26E9054B0052CD8A /* RemoteUpdateSignatureValue.swift */; };
 		93C8773326E9063F0052CD8A /* UpdateSignatureValueRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C8773226E9063F0052CD8A /* UpdateSignatureValueRequest.swift */; };
 		93C8773526E915180052CD8A /* UpdateSignatureValuePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C8773426E915180052CD8A /* UpdateSignatureValuePresenter.swift */; };
+		93C8773726E9179E0052CD8A /* RemoteUpdateSignatureValueFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C8773626E9179E0052CD8A /* RemoteUpdateSignatureValueFactory.swift */; };
 		93CA3F2726D8018800E95FDD /* RegularLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CA3F2626D8018800E95FDD /* RegularLabel.swift */; };
 		93CA3F2826D8018B00E95FDD /* RegularLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CA3F2626D8018800E95FDD /* RegularLabel.swift */; };
 		93CA3F2B26D8086200E95FDD /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CA3F2A26D8086200E95FDD /* SearchTextField.swift */; };
@@ -803,6 +804,7 @@
 		93C8772F26E9054B0052CD8A /* RemoteUpdateSignatureValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteUpdateSignatureValue.swift; sourceTree = "<group>"; };
 		93C8773226E9063F0052CD8A /* UpdateSignatureValueRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateSignatureValueRequest.swift; sourceTree = "<group>"; };
 		93C8773426E915180052CD8A /* UpdateSignatureValuePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateSignatureValuePresenter.swift; sourceTree = "<group>"; };
+		93C8773626E9179E0052CD8A /* RemoteUpdateSignatureValueFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteUpdateSignatureValueFactory.swift; sourceTree = "<group>"; };
 		93CA3F2526D7FFF700E95FDD /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		93CA3F2626D8018800E95FDD /* RegularLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularLabel.swift; sourceTree = "<group>"; };
 		93CA3F2A26D8086200E95FDD /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
@@ -1145,6 +1147,7 @@
 				931C7FF526E638D3000BDEDE /* RemoteAddValueAccountProductFactory.swift */,
 				9396621A26E6913D000089D7 /* RemoteAddSignatureValueFactory.swift */,
 				9396622E26E6ABCE000089D7 /* RemoteUpdateValueAccountProductFactory.swift */,
+				93C8773626E9179E0052CD8A /* RemoteUpdateSignatureValueFactory.swift */,
 			);
 			path = Product;
 			sourceTree = "<group>";
@@ -3048,6 +3051,7 @@
 				935EBE6326BDB0C60006A7CA /* LoadScreenViewController.swift in Sources */,
 				93622A0526E139D800BA2FB1 /* SaveButton.swift in Sources */,
 				93F0DE5126D6AF7500C4631C /* OfferViewController.swift in Sources */,
+				93C8773726E9179E0052CD8A /* RemoteUpdateSignatureValueFactory.swift in Sources */,
 				935EBEBB26BE2B3D0006A7CA /* TextLabelPrimary.swift in Sources */,
 				9396621026E64DC7000089D7 /* AddValueAccountProductDidChangeDelegate.swift in Sources */,
 				935EBEAA26BE262C0006A7CA /* UIColorExtensions.swift in Sources */,

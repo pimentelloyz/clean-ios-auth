@@ -77,3 +77,11 @@ extension MainQueueDispatchDecorator: UpdateValueAccountProduct where T: UpdateV
         }
     }
 }
+
+extension MainQueueDispatchDecorator: UpdateSignatureValue where T: UpdateSignatureValue {
+    public func update(with params: UpdateSignatureValueParemeters, to pathComponent: PathComponent, completion: @escaping (UpdateSignatureValue.Result) -> Void) {
+        instance.update(with: params, to: pathComponent) { [weak self] result in
+            self?.dispatch { completion(result) }
+        }
+    }
+}

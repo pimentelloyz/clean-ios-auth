@@ -8,7 +8,7 @@ public func makeAddProductViewController(viewModel: LoadProductNotRegisteredByAc
 }
 
 public func makeAddProductViewController(viewModel: LoadProductRegisteredByAccountBodyViewModel) -> AddProductViewController {
-    return makeUpdateProductViewControllerWith(viewModel: viewModel, updateValueAccountProduct: makeRemoteUpdateValueAccountProduct())
+    return makeUpdateProductViewControllerWith(viewModel: viewModel, updateValueAccountProduct: makeRemoteUpdateValueAccountProduct(), updateSignatureValue: makeRemoteUpdateSignatureValue())
 }
 
 
@@ -24,13 +24,16 @@ public func makeAddProductViewControllerWith(viewModel: LoadProductNotRegistered
     return controller
 }
 
-public func makeUpdateProductViewControllerWith(viewModel: LoadProductRegisteredByAccountBodyViewModel, updateValueAccountProduct: UpdateValueAccountProduct) -> AddProductViewController {
+public func makeUpdateProductViewControllerWith(viewModel: LoadProductRegisteredByAccountBodyViewModel, updateValueAccountProduct: UpdateValueAccountProduct, updateSignatureValue: UpdateSignatureValue) -> AddProductViewController {
     let controller = AddProductViewController.instantiate()
     let validationComposite = ValidationComposite(validations: makeUpdateValueAccountProductValidations())
+    let upadteSignatureValueValidationComposite = ValidationComposite(validations: makeUpdateSignatureValuesValidations())
     let updateValueAccountProductPresenter = UpdateValueAccountProductPresenter(updateValueAccountProduct: updateValueAccountProduct, alertView: WeakVarProxy(controller), loadingView: WeakVarProxy(controller), validation: validationComposite, viewModel: WeakVarProxy(controller))
+    let updateSignatureValuePresenter = UpdateSignatureValuePresenter(updateSignatureValue: updateSignatureValue, alertView: WeakVarProxy(controller), loadingView: WeakVarProxy(controller), validation: upadteSignatureValueValidationComposite, viewModel: WeakVarProxy(controller))
     controller.productToEditViewModel = viewModel
     controller.productActionManager = .update
     controller.updateValueAccountProduct = updateValueAccountProductPresenter.update
+    controller.updateSignatureValue = updateSignatureValuePresenter.update
     return controller
 }
 
@@ -46,4 +49,8 @@ public func makeUpdateValueAccountProductValidations() -> [Validation] {
 public func makeAddSignatureValuesValidations() -> [Validation] {
     return ValidationBuilder.field("productId").label("PRODUCT_ID".localized()).required().build() +
         ValidationBuilder.field("signatureItems").label("SIGNATURE_ITENS".localized()).required().build()
+}
+
+public func makeUpdateSignatureValuesValidations() -> [Validation] {
+    return ValidationBuilder.field("signatureItems").label("SIGNATURE_ITENS".localized()).required().build()
 }
