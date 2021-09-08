@@ -207,6 +207,9 @@
                 <outletCollection property="productPriceCollectionLabel" destination="dFN-pt-cBf" collectionClass="NSMutableArray" id="7C9-Om-yTV"/>
                 <outletCollection property="productPriceCollectionLabel" destination="hZW-yW-vIR" collectionClass="NSMutableArray" id="aSV-1G-bzJ"/>
                 <outletCollection property="productPriceCollectionLabel" destination="hR9-8d-4Hm" collectionClass="NSMutableArray" id="qaV-Av-WXE"/>
+                <outletCollection property="monthCountLabel" destination="Gcr-gX-BUc" collectionClass="NSMutableArray" id="3tT-xE-mYo"/>
+                <outletCollection property="monthCountLabel" destination="zBn-er-dhE" collectionClass="NSMutableArray" id="sAh-0y-caf"/>
+                <outletCollection property="monthCountLabel" destination="geR-I6-gwW" collectionClass="NSMutableArray" id="xaS-w7-bPK"/>
             </connections>
             <point key="canvasLocation" x="242.75362318840581" y="118.19196428571428"/>
         </tableViewCell>

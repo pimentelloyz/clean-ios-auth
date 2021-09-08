@@ -70,7 +70,6 @@ extension PriceViewController: UITableViewDelegate, UITableViewDataSource {
         if product?.isSignature ?? false {
             let cell = tableView.dequeueReusableCell(withIdentifier: Storyboard.productSignatureCell, for: indexPath) as! ProductSignatureTableViewCell
             cell.selectionStyle = .none
-            
             cell.product = product
             return cell
         }

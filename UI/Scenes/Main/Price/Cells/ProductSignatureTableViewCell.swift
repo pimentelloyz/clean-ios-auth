@@ -7,14 +7,13 @@ public final class ProductSignatureTableViewCell: UITableViewCell {
     @IBOutlet weak var lastPurchasePrice: RegularLabel!
     @IBOutlet var monthLabel: [TextLabelPrimary]!
     @IBOutlet var productPriceCollectionLabel: [TextLabelPrimary]!
-    
+    @IBOutlet var monthCountLabel: [TextLabelPrimary]!
     
     var product: LoadProductRegisteredByAccountBodyViewModel? {
         didSet {
             updateUI()
         }
     }
-    
     public override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -23,8 +22,9 @@ public final class ProductSignatureTableViewCell: UITableViewCell {
         guard let viewModel = product else { return }
         productNameLabel.text   = viewModel.codeAndNameProduct
         lastPurchasePrice.text  = (lastPurchasePrice.text?.localized())! +  viewModel.lastPurchasePrice
-        for (_, label) in monthLabel.enumerated() {
+        for (index, label) in monthLabel.enumerated() {
             label.text = label.text?.localized()
+            monthCountLabel[index].text = "\((index + 1) * 12)"
         }
         
         guard let signatures = viewModel.signatures else { return }
