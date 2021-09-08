@@ -19,6 +19,8 @@ public class AddProductViewController: UIViewController, Storyboarded {
     public var addValueAccountProduct: ((AddValueAccountProductRequest) -> Void)?
     var addValueAccountProductParameters: AddValueAccountProductRequest?
     public var updateValueAccountProduct: ((UpdateValueAccountProductRequest, PathComponentRequest) -> Void)?
+    public var updateValueAccountProductRequest: UpdateValueAccountProductRequest?
+    public var updateValueAccountProductPath: PathComponentRequest?
     var aupdateValueAccountProductParameters: UpdateValueAccountProductRequest?
     
     public var addSignatureValue: ((AddSignatureValueRequest) -> Void)?
@@ -86,12 +88,11 @@ public class AddProductViewController: UIViewController, Storyboarded {
             guard let viewModel = productToEditViewModel else { return }
             if viewModel.isSignature {
                 guard let parameters = addSignatureValueRequest else { return }
-                print(parameters)
 //                addSignatureValue?(parameters)
             } else {
-                guard let parameters = addValueAccountProductParameters else { return }
-                print(parameters)
-//                addValueAccountProduct?(parameters)
+                guard let request = updateValueAccountProductRequest else { return }
+                guard let path = updateValueAccountProductPath else { return }
+                updateValueAccountProduct?(request, path)
             }
         }
     }
@@ -153,8 +154,15 @@ extension AddProductViewController: UITableViewDelegate, UITableViewDataSource {
 
 extension AddProductViewController: AddValueAccountProductDidChangeDelegate {
     public func didChangeValueAccountProduct(with newValue: Double) {
-        guard let product = productViewModel else { return }
-        self.addValueAccountProductParameters = AddValueAccountProductRequest(productId: product.productId, salesValue: newValue)
+        switch productActionManager {
+        case .add:
+            guard let product = productViewModel else { return }
+            self.addValueAccountProductParameters = AddValueAccountProductRequest(productId: product.productId, salesValue: newValue)
+        case .update:
+            guard let product = productToEditViewModel else { return }
+            self.updateValueAccountProductRequest = UpdateValueAccountProductRequest(salesValue: newValue)
+            self.updateValueAccountProductPath = PathComponentRequest(path: "\(product.accountProductId)")
+        }
     }
 }
 

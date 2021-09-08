@@ -6,12 +6,9 @@ public protocol UpdateValueAccountProduct {
 }
 
 public struct UpdateValueAccountProductParameters: Model {
-    public let monthCount: Int
     public let salesValue: Double
     
-    public init(monthCount: Int,
-                salesValue: Double) {
-        self.monthCount     = monthCount
+    public init(salesValue: Double) {
         self.salesValue     = salesValue
     }
 }

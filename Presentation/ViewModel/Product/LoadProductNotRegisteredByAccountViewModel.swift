@@ -48,6 +48,10 @@ public struct LoadProductNotRegisteredByAccountBodyViewModel {
         return self.body?.productId ?? 0
     }
     
+    public var accountProductId: Int {
+        return self.body?.accountProductId ?? 0
+    }
+    
     public var productName: String {
         return self.body?.productName ?? ""
     }

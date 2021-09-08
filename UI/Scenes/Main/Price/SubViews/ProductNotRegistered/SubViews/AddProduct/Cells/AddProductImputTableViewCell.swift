@@ -32,7 +32,12 @@ public class AddProductImputTableViewCell: UITableViewCell {
             guard let viewModel = productToEditViewModel else {
                 return
             }
-            productValeuTextField.text  = "\(viewModel.signatures?[indexPath.row].salesValue ?? 0.0)"
+            if viewModel.isSignature {
+                productValeuTextField.text  = "\(viewModel.signatures?[indexPath.row].salesValue ?? 0.0)"
+            } else {
+                productValeuTextField.text  = "\(viewModel.salesValeu)"
+            }
+            
         }
     }
 }

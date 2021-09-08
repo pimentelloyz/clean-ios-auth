@@ -7,6 +7,6 @@ func makeRemoteUpdateValueAccountProduct() -> UpdateValueAccountProduct {
 }
 
 func makeRemoteUpdateValueAccountProductWith(httpClient: HttpPutClient) -> UpdateValueAccountProduct {
-    let module = RemoteUpdateValueAccountProduct(url: makeApiUrl(path: "product/update-signature-value"), httpClient: httpClient, authenticationHeaders: makeAuthenticationHeaders())
+    let module = RemoteUpdateValueAccountProduct(url: makeApiUrl(path: "product/update-value-account-product"), httpClient: httpClient, authenticationHeaders: makeAuthenticationHeaders())
     return MainQueueDispatchDecorator(module)
 }

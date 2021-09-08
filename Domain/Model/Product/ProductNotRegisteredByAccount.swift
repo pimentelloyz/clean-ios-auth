@@ -15,18 +15,21 @@ public struct ProductNotRegisteredByAccountBody: Model {
     public let productSignature: Bool
     public let salesValue: Double?
     public let lastPurchasePrice: Double?
+    public let accountProductId: Int?
     
     public init(productId: Int,
                 productCode: String,
                 productName: String,
                 productSignature: Bool,
                 salesValue: Double?,
-                lastPurchasePrice: Double?) {
+                lastPurchasePrice: Double?,
+                accountProductId: Int?) {
         self.productId          = productId
         self.productCode        = productCode
         self.productName        = productName
         self.productSignature   = productSignature
         self.salesValue         = salesValue
         self.lastPurchasePrice  = lastPurchasePrice
+        self.accountProductId   = accountProductId
     }
 }

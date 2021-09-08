@@ -15,6 +15,7 @@ public struct ProductRegisteredByAccountBody: Model {
     public let productSignature: Bool
     public let salesValue: Double?
     public let lastPurchasePrice: Double?
+    public let accountProductId: Int
     public let signatures: [SignatureValue]?
     
     public init(productId: Int,
@@ -23,6 +24,7 @@ public struct ProductRegisteredByAccountBody: Model {
                 productSignature: Bool,
                 salesValue: Double?,
                 lastPurchasePrice: Double?,
+                accountProductId: Int,
                 signatures: [SignatureValue]?) {
         self.productId          = productId
         self.productCode        = productCode
@@ -30,6 +32,7 @@ public struct ProductRegisteredByAccountBody: Model {
         self.productSignature   = productSignature
         self.salesValue         = salesValue
         self.lastPurchasePrice  = lastPurchasePrice
+        self.accountProductId   = accountProductId
         self.signatures         = signatures
     }
 }

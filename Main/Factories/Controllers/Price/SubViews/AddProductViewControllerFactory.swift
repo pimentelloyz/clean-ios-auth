@@ -26,7 +26,7 @@ public func makeAddProductViewControllerWith(viewModel: LoadProductNotRegistered
 
 public func makeUpdateProductViewControllerWith(viewModel: LoadProductRegisteredByAccountBodyViewModel, updateValueAccountProduct: UpdateValueAccountProduct) -> AddProductViewController {
     let controller = AddProductViewController.instantiate()
-    let validationComposite = ValidationComposite(validations: makeAddValueAccountProductValidations())
+    let validationComposite = ValidationComposite(validations: makeUpdateValueAccountProductValidations())
     let updateValueAccountProductPresenter = UpdateValueAccountProductPresenter(updateValueAccountProduct: updateValueAccountProduct, alertView: WeakVarProxy(controller), loadingView: WeakVarProxy(controller), validation: validationComposite, viewModel: WeakVarProxy(controller))
     controller.productToEditViewModel = viewModel
     controller.productActionManager = .update
@@ -37,6 +37,10 @@ public func makeUpdateProductViewControllerWith(viewModel: LoadProductRegistered
 public func makeAddValueAccountProductValidations() -> [Validation] {
     return ValidationBuilder.field("productId").label("PRODUCT_ID".localized()).required().build() +
         ValidationBuilder.field("salesValue").label("SALES_VALUE".localized()).required().build()
+}
+
+public func makeUpdateValueAccountProductValidations() -> [Validation] {
+    return ValidationBuilder.field("salesValue").label("SALES_VALUE".localized()).required().build()
 }
 
 public func makeAddSignatureValuesValidations() -> [Validation] {
