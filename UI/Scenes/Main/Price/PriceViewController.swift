@@ -11,9 +11,10 @@ public final class PriceViewController: UIViewController, Storyboarded {
     }
     var viewModel: LoadProductRegisteredByAccountViewModel? {
         didSet {
-            tableView.reloadData()
+            appendNewProjects()
         }
     }
+    var products: [LoadProductRegisteredByAccountBodyViewModel]?
     var selectedProduct: LoadProductRegisteredByAccountBodyViewModel?
     public var loadProductRegisteredByAccount: ((LoadProductRegisteredByAccountRequest) -> Void)?
     public var goToProductNotRegisteredViewController: (() -> Void)?
@@ -23,6 +24,8 @@ public final class PriceViewController: UIViewController, Storyboarded {
         static let productCell = String(describing: ProductTableViewCell.self)
         static let productSignatureCell = String(describing: ProductSignatureTableViewCell.self)
     }
+    var loadProductRegisteredOffsetViewModel = LoadProductRegisteredOffsetViewModel()
+    var loadProductControll: LoadProductControll = LoadProductControll.hasCompleted
     
     public final override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,11 +51,32 @@ public final class PriceViewController: UIViewController, Storyboarded {
     }
     
     func fetchProductRegisteredByAccount() {
-        loadProductRegisteredByAccount?(LoadProductRegisteredByAccountRequest(limit: 10, offSet: 0, search: "%"))
+        loadProductRegisteredByAccount?(LoadProductRegisteredByAccountRequest(limit: loadProductRegisteredOffsetViewModel.limit, offSet: loadProductRegisteredOffsetViewModel.offset, search: loadProductRegisteredOffsetViewModel.search))
+    }
+    
+    func appendNewProjects() {
+        guard let safeViewModel = self.viewModel else { return }
+        let newElements = safeViewModel.listProductBody()
+        if newElements.isEmpty {
+            self.loadProductRegisteredOffsetViewModel.decrementOffset()
+            return
+        }
+        if products == nil  {
+            products = newElements
+        } else {
+            products! += newElements
+        }
+        DispatchQueue.main.async() {
+            self.tableView.reloadData()
+        }
     }
     
     @IBAction func addNewProductDidTap(_ sender: Any) {
         goToProductNotRegisteredViewController?()
+    }
+    
+    @IBAction func searchDidTap(_ sender: Any) {
+        fetchProductRegisteredByAccount()
     }
 }
 
@@ -62,11 +86,11 @@ extension PriceViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel?.numberOfItemsInSection(section) ?? 0
+        return products?.count ?? 0
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let product = self.viewModel?.productByIndex(indexPath.row)
+        let product = products?[indexPath.row]
         if product?.isSignature ?? false {
             let cell = tableView.dequeueReusableCell(withIdentifier: Storyboard.productSignatureCell, for: indexPath) as! ProductSignatureTableViewCell
             cell.selectionStyle = .none
@@ -81,10 +105,41 @@ extension PriceViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let product = self.viewModel?.productByIndex(indexPath.row)
+        let product = products?[indexPath.row]
         self.selectedProduct = product
         guard let productViewModel = self.selectedProduct else { return }
         self.goToAddProductViewController?(productViewModel)
+    }
+    
+    public func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if ((tableView.contentOffset.y + tableView.frame.size.height) >= tableView.contentSize.height) {
+            switch loadProductControll {
+            case .hasCompleted:
+                self.loadProductRegisteredOffsetViewModel.incrementOffset()
+                self.fetchProductRegisteredByAccount()
+            case .isLoadingMore:
+                break
+            }
+        }
+    }
+}
+
+extension PriceViewController: UITextFieldDelegate {
+    public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        guard let safeText = textField.text else {
+            return true
+        }
+        
+        self.loadProductRegisteredOffsetViewModel.updateSearchQuery(newQuery: safeText)
+        return true
+    }
+    
+    public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        guard textField.text != nil else {
+            return true
+        }
+        self.fetchProductRegisteredByAccount()
+        return true
     }
 }
 

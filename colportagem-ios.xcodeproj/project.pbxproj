@@ -290,6 +290,7 @@
 		9381731B26D9676300B12D99 /* NewOfferButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9381731926D9676300B12D99 /* NewOfferButton.swift */; };
 		9381731E26D969CC00B12D99 /* AccountImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9381731D26D969CC00B12D99 /* AccountImageView.swift */; };
 		9381731F26D969CC00B12D99 /* AccountImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9381731D26D969CC00B12D99 /* AccountImageView.swift */; };
+		93861F4926E92E8900DB8BF4 /* LoadProductControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93861F4826E92E8900DB8BF4 /* LoadProductControll.swift */; };
 		9396620F26E64CAE000089D7 /* AddValueAccountProductDidChangeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9396620E26E64CAE000089D7 /* AddValueAccountProductDidChangeDelegate.swift */; };
 		9396621026E64DC7000089D7 /* AddValueAccountProductDidChangeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9396620E26E64CAE000089D7 /* AddValueAccountProductDidChangeDelegate.swift */; };
 		9396621226E68B65000089D7 /* AddSignatureValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9396621126E68B65000089D7 /* AddSignatureValue.swift */; };
@@ -324,6 +325,7 @@
 		93C8773326E9063F0052CD8A /* UpdateSignatureValueRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C8773226E9063F0052CD8A /* UpdateSignatureValueRequest.swift */; };
 		93C8773526E915180052CD8A /* UpdateSignatureValuePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C8773426E915180052CD8A /* UpdateSignatureValuePresenter.swift */; };
 		93C8773726E9179E0052CD8A /* RemoteUpdateSignatureValueFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C8773626E9179E0052CD8A /* RemoteUpdateSignatureValueFactory.swift */; };
+		93C8773926E927170052CD8A /* LoadProductRegisteredOffsetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C8773826E927170052CD8A /* LoadProductRegisteredOffsetViewModel.swift */; };
 		93CA3F2726D8018800E95FDD /* RegularLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CA3F2626D8018800E95FDD /* RegularLabel.swift */; };
 		93CA3F2826D8018B00E95FDD /* RegularLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CA3F2626D8018800E95FDD /* RegularLabel.swift */; };
 		93CA3F2B26D8086200E95FDD /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CA3F2A26D8086200E95FDD /* SearchTextField.swift */; };
@@ -775,6 +777,7 @@
 		93622A1E26E1480900BA2FB1 /* NumberMonthContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberMonthContainer.swift; sourceTree = "<group>"; };
 		9381731926D9676300B12D99 /* NewOfferButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOfferButton.swift; sourceTree = "<group>"; };
 		9381731D26D969CC00B12D99 /* AccountImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountImageView.swift; sourceTree = "<group>"; };
+		93861F4826E92E8900DB8BF4 /* LoadProductControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadProductControll.swift; sourceTree = "<group>"; };
 		9396620E26E64CAE000089D7 /* AddValueAccountProductDidChangeDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddValueAccountProductDidChangeDelegate.swift; sourceTree = "<group>"; };
 		9396621126E68B65000089D7 /* AddSignatureValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSignatureValue.swift; sourceTree = "<group>"; };
 		9396621326E68C08000089D7 /* RemoteAddSignatureValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAddSignatureValue.swift; sourceTree = "<group>"; };
@@ -805,6 +808,7 @@
 		93C8773226E9063F0052CD8A /* UpdateSignatureValueRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateSignatureValueRequest.swift; sourceTree = "<group>"; };
 		93C8773426E915180052CD8A /* UpdateSignatureValuePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateSignatureValuePresenter.swift; sourceTree = "<group>"; };
 		93C8773626E9179E0052CD8A /* RemoteUpdateSignatureValueFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteUpdateSignatureValueFactory.swift; sourceTree = "<group>"; };
+		93C8773826E927170052CD8A /* LoadProductRegisteredOffsetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadProductRegisteredOffsetViewModel.swift; sourceTree = "<group>"; };
 		93CA3F2526D7FFF700E95FDD /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		93CA3F2626D8018800E95FDD /* RegularLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularLabel.swift; sourceTree = "<group>"; };
 		93CA3F2A26D8086200E95FDD /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
@@ -1180,6 +1184,8 @@
 			children = (
 				9348E76226DFC08600DDF063 /* LoadProductRegisteredByAccountViewModel.swift */,
 				936229D626E1117600BA2FB1 /* LoadProductNotRegisteredByAccountViewModel.swift */,
+				93C8773826E927170052CD8A /* LoadProductRegisteredOffsetViewModel.swift */,
+				93861F4826E92E8900DB8BF4 /* LoadProductControll.swift */,
 			);
 			path = Product;
 			sourceTree = "<group>";
@@ -2907,6 +2913,7 @@
 			files = (
 				935EBDFC26BDA2380006A7CA /* LoginPresenter.swift in Sources */,
 				93C8772C26E8E6AB0052CD8A /* ProductActionManager.swift in Sources */,
+				93861F4926E92E8900DB8BF4 /* LoadProductControll.swift in Sources */,
 				93C8773526E915180052CD8A /* UpdateSignatureValuePresenter.swift in Sources */,
 				935EBD0F26BD516B0006A7CA /* Validation.swift in Sources */,
 				931C7FEF26E636FA000BDEDE /* AddValueAccountProductPresenter.swift in Sources */,
@@ -2927,6 +2934,7 @@
 				935EBE4026BDAA1D0006A7CA /* PathComponentRequest.swift in Sources */,
 				9396622B26E6A9F4000089D7 /* UpdateValueAccountProductPresenter.swift in Sources */,
 				931C7FF226E63722000BDEDE /* NoContentViewModel.swift in Sources */,
+				93C8773926E927170052CD8A /* LoadProductRegisteredOffsetViewModel.swift in Sources */,
 				9348E76526DFE98500DDF063 /* LoadProductRegisteredByAccountRequest.swift in Sources */,
 				935EBE4526BDAA650006A7CA /* GenerateTokenResultViewModel.swift in Sources */,
 				935EBE4A26BDAB2F0006A7CA /* GenerateTokenRequest.swift in Sources */,

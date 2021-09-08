@@ -79,4 +79,8 @@ public struct LoadProductRegisteredByAccountBodyViewModel {
     public var signatureOptions: String {
         return "SIGNATURE_OPTIONS"
     }
+    
+    public var lastPurchesePriceString: String {
+        return "LAST_PURCHASE_PRICE"
+    }
 }

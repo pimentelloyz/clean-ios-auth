@@ -57,6 +57,9 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="288" height="46"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="yO9-Sq-KBd" id="gLn-dW-OBb"/>
+                                                </connections>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9DV-Mb-QU7">
                                                 <rect key="frame" x="304" y="0.0" width="46" height="46"/>
@@ -64,6 +67,9 @@
                                                     <constraint firstAttribute="width" constant="46" id="rMj-kC-NHw"/>
                                                 </constraints>
                                                 <state key="normal" image="search"/>
+                                                <connections>
+                                                    <action selector="searchDidTap:" destination="yO9-Sq-KBd" eventType="touchUpInside" id="56P-UY-8ch"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>

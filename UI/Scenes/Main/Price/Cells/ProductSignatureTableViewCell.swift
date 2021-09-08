@@ -21,7 +21,7 @@ public final class ProductSignatureTableViewCell: UITableViewCell {
     func updateUI() {
         guard let viewModel = product else { return }
         productNameLabel.text   = viewModel.codeAndNameProduct
-        lastPurchasePrice.text  = (lastPurchasePrice.text?.localized())! +  viewModel.lastPurchasePrice
+        lastPurchasePrice.text  = viewModel.lastPurchesePriceString.localized() + " " + viewModel.lastPurchasePrice
         for (index, label) in monthLabel.enumerated() {
             label.text = label.text?.localized()
             monthCountLabel[index].text = "\((index + 1) * 12)"
