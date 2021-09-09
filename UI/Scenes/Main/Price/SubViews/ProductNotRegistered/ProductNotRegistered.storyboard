@@ -111,6 +111,7 @@
                     </view>
                     <connections>
                         <outlet property="searchContainerView" destination="pj7-kc-KW6" id="gFJ-gj-nWZ"/>
+                        <outlet property="searchTextField" destination="NVj-ie-676" id="YV7-7H-DSE"/>
                         <outlet property="tableView" destination="fZ1-bY-xMz" id="jnw-7h-Fjs"/>
                     </connections>
                 </viewController>

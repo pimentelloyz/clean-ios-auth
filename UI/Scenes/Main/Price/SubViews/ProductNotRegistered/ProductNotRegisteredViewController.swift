@@ -3,6 +3,7 @@ import Presentation
 
 public final class ProductNotRegisteredViewController: UIViewController, Storyboarded {
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var searchTextField: SearchTextField!
     @IBOutlet weak var searchContainerView: UIView! {
         didSet {
             searchContainerView.clipsToBounds = true
@@ -46,6 +47,7 @@ public final class ProductNotRegisteredViewController: UIViewController, Storybo
     }
     
     func fetchProductNotRegisteredByAccount() {
+        loadProductControll = .isLoadingMore
         loadProductNotRegisteredByAccount?(LoadProductNotRegisteredByAccountRequest(limit: loadProductNotRegisteredOffsetViewModel.limit, offSet: loadProductNotRegisteredOffsetViewModel.offset, search: loadProductNotRegisteredOffsetViewModel.search))
     }
     
@@ -53,7 +55,9 @@ public final class ProductNotRegisteredViewController: UIViewController, Storybo
         guard let safeViewModel = self.viewModel else { return }
         let newElements = safeViewModel.listProductBody()
         if newElements.isEmpty {
-            self.loadProductNotRegisteredOffsetViewModel.decrementOffset()
+            if self.loadProductNotRegisteredOffsetViewModel.offset != 0 {
+                self.loadProductNotRegisteredOffsetViewModel.decrementOffset()
+            }
             return
         }
         if products == nil  {
@@ -71,6 +75,10 @@ public final class ProductNotRegisteredViewController: UIViewController, Storybo
     }
     
     @IBAction func searchDidTap(_ sender: Any) {
+        guard let safeText = searchTextField.text else { return }
+        self.products?.removeAll()
+        self.loadProductNotRegisteredOffsetViewModel.resetDefaultOffset()
+        self.loadProductNotRegisteredOffsetViewModel.updateSearchQuery(newQuery: safeText)
         fetchProductNotRegisteredByAccount()
     }
 }
@@ -111,20 +119,11 @@ extension ProductNotRegisteredViewController: UITableViewDelegate, UITableViewDa
 }
 
 extension ProductNotRegisteredViewController: UITextFieldDelegate {
-    public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        guard let safeText = textField.text else {
-            return true
-        }
-        
-        self.products?.removeAll()
-        self.loadProductNotRegisteredOffsetViewModel.updateSearchQuery(newQuery: safeText)
-        return true
-    }
-    
     public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        guard textField.text != nil else {
-            return true
-        }
+        guard let safeText = textField.text else { return true }
+        self.products?.removeAll()
+        self.loadProductNotRegisteredOffsetViewModel.resetDefaultOffset()
+        self.loadProductNotRegisteredOffsetViewModel.updateSearchQuery(newQuery: safeText)
         self.fetchProductNotRegisteredByAccount()
         return true
     }
@@ -133,6 +132,8 @@ extension ProductNotRegisteredViewController: UITextFieldDelegate {
 extension ProductNotRegisteredViewController: LoadProductNotRegisteredByAccountResultViewModel {
     public func result(_ viewModel: LoadProductNotRegisteredByAccountViewModel) {
         self.viewModel = viewModel
+        self.loadProductControll = .hasCompleted
+
     }
 }
 

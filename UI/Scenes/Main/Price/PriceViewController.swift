@@ -3,6 +3,7 @@ import Presentation
 
 public final class PriceViewController: UIViewController, Storyboarded {
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var searchTextField: SearchTextField!
     @IBOutlet weak var searchContainerView: UIView! {
         didSet {
             searchContainerView.clipsToBounds = true
@@ -57,6 +58,7 @@ public final class PriceViewController: UIViewController, Storyboarded {
     }
     
     func fetchProductRegisteredByAccount() {
+        loadProductControll = .isLoadingMore
         loadProductRegisteredByAccount?(LoadProductRegisteredByAccountRequest(limit: loadProductRegisteredOffsetViewModel.limit, offSet: loadProductRegisteredOffsetViewModel.offset, search: loadProductRegisteredOffsetViewModel.search))
     }
     
@@ -64,7 +66,9 @@ public final class PriceViewController: UIViewController, Storyboarded {
         guard let safeViewModel = self.viewModel else { return }
         let newElements = safeViewModel.listProductBody()
         if newElements.isEmpty {
-            self.loadProductRegisteredOffsetViewModel.decrementOffset()
+            if self.loadProductRegisteredOffsetViewModel.offset != 0 {
+                self.loadProductRegisteredOffsetViewModel.decrementOffset()
+            }
             return
         }
         if products == nil  {
@@ -82,6 +86,10 @@ public final class PriceViewController: UIViewController, Storyboarded {
     }
     
     @IBAction func searchDidTap(_ sender: Any) {
+        guard let safeText = searchTextField.text else { return }
+        self.products?.removeAll()
+        self.loadProductRegisteredOffsetViewModel.resetDefaultOffset()
+        self.loadProductRegisteredOffsetViewModel.updateSearchQuery(newQuery: safeText)
         fetchProductRegisteredByAccount()
     }
     
@@ -135,20 +143,11 @@ extension PriceViewController: UITableViewDelegate, UITableViewDataSource {
 }
 
 extension PriceViewController: UITextFieldDelegate {
-    public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        guard let safeText = textField.text else {
-            return true
-        }
-        
-        self.products?.removeAll()
-        self.loadProductRegisteredOffsetViewModel.updateSearchQuery(newQuery: safeText)
-        return true
-    }
-    
     public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        guard textField.text != nil else {
-            return true
-        }
+        guard let safeText = textField.text else { return true }
+        self.products?.removeAll()
+        self.loadProductRegisteredOffsetViewModel.resetDefaultOffset()
+        self.loadProductRegisteredOffsetViewModel.updateSearchQuery(newQuery: safeText)
         self.fetchProductRegisteredByAccount()
         return true
     }
@@ -157,6 +156,7 @@ extension PriceViewController: UITextFieldDelegate {
 extension PriceViewController: LoadProductRegisteredByAccountResultViewModel {
     public func result(_ viewModel: LoadProductRegisteredByAccountViewModel) {
         self.viewModel = viewModel
+        self.loadProductControll = .hasCompleted
     }
 }
 

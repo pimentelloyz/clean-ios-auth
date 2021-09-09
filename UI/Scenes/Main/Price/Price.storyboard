@@ -110,6 +110,7 @@
                     </view>
                     <connections>
                         <outlet property="searchContainerView" destination="ifY-1v-MuO" id="3Zc-W1-hgw"/>
+                        <outlet property="searchTextField" destination="fxF-jd-gAw" id="VUO-eC-Q6U"/>
                         <outlet property="tableView" destination="XgP-XJ-poi" id="ftC-LX-1Ad"/>
                     </connections>
                 </viewController>
