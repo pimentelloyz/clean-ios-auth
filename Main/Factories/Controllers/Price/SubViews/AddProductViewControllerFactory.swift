@@ -8,7 +8,7 @@ public func makeAddProductViewController(viewModel: LoadProductNotRegisteredByAc
 }
 
 public func makeAddProductViewController(viewModel: LoadProductRegisteredByAccountBodyViewModel) -> AddProductViewController {
-    return makeUpdateProductViewControllerWith(viewModel: viewModel, updateValueAccountProduct: makeRemoteUpdateValueAccountProduct(), updateSignatureValue: makeRemoteUpdateSignatureValue())
+    return makeUpdateProductViewControllerWith(viewModel: viewModel, updateValueAccountProduct: makeRemoteUpdateValueAccountProduct(), updateSignatureValue: makeRemoteUpdateSignatureValue(), deleteProductAccount: makeRemoteDeleteProductAccount())
 }
 
 
@@ -24,16 +24,18 @@ public func makeAddProductViewControllerWith(viewModel: LoadProductNotRegistered
     return controller
 }
 
-public func makeUpdateProductViewControllerWith(viewModel: LoadProductRegisteredByAccountBodyViewModel, updateValueAccountProduct: UpdateValueAccountProduct, updateSignatureValue: UpdateSignatureValue) -> AddProductViewController {
+public func makeUpdateProductViewControllerWith(viewModel: LoadProductRegisteredByAccountBodyViewModel, updateValueAccountProduct: UpdateValueAccountProduct, updateSignatureValue: UpdateSignatureValue, deleteProductAccount: DeleteProductAccount) -> AddProductViewController {
     let controller = AddProductViewController.instantiate()
     let validationComposite = ValidationComposite(validations: makeUpdateValueAccountProductValidations())
     let upadteSignatureValueValidationComposite = ValidationComposite(validations: makeUpdateSignatureValuesValidations())
     let updateValueAccountProductPresenter = UpdateValueAccountProductPresenter(updateValueAccountProduct: updateValueAccountProduct, alertView: WeakVarProxy(controller), loadingView: WeakVarProxy(controller), validation: validationComposite, viewModel: WeakVarProxy(controller))
     let updateSignatureValuePresenter = UpdateSignatureValuePresenter(updateSignatureValue: updateSignatureValue, alertView: WeakVarProxy(controller), loadingView: WeakVarProxy(controller), validation: upadteSignatureValueValidationComposite, viewModel: WeakVarProxy(controller))
+    let deleteProductAccountPresenter = DeleteProductAccountPresenter(deleteProductAccount: deleteProductAccount, alertView: WeakVarProxy(controller), loadingView: WeakVarProxy(controller), viewModel: WeakVarProxy(controller))
     controller.productToEditViewModel = viewModel
     controller.productActionManager = .update
     controller.updateValueAccountProduct = updateValueAccountProductPresenter.update
     controller.updateSignatureValue = updateSignatureValuePresenter.update
+    controller.removeProductAccount = deleteProductAccountPresenter.delete
     return controller
 }
 

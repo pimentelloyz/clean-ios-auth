@@ -85,3 +85,12 @@ extension MainQueueDispatchDecorator: UpdateSignatureValue where T: UpdateSignat
         }
     }
 }
+
+
+extension MainQueueDispatchDecorator: DeleteProductAccount where T: DeleteProductAccount {
+    public func delete(to pathComponent: PathComponent, completion: @escaping (DeleteProductAccount.Result) -> Void) {
+        instance.delete(to: pathComponent) { [weak self] result in
+            self?.dispatch { completion(result) }
+        }
+    }
+}

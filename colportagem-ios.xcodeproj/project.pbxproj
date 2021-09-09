@@ -292,6 +292,18 @@
 		93690FE126EA7063007B82A7 /* CurrencyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93690FDF26EA7050007B82A7 /* CurrencyField.swift */; };
 		93690FE326EA808E007B82A7 /* LoadProductNotRegistredOffsetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93690FE226EA808E007B82A7 /* LoadProductNotRegistredOffsetViewModel.swift */; };
 		93690FE526EA8CE2007B82A7 /* FacebookButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93690FE426EA8CE2007B82A7 /* FacebookButton.swift */; };
+		93690FE726EA9A47007B82A7 /* DeleteProductAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93690FE626EA9A46007B82A7 /* DeleteProductAccount.swift */; };
+		93690FE926EA9A77007B82A7 /* RemoteDeleteProductAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93690FE826EA9A77007B82A7 /* RemoteDeleteProductAccount.swift */; };
+		93690FEC26EA9AC2007B82A7 /* DeleteProductAccountPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93690FEB26EA9AC2007B82A7 /* DeleteProductAccountPresenter.swift */; };
+		93690FEE26EA9B9E007B82A7 /* RemoteDeleteProductAccountFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93690FED26EA9B9E007B82A7 /* RemoteDeleteProductAccountFactory.swift */; };
+		93690FF126EA9CF5007B82A7 /* DeleteProductAccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93690FEF26EA9CF5007B82A7 /* DeleteProductAccountTableViewCell.swift */; };
+		93690FF226EA9CF5007B82A7 /* DeleteProductAccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93690FEF26EA9CF5007B82A7 /* DeleteProductAccountTableViewCell.swift */; };
+		93690FF326EA9CF5007B82A7 /* DeleteProductAccountTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93690FF026EA9CF5007B82A7 /* DeleteProductAccountTableViewCell.xib */; };
+		93690FF426EA9CF5007B82A7 /* DeleteProductAccountTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93690FF026EA9CF5007B82A7 /* DeleteProductAccountTableViewCell.xib */; };
+		93690FF626EA9E51007B82A7 /* RemoveProductButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93690FF526EA9E51007B82A7 /* RemoveProductButton.swift */; };
+		93690FF726EA9E51007B82A7 /* RemoveProductButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93690FF526EA9E51007B82A7 /* RemoveProductButton.swift */; };
+		93690FFB26EA9F25007B82A7 /* RemoveProductAccountDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93690FFA26EA9F25007B82A7 /* RemoveProductAccountDelegate.swift */; };
+		93690FFC26EA9F25007B82A7 /* RemoveProductAccountDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93690FFA26EA9F25007B82A7 /* RemoveProductAccountDelegate.swift */; };
 		9381731A26D9676300B12D99 /* NewOfferButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9381731926D9676300B12D99 /* NewOfferButton.swift */; };
 		9381731B26D9676300B12D99 /* NewOfferButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9381731926D9676300B12D99 /* NewOfferButton.swift */; };
 		9381731E26D969CC00B12D99 /* AccountImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9381731D26D969CC00B12D99 /* AccountImageView.swift */; };
@@ -785,6 +797,14 @@
 		93690FDF26EA7050007B82A7 /* CurrencyField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyField.swift; sourceTree = "<group>"; };
 		93690FE226EA808E007B82A7 /* LoadProductNotRegistredOffsetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadProductNotRegistredOffsetViewModel.swift; sourceTree = "<group>"; };
 		93690FE426EA8CE2007B82A7 /* FacebookButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookButton.swift; sourceTree = "<group>"; };
+		93690FE626EA9A46007B82A7 /* DeleteProductAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteProductAccount.swift; sourceTree = "<group>"; };
+		93690FE826EA9A77007B82A7 /* RemoteDeleteProductAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDeleteProductAccount.swift; sourceTree = "<group>"; };
+		93690FEB26EA9AC2007B82A7 /* DeleteProductAccountPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteProductAccountPresenter.swift; sourceTree = "<group>"; };
+		93690FED26EA9B9E007B82A7 /* RemoteDeleteProductAccountFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDeleteProductAccountFactory.swift; sourceTree = "<group>"; };
+		93690FEF26EA9CF5007B82A7 /* DeleteProductAccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteProductAccountTableViewCell.swift; sourceTree = "<group>"; };
+		93690FF026EA9CF5007B82A7 /* DeleteProductAccountTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeleteProductAccountTableViewCell.xib; sourceTree = "<group>"; };
+		93690FF526EA9E51007B82A7 /* RemoveProductButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveProductButton.swift; sourceTree = "<group>"; };
+		93690FFA26EA9F25007B82A7 /* RemoveProductAccountDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveProductAccountDelegate.swift; sourceTree = "<group>"; };
 		9381731926D9676300B12D99 /* NewOfferButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOfferButton.swift; sourceTree = "<group>"; };
 		9381731D26D969CC00B12D99 /* AccountImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountImageView.swift; sourceTree = "<group>"; };
 		93861F4826E92E8900DB8BF4 /* LoadProductControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadProductControll.swift; sourceTree = "<group>"; };
@@ -984,6 +1004,7 @@
 				933DFE3C26DD1CC6007812EA /* SignatureValue.swift */,
 				933DFE3E26DD2251007812EA /* ProductRegisteredByAccount.swift */,
 				936229CF26E10DB200BA2FB1 /* ProductNotRegisteredByAccount.swift */,
+				93690FE626EA9A46007B82A7 /* DeleteProductAccount.swift */,
 			);
 			path = Product;
 			sourceTree = "<group>";
@@ -1045,6 +1066,7 @@
 				9396621326E68C08000089D7 /* RemoteAddSignatureValue.swift */,
 				9396622526E6A8A7000089D7 /* RemoteUpdateValueAccountProduct.swift */,
 				93C8772F26E9054B0052CD8A /* RemoteUpdateSignatureValue.swift */,
+				93690FE826EA9A77007B82A7 /* RemoteDeleteProductAccount.swift */,
 			);
 			path = Product;
 			sourceTree = "<group>";
@@ -1162,6 +1184,7 @@
 				9396621A26E6913D000089D7 /* RemoteAddSignatureValueFactory.swift */,
 				9396622E26E6ABCE000089D7 /* RemoteUpdateValueAccountProductFactory.swift */,
 				93C8773626E9179E0052CD8A /* RemoteUpdateSignatureValueFactory.swift */,
+				93690FED26EA9B9E007B82A7 /* RemoteDeleteProductAccountFactory.swift */,
 			);
 			path = Product;
 			sourceTree = "<group>";
@@ -1178,6 +1201,7 @@
 		9348E75E26DFBFE800DDF063 /* Product */ = {
 			isa = PBXGroup;
 			children = (
+				93690FEA26EA9AB5007B82A7 /* DeleteProductAccount */,
 				93C8773126E9060D0052CD8A /* UpdateSignatureValue */,
 				93C8772A26E8E6860052CD8A /* Helpers */,
 				9396622726E6A98A000089D7 /* UpdateValueAccountProduct */,
@@ -2082,8 +2106,12 @@
 		936229F526E1345F00BA2FB1 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				93690FF926EA9F0E007B82A7 /* Protocols */,
+				93690FF826EA9EAC007B82A7 /* Components */,
 				936229F626E1347900BA2FB1 /* AddProductImputTableViewCell.swift */,
 				936229F726E1347900BA2FB1 /* AddProductImputTableViewCell.xib */,
+				93690FEF26EA9CF5007B82A7 /* DeleteProductAccountTableViewCell.swift */,
+				93690FF026EA9CF5007B82A7 /* DeleteProductAccountTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -2110,6 +2138,30 @@
 				93622A1E26E1480900BA2FB1 /* NumberMonthContainer.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		93690FEA26EA9AB5007B82A7 /* DeleteProductAccount */ = {
+			isa = PBXGroup;
+			children = (
+				93690FEB26EA9AC2007B82A7 /* DeleteProductAccountPresenter.swift */,
+			);
+			path = DeleteProductAccount;
+			sourceTree = "<group>";
+		};
+		93690FF826EA9EAC007B82A7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				93690FF526EA9E51007B82A7 /* RemoveProductButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		93690FF926EA9F0E007B82A7 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				93690FFA26EA9F25007B82A7 /* RemoveProductAccountDelegate.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		9381731C26D969AA00B12D99 /* Images */ = {
@@ -2721,6 +2773,7 @@
 				935EBE5E26BDB0B50006A7CA /* LoadScreen.storyboard in Resources */,
 				93CA3F3226D80B8700E95FDD /* ProductTableViewCell.xib in Resources */,
 				935EBD4026BD525C0006A7CA /* Montserrat-Thin.ttf in Resources */,
+				93690FF326EA9CF5007B82A7 /* DeleteProductAccountTableViewCell.xib in Resources */,
 				935EBD3F26BD525C0006A7CA /* Montserrat-SemiBold.ttf in Resources */,
 				935EBD7D26BD6AD20006A7CA /* Login.storyboard in Resources */,
 				93622A1B26E146E800BA2FB1 /* ProductSignatureTableViewCell.xib in Resources */,
@@ -2749,6 +2802,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93622A0F26E13CCF00BA2FB1 /* Montserrat-Thin.ttf in Resources */,
+				93690FF426EA9CF5007B82A7 /* DeleteProductAccountTableViewCell.xib in Resources */,
 				93622A0A26E13CCF00BA2FB1 /* Montserrat-Bold.ttf in Resources */,
 				935EBE9726BDD8690006A7CA /* Login.storyboard in Resources */,
 				93622A0D26E13CCF00BA2FB1 /* Montserrat-Regular.ttf in Resources */,
@@ -2791,6 +2845,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93690FE726EA9A47007B82A7 /* DeleteProductAccount.swift in Sources */,
 				935EBC6526BD4C010006A7CA /* Model.swift in Sources */,
 				935EBE6A26BDD3F20006A7CA /* RefreshToken.swift in Sources */,
 				935EBE1626BDA7CD0006A7CA /* GenerateToken.swift in Sources */,
@@ -2836,6 +2891,7 @@
 				931C7FEC26E635EF000BDEDE /* RemoteAddValueAccountProduct.swift in Sources */,
 				935EBE9C26BDD9230006A7CA /* LocalSaveSecureCurrentAccount.swift in Sources */,
 				935EBE1C26BDA8450006A7CA /* SaveSecureCacheStorage.swift in Sources */,
+				93690FE926EA9A77007B82A7 /* RemoteDeleteProductAccount.swift in Sources */,
 				935EBE1B26BDA8450006A7CA /* RemoveSecureCacheStorage.swift in Sources */,
 				9396622426E6A84B000089D7 /* HttpPutClient.swift in Sources */,
 				9396622626E6A8A7000089D7 /* RemoteUpdateValueAccountProduct.swift in Sources */,
@@ -2944,6 +3000,7 @@
 				936229D726E1117600BA2FB1 /* LoadProductNotRegisteredByAccountViewModel.swift in Sources */,
 				936229DD26E1126200BA2FB1 /* LoadProductNotRegisteredByAccountPresenter.swift in Sources */,
 				935EBDF826BDA2100006A7CA /* AlertView.swift in Sources */,
+				93690FEC26EA9AC2007B82A7 /* DeleteProductAccountPresenter.swift in Sources */,
 				93AD24E426BF7ECC0012A5CF /* AuthenticationResultViewModel.swift in Sources */,
 				936229DB26E1123300BA2FB1 /* LoadProductNotRegisteredByAccountRequest.swift in Sources */,
 				935EBE4026BDAA1D0006A7CA /* PathComponentRequest.swift in Sources */,
@@ -2981,6 +3038,7 @@
 			files = (
 				935EBD8126BD6AE10006A7CA /* LoginViewController.swift in Sources */,
 				935EBD5726BD63670006A7CA /* Stringi18nExtension.swift in Sources */,
+				93690FFB26EA9F25007B82A7 /* RemoveProductAccountDelegate.swift in Sources */,
 				935EBE5226BDADD70006A7CA /* HomeController.swift in Sources */,
 				936229CA26E10C7300BA2FB1 /* ProductNotRegisteredViewController.swift in Sources */,
 				93CA3F2726D8018800E95FDD /* RegularLabel.swift in Sources */,
@@ -2997,6 +3055,7 @@
 				935EBD5526BD63670006A7CA /* Font.swift in Sources */,
 				93622A1526E1441B00BA2FB1 /* ProductLabel.swift in Sources */,
 				9381731A26D9676300B12D99 /* NewOfferButton.swift in Sources */,
+				93690FF126EA9CF5007B82A7 /* DeleteProductAccountTableViewCell.swift in Sources */,
 				936229F826E1347900BA2FB1 /* AddProductImputTableViewCell.swift in Sources */,
 				9396620F26E64CAE000089D7 /* AddValueAccountProductDidChangeDelegate.swift in Sources */,
 				93CA3F3B26D80F9A00E95FDD /* BoldLabel.swift in Sources */,
@@ -3022,6 +3081,7 @@
 				93F0DE5026D6AF7500C4631C /* OfferViewController.swift in Sources */,
 				935EBE6226BDB0C10006A7CA /* LoadScreenRouter.swift in Sources */,
 				935EBD6A26BD63A70006A7CA /* CheckBox.swift in Sources */,
+				93690FF626EA9E51007B82A7 /* RemoveProductButton.swift in Sources */,
 				93622A1F26E1480900BA2FB1 /* NumberMonthContainer.swift in Sources */,
 				935EBE5826BDAF080006A7CA /* SettingViewController.swift in Sources */,
 				93CA3F2B26D8086200E95FDD /* SearchTextField.swift in Sources */,
@@ -3045,6 +3105,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93690FEE26EA9B9E007B82A7 /* RemoteDeleteProductAccountFactory.swift in Sources */,
 				936229E226E1150D00BA2FB1 /* ProductNotRegisteredByAccountViewControllerFactory.swift in Sources */,
 				935EBDC526BD83250006A7CA /* ValidationBuilder.swift in Sources */,
 				935EBEA926BE26230006A7CA /* Responsive.swift in Sources */,
@@ -3056,6 +3117,7 @@
 				935EBE7D26BDD4AC0006A7CA /* AlamofireGetAdapterFactory.swift in Sources */,
 				935EBE9026BDD6DE0006A7CA /* FacebookAuthAdapterFactory.swift in Sources */,
 				935EBEAC26BE26420006A7CA /* UIViewExtensions.swift in Sources */,
+				93690FFC26EA9F25007B82A7 /* RemoveProductAccountDelegate.swift in Sources */,
 				935EBEB726BE2B350006A7CA /* ButtonPrimary.swift in Sources */,
 				935EBEBC26BE2B3D0006A7CA /* HeaderPrimary.swift in Sources */,
 				935EBE7126BDD47B0006A7CA /* KeychainAccessLoadSecureAdapter.swift in Sources */,
@@ -3074,12 +3136,14 @@
 				936229F126E1328200BA2FB1 /* AddProductViewController.swift in Sources */,
 				9396621E26E69392000089D7 /* AddSignatureValueDidChange.swift in Sources */,
 				936229F926E1347900BA2FB1 /* AddProductImputTableViewCell.swift in Sources */,
+				93690FF726EA9E51007B82A7 /* RemoveProductButton.swift in Sources */,
 				935EBE6326BDB0C60006A7CA /* LoadScreenViewController.swift in Sources */,
 				93622A0526E139D800BA2FB1 /* SaveButton.swift in Sources */,
 				93F0DE5126D6AF7500C4631C /* OfferViewController.swift in Sources */,
 				93C8773726E9179E0052CD8A /* RemoteUpdateSignatureValueFactory.swift in Sources */,
 				935EBEBB26BE2B3D0006A7CA /* TextLabelPrimary.swift in Sources */,
 				9396621026E64DC7000089D7 /* AddValueAccountProductDidChangeDelegate.swift in Sources */,
+				93690FF226EA9CF5007B82A7 /* DeleteProductAccountTableViewCell.swift in Sources */,
 				935EBEAA26BE262C0006A7CA /* UIColorExtensions.swift in Sources */,
 				935EBE9526BDD8690006A7CA /* LoginViewController.swift in Sources */,
 				935EBEBD26BE2F960006A7CA /* GoogleButton.swift in Sources */,

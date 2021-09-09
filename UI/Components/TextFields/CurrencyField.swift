@@ -17,7 +17,7 @@ class CurrencyField: UITextField {
         addTarget(self, action: #selector(editingChanged), for: .editingChanged)
         keyboardType = .numberPad
         textAlignment = .left
-        sendActions(for: .editingChanged)
+//        sendActions(for: .editingChanged)
     }
     override func deleteBackward() {
         text = string.digits.dropLast().string
