@@ -6,13 +6,13 @@ public protocol GenerateTokenResultViewModel {
 }
 
 public struct GenerateTokenViewModel: Equatable {
-    public var account: AccountModel
+    public var account: AccountModel?
     
-    public init(account: AccountModel) {
+    public init(account: AccountModel?) {
         self.account = account
     }
     
     public var isLogged: Bool {
-        return !self.account.body.accessToken.isEmpty
+        return self.account != nil
     }
 }

@@ -47,7 +47,7 @@
                                                                             <constraint firstAttribute="height" constant="1" id="N9Z-dy-8kz"/>
                                                                         </constraints>
                                                                     </view>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6N6-gb-Bnj" customClass="ButtonPrimary" customModule="Main" customModuleProvider="target">
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6N6-gb-Bnj" customClass="FacebookButton" customModule="UI">
                                                                         <rect key="frame" x="0.0" y="25" width="366" height="24"/>
                                                                         <color key="backgroundColor" name="backgroundPrimary"/>
                                                                         <inset key="imageEdgeInsets" minX="-16" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -135,10 +135,10 @@
         <image name="google-icon" width="17" height="17"/>
         <image name="microsoft" width="30" height="30"/>
         <namedColor name="backgroundPrimary">
-            <color red="0.0" green="0.18799999356269836" blue="0.40000000596046448" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="textPrimary">
-            <color red="0.0" green="0.18799999356269836" blue="0.40000000596046448" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.18823529411764706" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

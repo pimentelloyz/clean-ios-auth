@@ -27,6 +27,11 @@ public struct LoadProductRegisteredByAccountViewModel: Equatable {
     public func listProductBody() -> [LoadProductRegisteredByAccountBodyViewModel] {
         product.body.map({ LoadProductRegisteredByAccountBodyViewModel($0)})
     }
+    
+    public func listProductWithoutPrice() -> [LoadProductRegisteredByAccountBodyViewModel] {
+        let newList = product.body.filter({ $0.withoutPrice == false })
+        return newList.map({ LoadProductRegisteredByAccountBodyViewModel($0)})
+    }
 }
 
 public struct LoadProductRegisteredByAccountBodyViewModel {

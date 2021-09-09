@@ -291,6 +291,7 @@
 		93690FE026EA7050007B82A7 /* CurrencyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93690FDF26EA7050007B82A7 /* CurrencyField.swift */; };
 		93690FE126EA7063007B82A7 /* CurrencyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93690FDF26EA7050007B82A7 /* CurrencyField.swift */; };
 		93690FE326EA808E007B82A7 /* LoadProductNotRegistredOffsetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93690FE226EA808E007B82A7 /* LoadProductNotRegistredOffsetViewModel.swift */; };
+		93690FE526EA8CE2007B82A7 /* FacebookButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93690FE426EA8CE2007B82A7 /* FacebookButton.swift */; };
 		9381731A26D9676300B12D99 /* NewOfferButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9381731926D9676300B12D99 /* NewOfferButton.swift */; };
 		9381731B26D9676300B12D99 /* NewOfferButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9381731926D9676300B12D99 /* NewOfferButton.swift */; };
 		9381731E26D969CC00B12D99 /* AccountImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9381731D26D969CC00B12D99 /* AccountImageView.swift */; };
@@ -783,6 +784,7 @@
 		93690FDC26EA6FE4007B82A7 /* CurrencyExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyExtensions.swift; sourceTree = "<group>"; };
 		93690FDF26EA7050007B82A7 /* CurrencyField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyField.swift; sourceTree = "<group>"; };
 		93690FE226EA808E007B82A7 /* LoadProductNotRegistredOffsetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadProductNotRegistredOffsetViewModel.swift; sourceTree = "<group>"; };
+		93690FE426EA8CE2007B82A7 /* FacebookButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookButton.swift; sourceTree = "<group>"; };
 		9381731926D9676300B12D99 /* NewOfferButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOfferButton.swift; sourceTree = "<group>"; };
 		9381731D26D969CC00B12D99 /* AccountImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountImageView.swift; sourceTree = "<group>"; };
 		93861F4826E92E8900DB8BF4 /* LoadProductControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadProductControll.swift; sourceTree = "<group>"; };
@@ -1670,6 +1672,7 @@
 			isa = PBXGroup;
 			children = (
 				935EBD7A26BD6AAE0006A7CA /* GoogleButton.swift */,
+				93690FE426EA8CE2007B82A7 /* FacebookButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -2988,6 +2991,7 @@
 				935EBD6726BD63A70006A7CA /* AccountTextField.swift in Sources */,
 				93F0DE4926D6ABC500C4631C /* PriceViewController.swift in Sources */,
 				936229E626E115DE00BA2FB1 /* ProductNotRegisteredTableViewCell.swift in Sources */,
+				93690FE526EA8CE2007B82A7 /* FacebookButton.swift in Sources */,
 				935EBD7626BD6A4C0006A7CA /* OnboardingViewController.swift in Sources */,
 				935EBD5A26BD63670006A7CA /* Responsive.swift in Sources */,
 				935EBD5526BD63670006A7CA /* Font.swift in Sources */,

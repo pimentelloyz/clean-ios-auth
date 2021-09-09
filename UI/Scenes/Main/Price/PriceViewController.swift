@@ -84,6 +84,10 @@ public final class PriceViewController: UIViewController, Storyboarded {
     @IBAction func searchDidTap(_ sender: Any) {
         fetchProductRegisteredByAccount()
     }
+    
+    @IBAction func withoutPriceDidChange(_ sender: UISwitch) {
+//        loadProductRegisteredOffsetViewModel.resetDefaultvalues()
+    }
 }
 
 extension PriceViewController: UITableViewDelegate, UITableViewDataSource {
