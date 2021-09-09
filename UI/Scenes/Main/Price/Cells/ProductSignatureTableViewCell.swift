@@ -21,7 +21,7 @@ public final class ProductSignatureTableViewCell: UITableViewCell {
     func updateUI() {
         guard let viewModel = product else { return }
         productNameLabel.text   = viewModel.codeAndNameProduct
-        lastPurchasePrice.text  = viewModel.lastPurchesePriceString.localized() + " " + viewModel.lastPurchasePrice
+        lastPurchasePrice.text  = viewModel.lastPurchesePriceString.localized() + " " + viewModel.lastPurchasePrice.currencyInputFormatting()
         for (index, label) in monthLabel.enumerated() {
             label.text = label.text?.localized()
             monthCountLabel[index].text = "\((index + 1) * 12)"
@@ -29,7 +29,7 @@ public final class ProductSignatureTableViewCell: UITableViewCell {
         
         guard let signatures = viewModel.signatures else { return }
         for (index, signature) in signatures.enumerated() {
-            productPriceCollectionLabel[index].text = "\(signature.salesValue)"
+            productPriceCollectionLabel[index].text = "\(signature.salesValue)".currencyInputFormatting()
         }
     }
 }

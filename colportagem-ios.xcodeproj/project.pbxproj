@@ -286,6 +286,10 @@
 		93622A1C26E146E800BA2FB1 /* ProductSignatureTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93622A1826E146E800BA2FB1 /* ProductSignatureTableViewCell.xib */; };
 		93622A1F26E1480900BA2FB1 /* NumberMonthContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93622A1E26E1480900BA2FB1 /* NumberMonthContainer.swift */; };
 		93622A2026E1480900BA2FB1 /* NumberMonthContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93622A1E26E1480900BA2FB1 /* NumberMonthContainer.swift */; };
+		93690FDD26EA6FE4007B82A7 /* CurrencyExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93690FDC26EA6FE4007B82A7 /* CurrencyExtensions.swift */; };
+		93690FDE26EA6FFD007B82A7 /* CurrencyExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93690FDC26EA6FE4007B82A7 /* CurrencyExtensions.swift */; };
+		93690FE026EA7050007B82A7 /* CurrencyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93690FDF26EA7050007B82A7 /* CurrencyField.swift */; };
+		93690FE126EA7063007B82A7 /* CurrencyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93690FDF26EA7050007B82A7 /* CurrencyField.swift */; };
 		9381731A26D9676300B12D99 /* NewOfferButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9381731926D9676300B12D99 /* NewOfferButton.swift */; };
 		9381731B26D9676300B12D99 /* NewOfferButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9381731926D9676300B12D99 /* NewOfferButton.swift */; };
 		9381731E26D969CC00B12D99 /* AccountImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9381731D26D969CC00B12D99 /* AccountImageView.swift */; };
@@ -775,6 +779,8 @@
 		93622A1726E146E800BA2FB1 /* ProductSignatureTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSignatureTableViewCell.swift; sourceTree = "<group>"; };
 		93622A1826E146E800BA2FB1 /* ProductSignatureTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductSignatureTableViewCell.xib; sourceTree = "<group>"; };
 		93622A1E26E1480900BA2FB1 /* NumberMonthContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberMonthContainer.swift; sourceTree = "<group>"; };
+		93690FDC26EA6FE4007B82A7 /* CurrencyExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyExtensions.swift; sourceTree = "<group>"; };
+		93690FDF26EA7050007B82A7 /* CurrencyField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyField.swift; sourceTree = "<group>"; };
 		9381731926D9676300B12D99 /* NewOfferButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOfferButton.swift; sourceTree = "<group>"; };
 		9381731D26D969CC00B12D99 /* AccountImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountImageView.swift; sourceTree = "<group>"; };
 		93861F4826E92E8900DB8BF4 /* LoadProductControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadProductControll.swift; sourceTree = "<group>"; };
@@ -1577,6 +1583,7 @@
 				935EBD4E26BD63660006A7CA /* UIViewControllerExtensions.swift */,
 				935EBD5026BD63670006A7CA /* UIViewExtensions.swift */,
 				93622A1026E13F7800BA2FB1 /* FontExtension.swift */,
+				93690FDC26EA6FE4007B82A7 /* CurrencyExtensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -2167,6 +2174,7 @@
 			children = (
 				935EBD6226BD63A60006A7CA /* AccountTextField.swift */,
 				93CA3F2A26D8086200E95FDD /* SearchTextField.swift */,
+				93690FDF26EA7050007B82A7 /* CurrencyField.swift */,
 			);
 			path = TextFields;
 			sourceTree = "<group>";
@@ -2987,6 +2995,7 @@
 				9396621D26E69385000089D7 /* AddSignatureValueDidChange.swift in Sources */,
 				935EBD7B26BD6AAF0006A7CA /* GoogleButton.swift in Sources */,
 				935EBD5926BD63670006A7CA /* UIColorExtensions.swift in Sources */,
+				93690FE026EA7050007B82A7 /* CurrencyField.swift in Sources */,
 				93CA3F3826D80D5600E95FDD /* ContainerCell.swift in Sources */,
 				935EBD7126BD69CE0006A7CA /* StartButton.swift in Sources */,
 				93622A1926E146E800BA2FB1 /* ProductSignatureTableViewCell.swift in Sources */,
@@ -2996,6 +3005,7 @@
 				936229F026E1328200BA2FB1 /* AddProductViewController.swift in Sources */,
 				9381731E26D969CC00B12D99 /* AccountImageView.swift in Sources */,
 				93CA3F3026D80B8700E95FDD /* ProductTableViewCell.swift in Sources */,
+				93690FDD26EA6FE4007B82A7 /* CurrencyExtensions.swift in Sources */,
 				93622A0726E139EF00BA2FB1 /* CancelButton.swift in Sources */,
 				936229EB26E1184100BA2FB1 /* PriceRouter.swift in Sources */,
 				935EBD6026BD63980006A7CA /* HeaderPrimary.swift in Sources */,
@@ -3080,6 +3090,7 @@
 				935EBE7C26BDD4AC0006A7CA /* AlamofireDownloadFileAdapterFactory.swift in Sources */,
 				9381731B26D9676300B12D99 /* NewOfferButton.swift in Sources */,
 				935EBE8926BDD54C0006A7CA /* RemoteRefreshTokenFactory.swift in Sources */,
+				93690FDE26EA6FFD007B82A7 /* CurrencyExtensions.swift in Sources */,
 				935EBEBA26BE2B350006A7CA /* CheckBox.swift in Sources */,
 				935EBE7A26BDD4AC0006A7CA /* AlamofireDeleteAdapterFactory.swift in Sources */,
 				9381731F26D969CC00B12D99 /* AccountImageView.swift in Sources */,
@@ -3095,6 +3106,7 @@
 				931C7FF626E638D3000BDEDE /* RemoteAddValueAccountProductFactory.swift in Sources */,
 				935EBE5B26BDB0850006A7CA /* LoadScreenViewControllerFactory.swift in Sources */,
 				935EBEAB26BE26380006A7CA /* UIViewControllerExtensions.swift in Sources */,
+				93690FE126EA7063007B82A7 /* CurrencyField.swift in Sources */,
 				935EBDC226BD830C0006A7CA /* MainQueueDispatchDecorator.swift in Sources */,
 				93622A0826E139EF00BA2FB1 /* CancelButton.swift in Sources */,
 				936229FE26E1367300BA2FB1 /* AddProductViewControllerFactory.swift in Sources */,

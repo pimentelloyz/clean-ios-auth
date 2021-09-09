@@ -72,6 +72,10 @@ public struct LoadProductRegisteredByAccountBodyViewModel {
         return "\(self.body?.salesValue ?? 00.0)" 
     }
     
+    public var salesValeuDouble: Double {
+        return self.body?.salesValue ?? 00.0
+    }
+    
     public var lastPurchasePrice: String {
         return "\(self.body?.lastPurchasePrice ?? 00.0)"
     }

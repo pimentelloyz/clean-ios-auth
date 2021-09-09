@@ -23,13 +23,13 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ywe-fN-Q65">
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ywe-fN-Q65" customClass="CurrencyField" customModule="Main" customModuleProvider="target">
                         <rect key="frame" x="24" y="39" width="272" height="42"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="42" id="DRh-Uc-5c1"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <textInputTraits key="textInputTraits"/>
+                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                     </textField>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -47,7 +47,7 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
                 <outlet property="productLabel" destination="Y5F-S6-CKc" id="bSe-IS-wA0"/>
-                <outlet property="productValeuTextField" destination="Ywe-fN-Q65" id="uno-76-83q"/>
+                <outlet property="productValeuTextField" destination="Ywe-fN-Q65" id="rPr-g3-Csg"/>
             </connections>
             <point key="canvasLocation" x="34.782608695652179" y="89.0625"/>
         </tableViewCell>
