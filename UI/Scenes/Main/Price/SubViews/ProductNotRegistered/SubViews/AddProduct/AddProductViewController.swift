@@ -186,7 +186,7 @@ extension AddProductViewController: AddSignatureValueDidChange {
 
 extension AddProductViewController: ResultNoContentViewModel {
     public func result(_ viewModel: NoContentViewModel) {
-        navigationController?.popViewController(animated: true)
+        navigationController?.popToRootViewController(animated: false)
     }
 }
 

@@ -63,6 +63,9 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="288" height="46"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="TBM-Ey-POD" id="VBl-9f-GmC"/>
+                                                </connections>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IfW-Cq-OWF">
                                                 <rect key="frame" x="304" y="0.0" width="46" height="46"/>
@@ -70,6 +73,9 @@
                                                     <constraint firstAttribute="width" constant="46" id="K4b-Hz-EfI"/>
                                                 </constraints>
                                                 <state key="normal" image="search"/>
+                                                <connections>
+                                                    <action selector="searchDidTap:" destination="TBM-Ey-POD" eventType="touchUpInside" id="OBT-lY-Ql3"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
