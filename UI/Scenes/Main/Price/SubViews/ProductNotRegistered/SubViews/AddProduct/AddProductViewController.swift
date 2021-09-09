@@ -133,6 +133,7 @@ extension AddProductViewController: UITableViewDelegate, UITableViewDataSource {
                 cell.productLabel.text = "\("VALUE_FOR_SALE".localized()) - \((indexPath.row + 1) * 12) \(cell.productLabel.text!.localized())"
                 self.addSignatureValueRequest?.signatureItems?.append(SignatureItemsRequest(monthCount: ((indexPath.row + 1) * 12), salesValue: 0.0))
             } else {
+                cell.productLabel.text = "VALUE_FOR_SALE".localized()
                 cell.productViewModel = viewModel
                 cell.valueDidChangeDelegate = self
                 cell.selectionStyle = .none
@@ -148,6 +149,7 @@ extension AddProductViewController: UITableViewDelegate, UITableViewDataSource {
                 cell.addSignatureValueDidChange = self
                 cell.productLabel.text = "\("VALUE_FOR_SALE".localized()) - \((indexPath.row + 1) * 12) \(cell.productLabel.text!.localized())"
             } else {
+                cell.productLabel.text = "VALUE_FOR_SALE".localized()
                 cell.valueDidChangeDelegate = self
                 cell.selectionStyle = .none
             }

@@ -37,7 +37,6 @@ public class AddProductImputTableViewCell: UITableViewCell {
             } else {
                 productValeuTextField.text  = "\(viewModel.salesValeu)"
             }
-            
         }
     }
 }

@@ -31,6 +31,12 @@ public final class PriceViewController: UIViewController, Storyboarded {
         super.viewDidLoad()
         setup()
         registerNib()
+    }
+    
+    public override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        products?.removeAll()
+        loadProductRegisteredOffsetViewModel.resetDefaultvalues()
         fetchProductRegisteredByAccount()
     }
     
@@ -130,6 +136,7 @@ extension PriceViewController: UITextFieldDelegate {
             return true
         }
         
+        self.products?.removeAll()
         self.loadProductRegisteredOffsetViewModel.updateSearchQuery(newQuery: safeText)
         return true
     }
