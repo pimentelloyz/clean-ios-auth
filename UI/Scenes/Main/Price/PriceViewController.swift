@@ -20,7 +20,8 @@ public final class PriceViewController: UIViewController, Storyboarded {
     public var loadProductRegisteredByAccount: ((LoadProductRegisteredByAccountRequest) -> Void)?
     public var goToProductNotRegisteredViewController: (() -> Void)?
     public var goToAddProductViewController: ((LoadProductRegisteredByAccountBodyViewModel) -> Void)?
-
+    public var removeProductAccount: ((PathComponentRequest) -> Void)?
+    
     struct Storyboard {
         static let productCell = String(describing: ProductTableViewCell.self)
         static let productSignatureCell = String(describing: ProductSignatureTableViewCell.self)
@@ -81,6 +82,37 @@ public final class PriceViewController: UIViewController, Storyboarded {
         }
     }
     
+    func handleDidTapLogout(indexPath: IndexPath) {
+        let product = products?[indexPath.row]
+        self.selectedProduct = product
+        guard let productViewModel = self.selectedProduct else { return }
+        let alert = UIAlertController(title: "Atenção", message: "Tem certeza que deseja sair?", preferredStyle: .actionSheet)
+        let removeAction = UIAlertAction(title: "Remover", style: .default) { _ in
+            self.handleRemoveDidTapLogout(productViewModel: productViewModel)
+        }
+        
+        let editAction = UIAlertAction(title: "Editar", style: .default) { _ in
+            self.goToAddProductViewController?(productViewModel)
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancelar", style: .cancel)
+        alert.addAction(editAction)
+        alert.addAction(removeAction)
+        alert.addAction(cancelAction)
+        present(alert, animated: true)
+    }
+    
+    func handleRemoveDidTapLogout(productViewModel: LoadProductRegisteredByAccountBodyViewModel) {
+        let alert = UIAlertController(title: "Atenção", message: "Tem certeza que deseja remover este produto?", preferredStyle: .actionSheet)
+        let action = UIAlertAction(title: "Sim", style: .default) { _ in
+            self.removeProductAccount?(PathComponentRequest(path: "\(productViewModel.accountProductId)"))
+        }
+        let cancelAction = UIAlertAction(title: "Cancelar", style: .cancel)
+        alert.addAction(action)
+        alert.addAction(cancelAction)
+        present(alert, animated: true)
+    }
+    
     @IBAction func addNewProductDidTap(_ sender: Any) {
         goToProductNotRegisteredViewController?()
     }
@@ -113,20 +145,21 @@ extension PriceViewController: UITableViewDelegate, UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(withIdentifier: Storyboard.productSignatureCell, for: indexPath) as! ProductSignatureTableViewCell
             cell.selectionStyle = .none
             cell.product = product
+            cell.indexPath = indexPath
+            cell.showMenuDelegate = self
             return cell
         }
         let cell = tableView.dequeueReusableCell(withIdentifier: Storyboard.productCell, for: indexPath) as! ProductTableViewCell
         cell.selectionStyle = .none
         
         cell.product = product
+        cell.indexPath = indexPath
+        cell.showMenuDelegate = self
         return cell
     }
     
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let product = products?[indexPath.row]
-        self.selectedProduct = product
-        guard let productViewModel = self.selectedProduct else { return }
-        self.goToAddProductViewController?(productViewModel)
+        handleDidTapLogout(indexPath: indexPath)
     }
     
     public func scrollViewDidScroll(_ scrollView: UIScrollView) {
@@ -139,6 +172,12 @@ extension PriceViewController: UITableViewDelegate, UITableViewDataSource {
                 break
             }
         }
+    }
+}
+
+extension PriceViewController: ProductOptionsDidTapDelegate {
+    public func showMenu(by indexPath: IndexPath) {
+        handleDidTapLogout(indexPath: indexPath)
     }
 }
 
@@ -157,6 +196,15 @@ extension PriceViewController: LoadProductRegisteredByAccountResultViewModel {
     public func result(_ viewModel: LoadProductRegisteredByAccountViewModel) {
         self.viewModel = viewModel
         self.loadProductControll = .hasCompleted
+    }
+}
+
+extension PriceViewController: ResultNoContentViewModel {
+    public func result(_ viewModel: NoContentViewModel) {
+        self.products?.removeAll()
+        self.loadProductRegisteredOffsetViewModel.resetDefaultOffset()
+        self.loadProductRegisteredOffsetViewModel.resetDefaultvalues()
+        self.fetchProductRegisteredByAccount()
     }
 }
 

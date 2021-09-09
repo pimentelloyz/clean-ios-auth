@@ -14,6 +14,8 @@ public final class ProductSignatureTableViewCell: UITableViewCell {
             updateUI()
         }
     }
+    var indexPath: IndexPath!
+    var showMenuDelegate: ProductOptionsDidTapDelegate?
     public override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -31,5 +33,9 @@ public final class ProductSignatureTableViewCell: UITableViewCell {
         for (index, signature) in signatures.enumerated() {
             productPriceCollectionLabel[index].text = "\(signature.salesValue)".currencyInputFormatting()
         }
+    }
+    
+    @IBAction func showMenuDidTap(_ sender: Any) {
+        showMenuDelegate?.showMenu(by: indexPath)
     }
 }

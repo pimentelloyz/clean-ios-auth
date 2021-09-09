@@ -40,6 +40,9 @@
                                     <constraint firstAttribute="width" constant="24" id="xvB-kG-P0k"/>
                                 </constraints>
                                 <state key="normal" image="more"/>
+                                <connections>
+                                    <action selector="optionsDidTap:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="PXm-NY-gUu"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LAST_PURCHASE_PRICE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7wG-KF-U69" customClass="RegularLabel" customModule="Main" customModuleProvider="target">
                                 <rect key="frame" x="16" y="85" width="240" height="21"/>

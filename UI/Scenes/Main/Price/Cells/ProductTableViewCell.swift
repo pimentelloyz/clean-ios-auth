@@ -12,7 +12,8 @@ public final class ProductTableViewCell: UITableViewCell {
             updateUI()
         }
     }
-    
+    var indexPath: IndexPath!
+    var showMenuDelegate: ProductOptionsDidTapDelegate?
     public override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -23,5 +24,9 @@ public final class ProductTableViewCell: UITableViewCell {
         productPriceLabel.text  = viewModel.salesValeu.currencyInputFormatting()
 
         lastPurchasePrice.text  = viewModel.lastPurchesePriceString.localized() + " " + viewModel.lastPurchasePrice.currencyInputFormatting()
+    }
+    
+    @IBAction func optionsDidTap(_ sender: Any) {
+        showMenuDelegate?.showMenu(by: indexPath)
     }
 }

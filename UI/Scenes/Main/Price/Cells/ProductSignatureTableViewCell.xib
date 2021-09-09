@@ -35,6 +35,9 @@
                                     <constraint firstAttribute="height" constant="24" id="rdl-0u-ZOl"/>
                                 </constraints>
                                 <state key="normal" image="more"/>
+                                <connections>
+                                    <action selector="showMenuDidTap:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="mbZ-32-yrH"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="lKc-6y-ESW">
                                 <rect key="frame" x="16" y="56" width="413" height="119.5"/>

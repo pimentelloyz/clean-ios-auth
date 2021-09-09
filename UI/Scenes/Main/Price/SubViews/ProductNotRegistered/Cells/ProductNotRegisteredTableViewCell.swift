@@ -19,6 +19,6 @@ public class ProductNotRegisteredTableViewCell: UITableViewCell {
     func updateUI() {
         guard let viewModel = product else { return }
         productNameLabel.text  = viewModel.codeAndNameProduct
-        signatureOptionsLabel.text  = (signatureOptionsLabel.text?.localized())!
+        signatureOptionsLabel.text  = viewModel.isSignature ? (signatureOptionsLabel.text?.localized())! : ""
     }
 }

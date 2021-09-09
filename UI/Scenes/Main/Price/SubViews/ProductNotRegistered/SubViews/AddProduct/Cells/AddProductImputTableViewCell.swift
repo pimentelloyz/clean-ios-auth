@@ -56,7 +56,7 @@ public class AddProductImputTableViewCell: UITableViewCell {
             guard let viewModel = productToEditViewModel else {
                 return
             }
-            if viewModel.isSignature {
+            if viewModel.isSignature {        
                 productValeuTextField.text  = "\(viewModel.signatures?[indexPath.row].salesValue ?? 0.0)".currencyInputFormatting()
             } else {
                 productValeuTextField.text  = "\(viewModel.salesValeu)".currencyInputFormatting()

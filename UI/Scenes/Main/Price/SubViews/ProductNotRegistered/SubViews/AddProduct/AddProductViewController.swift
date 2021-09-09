@@ -9,7 +9,6 @@ public class AddProductViewController: UIViewController, Storyboarded {
     
     struct Storyboard {
         static let addProductImputTableViewCell = String(describing: AddProductImputTableViewCell.self)
-        static let deleteProductAccountTableViewCell = String(describing: DeleteProductAccountTableViewCell.self)
     }
     
     public var productActionManager: ProductActionManager = ProductActionManager.add
@@ -26,7 +25,6 @@ public class AddProductViewController: UIViewController, Storyboarded {
     public var addSignatureValue: ((AddSignatureValueRequest) -> Void)?
     var addSignatureValueRequest: AddSignatureValueRequest?
     public var updateSignatureValue: ((UpdateSignatureValueRequest, PathComponentRequest) -> Void)?
-    public var removeProductAccount: ((PathComponentRequest) -> Void)?
     public var updateSignatureValueRequest: UpdateSignatureValueRequest?
     public var updateSignatureValuePath: PathComponentRequest?
     
@@ -41,8 +39,6 @@ public class AddProductViewController: UIViewController, Storyboarded {
     func registerNib() {
         let productNib = UINib(nibName: Storyboard.addProductImputTableViewCell, bundle: nil)
         tableView.register(productNib, forCellReuseIdentifier: Storyboard.addProductImputTableViewCell)
-        let deleteProductAccountNib = UINib(nibName: Storyboard.deleteProductAccountTableViewCell, bundle: nil)
-        tableView.register(deleteProductAccountNib, forCellReuseIdentifier: Storyboard.deleteProductAccountTableViewCell)
     }
     
     func setup() {
@@ -116,14 +112,15 @@ extension AddProductViewController: UITableViewDelegate, UITableViewDataSource {
         switch productActionManager {
         case .add:
             return productViewModel?.numberOfRowsOnAddProductView() ?? 0
-        case .update:
-            return (productToEditViewModel?.numberOfRowsOnAddProductView() ?? 0) + 1
+        default:
+            return productToEditViewModel?.numberOfRowsOnAddProductView() ?? 0
         }
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Storyboard.addProductImputTableViewCell, for: indexPath) as! AddProductImputTableViewCell
         cell.productActionManager = productActionManager
+        cell.indexPath = indexPath
         switch productActionManager {
         case .add:
             guard let viewModel = self.productViewModel else {
@@ -131,14 +128,11 @@ extension AddProductViewController: UITableViewDelegate, UITableViewDataSource {
             }
             
             if viewModel.isSignature {
-                cell.indexPath = indexPath
-                cell.productViewModel = viewModel
                 cell.selectionStyle = .none
                 cell.addSignatureValueDidChange = self
                 cell.productLabel.text = "\("VALUE_FOR_SALE".localized()) - \((indexPath.row + 1) * 12) \(cell.productLabel.text!.localized())"
                 self.addSignatureValueRequest?.signatureItems?.append(SignatureItemsRequest(monthCount: ((indexPath.row + 1) * 12), salesValue: 0.0))
             } else {
-                cell.productLabel.text = "VALUE_FOR_SALE".localized()
                 cell.productViewModel = viewModel
                 cell.valueDidChangeDelegate = self
                 cell.selectionStyle = .none
@@ -148,41 +142,17 @@ extension AddProductViewController: UITableViewDelegate, UITableViewDataSource {
             guard let viewModel = self.productToEditViewModel else {
                 return UITableViewCell()
             }
+            cell.productToEditViewModel = viewModel
             if viewModel.isSignature {
-                if indexPath.row == 3 {
-                    let cell = tableView.dequeueReusableCell(withIdentifier: Storyboard.deleteProductAccountTableViewCell, for: indexPath) as! DeleteProductAccountTableViewCell
-                    cell.delegate = self
-                    cell.selectionStyle = .none
-
-                    return cell
-                }
-                cell.indexPath = indexPath
-                cell.productToEditViewModel = viewModel
                 cell.selectionStyle = .none
                 cell.addSignatureValueDidChange = self
                 cell.productLabel.text = "\("VALUE_FOR_SALE".localized()) - \((indexPath.row + 1) * 12) \(cell.productLabel.text!.localized())"
             } else {
-                if indexPath.row == 1 {
-                    let cell = tableView.dequeueReusableCell(withIdentifier: Storyboard.deleteProductAccountTableViewCell, for: indexPath) as! DeleteProductAccountTableViewCell
-                    cell.delegate = self
-                    cell.selectionStyle = .none
-
-                    return cell
-                }
-                cell.productToEditViewModel = viewModel
-                cell.productLabel.text = "VALUE_FOR_SALE".localized()
                 cell.valueDidChangeDelegate = self
                 cell.selectionStyle = .none
             }
             return cell
         }
-    }
-}
-
-extension AddProductViewController: RemoveProductAccountDelegate {
-    public func remove() {
-        guard let viewModel = self.productToEditViewModel else { return }
-        removeProductAccount?(PathComponentRequest(path: "\(viewModel.accountProductId)"))
     }
 }
 
@@ -214,7 +184,7 @@ extension AddProductViewController: AddSignatureValueDidChange {
 
 extension AddProductViewController: ResultNoContentViewModel {
     public func result(_ viewModel: NoContentViewModel) {
-        navigationController?.popToRootViewController(animated: false)
+        navigationController?.popViewController(animated: true)
     }
 }
 
