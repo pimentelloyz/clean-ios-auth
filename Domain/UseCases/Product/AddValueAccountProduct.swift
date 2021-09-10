@@ -7,10 +7,10 @@ public protocol AddValueAccountProduct {
 
 public struct AddValueAccountProductParameters: Model {
     public let productId: Int
-    public let salesValue: Double
+    public let salesValue: Double?
     
     public init(productId: Int,
-                salesValue: Double) {
+                salesValue: Double?) {
         self.productId = productId
         self.salesValue  = salesValue
     }

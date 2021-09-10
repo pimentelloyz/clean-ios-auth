@@ -12,6 +12,6 @@ public struct AddValueAccountProductRequest: Model {
     }
     
     public func toAddValueAccountProductParameters() -> AddValueAccountProductParameters {
-        return AddValueAccountProductParameters(productId: self.productId!, salesValue: self.salesValue!)
+        return AddValueAccountProductParameters(productId: self.productId!, salesValue: self.salesValue)
     }
 }

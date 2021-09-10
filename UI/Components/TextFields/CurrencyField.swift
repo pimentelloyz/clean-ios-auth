@@ -18,6 +18,9 @@ class CurrencyField: UITextField {
         keyboardType = .numberPad
         textAlignment = .left
         sendActions(for: .editingChanged)
+//        if let _ = newSuperview as? UITextField {
+//            sendActions(for: .editingChanged)
+//        }
     }
     override func deleteBackward() {
         text = string.digits.dropLast().string

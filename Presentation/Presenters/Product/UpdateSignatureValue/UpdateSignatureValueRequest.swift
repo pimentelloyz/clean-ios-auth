@@ -33,6 +33,6 @@ public struct UpdateSignatureItemsRequest: Model {
     }
     
     public func toUpdateSignatureItemsParameters() -> UpdateSignatureItemsParameters {
-        return UpdateSignatureItemsParameters(signatureValueId: self.signatureValueId!, monthCount: self.monthCount!, salesValue: self.salesValue!)
+        return UpdateSignatureItemsParameters(signatureValueId: self.signatureValueId!, monthCount: self.monthCount!, salesValue: self.salesValue)
     }
 }

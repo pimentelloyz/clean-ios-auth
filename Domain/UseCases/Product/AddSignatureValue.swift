@@ -18,10 +18,10 @@ public struct AddSignatureValueParameters: Model {
 
 public struct SignatureItemsParameters: Model {
     public let monthCount: Int
-    public let salesValue: Double
+    public let salesValue: Double?
     
     public init(monthCount: Int,
-                salesValue: Double) {
+                salesValue: Double?) {
         self.monthCount     = monthCount
         self.salesValue     = salesValue
     }

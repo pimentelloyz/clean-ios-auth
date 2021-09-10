@@ -30,6 +30,6 @@ public struct SignatureItemsRequest: Model {
     }
     
     public func toSignatureItemsParameters() -> SignatureItemsParameters {
-        return SignatureItemsParameters(monthCount: self.monthCount!, salesValue: self.salesValue!)
+        return SignatureItemsParameters(monthCount: self.monthCount!, salesValue: self.salesValue)
     }
 }

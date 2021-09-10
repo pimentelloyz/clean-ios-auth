@@ -128,12 +128,14 @@ extension AddProductViewController: UITableViewDelegate, UITableViewDataSource {
             }
             
             if viewModel.isSignature {
+                cell.productViewModel = viewModel
                 cell.selectionStyle = .none
                 cell.addSignatureValueDidChange = self
                 cell.productLabel.text = "\("VALUE_FOR_SALE".localized()) - \((indexPath.row + 1) * 12) \(cell.productLabel.text!.localized())"
-                self.addSignatureValueRequest?.signatureItems?.append(SignatureItemsRequest(monthCount: ((indexPath.row + 1) * 12), salesValue: 0.0))
+                self.addSignatureValueRequest?.signatureItems?.append(SignatureItemsRequest(monthCount: ((indexPath.row + 1) * 12), salesValue: nil))
             } else {
                 cell.productViewModel = viewModel
+                self.addValueAccountProductParameters = AddValueAccountProductRequest(productId: viewModel.productId, salesValue: nil)
                 cell.valueDidChangeDelegate = self
                 cell.selectionStyle = .none
             }
@@ -184,7 +186,7 @@ extension AddProductViewController: AddSignatureValueDidChange {
 
 extension AddProductViewController: ResultNoContentViewModel {
     public func result(_ viewModel: NoContentViewModel) {
-        navigationController?.popViewController(animated: true)
+        navigationController?.popToRootViewController(animated: true)
     }
 }
 

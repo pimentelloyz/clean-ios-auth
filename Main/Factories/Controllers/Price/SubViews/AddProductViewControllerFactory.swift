@@ -37,12 +37,11 @@ public func makeUpdateProductViewControllerWith(viewModel: LoadProductRegistered
 }
 
 public func makeAddValueAccountProductValidations() -> [Validation] {
-    return ValidationBuilder.field("productId").label("PRODUCT_ID".localized()).required().build() +
-        ValidationBuilder.field("salesValue").label("SALES_VALUE".localized()).required().build()
+    return ValidationBuilder.field("productId").label("PRODUCT_ID".localized()).required().build()
 }
 
 public func makeUpdateValueAccountProductValidations() -> [Validation] {
-    return ValidationBuilder.field("salesValue").label("SALES_VALUE".localized()).required().build()
+    return []
 }
 
 public func makeAddSignatureValuesValidations() -> [Validation] {

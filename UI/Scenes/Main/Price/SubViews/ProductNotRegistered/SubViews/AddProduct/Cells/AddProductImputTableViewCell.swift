@@ -51,7 +51,7 @@ public class AddProductImputTableViewCell: UITableViewCell {
     func updateUI() {
         switch productActionManager {
         case .add:
-            break
+            productValeuTextField.text = ""
         case .update:
             guard let viewModel = productToEditViewModel else {
                 return

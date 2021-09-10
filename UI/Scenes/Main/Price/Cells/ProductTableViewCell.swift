@@ -21,7 +21,12 @@ public final class ProductTableViewCell: UITableViewCell {
     func updateUI() {
         guard let viewModel = product else { return }
         productNameLabel.text   = viewModel.codeAndNameProduct
-        productPriceLabel.text  = viewModel.salesValeu.currencyInputFormatting()
+        if let value = viewModel.body?.salesValue {
+            productPriceLabel.text  = "\(value)".currencyInputFormatting()
+        } else {
+            productPriceLabel.text = "NO_PRICE".localized()
+        }
+       
 
         lastPurchasePrice.text  = viewModel.lastPurchesePriceString.localized() + " " + viewModel.lastPurchasePrice.currencyInputFormatting()
     }

@@ -32,7 +32,7 @@ extension LosslessStringConvertible {
     var string: String { .init(self) }
 }
 
-extension String {
+public extension String {
     func currencyInputFormatting() -> String {
         Formatter.currency.locale = Locale(identifier: "pt_BR")
         var decimal: Decimal { self.decimal / pow(10, Formatter.currency.maximumFractionDigits) }

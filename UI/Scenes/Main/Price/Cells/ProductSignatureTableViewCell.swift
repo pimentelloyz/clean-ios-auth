@@ -31,7 +31,11 @@ public final class ProductSignatureTableViewCell: UITableViewCell {
         
         guard let signatures = viewModel.signatures else { return }
         for (index, signature) in signatures.enumerated() {
-            productPriceCollectionLabel[index].text = "\(signature.salesValue)".currencyInputFormatting()
+            if let value = signature.salesValue {
+                productPriceCollectionLabel[index].text = "\(value)".currencyInputFormatting()
+            } else {
+                productPriceCollectionLabel[index].text = "NO_PRICE".localized()
+            }
         }
     }
     

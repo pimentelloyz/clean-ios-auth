@@ -4,6 +4,7 @@ import Presentation
 public final class PriceViewController: UIViewController, Storyboarded {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchTextField: SearchTextField!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var searchContainerView: UIView! {
         didSet {
             searchContainerView.clipsToBounds = true
@@ -212,7 +213,9 @@ extension PriceViewController: LoadingView {
     public func display(viewModel: LoadingViewModel) {
         if viewModel.isLoading {
             view.isUserInteractionEnabled = false
+            activityIndicator.startAnimating()
         } else {
+            activityIndicator.stopAnimating()
             view.isUserInteractionEnabled = true
         }
     }
