@@ -18,6 +18,6 @@ class NewOfferButton: UIButton {
         clipsToBounds = true
         layer.cornerRadius = heightResponsive / 2.1
         setTitleColor(Color.textGray, for: .normal)
-        titleLabel?.font = MainFont.bold.with(size: Responsive.of().ip(2.4).inch)
+        titleLabel?.font = MainFont.bold.with(size: Responsive.of().ip(2.1).inch)
     }
 }

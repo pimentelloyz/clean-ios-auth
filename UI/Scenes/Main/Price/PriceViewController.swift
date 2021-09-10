@@ -88,7 +88,7 @@ public final class PriceViewController: UIViewController, Storyboarded {
         self.selectedProduct = product
         guard let productViewModel = self.selectedProduct else { return }
         let alert = UIAlertController(title: "\(productViewModel.productName)", message: "", preferredStyle: .actionSheet)
-        let removeAction = UIAlertAction(title: "REMOVE".localized(), style: .default) { _ in
+        let removeAction = UIAlertAction(title: "REMOVE".localized(), style: .destructive) { _ in
             self.handleRemoveDidTapLogout(productViewModel: productViewModel)
         }
         
