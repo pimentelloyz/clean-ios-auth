@@ -86,16 +86,16 @@ public final class PriceViewController: UIViewController, Storyboarded {
         let product = products?[indexPath.row]
         self.selectedProduct = product
         guard let productViewModel = self.selectedProduct else { return }
-        let alert = UIAlertController(title: "Atenção", message: "Tem certeza que deseja sair?", preferredStyle: .actionSheet)
-        let removeAction = UIAlertAction(title: "Remover", style: .default) { _ in
+        let alert = UIAlertController(title: "\(productViewModel.productName)", message: "", preferredStyle: .actionSheet)
+        let removeAction = UIAlertAction(title: "REMOVE".localized(), style: .default) { _ in
             self.handleRemoveDidTapLogout(productViewModel: productViewModel)
         }
         
-        let editAction = UIAlertAction(title: "Editar", style: .default) { _ in
+        let editAction = UIAlertAction(title: "EDIT".localized(), style: .default) { _ in
             self.goToAddProductViewController?(productViewModel)
         }
         
-        let cancelAction = UIAlertAction(title: "Cancelar", style: .cancel)
+        let cancelAction = UIAlertAction(title: "CANCEL".localized(), style: .cancel)
         alert.addAction(editAction)
         alert.addAction(removeAction)
         alert.addAction(cancelAction)
@@ -103,11 +103,11 @@ public final class PriceViewController: UIViewController, Storyboarded {
     }
     
     func handleRemoveDidTapLogout(productViewModel: LoadProductRegisteredByAccountBodyViewModel) {
-        let alert = UIAlertController(title: "Atenção", message: "Tem certeza que deseja remover este produto?", preferredStyle: .actionSheet)
-        let action = UIAlertAction(title: "Sim", style: .default) { _ in
+        let alert = UIAlertController(title: "CONFIRM_REMOVE_REMOVE_TITLE".localized(), message: "CONFIRM_REMOVE_PRODCUT_MESSAGE".localized(), preferredStyle: .alert)
+        let action = UIAlertAction(title: "CONFIRM_BUTTON".localized(), style: .destructive) { _ in
             self.removeProductAccount?(PathComponentRequest(path: "\(productViewModel.accountProductId)"))
         }
-        let cancelAction = UIAlertAction(title: "Cancelar", style: .cancel)
+        let cancelAction = UIAlertAction(title: "CANCEL".localized(), style: .cancel)
         alert.addAction(action)
         alert.addAction(cancelAction)
         present(alert, animated: true)

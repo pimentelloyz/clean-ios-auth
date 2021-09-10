@@ -41,3 +41,9 @@
 "VALIDATION_FAILS" = "Validation fails";
 "PRODUCT_ID" = "Product ID";
 "REMOVE_PRODUCT_ACCOUNT" = "Remove product";
+"CONFIRM_REMOVE_REMOVE_TITLE" = "Wait!";
+"CONFIRM_REMOVE_PRODCUT_MESSAGE" = "Are you sure you want to remove this product?";
+"CONFIRM_BUTTON" = "Yes";
+"REMOVE" = "Remove";
+"EDIT" = "Edit";
+"CANCEL" = "Cancel";

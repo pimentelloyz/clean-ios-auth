@@ -40,3 +40,9 @@
 "VALIDATION_FAILS" = "Falha na validação";
 "PRODUCT_ID" = "Id do produto";
 "REMOVE_PRODUCT_ACCOUNT" = "Remover produto";
+"CONFIRM_REMOVE_REMOVE_TITLE" = "Atenção!";
+"CONFIRM_REMOVE_PRODCUT_MESSAGE" = "Você tem certeza que deseja remover este produto?";
+"CONFIRM_BUTTON" = "Sim";
+"REMOVE" = "Remover";
+"EDIT" = "Editar";
+"CANCEL" = "Cancelar";
